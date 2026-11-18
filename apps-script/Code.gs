@@ -59,7 +59,7 @@ function napLaiNoiDung() {
   nd.setColumnWidth(3, 110); nd.setColumnWidth(4, 340); nd.setColumnWidth(6, 220); nd.setColumnWidth(7, 160);
   nd.setColumnWidth(8, 180); nd.setColumnWidth(9, 300); nd.setColumnWidth(10, 260); nd.setColumnWidth(11, 220);
   var loai = SpreadsheetApp.newDataValidation()
-    .requireValueInList(['Tên buổi', 'Từ vựng', 'Luyện âm', 'Câu nói', 'Trắc nghiệm', 'Điền từ', 'Sắp xếp câu'], true).build();
+    .requireValueInList(['Tên buổi', 'Lý thuyết', 'Từ vựng', 'Luyện âm', 'Câu nói', 'Trắc nghiệm', 'Điền từ', 'Sắp xếp câu', 'Tìm lỗi sai'], true).build();
   nd.getRange(2, 3, Math.max(bang.length + 500, 2000), 1).setDataValidation(loai);
   Logger.log('Đã nạp ' + data.dong.length + ' dòng nội dung.');
 }

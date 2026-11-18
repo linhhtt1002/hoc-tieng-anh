@@ -2,12 +2,15 @@
 
 ## App có gì
 
-Học viên mở link trên điện thoại, nhập họ tên + số điện thoại một lần, rồi chọn Giai đoạn → Buổi. Mỗi buổi có 4 phần:
+Học viên mở link trên điện thoại, nhập họ tên + số điện thoại một lần, rồi chọn Giai đoạn → Buổi. Ở trang chủ còn có mục **Phát âm 44 âm IPA**: mỗi âm có cách đặt miệng, lưỡi, từ ví dụ, cặp từ dễ nhầm, nói theo có máy chấm, và bài nghe phân biệt.
+
+Mỗi buổi có 5 phần:
 
 | Phần | Học viên làm gì |
 |---|---|
+| **Bài học** | Kiến thức để xem lại: cách dùng, công thức, dấu hiệu, lỗi hay sai, phát âm của buổi, ví dụ bấm nghe được |
 | **Từ vựng** | Lật thẻ xem nghĩa, nghe đọc mẫu, bấm 🎤 nói thử. Cuối cùng làm bài kiểm tra: xem nghĩa chọn từ, nghe chọn nghĩa |
-| **Bài tập** | Trắc nghiệm, điền từ, sắp xếp câu theo đúng ngữ pháp của buổi. Sai thì có giải thích |
+| **Bài tập** | 30 câu mỗi buổi: trắc nghiệm, điền từ, sắp xếp câu, tìm lỗi sai, theo đúng ngữ pháp của buổi. Sai thì có giải thích |
 | **Nói theo** | Nghe mẫu (thường / chậm) → bấm 🎤 đọc to → máy tô xanh từ đọc đúng, đỏ từ đọc sai, chấm % |
 | **Nghe chép** | Nghe câu rồi gõ lại, máy so từng từ |
 
@@ -41,7 +44,9 @@ Sửa thẳng trong tab **Noi_dung**. Học viên mở lại trang là thấy n�
 | Cột | Ý nghĩa |
 |---|---|
 | Giai đoạn, Buổi | Số. Buổi mới (ví dụ GĐ 2 buổi 13) thì thêm dòng "Tên buổi" trước |
-| Loại | Chọn trong danh sách: Tên buổi · Từ vựng · Luyện âm · Câu nói · Trắc nghiệm · Điền từ · Sắp xếp câu |
+| Loại | Chọn trong danh sách: Tên buổi · Lý thuyết · Từ vựng · Luyện âm · Câu nói · Trắc nghiệm · Điền từ · Sắp xếp câu · Tìm lỗi sai |
+| *Riêng Lý thuyết* | Cột Tiếng Anh = tiêu đề mục (ví dụ "Công thức"). Cột Giải thích = các ý, cách nhau bằng `\|`. Cột Câu ví dụ / Nghĩa câu ví dụ = các ví dụ, cách nhau bằng `\|`, theo đúng thứ tự |
+| *Riêng Tìm lỗi sai* | Cột Tiếng Anh = câu có MỘT từ sai. Cột Đáp án = `từ sai \| từ sửa đúng`, ví dụ `go \| goes` |
 | Tiếng Anh / Câu hỏi | Từ, câu, hoặc câu hỏi có chỗ trống `___` |
 | Phiên âm | Cho Từ vựng, Luyện âm |
 | Nghĩa tiếng Việt | Cho Từ vựng, Câu nói, Sắp xếp câu (gợi ý nghĩa) |

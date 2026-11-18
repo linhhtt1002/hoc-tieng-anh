@@ -25,6 +25,7 @@ for r in lo_trinh:
         'gd': r['gd'], 'buoi': r['buoi'],
         'ten': c.get('ten') or r['ngu_phap'],
         'ngu_phap': r['ngu_phap'] or '', 'chu_de': r['tu_vung'] or '', 'phat_am': r['phat_am'] or '',
+        'ly_thuyet': c.get('ly_thuyet', []),
         'tu': c.get('tu', []), 'luyen_am': c.get('luyen_am', []), 'cau': c.get('cau', []), 'bai': c.get('bai', []),
     })
 
@@ -35,6 +36,10 @@ dong = []
 for b in buoi:
     g, n = b['gd'], b['buoi']
     dong.append([g, n, 'Tên buổi', b['ten'], '', '', '', '', '', '', ''])
+    for t in b['ly_thuyet']:
+        vd = t.get('vd', [])
+        dong.append([g, n, 'Lý thuyết', t['tieu_de'], '', '', '', '', ' | '.join(t.get('y', [])),
+                     ' | '.join(x['en'] for x in vd), ' | '.join(x.get('vi', '') for x in vd)])
     for t in b['tu']:
         dong.append([g, n, 'Từ vựng', t['en'], t.get('ipa', ''), t.get('vi', ''), '', '', '', t.get('vd', ''), t.get('vd_vi', '')])
     for t in b['luyen_am']:
@@ -49,6 +54,13 @@ for b in buoi:
             dong.append([g, n, 'Điền từ', t['hoi'], '', '', ' | '.join(ds), '', t.get('giai_thich', ''), '', ''])
         elif t['dang'] == 'sapxep':
             dong.append([g, n, 'Sắp xếp câu', t['dap_an'], '', t.get('vi', ''), '', '', t.get('giai_thich', ''), '', ''])
+        elif t['dang'] == 'tim_loi':
+            dong.append([g, n, 'Tìm lỗi sai', t['hoi'], '', '', t['tu_sai'] + ' | ' + t.get('sua', ''), '', t.get('giai_thich', ''), '', ''])
+
+ipa_p = os.path.join(ND, 'ipa.json')
+ipa = json.load(open(ipa_p, encoding='utf-8')) if os.path.exists(ipa_p) else {'nhom': [], 'am': []}
+with open(os.path.join(GOC, 'ipa.js'), 'w', encoding='utf-8') as f:
+    f.write('window.IPA = ' + json.dumps(ipa, ensure_ascii=False) + ';\n')
 
 with open(os.path.join(GOC, 'noi-dung.js'), 'w', encoding='utf-8') as f:
     f.write('window.NOI_DUNG = ' + json.dumps(buoi, ensure_ascii=False) + ';\n')
