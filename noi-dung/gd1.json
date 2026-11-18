@@ -1,0 +1,518 @@
+{"gd": 1, "buoi": [
+{
+"buoi": 1,
+"ten": "To be – Giới thiệu nhà mình",
+"tu": [
+{"en":"house","ipa":"/haʊs/","vi":"ngôi nhà","vd":"This is my house.","vd_vi":"Đây là nhà của tôi."},
+{"en":"kitchen","ipa":"/ˈkɪtʃɪn/","vi":"nhà bếp","vd":"The kitchen is small.","vd_vi":"Nhà bếp nhỏ."},
+{"en":"bedroom","ipa":"/ˈbedruːm/","vi":"phòng ngủ","vd":"My bedroom is not big.","vd_vi":"Phòng ngủ của tôi không lớn."},
+{"en":"bathroom","ipa":"/ˈbɑːθruːm/","vi":"phòng tắm","vd":"The bathroom is clean.","vd_vi":"Phòng tắm sạch sẽ."},
+{"en":"living room","ipa":"/ˈlɪvɪŋ ruːm/","vi":"phòng khách","vd":"These chairs are in the living room.","vd_vi":"Những cái ghế này ở trong phòng khách."},
+{"en":"table","ipa":"/ˈteɪbl/","vi":"cái bàn","vd":"That is a big table.","vd_vi":"Kia là một cái bàn lớn."},
+{"en":"chair","ipa":"/tʃeə/","vi":"cái ghế","vd":"Those chairs are new.","vd_vi":"Những cái ghế kia mới."},
+{"en":"bed","ipa":"/bed/","vi":"cái giường","vd":"The bed is very soft.","vd_vi":"Cái giường rất êm."},
+{"en":"window","ipa":"/ˈwɪndəʊ/","vi":"cửa sổ","vd":"This window is open.","vd_vi":"Cửa sổ này đang mở."},
+{"en":"door","ipa":"/dɔː/","vi":"cửa ra vào","vd":"The door is not open.","vd_vi":"Cửa ra vào không mở."}
+],
+"luyen_am": [
+{"en":"bed","ipa":"/bed/","ghi_chu":"âm /e/ ngắn, giống 'e' tiếng Việt nhưng gọn"},
+{"en":"lamp","ipa":"/læmp/","ghi_chu":"âm /æ/: miệng mở rộng, đọc giữa 'a' và 'e'"},
+{"en":"kitchen","ipa":"/ˈkɪtʃɪn/","ghi_chu":"âm /ɪ/ ngắn, đọc 'i' thật nhanh, không kéo dài"},
+{"en":"room","ipa":"/ruːm/","ghi_chu":"âm /uː/ dài, chu môi và kéo dài 'u'"},
+{"en":"door","ipa":"/dɔː/","ghi_chu":"âm /ɔː/ dài, tròn môi, đọc như 'o' kéo dài"}
+],
+"cau": [
+{"en":"This is my house.","vi":"Đây là nhà của tôi."},
+{"en":"That is a big bed.","vi":"Kia là một cái giường lớn."},
+{"en":"These are my chairs.","vi":"Đây là những cái ghế của tôi."},
+{"en":"Those lamps are not new.","vi":"Những cái đèn kia không mới."},
+{"en":"The kitchen is not big.","vi":"Nhà bếp không lớn."},
+{"en":"My room is small.","vi":"Phòng của tôi nhỏ."}
+],
+"bai": [
+{"dang":"chon","hoi":"This ___ my bedroom.","dap_an":"is","sai":["am","are"],"giai_thich":"This chỉ một vật (số ít) nên đi với is."},
+{"dang":"chon","hoi":"These ___ my chairs.","dap_an":"are","sai":["is","am"],"giai_thich":"These chỉ nhiều vật (số nhiều) nên đi với are."},
+{"dang":"chon","hoi":"It is ___ old house.","dap_an":"an","sai":["a","these"],"giai_thich":"old bắt đầu bằng một nguyên âm nên dùng an thay cho a."},
+{"dang":"chon","hoi":"Those ___ are new.","dap_an":"doors","sai":["door","a door"],"giai_thich":"Those chỉ nhiều vật nên danh từ phải ở số nhiều (thêm -s)."},
+{"dang":"dien","hoi":"The bathroom ___ (be) small.","dap_an":"is","chap_nhan":["is"],"giai_thich":"The bathroom là một phòng (số ít) nên dùng is."},
+{"dang":"dien","hoi":"We ___ (be) at home.","dap_an":"are","chap_nhan":["are"],"giai_thich":"We là nhiều người nên to be phải là are."},
+{"dang":"dien","hoi":"They ___ (not be) in the bedroom.","dap_an":"are not","chap_nhan":["are not","aren't"],"giai_thich":"Câu phủ định thêm not ngay sau to be, they đi với are."},
+{"dang":"sapxep","dap_an":"This is not my bedroom.","vi":"Đây không phải phòng ngủ của tôi.","giai_thich":"Câu phủ định: chủ ngữ + to be + not + danh từ."},
+{"dang":"sapxep","dap_an":"These are my new chairs.","vi":"Đây là những cái ghế mới của tôi.","giai_thich":"Tính từ new đứng trước danh từ chairs, sau my."},
+{"dang":"sapxep","dap_an":"The kitchen is not very big.","vi":"Nhà bếp không lớn lắm.","giai_thich":"not đứng ngay sau is, very đứng trước tính từ big."}
+]
+},
+{
+"buoi": 2,
+"ten": "Câu hỏi với to be – Thông tin cá nhân",
+"tu": [
+{"en":"name","ipa":"/neɪm/","vi":"tên","vd":"What is your name?","vd_vi":"Bạn tên là gì?"},
+{"en":"age","ipa":"/eɪdʒ/","vi":"tuổi","vd":"His age is forty.","vd_vi":"Anh ấy bốn mươi tuổi."},
+{"en":"job","ipa":"/dʒɒb/","vi":"công việc, nghề","vd":"What is your job?","vd_vi":"Bạn làm nghề gì?"},
+{"en":"phone number","ipa":"/ˈfəʊn ˌnʌmbə/","vi":"số điện thoại","vd":"What is your phone number?","vd_vi":"Số điện thoại của bạn là gì?"},
+{"en":"address","ipa":"/əˈdres/","vi":"địa chỉ","vd":"What is her address?","vd_vi":"Địa chỉ của cô ấy là gì?"},
+{"en":"teacher","ipa":"/ˈtiːtʃə/","vi":"giáo viên","vd":"She is a teacher.","vd_vi":"Cô ấy là giáo viên."},
+{"en":"student","ipa":"/ˈstjuːdnt/","vi":"học sinh, sinh viên","vd":"Are you a student?","vd_vi":"Bạn là sinh viên phải không?"},
+{"en":"married","ipa":"/ˈmærid/","vi":"đã kết hôn","vd":"He is not married.","vd_vi":"Anh ấy chưa kết hôn."},
+{"en":"country","ipa":"/ˈkʌntri/","vi":"đất nước","vd":"Vietnam is my country.","vd_vi":"Việt Nam là đất nước của tôi."},
+{"en":"city","ipa":"/ˈsɪti/","vi":"thành phố","vd":"My city is very big.","vd_vi":"Thành phố của tôi rất lớn."}
+],
+"luyen_am": [
+{"en":"job","ipa":"/dʒɒb/","ghi_chu":"/dʒ/ đầu từ đọc gần như 'gi' nhưng chu môi; /b/ cuối phải mím môi rồi bật nhẹ"},
+{"en":"teacher","ipa":"/ˈtiːtʃə/","ghi_chu":"/tʃ/ giống 'ch' tiếng Việt nhưng chu môi ra và bật hơi"},
+{"en":"three","ipa":"/θriː/","ghi_chu":"/θ/: đặt đầu lưỡi giữa hai hàm răng rồi thổi hơi, không đọc thành 't' hay 'th' tiếng Việt"},
+{"en":"she","ipa":"/ʃiː/","ghi_chu":"/ʃ/: chu môi, thổi hơi như tiếng 'suỵt', khác với /s/"},
+{"en":"phone","ipa":"/fəʊn/","ghi_chu":"/f/: răng trên chạm nhẹ môi dưới rồi thổi hơi; ph đọc là /f/"}
+],
+"cau": [
+{"en":"What is your name?","vi":"Bạn tên là gì?"},
+{"en":"Where are you from?","vi":"Bạn đến từ đâu?"},
+{"en":"I am a teacher.","vi":"Tôi là giáo viên."},
+{"en":"Is he a student?","vi":"Anh ấy có phải là sinh viên không?"},
+{"en":"What is his job?","vi":"Anh ấy làm nghề gì?"},
+{"en":"What is your phone number?","vi":"Số điện thoại của bạn là gì?"}
+],
+"bai": [
+{"dang":"chon","hoi":"___ you a student?","dap_an":"Are","sai":["Is","Am"],"giai_thich":"Câu hỏi với to be thì đưa to be lên đầu, you luôn đi với are."},
+{"dang":"chon","hoi":"___ is your name?","dap_an":"What","sai":["Who","How"],"giai_thich":"Tên là một thông tin (cái gì) nên hỏi bằng What."},
+{"dang":"chon","hoi":"This is my brother. ___ name is Nam.","dap_an":"His","sai":["He","Her"],"giai_thich":"Brother là nam và cần từ chỉ sở hữu 'của anh ấy' nên dùng his, không dùng he."},
+{"dang":"chon","hoi":"Số 15 trong tiếng Anh là: ___","dap_an":"fifteen","sai":["fifty","five"],"giai_thich":"Đuôi -teen dùng cho số 13 đến 19, còn -ty là số tròn chục như 50."},
+{"dang":"dien","hoi":"___ are you from? I am from Vietnam. (đâu)","dap_an":"Where","chap_nhan":["where"],"giai_thich":"Hỏi về nơi chốn, quê quán thì dùng Where."},
+{"dang":"dien","hoi":"Is he a doctor? No, he ___ (not be).","dap_an":"is not","chap_nhan":["is not","isn't"],"giai_thich":"Trả lời ngắn phủ định giữ lại to be của câu hỏi (is) và thêm not."},
+{"dang":"dien","hoi":"They are students. ___ teacher is very nice. (của họ)","dap_an":"Their","chap_nhan":["their"],"giai_thich":"Their nghĩa là 'của họ', đứng trước danh từ để chỉ sở hữu của they."},
+{"dang":"sapxep","dap_an":"What is your phone number?","vi":"Số điện thoại của bạn là gì?","giai_thich":"Câu hỏi WH: từ để hỏi + to be + phần còn lại."},
+{"dang":"sapxep","dap_an":"Where is your teacher from?","vi":"Giáo viên của bạn đến từ đâu?","giai_thich":"Where đứng đầu, sau đó là is, chủ ngữ, rồi from ở cuối câu."},
+{"dang":"sapxep","dap_an":"My brother is not a student.","vi":"Anh trai tôi không phải là sinh viên.","giai_thich":"Phủ định: chủ ngữ + is + not + a + danh từ chỉ nghề."}
+]
+},
+{
+"buoi": 3,
+"ten": "Hiện tại đơn (khẳng định) – Một ngày của tôi",
+"tu": [
+{"en":"wake up","ipa":"/weɪk ʌp/","vi":"thức dậy","vd":"I wake up early.","vd_vi":"Tôi thức dậy sớm."},
+{"en":"get up","ipa":"/ɡet ʌp/","vi":"ra khỏi giường","vd":"She gets up early.","vd_vi":"Cô ấy dậy sớm."},
+{"en":"brush my teeth","ipa":"/brʌʃ maɪ tiːθ/","vi":"đánh răng","vd":"I brush my teeth every morning.","vd_vi":"Tôi đánh răng mỗi sáng."},
+{"en":"take a shower","ipa":"/teɪk ə ˈʃaʊə/","vi":"tắm vòi sen","vd":"He takes a shower in the morning.","vd_vi":"Anh ấy tắm vào buổi sáng."},
+{"en":"have breakfast","ipa":"/hæv ˈbrekfəst/","vi":"ăn sáng","vd":"We have breakfast at home.","vd_vi":"Chúng tôi ăn sáng ở nhà."},
+{"en":"go to work","ipa":"/ɡəʊ tə wɜːk/","vi":"đi làm","vd":"My father goes to work by bus.","vd_vi":"Bố tôi đi làm bằng xe buýt."},
+{"en":"have lunch","ipa":"/hæv lʌntʃ/","vi":"ăn trưa","vd":"She has lunch at noon.","vd_vi":"Cô ấy ăn trưa vào buổi trưa."},
+{"en":"cook dinner","ipa":"/kʊk ˈdɪnə/","vi":"nấu bữa tối","vd":"My mother cooks dinner.","vd_vi":"Mẹ tôi nấu bữa tối."},
+{"en":"watch TV","ipa":"/wɒtʃ ˌtiː ˈviː/","vi":"xem ti vi","vd":"He watches TV in the evening.","vd_vi":"Anh ấy xem ti vi vào buổi tối."},
+{"en":"go to bed","ipa":"/ɡəʊ tə bed/","vi":"đi ngủ","vd":"I go to bed late.","vd_vi":"Tôi đi ngủ muộn."}
+],
+"luyen_am": [
+{"en":"cooks","ipa":"/kʊks/","ghi_chu":"đuôi -s đọc /s/ vì cook kết thúc bằng âm vô thanh /k/"},
+{"en":"goes","ipa":"/ɡəʊz/","ghi_chu":"đuôi -es đọc /z/ (rung cổ họng) vì go kết thúc bằng nguyên âm"},
+{"en":"plays","ipa":"/pleɪz/","ghi_chu":"đuôi -s đọc /z/ vì play kết thúc bằng nguyên âm"},
+{"en":"watches","ipa":"/ˈwɒtʃɪz/","ghi_chu":"đuôi -es đọc /ɪz/ vì watch kết thúc bằng âm /tʃ/, thêm một âm tiết"},
+{"en":"brushes","ipa":"/ˈbrʌʃɪz/","ghi_chu":"đuôi -es đọc /ɪz/ vì brush kết thúc bằng âm /ʃ/, thêm một âm tiết"}
+],
+"cau": [
+{"en":"I wake up early.","vi":"Tôi thức dậy sớm."},
+{"en":"She takes a shower in the morning.","vi":"Cô ấy tắm vào buổi sáng."},
+{"en":"He watches TV in the evening.","vi":"Anh ấy xem ti vi vào buổi tối."},
+{"en":"My mother cooks dinner.","vi":"Mẹ tôi nấu bữa tối."},
+{"en":"We have breakfast at home.","vi":"Chúng tôi ăn sáng ở nhà."},
+{"en":"My father goes to work by bus.","vi":"Bố tôi đi làm bằng xe buýt."}
+],
+"bai": [
+{"dang":"chon","hoi":"She ___ TV every evening.","dap_an":"watches","sai":["watch","watchs"],"giai_thich":"Chủ ngữ she cần thêm đuôi, và động từ tận cùng -ch thì thêm -es chứ không thêm -s."},
+{"dang":"chon","hoi":"They ___ breakfast at home.","dap_an":"have","sai":["has","haves"],"giai_thich":"They là số nhiều nên động từ giữ nguyên, không đổi thành has."},
+{"dang":"chon","hoi":"My father ___ to work by bus.","dap_an":"goes","sai":["go","gos"],"giai_thich":"My father tương đương he nên động từ thêm đuôi, mà go tận cùng -o nên thêm -es."},
+{"dang":"chon","hoi":"I ___ up early every day.","dap_an":"get","sai":["gets","getting"],"giai_thich":"Chủ ngữ I dùng động từ nguyên mẫu, chỉ he/she/it mới thêm -s."},
+{"dang":"dien","hoi":"She ___ (brush) her teeth after breakfast.","dap_an":"brushes","chap_nhan":["brushes"],"giai_thich":"Chủ ngữ she và động từ tận cùng -sh nên thêm -es."},
+{"dang":"dien","hoi":"My brother ___ (play) football after work.","dap_an":"plays","chap_nhan":["plays"],"giai_thich":"Trước y là nguyên âm a nên chỉ thêm -s, không đổi y thành ies."},
+{"dang":"dien","hoi":"My mother ___ (have) lunch at home.","dap_an":"has","chap_nhan":["has"],"giai_thich":"have là động từ đặc biệt, đi với he/she/it thì đổi thành has."},
+{"dang":"sapxep","dap_an":"My mother cooks dinner for us.","vi":"Mẹ tôi nấu bữa tối cho chúng tôi.","giai_thich":"Chủ ngữ + động từ + tân ngữ, rồi mới đến for us."},
+{"dang":"sapxep","dap_an":"He brushes his teeth.","vi":"Anh ấy đánh răng.","giai_thich":"Chủ ngữ he, động từ thêm -es, rồi đến his teeth."},
+{"dang":"sapxep","dap_an":"My sister wakes up very early.","vi":"Chị tôi thức dậy rất sớm.","giai_thich":"Cụm wake up đi liền nhau, very đứng trước early."}
+]
+},
+{
+"buoi": 4,
+"ten": "Hiện tại đơn (phủ định, câu hỏi) – Giờ giấc, việc hằng ngày",
+"tu": [
+{"en":"clean the house","ipa":"/kliːn ðə haʊs/","vi":"dọn nhà","vd":"We clean the house on Sunday.","vd_vi":"Chúng tôi dọn nhà vào Chủ nhật."},
+{"en":"wash the dishes","ipa":"/wɒʃ ðə ˈdɪʃɪz/","vi":"rửa bát","vd":"Does he wash the dishes?","vd_vi":"Anh ấy có rửa bát không?"},
+{"en":"do the laundry","ipa":"/duː ðə ˈlɔːndri/","vi":"giặt quần áo","vd":"I do the laundry on Saturday.","vd_vi":"Tôi giặt quần áo vào thứ Bảy."},
+{"en":"go shopping","ipa":"/ɡəʊ ˈʃɒpɪŋ/","vi":"đi mua sắm","vd":"Do you go shopping at the weekend?","vd_vi":"Bạn có đi mua sắm vào cuối tuần không?"},
+{"en":"walk the dog","ipa":"/wɔːk ðə dɒɡ/","vi":"dắt chó đi dạo","vd":"She walks the dog in the morning.","vd_vi":"Cô ấy dắt chó đi dạo vào buổi sáng."},
+{"en":"do homework","ipa":"/duː ˈhəʊmwɜːk/","vi":"làm bài tập về nhà","vd":"My son does his homework at night.","vd_vi":"Con trai tôi làm bài tập vào buổi tối."},
+{"en":"take the bus","ipa":"/teɪk ðə bʌs/","vi":"đi xe buýt","vd":"I don't take the bus to work.","vd_vi":"Tôi không đi xe buýt đi làm."},
+{"en":"Monday","ipa":"/ˈmʌndeɪ/","vi":"thứ Hai","vd":"The class is on Monday.","vd_vi":"Lớp học vào thứ Hai."},
+{"en":"weekend","ipa":"/ˌwiːkˈend/","vi":"cuối tuần","vd":"We don't work at the weekend.","vd_vi":"Chúng tôi không làm việc vào cuối tuần."},
+{"en":"o'clock","ipa":"/əˈklɒk/","vi":"giờ (đúng)","vd":"The shop opens at nine o'clock.","vd_vi":"Cửa hàng mở cửa lúc chín giờ."}
+],
+"luyen_am": [
+{"en":"walk","ipa":"/wɔːk/","ghi_chu":"âm cuối /k/: chặn hơi ở cuống lưỡi, không bỏ mất âm cuối; chữ l không đọc"},
+{"en":"wash","ipa":"/wɒʃ/","ghi_chu":"âm cuối /ʃ/: chu môi thổi hơi 'sh', đừng dừng ở 'wo'"},
+{"en":"bus","ipa":"/bʌs/","ghi_chu":"âm cuối /s/: kéo hơi 'xì' rõ ở cuối, không đọc thành 'bắt'"},
+{"en":"clean","ipa":"/kliːn/","ghi_chu":"âm cuối /n/: đầu lưỡi chạm chân răng trên, không đọc thành 'ng'"},
+{"en":"does","ipa":"/dʌz/","ghi_chu":"âm cuối /z/: rung cổ họng như tiếng ong 'zzz', khác với /s/"}
+],
+"cau": [
+{"en":"I do not work on Sunday.","vi":"Tôi không làm việc vào Chủ nhật."},
+{"en":"Does she walk the dog?","vi":"Cô ấy có dắt chó đi dạo không?"},
+{"en":"We clean the house at the weekend.","vi":"Chúng tôi dọn nhà vào cuối tuần."},
+{"en":"He does not take the bus.","vi":"Anh ấy không đi xe buýt."},
+{"en":"What time do you get up?","vi":"Bạn dậy lúc mấy giờ?"},
+{"en":"Do you go shopping on Saturday?","vi":"Bạn có đi mua sắm vào thứ Bảy không?"}
+],
+"bai": [
+{"dang":"chon","hoi":"___ she wash the dishes?","dap_an":"Does","sai":["Do","Is"],"giai_thich":"Câu hỏi hiện tại đơn với động từ thường phải mượn trợ động từ, chủ ngữ she dùng Does."},
+{"dang":"chon","hoi":"I don't work ___ Monday.","dap_an":"on","sai":["in","at"],"giai_thich":"Trước thứ trong tuần và ngày cụ thể ta dùng on."},
+{"dang":"chon","hoi":"The class starts ___ seven o'clock.","dap_an":"at","sai":["in","on"],"giai_thich":"Trước giờ cụ thể (một điểm thời gian) ta dùng at."},
+{"dang":"chon","hoi":"He doesn't ___ the bus.","dap_an":"take","sai":["takes","taking"],"giai_thich":"Sau doesn't động từ quay về nguyên mẫu vì đuôi -s đã nằm ở does."},
+{"dang":"dien","hoi":"My birthday is ___ May. (giới từ)","dap_an":"in","chap_nhan":["in"],"giai_thich":"Trước tháng (khoảng thời gian dài) ta dùng in."},
+{"dang":"dien","hoi":"She ___ (not / like) coffee.","dap_an":"doesn't like","chap_nhan":["doesn't like","does not like"],"giai_thich":"Phủ định với she dùng does not (doesn't) và động từ giữ nguyên mẫu."},
+{"dang":"dien","hoi":"___ you go shopping at the weekend? Yes, I do.","dap_an":"Do","chap_nhan":["do"],"giai_thich":"Chủ ngữ you dùng trợ động từ Do, và câu trả lời cũng dùng do."},
+{"dang":"sapxep","dap_an":"Does your son do his homework?","vi":"Con trai bạn có làm bài tập không?","giai_thich":"Does đứng đầu, rồi chủ ngữ, rồi động từ nguyên mẫu do."},
+{"dang":"sapxep","dap_an":"We do not clean the house.","vi":"Chúng tôi không dọn nhà.","giai_thich":"Phủ định: chủ ngữ + do not + động từ nguyên mẫu."},
+{"dang":"sapxep","dap_an":"What time do you go to bed?","vi":"Bạn đi ngủ lúc mấy giờ?","giai_thich":"What time đứng đầu, sau đó là do + chủ ngữ + động từ."}
+]
+},
+{
+"buoi": 5,
+"ten": "Sở hữu 's và me/him/her – Gia đình",
+"tu": [
+{"en":"mother","ipa":"/ˈmʌðə/","vi":"mẹ","vd":"I call my mother every day.","vd_vi":"Tôi gọi cho mẹ mỗi ngày."},
+{"en":"father","ipa":"/ˈfɑːðə/","vi":"bố","vd":"My father's car is old.","vd_vi":"Xe ô tô của bố tôi đã cũ."},
+{"en":"brother","ipa":"/ˈbrʌðə/","vi":"anh trai, em trai","vd":"My brother lives with them.","vd_vi":"Anh trai tôi sống cùng họ."},
+{"en":"sister","ipa":"/ˈsɪstə/","vi":"chị gái, em gái","vd":"My sister helps me every day.","vd_vi":"Chị tôi giúp tôi mỗi ngày."},
+{"en":"parents","ipa":"/ˈpeərənts/","vi":"bố mẹ","vd":"My parents live in the city.","vd_vi":"Bố mẹ tôi sống ở thành phố."},
+{"en":"son","ipa":"/sʌn/","vi":"con trai","vd":"Their son is a student.","vd_vi":"Con trai họ là sinh viên."},
+{"en":"daughter","ipa":"/ˈdɔːtə/","vi":"con gái","vd":"His daughter likes music.","vd_vi":"Con gái anh ấy thích âm nhạc."},
+{"en":"grandmother","ipa":"/ˈɡrænmʌðə/","vi":"bà","vd":"I visit my grandmother on Sunday.","vd_vi":"Tôi thăm bà vào Chủ nhật."},
+{"en":"husband","ipa":"/ˈhʌzbənd/","vi":"chồng","vd":"Her husband works in a bank.","vd_vi":"Chồng cô ấy làm việc ở ngân hàng."},
+{"en":"wife","ipa":"/waɪf/","vi":"vợ","vd":"My wife's name is Hoa.","vd_vi":"Vợ tôi tên là Hoa."}
+],
+"luyen_am": [
+{"en":"mother","ipa":"/ˈmʌðə/","ghi_chu":"2 âm tiết, nhấn âm thứ nhất MO-ther; âm sau đọc nhẹ /ə/"},
+{"en":"daughter","ipa":"/ˈdɔːtə/","ghi_chu":"nhấn âm thứ nhất DAU-ghter; gh không đọc"},
+{"en":"family","ipa":"/ˈfæməli/","ghi_chu":"3 âm tiết, nhấn âm thứ nhất FA-mi-ly, hai âm sau đọc nhẹ và nhanh"},
+{"en":"grandmother","ipa":"/ˈɡrænmʌðə/","ghi_chu":"3 âm tiết, nhấn âm đầu GRAND-mo-ther; chữ d gần như không đọc"},
+{"en":"together","ipa":"/təˈɡeðə/","ghi_chu":"nhấn âm thứ hai to-GE-ther, âm đầu đọc nhẹ /tə/"}
+],
+"cau": [
+{"en":"My mother lives with us.","vi":"Mẹ tôi sống cùng chúng tôi."},
+{"en":"My father's car is very old.","vi":"Xe ô tô của bố tôi rất cũ."},
+{"en":"I visit my grandmother on Sunday.","vi":"Tôi thăm bà vào Chủ nhật."},
+{"en":"Her husband helps her every day.","vi":"Chồng cô ấy giúp cô ấy mỗi ngày."},
+{"en":"My sister calls me every evening.","vi":"Chị tôi gọi cho tôi mỗi tối."},
+{"en":"We have dinner together.","vi":"Chúng tôi ăn tối cùng nhau."}
+],
+"bai": [
+{"dang":"chon","hoi":"My sister often calls ___.","dap_an":"me","sai":["I","my"],"giai_thich":"Sau động từ (calls) phải dùng đại từ tân ngữ me, còn I chỉ đứng làm chủ ngữ."},
+{"dang":"chon","hoi":"This is ___ car.","dap_an":"my father's","sai":["my father","my fathers"],"giai_thich":"Muốn nói đồ vật thuộc về ai thì thêm 's sau người sở hữu."},
+{"dang":"chon","hoi":"I love my parents. I visit ___ every week.","dap_an":"them","sai":["they","their"],"giai_thich":"Parents là nhiều người và đứng sau động từ visit nên dùng tân ngữ them."},
+{"dang":"chon","hoi":"My brother ___ in Hanoi.","dap_an":"lives","sai":["live","living"],"giai_thich":"My brother tương đương he nên động từ hiện tại đơn phải thêm -s."},
+{"dang":"dien","hoi":"Lan is my friend. I often help ___. (cô ấy)","dap_an":"her","chap_nhan":["her"],"giai_thich":"Lan là nữ và đứng sau động từ help nên dùng tân ngữ her, không dùng she."},
+{"dang":"dien","hoi":"___ your parents live in the city?","dap_an":"Do","chap_nhan":["do"],"giai_thich":"Your parents là số nhiều (như they) nên câu hỏi dùng Do."},
+{"dang":"dien","hoi":"This is ___ (Nam) bike.","dap_an":"Nam's","chap_nhan":["nam's"],"giai_thich":"Thêm 's sau tên người để nói chiếc xe là của người đó."},
+{"dang":"sapxep","dap_an":"My mother's name is Hoa.","vi":"Mẹ tôi tên là Hoa.","giai_thich":"My mother's name là một cụm chủ ngữ, theo sau là is."},
+{"dang":"sapxep","dap_an":"Does your brother live with you?","vi":"Anh trai bạn có sống cùng bạn không?","giai_thich":"Does + chủ ngữ + động từ nguyên mẫu, tân ngữ you đứng sau with."},
+{"dang":"sapxep","dap_an":"My grandmother tells us stories.","vi":"Bà kể chuyện cho chúng tôi nghe.","giai_thich":"Sau tells là người nghe (us) trước, rồi mới đến stories."}
+]
+},
+{
+"buoi": 6,
+"ten": "Hiện tại tiếp diễn – Mọi người đang làm gì",
+"tu": [
+{"en":"run","ipa":"/rʌn/","vi":"chạy","vd":"He is running in the park.","vd_vi":"Anh ấy đang chạy trong công viên."},
+{"en":"swim","ipa":"/swɪm/","vi":"bơi","vd":"The children are swimming now.","vd_vi":"Bọn trẻ đang bơi."},
+{"en":"dance","ipa":"/dɑːns/","vi":"nhảy, khiêu vũ","vd":"She is dancing with her friends.","vd_vi":"Cô ấy đang nhảy với các bạn."},
+{"en":"sing","ipa":"/sɪŋ/","vi":"hát","vd":"My mother is singing in the kitchen.","vd_vi":"Mẹ tôi đang hát trong bếp."},
+{"en":"play football","ipa":"/pleɪ ˈfʊtbɔːl/","vi":"đá bóng","vd":"They are playing football.","vd_vi":"Họ đang đá bóng."},
+{"en":"ride a bike","ipa":"/raɪd ə baɪk/","vi":"đạp xe","vd":"I am riding a bike.","vd_vi":"Tôi đang đạp xe."},
+{"en":"read a book","ipa":"/riːd ə bʊk/","vi":"đọc sách","vd":"My father is reading a book.","vd_vi":"Bố tôi đang đọc sách."},
+{"en":"listen to music","ipa":"/ˈlɪsn tə ˈmjuːzɪk/","vi":"nghe nhạc","vd":"We are listening to music.","vd_vi":"Chúng tôi đang nghe nhạc."},
+{"en":"talk on the phone","ipa":"/tɔːk ɒn ðə fəʊn/","vi":"nói chuyện điện thoại","vd":"She is talking on the phone.","vd_vi":"Cô ấy đang nói chuyện điện thoại."},
+{"en":"take photos","ipa":"/teɪk ˈfəʊtəʊz/","vi":"chụp ảnh","vd":"He is taking photos of the sea.","vd_vi":"Anh ấy đang chụp ảnh biển."}
+],
+"luyen_am": [
+{"en":"singing","ipa":"/ˈsɪŋɪŋ/","ghi_chu":"đuôi -ing đọc /ɪŋ/: 'i' ngắn + 'ng', không đọc thành 'inh' và không bật âm /g/"},
+{"en":"running","ipa":"/ˈrʌnɪŋ/","ghi_chu":"đuôi -ing /ɪŋ/: cuối lưỡi nâng chạm vòm mềm, giữ âm mũi 'ng'"},
+{"en":"dancing","ipa":"/ˈdɑːnsɪŋ/","ghi_chu":"đuôi -ing /ɪŋ/ nối liền với /s/ phía trước: 'dan-sing'"},
+{"en":"swimming","ipa":"/ˈswɪmɪŋ/","ghi_chu":"đuôi -ing /ɪŋ/; hai chữ m chỉ đọc một âm /m/"},
+{"en":"reading","ipa":"/ˈriːdɪŋ/","ghi_chu":"đuôi -ing /ɪŋ/ nối với /d/ phía trước: 'ree-ding', âm 'ee' kéo dài"}
+],
+"cau": [
+{"en":"I am reading a book.","vi":"Tôi đang đọc sách."},
+{"en":"She is singing in the kitchen.","vi":"Cô ấy đang hát trong bếp."},
+{"en":"They are playing football now.","vi":"Bây giờ họ đang đá bóng."},
+{"en":"Are you listening to music?","vi":"Bạn đang nghe nhạc à?"},
+{"en":"He is not swimming today.","vi":"Hôm nay anh ấy không bơi."},
+{"en":"What are you doing?","vi":"Bạn đang làm gì vậy?"}
+],
+"bai": [
+{"dang":"chon","hoi":"Look! The children ___ in the garden.","dap_an":"are playing","sai":["is playing","play"],"giai_thich":"Look! cho biết việc đang diễn ra nên dùng tiếp diễn, children là số nhiều nên đi với are."},
+{"dang":"chon","hoi":"She is ___ a bike now.","dap_an":"riding","sai":["rideing","rides"],"giai_thich":"Động từ tận cùng bằng e câm thì bỏ e rồi mới thêm -ing."},
+{"dang":"chon","hoi":"___ he talking on the phone?","dap_an":"Is","sai":["Does","Are"],"giai_thich":"Câu hỏi tiếp diễn đưa to be lên đầu, he đi với is; không dùng does vì đã có đuôi -ing."},
+{"dang":"chon","hoi":"We are ___ in the sea.","dap_an":"swimming","sai":["swiming","swim"],"giai_thich":"swim kết thúc bằng phụ âm - nguyên âm - phụ âm nên gấp đôi m trước khi thêm -ing."},
+{"dang":"dien","hoi":"I ___ (listen) to music now.","dap_an":"am listening","chap_nhan":["am listening","'m listening"],"giai_thich":"now cho biết việc đang xảy ra, I đi với am và động từ thêm -ing."},
+{"dang":"dien","hoi":"My father ___ (not / read) a book now.","dap_an":"is not reading","chap_nhan":["is not reading","isn't reading"],"giai_thich":"Phủ định tiếp diễn: is + not + động từ -ing, vì my father tương đương he."},
+{"dang":"dien","hoi":"Look! They ___ (dance).","dap_an":"are dancing","chap_nhan":["are dancing","'re dancing"],"giai_thich":"Look! báo hiệu việc đang xảy ra; dance bỏ e rồi thêm -ing, they đi với are."},
+{"dang":"sapxep","dap_an":"She is talking on the phone.","vi":"Cô ấy đang nói chuyện điện thoại.","giai_thich":"Chủ ngữ + is + động từ -ing + phần còn lại."},
+{"dang":"sapxep","dap_an":"What are you doing?","vi":"Bạn đang làm gì?","giai_thich":"Câu hỏi WH tiếp diễn: What + are + chủ ngữ + động từ -ing."},
+{"dang":"sapxep","dap_an":"The children are not playing football.","vi":"Bọn trẻ không đang đá bóng.","giai_thich":"not đứng giữa are và động từ -ing."}
+]
+},
+{
+"buoi": 7,
+"ten": "Quá khứ đơn – Hôm qua và cuối tuần",
+"tu": [
+{"en":"yesterday","ipa":"/ˈjestədeɪ/","vi":"hôm qua","vd":"I was at home yesterday.","vd_vi":"Hôm qua tôi ở nhà."},
+{"en":"last weekend","ipa":"/lɑːst ˌwiːkˈend/","vi":"cuối tuần trước","vd":"We visited our parents last weekend.","vd_vi":"Cuối tuần trước chúng tôi đã thăm bố mẹ."},
+{"en":"last night","ipa":"/lɑːst naɪt/","vi":"tối qua","vd":"She watched a film last night.","vd_vi":"Tối qua cô ấy đã xem một bộ phim."},
+{"en":"visit","ipa":"/ˈvɪzɪt/","vi":"thăm","vd":"I visited my grandmother.","vd_vi":"Tôi đã đi thăm bà."},
+{"en":"stay at home","ipa":"/steɪ ət həʊm/","vi":"ở nhà","vd":"They stayed at home on Sunday.","vd_vi":"Họ ở nhà vào Chủ nhật."},
+{"en":"watch a film","ipa":"/wɒtʃ ə fɪlm/","vi":"xem phim","vd":"We watched a film together.","vd_vi":"Chúng tôi đã xem phim cùng nhau."},
+{"en":"relax","ipa":"/rɪˈlæks/","vi":"thư giãn","vd":"He relaxed in the garden.","vd_vi":"Anh ấy đã thư giãn trong vườn."},
+{"en":"tired","ipa":"/ˈtaɪəd/","vi":"mệt","vd":"I was very tired yesterday.","vd_vi":"Hôm qua tôi rất mệt."},
+{"en":"busy","ipa":"/ˈbɪzi/","vi":"bận","vd":"My mother was busy yesterday.","vd_vi":"Hôm qua mẹ tôi bận."},
+{"en":"party","ipa":"/ˈpɑːti/","vi":"bữa tiệc","vd":"The party was great.","vd_vi":"Bữa tiệc rất tuyệt."}
+],
+"luyen_am": [
+{"en":"watched","ipa":"/wɒtʃt/","ghi_chu":"đuôi -ed đọc /t/ vì watch kết thúc bằng âm vô thanh /tʃ/; không thêm âm tiết"},
+{"en":"cooked","ipa":"/kʊkt/","ghi_chu":"đuôi -ed đọc /t/ vì cook kết thúc bằng âm vô thanh /k/"},
+{"en":"played","ipa":"/pleɪd/","ghi_chu":"đuôi -ed đọc /d/ vì play kết thúc bằng nguyên âm"},
+{"en":"stayed","ipa":"/steɪd/","ghi_chu":"đuôi -ed đọc /d/ nhẹ, vẫn là một âm tiết"},
+{"en":"visited","ipa":"/ˈvɪzɪtɪd/","ghi_chu":"đuôi -ed đọc /ɪd/ vì visit kết thúc bằng /t/, thêm một âm tiết"}
+],
+"cau": [
+{"en":"I was at home yesterday.","vi":"Hôm qua tôi ở nhà."},
+{"en":"We visited our grandmother.","vi":"Chúng tôi đã đi thăm bà."},
+{"en":"She watched a film last night.","vi":"Tối qua cô ấy đã xem một bộ phim."},
+{"en":"They played football in the park.","vi":"Họ đã đá bóng trong công viên."},
+{"en":"The party was great.","vi":"Bữa tiệc rất tuyệt."},
+{"en":"We were very tired.","vi":"Chúng tôi đã rất mệt."}
+],
+"bai": [
+{"dang":"chon","hoi":"I ___ very busy yesterday.","dap_an":"was","sai":["were","am"],"giai_thich":"yesterday chỉ quá khứ, quá khứ của to be với I là was."},
+{"dang":"chon","hoi":"They ___ at the party last night.","dap_an":"were","sai":["was","are"],"giai_thich":"last night chỉ quá khứ, they là số nhiều nên dùng were."},
+{"dang":"chon","hoi":"We ___ a film last night.","dap_an":"watched","sai":["watch","watching"],"giai_thich":"last night là quá khứ nên động từ thường thêm -ed."},
+{"dang":"chon","hoi":"She ___ her grandmother last weekend.","dap_an":"visited","sai":["visit","visits"],"giai_thich":"last weekend là quá khứ nên dùng visited, quá khứ đơn không thêm -s theo chủ ngữ."},
+{"dang":"dien","hoi":"He ___ (stay) at home yesterday.","dap_an":"stayed","chap_nhan":["stayed"],"giai_thich":"Trước y là nguyên âm a nên giữ y và chỉ thêm -ed."},
+{"dang":"dien","hoi":"My mother ___ (cook) dinner last night.","dap_an":"cooked","chap_nhan":["cooked"],"giai_thich":"last night là quá khứ, cook là động từ có quy tắc nên thêm -ed."},
+{"dang":"dien","hoi":"The film ___ (be) very good.","dap_an":"was","chap_nhan":["was"],"giai_thich":"The film là số ít, kể lại chuyện đã xem nên to be chia là was."},
+{"dang":"sapxep","dap_an":"My father cleaned the kitchen.","vi":"Bố tôi đã dọn nhà bếp.","giai_thich":"Chủ ngữ + động từ thêm -ed + tân ngữ."},
+{"dang":"sapxep","dap_an":"She visited her old teacher.","vi":"Cô ấy đã đến thăm thầy giáo cũ.","giai_thich":"Tính từ old đứng sau her và trước danh từ teacher."},
+{"dang":"sapxep","dap_an":"My parents were not at home.","vi":"Bố mẹ tôi đã không ở nhà.","giai_thich":"Phủ định to be quá khứ: were + not, parents số nhiều nên dùng were."}
+]
+},
+{
+"buoi": 8,
+"ten": "Quá khứ đơn (phủ định, câu hỏi) – Kể chuyện đã qua",
+"tu": [
+{"en":"travel","ipa":"/ˈtrævl/","vi":"đi du lịch","vd":"Did you travel last summer?","vd_vi":"Mùa hè năm ngoái bạn có đi du lịch không?"},
+{"en":"wait","ipa":"/weɪt/","vi":"chờ đợi","vd":"I waited for the bus.","vd_vi":"Tôi đã chờ xe buýt."},
+{"en":"call","ipa":"/kɔːl/","vi":"gọi điện","vd":"She didn't call me yesterday.","vd_vi":"Hôm qua cô ấy đã không gọi cho tôi."},
+{"en":"finish","ipa":"/ˈfɪnɪʃ/","vi":"làm xong, kết thúc","vd":"Did he finish his work?","vd_vi":"Anh ấy đã làm xong việc chưa?"},
+{"en":"start","ipa":"/stɑːt/","vi":"bắt đầu","vd":"The film started late.","vd_vi":"Bộ phim đã bắt đầu muộn."},
+{"en":"help","ipa":"/help/","vi":"giúp đỡ","vd":"My son helped me in the kitchen.","vd_vi":"Con trai đã giúp tôi trong bếp."},
+{"en":"need","ipa":"/niːd/","vi":"cần","vd":"We needed a new table.","vd_vi":"Chúng tôi đã cần một cái bàn mới."},
+{"en":"open","ipa":"/ˈəʊpən/","vi":"mở","vd":"Did you open the window?","vd_vi":"Bạn đã mở cửa sổ à?"},
+{"en":"go out","ipa":"/ɡəʊ aʊt/","vi":"đi chơi, ra ngoài","vd":"We didn't go out last night.","vd_vi":"Tối qua chúng tôi không đi chơi."},
+{"en":"meet friends","ipa":"/miːt frendz/","vi":"gặp bạn bè","vd":"Did you meet friends at the weekend?","vd_vi":"Cuối tuần bạn có gặp bạn bè không?"}
+],
+"luyen_am": [
+{"en":"helped","ipa":"/helpt/","ghi_chu":"-ed đọc /t/ vì help kết thúc bằng âm vô thanh /p/"},
+{"en":"called","ipa":"/kɔːld/","ghi_chu":"-ed đọc /d/ vì call kết thúc bằng âm hữu thanh /l/"},
+{"en":"opened","ipa":"/ˈəʊpənd/","ghi_chu":"-ed đọc /d/ vì open kết thúc bằng âm hữu thanh /n/"},
+{"en":"waited","ipa":"/ˈweɪtɪd/","ghi_chu":"-ed đọc /ɪd/ vì wait kết thúc bằng /t/, thêm một âm tiết"},
+{"en":"needed","ipa":"/ˈniːdɪd/","ghi_chu":"-ed đọc /ɪd/ vì need kết thúc bằng /d/, thêm một âm tiết"}
+],
+"cau": [
+{"en":"Did you go out last night?","vi":"Tối qua bạn có đi chơi không?"},
+{"en":"I did not meet my friends.","vi":"Tôi đã không gặp bạn bè."},
+{"en":"We waited for the bus.","vi":"Chúng tôi đã chờ xe buýt."},
+{"en":"She helped me in the kitchen.","vi":"Cô ấy đã giúp tôi trong bếp."},
+{"en":"Did he finish his work?","vi":"Anh ấy đã làm xong việc chưa?"},
+{"en":"They opened the door.","vi":"Họ đã mở cửa."}
+],
+"bai": [
+{"dang":"chon","hoi":"___ you travel last summer?","dap_an":"Did","sai":["Do","Were"],"giai_thich":"last summer là quá khứ, câu hỏi có động từ thường (travel) phải mượn Did."},
+{"dang":"chon","hoi":"She didn't ___ me yesterday.","dap_an":"call","sai":["called","calls"],"giai_thich":"didn't đã mang nghĩa quá khứ nên động từ phía sau giữ nguyên mẫu."},
+{"dang":"chon","hoi":"Did they finish the work? No, they ___.","dap_an":"didn't","sai":["don't","weren't"],"giai_thich":"Câu hỏi dùng Did thì câu trả lời ngắn cũng dùng did, phủ định là didn't."},
+{"dang":"chon","hoi":"I ___ at home last night. I was at a party.","dap_an":"wasn't","sai":["didn't","weren't"],"giai_thich":"Trước at home cần to be chứ không cần did, quá khứ của to be với I là was nên phủ định là wasn't."},
+{"dang":"dien","hoi":"We ___ (not / go) out last night.","dap_an":"didn't go","chap_nhan":["didn't go","did not go"],"giai_thich":"Phủ định quá khứ đơn: did not (didn't) + động từ nguyên mẫu."},
+{"dang":"dien","hoi":"___ he help you yesterday? (trợ động từ)","dap_an":"Did","chap_nhan":["did"],"giai_thich":"yesterday là quá khứ nên câu hỏi với động từ thường dùng trợ động từ Did."},
+{"dang":"dien","hoi":"Were you busy yesterday? No, I ___.","dap_an":"wasn't","chap_nhan":["wasn't","was not"],"giai_thich":"Câu hỏi dùng Were you thì trả lời bằng I was, phủ định là wasn't."},
+{"dang":"sapxep","dap_an":"Did you meet your friends?","vi":"Bạn đã gặp bạn bè chưa?","giai_thich":"Did đứng đầu, rồi chủ ngữ, rồi động từ nguyên mẫu meet."},
+{"dang":"sapxep","dap_an":"She did not open the window.","vi":"Cô ấy đã không mở cửa sổ.","giai_thich":"Phủ định: chủ ngữ + did not + động từ nguyên mẫu."},
+{"dang":"sapxep","dap_an":"Where did you have dinner?","vi":"Bạn đã ăn tối ở đâu?","giai_thich":"Từ hỏi Where đứng đầu, sau đó là did + chủ ngữ + động từ nguyên mẫu."}
+]
+},
+{
+"buoi": 9,
+"ten": "Tương lai đơn – Công việc, học tập, kế hoạch",
+"tu": [
+{"en":"plan","ipa":"/plæn/","vi":"kế hoạch","vd":"I will make a plan.","vd_vi":"Tôi sẽ lập một kế hoạch."},
+{"en":"meeting","ipa":"/ˈmiːtɪŋ/","vi":"cuộc họp","vd":"The meeting will start soon.","vd_vi":"Cuộc họp sẽ bắt đầu sớm thôi."},
+{"en":"office","ipa":"/ˈɒfɪs/","vi":"văn phòng","vd":"I will be in the office tomorrow.","vd_vi":"Ngày mai tôi sẽ ở văn phòng."},
+{"en":"course","ipa":"/kɔːs/","vi":"khóa học","vd":"She will take an English course.","vd_vi":"Cô ấy sẽ học một khóa tiếng Anh."},
+{"en":"exam","ipa":"/ɪɡˈzæm/","vi":"kỳ thi","vd":"Will you pass the exam?","vd_vi":"Bạn sẽ thi đỗ chứ?"},
+{"en":"project","ipa":"/ˈprɒdʒekt/","vi":"dự án","vd":"We will finish the project next week.","vd_vi":"Tuần sau chúng tôi sẽ làm xong dự án."},
+{"en":"learn","ipa":"/lɜːn/","vi":"học","vd":"I will learn English every day.","vd_vi":"Tôi sẽ học tiếng Anh mỗi ngày."},
+{"en":"boss","ipa":"/bɒs/","vi":"sếp","vd":"My boss will not be happy.","vd_vi":"Sếp tôi sẽ không vui đâu."},
+{"en":"next week","ipa":"/nekst wiːk/","vi":"tuần sau","vd":"They will visit us next week.","vd_vi":"Tuần sau họ sẽ đến thăm chúng tôi."},
+{"en":"tomorrow","ipa":"/təˈmɒrəʊ/","vi":"ngày mai","vd":"It will rain tomorrow.","vd_vi":"Ngày mai trời sẽ mưa."}
+],
+"luyen_am": [
+{"en":"work","ipa":"/wɜːk/","ghi_chu":"âm cuối /k/: chặn hơi ở cuống lưỡi, phải nghe được tiếng 'k' nhẹ"},
+{"en":"next","ipa":"/nekst/","ghi_chu":"cụm âm cuối /kst/: đọc đủ k - s - t, không rút gọn thành 'néc'"},
+{"en":"exam","ipa":"/ɪɡˈzæm/","ghi_chu":"âm cuối /m/: mím môi giữ âm, nhấn vào âm thứ hai"},
+{"en":"course","ipa":"/kɔːs/","ghi_chu":"âm cuối /s/: kéo hơi 'xì' rõ ràng, chữ r và e không đọc"},
+{"en":"will","ipa":"/wɪl/","ghi_chu":"âm cuối /l/: đầu lưỡi chạm chân răng trên, không nuốt mất âm"}
+],
+"cau": [
+{"en":"I will call you tomorrow.","vi":"Ngày mai tôi sẽ gọi cho bạn."},
+{"en":"She will take an English course.","vi":"Cô ấy sẽ học một khóa tiếng Anh."},
+{"en":"We will not work next week.","vi":"Tuần sau chúng tôi sẽ không làm việc."},
+{"en":"Will you pass the exam?","vi":"Bạn sẽ thi đỗ chứ?"},
+{"en":"My boss will be in the office.","vi":"Sếp tôi sẽ ở văn phòng."},
+{"en":"I will finish the project.","vi":"Tôi sẽ làm xong dự án."}
+],
+"bai": [
+{"dang":"chon","hoi":"I ___ call you tomorrow.","dap_an":"will","sai":["am","did"],"giai_thich":"tomorrow chỉ tương lai nên dùng will trước động từ."},
+{"dang":"chon","hoi":"She will ___ the exam next week.","dap_an":"take","sai":["takes","took"],"giai_thich":"Sau will động từ luôn ở dạng nguyên mẫu, không thêm -s hay đổi sang quá khứ."},
+{"dang":"chon","hoi":"___ you be at the office tomorrow?","dap_an":"Will","sai":["Do","Did"],"giai_thich":"Câu hỏi tương lai đưa Will lên đầu; be nguyên mẫu ở đây không đi với do hay did."},
+{"dang":"chon","hoi":"It is late. I ___ go out tonight.","dap_an":"won't","sai":["not will","am not"],"giai_thich":"Phủ định của will là will not (won't), not không đứng trước will."},
+{"dang":"dien","hoi":"We ___ (finish) the project next week.","dap_an":"will finish","chap_nhan":["will finish","'ll finish"],"giai_thich":"next week là tương lai nên dùng will + động từ nguyên mẫu."},
+{"dang":"dien","hoi":"He ___ (not / come) to the meeting tomorrow.","dap_an":"won't come","chap_nhan":["won't come","will not come"],"giai_thich":"Phủ định tương lai: will not (won't) + động từ nguyên mẫu."},
+{"dang":"dien","hoi":"___ your boss be at the meeting tomorrow?","dap_an":"Will","chap_nhan":["will"],"giai_thich":"Có tomorrow và động từ be nguyên mẫu nên câu hỏi phải mở đầu bằng Will."},
+{"dang":"sapxep","dap_an":"She will not be at work.","vi":"Cô ấy sẽ không có mặt ở chỗ làm.","giai_thich":"not đứng ngay sau will, trước động từ be."},
+{"dang":"sapxep","dap_an":"Will you come to the meeting?","vi":"Bạn sẽ đến cuộc họp chứ?","giai_thich":"Will đứng đầu, rồi chủ ngữ, rồi động từ nguyên mẫu come."},
+{"dang":"sapxep","dap_an":"My brother will take an exam.","vi":"Anh trai tôi sẽ đi thi.","giai_thich":"Chủ ngữ + will + động từ nguyên mẫu + tân ngữ."}
+]
+},
+{
+"buoi": 10,
+"ten": "Tương lai đơn + ôn 3 thì – Dự định sắp tới",
+"tu": [
+{"en":"holiday","ipa":"/ˈhɒlədeɪ/","vi":"kỳ nghỉ","vd":"We will go on holiday next month.","vd_vi":"Tháng sau chúng tôi sẽ đi nghỉ."},
+{"en":"trip","ipa":"/trɪp/","vi":"chuyến đi","vd":"Our trip was great.","vd_vi":"Chuyến đi của chúng tôi rất tuyệt."},
+{"en":"birthday","ipa":"/ˈbɜːθdeɪ/","vi":"sinh nhật","vd":"My birthday is next week.","vd_vi":"Tuần sau là sinh nhật tôi."},
+{"en":"wedding","ipa":"/ˈwedɪŋ/","vi":"đám cưới","vd":"Will you come to the wedding?","vd_vi":"Bạn sẽ đến dự đám cưới chứ?"},
+{"en":"invite","ipa":"/ɪnˈvaɪt/","vi":"mời","vd":"I will invite all my friends.","vd_vi":"Tôi sẽ mời tất cả bạn bè."},
+{"en":"buy","ipa":"/baɪ/","vi":"mua","vd":"She will buy a new phone.","vd_vi":"Cô ấy sẽ mua một chiếc điện thoại mới."},
+{"en":"move","ipa":"/muːv/","vi":"chuyển nhà","vd":"They moved to a new house last year.","vd_vi":"Năm ngoái họ đã chuyển đến nhà mới."},
+{"en":"save money","ipa":"/seɪv ˈmʌni/","vi":"tiết kiệm tiền","vd":"I save money every month.","vd_vi":"Tôi tiết kiệm tiền mỗi tháng."},
+{"en":"dream","ipa":"/driːm/","vi":"ước mơ","vd":"My dream is a big house.","vd_vi":"Ước mơ của tôi là một ngôi nhà lớn."},
+{"en":"next year","ipa":"/nekst jɪə/","vi":"năm sau","vd":"I will visit Japan next year.","vd_vi":"Năm sau tôi sẽ đi thăm Nhật Bản."}
+],
+"luyen_am": [
+{"en":"get up","ipa":"/ɡet‿ʌp/","ghi_chu":"nối âm: /t/ cuối của get nối sang up, nghe như 'ge-tắp'"},
+{"en":"turn on","ipa":"/tɜːn‿ɒn/","ghi_chu":"nối âm: /n/ cuối nối sang on, nghe như 'tơ-non'"},
+{"en":"look at","ipa":"/lʊk‿æt/","ghi_chu":"nối âm: /k/ cuối nối sang at, nghe như 'lu-kát'"},
+{"en":"this evening","ipa":"/ðɪs‿ˈiːvnɪŋ/","ghi_chu":"nối âm: /s/ cuối của this nối sang evening, nghe như 'đi-sí-vning'"},
+{"en":"come in","ipa":"/kʌm‿ɪn/","ghi_chu":"nối âm: /m/ cuối nối sang in, nghe như 'kă-min'"}
+],
+"cau": [
+{"en":"I will get up early tomorrow.","vi":"Ngày mai tôi sẽ dậy sớm."},
+{"en":"We moved to a new house.","vi":"Chúng tôi đã chuyển đến nhà mới."},
+{"en":"She works in an office.","vi":"Cô ấy làm việc ở văn phòng."},
+{"en":"We will look at the photos.","vi":"Chúng tôi sẽ xem ảnh."},
+{"en":"My birthday is next week.","vi":"Tuần sau là sinh nhật tôi."},
+{"en":"Will you come to my wedding?","vi":"Bạn sẽ đến dự đám cưới của tôi chứ?"}
+],
+"bai": [
+{"dang":"chon","hoi":"Last year we ___ to a new house.","dap_an":"moved","sai":["move","will move"],"giai_thich":"Last year là quá khứ nên dùng quá khứ đơn, thêm -ed."},
+{"dang":"chon","hoi":"Next year she ___ a car.","dap_an":"will buy","sai":["bought","buy"],"giai_thich":"Next year là tương lai nên dùng will + động từ nguyên mẫu."},
+{"dang":"chon","hoi":"My father usually ___ dinner at home.","dap_an":"has","sai":["have","having"],"giai_thich":"usually chỉ thói quen nên dùng hiện tại đơn, my father là he nên have đổi thành has."},
+{"dang":"chon","hoi":"We ___ to the wedding next Sunday.","dap_an":"will go","sai":["went","goes"],"giai_thich":"next Sunday là tương lai nên dùng will go; goes chỉ dùng cho he/she/it."},
+{"dang":"dien","hoi":"I ___ (invite) all my friends to my party next week.","dap_an":"will invite","chap_nhan":["will invite","'ll invite"],"giai_thich":"next week là tương lai nên dùng will + động từ nguyên mẫu."},
+{"dang":"dien","hoi":"Last year they ___ (save) a lot of money.","dap_an":"saved","chap_nhan":["saved"],"giai_thich":"Last year là quá khứ; save đã có e ở cuối nên chỉ thêm -d."},
+{"dang":"dien","hoi":"Every day I ___ (walk) to work.","dap_an":"walk","chap_nhan":["walk"],"giai_thich":"Every day chỉ thói quen nên dùng hiện tại đơn, chủ ngữ I giữ nguyên động từ."},
+{"dang":"sapxep","dap_an":"Will you come to my birthday party?","vi":"Bạn sẽ đến dự tiệc sinh nhật của tôi chứ?","giai_thich":"Will + chủ ngữ + động từ nguyên mẫu, birthday đứng trước party để bổ nghĩa."},
+{"dang":"sapxep","dap_an":"We moved to a new house.","vi":"Chúng tôi đã chuyển đến nhà mới.","giai_thich":"Chủ ngữ + động từ -ed + to + a new house (tính từ new đứng trước house)."},
+{"dang":"sapxep","dap_an":"My sister works in a big office.","vi":"Chị tôi làm việc ở một văn phòng lớn.","giai_thich":"Hiện tại đơn với my sister thêm -s; big đứng trước office."}
+]
+},
+{
+"buoi": 11,
+"ten": "Ôn 4 thì + I'd like – Đồ ăn, đồ uống",
+"tu": [
+{"en":"rice","ipa":"/raɪs/","vi":"cơm, gạo","vd":"We eat rice every day.","vd_vi":"Chúng tôi ăn cơm mỗi ngày."},
+{"en":"bread","ipa":"/bred/","vi":"bánh mì","vd":"I had bread for breakfast.","vd_vi":"Tôi đã ăn bánh mì cho bữa sáng."},
+{"en":"chicken","ipa":"/ˈtʃɪkɪn/","vi":"thịt gà","vd":"I'd like the chicken, please.","vd_vi":"Cho tôi món gà nhé."},
+{"en":"fish","ipa":"/fɪʃ/","vi":"cá","vd":"She is cooking fish now.","vd_vi":"Bây giờ cô ấy đang nấu cá."},
+{"en":"egg","ipa":"/eɡ/","vi":"quả trứng","vd":"He eats two eggs every morning.","vd_vi":"Mỗi sáng anh ấy ăn hai quả trứng."},
+{"en":"soup","ipa":"/suːp/","vi":"món súp, canh","vd":"The soup is very hot.","vd_vi":"Món súp rất nóng."},
+{"en":"vegetables","ipa":"/ˈvedʒtəblz/","vi":"rau củ","vd":"My children don't like vegetables.","vd_vi":"Con tôi không thích ăn rau."},
+{"en":"coffee","ipa":"/ˈkɒfi/","vi":"cà phê","vd":"I'd like a coffee, please.","vd_vi":"Cho tôi một ly cà phê nhé."},
+{"en":"tea","ipa":"/tiː/","vi":"trà","vd":"Would you like some tea?","vd_vi":"Bạn có muốn uống chút trà không?"},
+{"en":"water","ipa":"/ˈwɔːtə/","vi":"nước","vd":"I will have a glass of water.","vd_vi":"Tôi sẽ uống một cốc nước."}
+],
+"luyen_am": [
+{"en":"chicken","ipa":"/ˈtʃɪkɪn/","ghi_chu":"/tʃ/ chu môi bật hơi, hai âm /ɪ/ ngắn, nhấn âm đầu"},
+{"en":"fish","ipa":"/fɪʃ/","ghi_chu":"/f/ đầu (răng chạm môi dưới) và /ʃ/ cuối (chu môi thổi hơi), đừng bỏ âm cuối"},
+{"en":"tea","ipa":"/tiː/","ghi_chu":"/iː/ dài: kéo dài 'i' và căng môi như đang cười"},
+{"en":"soup","ipa":"/suːp/","ghi_chu":"/uː/ dài chu môi, âm cuối /p/ mím môi rõ"},
+{"en":"juice","ipa":"/dʒuːs/","ghi_chu":"/dʒ/ đầu, /uː/ dài, âm cuối /s/ kéo hơi rõ"}
+],
+"cau": [
+{"en":"I would like a cup of tea.","vi":"Tôi muốn một tách trà."},
+{"en":"She is cooking fish now.","vi":"Bây giờ cô ấy đang nấu cá."},
+{"en":"We eat rice every day.","vi":"Chúng tôi ăn cơm mỗi ngày."},
+{"en":"I would like the chicken soup.","vi":"Tôi muốn món súp gà."},
+{"en":"He wanted some water.","vi":"Anh ấy đã muốn một chút nước."},
+{"en":"We will have tea after lunch.","vi":"Chúng tôi sẽ uống trà sau bữa trưa."}
+],
+"bai": [
+{"dang":"chon","hoi":"Waiter: What would you like? Customer: ___ the fish, please.","dap_an":"I'd like","sai":["I like","I'm like"],"giai_thich":"Khi gọi món dùng cụm cố định I'd like (I would like) để nói lịch sự 'tôi muốn', còn I like là 'tôi thích' nói chung."},
+{"dang":"chon","hoi":"My mother ___ fish now. It smells good.","dap_an":"is cooking","sai":["cooks","cooked"],"giai_thich":"now cho biết việc đang xảy ra nên dùng hiện tại tiếp diễn is cooking."},
+{"dang":"chon","hoi":"Yesterday we ___ pizza for dinner.","dap_an":"ordered","sai":["order","will order"],"giai_thich":"Yesterday là quá khứ nên động từ thêm -ed."},
+{"dang":"chon","hoi":"Tomorrow I ___ chicken soup for you.","dap_an":"will cook","sai":["cooked","cooking"],"giai_thich":"Tomorrow là tương lai nên dùng will + động từ nguyên mẫu."},
+{"dang":"dien","hoi":"I ___ like a glass of water, please.","dap_an":"would","chap_nhan":["would","'d"],"giai_thich":"Cụm gọi món lịch sự là would like, thường nói tắt là I'd like."},
+{"dang":"dien","hoi":"She ___ (not / drink) coffee. She drinks tea.","dap_an":"doesn't drink","chap_nhan":["doesn't drink","does not drink"],"giai_thich":"Câu sau dùng drinks (hiện tại đơn) nên phủ định cũng là hiện tại đơn: doesn't + nguyên mẫu."},
+{"dang":"dien","hoi":"___ you eat vegetables every day?","dap_an":"Do","chap_nhan":["do"],"giai_thich":"every day chỉ thói quen, chủ ngữ you nên câu hỏi hiện tại đơn dùng Do."},
+{"dang":"sapxep","dap_an":"I would like some chicken soup.","vi":"Tôi muốn một ít súp gà.","giai_thich":"I would like + some + món ăn; chicken đứng trước soup để chỉ loại súp."},
+{"dang":"sapxep","dap_an":"My children do not like vegetables.","vi":"Con tôi không thích rau.","giai_thich":"Phủ định hiện tại đơn: chủ ngữ số nhiều + do not + động từ nguyên mẫu."},
+{"dang":"sapxep","dap_an":"We are having dinner with friends.","vi":"Chúng tôi đang ăn tối cùng bạn bè.","giai_thich":"Hiện tại tiếp diễn: are + having, rồi tân ngữ dinner, cuối cùng with friends."}
+]
+},
+{
+"buoi": 12,
+"ten": "Tổng ôn giai đoạn 1 – Du lịch, tiếng Anh hằng ngày",
+"tu": [
+{"en":"airport","ipa":"/ˈeəpɔːt/","vi":"sân bay","vd":"We are at the airport now.","vd_vi":"Bây giờ chúng tôi đang ở sân bay."},
+{"en":"ticket","ipa":"/ˈtɪkɪt/","vi":"vé","vd":"I booked a ticket yesterday.","vd_vi":"Hôm qua tôi đã đặt một vé."},
+{"en":"passport","ipa":"/ˈpɑːspɔːt/","vi":"hộ chiếu","vd":"Where is my passport?","vd_vi":"Hộ chiếu của tôi đâu rồi?"},
+{"en":"hotel","ipa":"/həʊˈtel/","vi":"khách sạn","vd":"Our hotel is near the beach.","vd_vi":"Khách sạn của chúng tôi ở gần bãi biển."},
+{"en":"suitcase","ipa":"/ˈsuːtkeɪs/","vi":"va li","vd":"Her suitcase is very heavy.","vd_vi":"Va li của cô ấy rất nặng."},
+{"en":"train","ipa":"/treɪn/","vi":"tàu hỏa","vd":"The train will leave soon.","vd_vi":"Tàu sắp chạy rồi."},
+{"en":"taxi","ipa":"/ˈtæksi/","vi":"xe taxi","vd":"I will call a taxi.","vd_vi":"Tôi sẽ gọi taxi."},
+{"en":"beach","ipa":"/biːtʃ/","vi":"bãi biển","vd":"The children are playing on the beach.","vd_vi":"Bọn trẻ đang chơi trên bãi biển."},
+{"en":"map","ipa":"/mæp/","vi":"bản đồ","vd":"Do you have a map?","vd_vi":"Bạn có bản đồ không?"},
+{"en":"excuse me","ipa":"/ɪkˈskjuːz miː/","vi":"xin lỗi (khi hỏi, nhờ)","vd":"Excuse me, where is the station?","vd_vi":"Xin lỗi, nhà ga ở đâu ạ?"}
+],
+"luyen_am": [
+{"en":"hotel","ipa":"/həʊˈtel/","ghi_chu":"nhấn âm thứ hai ho-TEL; âm đầu /əʊ/ đọc như 'âu' nhẹ"},
+{"en":"ticket","ipa":"/ˈtɪkɪt/","ghi_chu":"nhấn âm đầu, hai âm /ɪ/ ngắn, âm cuối /t/ phải chặn hơi rõ"},
+{"en":"beach","ipa":"/biːtʃ/","ghi_chu":"/iː/ dài (khác /ɪ/ ngắn), âm cuối /tʃ/ chu môi bật hơi"},
+{"en":"map","ipa":"/mæp/","ghi_chu":"/æ/ mở rộng miệng giữa 'a' và 'e', âm cuối /p/ mím môi"},
+{"en":"passport","ipa":"/ˈpɑːspɔːt/","ghi_chu":"hai nguyên âm dài /ɑː/ và /ɔː/, nhấn âm đầu, chữ r không đọc"}
+],
+"cau": [
+{"en":"Excuse me, where is the hotel?","vi":"Xin lỗi, khách sạn ở đâu ạ?"},
+{"en":"I booked a ticket yesterday.","vi":"Hôm qua tôi đã đặt một vé."},
+{"en":"We will take a taxi.","vi":"Chúng tôi sẽ đi taxi."},
+{"en":"The children are playing on the beach.","vi":"Bọn trẻ đang chơi trên bãi biển."},
+{"en":"Do you have a map?","vi":"Bạn có bản đồ không?"},
+{"en":"My passport is in my bag.","vi":"Hộ chiếu của tôi ở trong túi."}
+],
+"bai": [
+{"dang":"chon","hoi":"Excuse me, ___ is the train station?","dap_an":"where","sai":["what","who"],"giai_thich":"Hỏi một địa điểm ở đâu thì dùng where."},
+{"dang":"chon","hoi":"Last summer we ___ in a small hotel.","dap_an":"stayed","sai":["stay","will stay"],"giai_thich":"Last summer là quá khứ nên dùng quá khứ đơn, thêm -ed."},
+{"dang":"chon","hoi":"Look! The taxi ___.","dap_an":"is coming","sai":["comes","came"],"giai_thich":"Look! cho biết việc đang xảy ra ngay lúc nói nên dùng hiện tại tiếp diễn."},
+{"dang":"chon","hoi":"___ these your bags?","dap_an":"Are","sai":["Is","Do"],"giai_thich":"these chỉ nhiều vật nên đi với are, và câu hỏi to be thì đưa are lên đầu."},
+{"dang":"dien","hoi":"I ___ (book) a ticket tomorrow.","dap_an":"will book","chap_nhan":["will book","'ll book"],"giai_thich":"tomorrow là tương lai nên dùng will + động từ nguyên mẫu."},
+{"dang":"dien","hoi":"Did you find your passport? No, I ___.","dap_an":"didn't","chap_nhan":["didn't","did not"],"giai_thich":"Câu hỏi bắt đầu bằng Did nên câu trả lời ngắn phủ định là didn't."},
+{"dang":"dien","hoi":"How much ___ (be) this map?","dap_an":"is","chap_nhan":["is"],"giai_thich":"this map là một vật (số ít) nên to be là is."},
+{"dang":"sapxep","dap_an":"Excuse me, where is the airport?","vi":"Xin lỗi, sân bay ở đâu ạ?","giai_thich":"Excuse me mở đầu lời hỏi, sau đó where + is + nơi chốn."},
+{"dang":"sapxep","dap_an":"We will take a taxi to the hotel.","vi":"Chúng tôi sẽ đi taxi đến khách sạn.","giai_thich":"will + động từ + phương tiện (a taxi), rồi to + nơi đến."},
+{"dang":"sapxep","dap_an":"Did you buy a ticket?","vi":"Bạn đã mua vé chưa?","giai_thich":"Câu hỏi quá khứ: Did + chủ ngữ + động từ nguyên mẫu buy."}
+]
+}
+]}

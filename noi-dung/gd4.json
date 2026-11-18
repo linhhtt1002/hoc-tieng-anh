@@ -1,0 +1,518 @@
+{"gd": 4, "buoi": [
+{
+  "buoi": 1,
+  "ten": "Hiện tại hoàn thành và quá khứ đơn – Trải nghiệm sống",
+  "tu": [
+    {"en":"travel abroad","ipa":"/ˈtrævl əˈbrɔːd/","vi":"đi nước ngoài","vd":"I have never travelled abroad on my own.","vd_vi":"Tôi chưa bao giờ tự đi nước ngoài một mình."},
+    {"en":"experience","ipa":"/ɪkˈspɪəriəns/","vi":"trải nghiệm","vd":"It was the best experience of my life.","vd_vi":"Đó là trải nghiệm tuyệt nhất trong đời tôi."},
+    {"en":"once-in-a-lifetime","ipa":"/ˌwʌns ɪn ə ˈlaɪftaɪm/","vi":"có một không hai trong đời","vd":"Working in Japan was a once-in-a-lifetime chance for me.","vd_vi":"Làm việc ở Nhật là cơ hội có một không hai trong đời tôi."},
+    {"en":"achieve","ipa":"/əˈtʃiːv/","vi":"đạt được","vd":"She has achieved a lot since she moved to the city.","vd_vi":"Cô ấy đã đạt được nhiều thứ từ khi chuyển lên thành phố."},
+    {"en":"go skydiving","ipa":"/ɡəʊ ˈskaɪdaɪvɪŋ/","vi":"đi nhảy dù","vd":"Have you ever been skydiving? It sounds scary.","vd_vi":"Bạn đã bao giờ đi nhảy dù chưa? Nghe đáng sợ quá."},
+    {"en":"try something new","ipa":"/ˌtraɪ ˌsʌmθɪŋ ˈnjuː/","vi":"thử điều mới","vd":"I want to try something new every year.","vd_vi":"Tôi muốn thử một điều mới mỗi năm."},
+    {"en":"win a prize","ipa":"/ˌwɪn ə ˈpraɪz/","vi":"đoạt giải","vd":"My brother has won a prize for his photos.","vd_vi":"Anh trai tôi đã đoạt giải nhờ những bức ảnh của anh ấy."},
+    {"en":"meet someone famous","ipa":"/ˌmiːt ˌsʌmwʌn ˈfeɪməs/","vi":"gặp người nổi tiếng","vd":"Have you ever met someone famous in the street?","vd_vi":"Bạn đã bao giờ gặp người nổi tiếng ngoài đường chưa?"},
+    {"en":"get lost","ipa":"/ˌɡet ˈlɒst/","vi":"bị lạc","vd":"We got lost in the old town last summer.","vd_vi":"Mùa hè năm ngoái chúng tôi bị lạc ở khu phố cổ."},
+    {"en":"so far","ipa":"/ˌsəʊ ˈfɑː/","vi":"cho đến nay","vd":"I have visited three countries so far.","vd_vi":"Cho đến nay tôi đã đến ba nước."}
+  ],
+  "luyen_am": [
+    {"en":"Have you ever","ipa":"/həv ju ˈevə/","ghi_chu":"you nối sang ever bằng một âm /w/ rất nhẹ, đọc liền: hờv-ju-wevə."},
+    {"en":"lived in","ipa":"/ˈlɪvd ɪn/","ghi_chu":"Phụ âm cuối /d/ của lived nối sang nguyên âm đầu của in: liv-din."},
+    {"en":"for a year","ipa":"/fər ə ˈjɪə/","ghi_chu":"Chữ r cuối của for được đọc ra khi đứng trước nguyên âm: fơ-rơ-yia."},
+    {"en":"an old friend","ipa":"/ən ˈəʊld ˈfrend/","ghi_chu":"/n/ của an nối sang old: ơ-nâuld, không ngắt hơi giữa hai từ."},
+    {"en":"visited it","ipa":"/ˈvɪzɪtɪd ɪt/","ghi_chu":"/d/ cuối của visited nối sang it: vi-zi-ti-đit."}
+  ],
+  "cau": [
+    {"en":"Have you ever eaten street food in another country?","vi":"Bạn đã bao giờ ăn đồ ăn đường phố ở nước khác chưa?"},
+    {"en":"I lived in a small town for a year.","vi":"Tôi đã sống ở một thị trấn nhỏ trong một năm."},
+    {"en":"We visited an old friend in the mountains last summer.","vi":"Mùa hè năm ngoái chúng tôi đến thăm một người bạn cũ trên núi."},
+    {"en":"She has worked here since she finished university.","vi":"Cô ấy đã làm ở đây từ khi học xong đại học."},
+    {"en":"How long have you been learning English?","vi":"Bạn học tiếng Anh được bao lâu rồi?"},
+    {"en":"I have been waiting for an hour and I am tired.","vi":"Tôi đã đợi một tiếng rồi và tôi mệt."}
+  ],
+  "bai": [
+    {"dang":"chon","hoi":"I ___ to Thailand two years ago.","dap_an":"went","sai":["have been","have gone"],"giai_thich":"Có mốc thời gian đã qua là two years ago nên phải dùng quá khứ đơn."},
+    {"dang":"chon","hoi":"She has lived in this flat ___ 2019.","dap_an":"since","sai":["for","ago"],"giai_thich":"2019 là một mốc thời gian bắt đầu nên dùng since, còn for đi với một khoảng thời gian."},
+    {"dang":"chon","hoi":"___ you ever tried Indian food?","dap_an":"Have","sai":["Did","Do"],"giai_thich":"ever hỏi về trải nghiệm tính đến bây giờ và tried là V3, nên dùng Have."},
+    {"dang":"chon","hoi":"I ___ for the bus for forty minutes, and it still hasn't come.","dap_an":"have been waiting","sai":["waited","was waiting"],"giai_thich":"Việc chờ bắt đầu trong quá khứ và vẫn đang tiếp diễn nên dùng hiện tại hoàn thành tiếp diễn."},
+    {"dang":"dien","hoi":"We ___ (know) each other for ten years.","dap_an":"have known","chap_nhan":["have known","'ve known"],"giai_thich":"Quen nhau từ mười năm trước đến nay vẫn quen, và know không chia tiếp diễn, nên dùng have known."},
+    {"dang":"dien","hoi":"Last year I ___ (travel) to Japan for the first time.","dap_an":"travelled","chap_nhan":["travelled","traveled"],"giai_thich":"Last year là thời gian đã kết thúc nên dùng quá khứ đơn."},
+    {"dang":"dien","hoi":"How long have you ___ (work) at this company?","dap_an":"been working","chap_nhan":["been working","worked"],"giai_thich":"How long have you hỏi về việc kéo dài đến hiện tại, hay dùng been + V-ing để nhấn việc vẫn đang làm."},
+    {"dang":"sapxep","dap_an":"I have never been on a plane before.","vi":"Trước giờ tôi chưa từng đi máy bay.","giai_thich":"never đứng giữa have và V3, before đứng cuối câu."},
+    {"dang":"sapxep","dap_an":"She has been learning to drive since March.","vi":"Cô ấy đã học lái xe từ tháng Ba.","giai_thich":"has been + V-ing diễn tả việc kéo dài từ tháng Ba tới giờ, since + mốc đứng cuối."},
+    {"dang":"sapxep","dap_an":"When did you start your first job?","vi":"Bạn bắt đầu công việc đầu tiên khi nào?","giai_thich":"Hỏi thời điểm cụ thể trong quá khứ nên dùng When did + động từ nguyên mẫu."}
+  ]
+},
+{
+  "buoi": 2,
+  "ten": "Kể chuyện quá khứ – Kỷ niệm và câu chuyện",
+  "tu": [
+    {"en":"childhood","ipa":"/ˈtʃaɪldhʊd/","vi":"tuổi thơ","vd":"I spent most of my childhood in a small village.","vd_vi":"Tôi trải qua phần lớn tuổi thơ ở một ngôi làng nhỏ."},
+    {"en":"remember","ipa":"/rɪˈmembə/","vi":"nhớ","vd":"I still remember the day I started school.","vd_vi":"Tôi vẫn nhớ ngày tôi bắt đầu đi học."},
+    {"en":"memory","ipa":"/ˈmeməri/","vi":"kỷ niệm, ký ức","vd":"That trip is one of my happiest memories.","vd_vi":"Chuyến đi đó là một trong những kỷ niệm vui nhất của tôi."},
+    {"en":"suddenly","ipa":"/ˈsʌdənli/","vi":"đột nhiên","vd":"We were walking home when it suddenly started to rain.","vd_vi":"Chúng tôi đang đi bộ về nhà thì đột nhiên trời đổ mưa."},
+    {"en":"happen","ipa":"/ˈhæpən/","vi":"xảy ra","vd":"What happened while you were waiting for the bus?","vd_vi":"Chuyện gì đã xảy ra khi bạn đang chờ xe buýt?"},
+    {"en":"by accident","ipa":"/baɪ ˈæksɪdənt/","vi":"tình cờ","vd":"I met my best friend by accident at a party.","vd_vi":"Tôi tình cờ gặp bạn thân nhất của mình ở một bữa tiệc."},
+    {"en":"in the end","ipa":"/ɪn ði ˈend/","vi":"cuối cùng","vd":"We got lost, but in the end we found the hotel.","vd_vi":"Chúng tôi bị lạc, nhưng cuối cùng cũng tìm được khách sạn."},
+    {"en":"after that","ipa":"/ˈɑːftə ˈðæt/","vi":"sau đó","vd":"We had lunch. After that, we went to the museum.","vd_vi":"Chúng tôi ăn trưa. Sau đó chúng tôi đi bảo tàng."},
+    {"en":"scared","ipa":"/skeəd/","vi":"sợ hãi","vd":"I was scared because the house was completely dark.","vd_vi":"Tôi sợ vì căn nhà tối om."},
+    {"en":"realise","ipa":"/ˈrɪəlaɪz/","vi":"nhận ra","vd":"I realised that I had left my keys at home.","vd_vi":"Tôi nhận ra là mình đã để quên chìa khóa ở nhà."}
+  ],
+  "luyen_am": [
+    {"en":"I was walking home","ipa":"/aɪ wəz ˈwɔːkɪŋ ˈhəʊm/","ghi_chu":"Nhấn mạnh walking và home vì mang nghĩa chính, was đọc nhẹ và nhanh thành /wəz/."},
+    {"en":"when it started to rain","ipa":"/wen ɪt ˈstɑːtɪd tə ˈreɪn/","ghi_chu":"Nhấn started và rain, còn when, it, to đọc lướt nhẹ."},
+    {"en":"she had already left","ipa":"/ʃi həd ɔːlˈredi ˈleft/","ghi_chu":"Nhấn already và left, had đọc rất nhẹ thành /həd/."},
+    {"en":"What were you doing?","ipa":"/ˈwɒt wə ju ˈduːɪŋ/","ghi_chu":"Nhấn what và doing, were you đọc lướt thành /wə ju/."},
+    {"en":"in the end","ipa":"/ɪn ði ˈend/","ghi_chu":"Chỉ nhấn end, in the đọc nhẹ, the đọc /ði/ vì đứng trước nguyên âm."}
+  ],
+  "cau": [
+    {"en":"I was walking home when it started to rain.","vi":"Tôi đang đi bộ về nhà thì trời bắt đầu mưa."},
+    {"en":"When I arrived at the station, the train had already left.","vi":"Khi tôi đến ga thì tàu đã chạy mất rồi."},
+    {"en":"What were you doing when the lights went out?","vi":"Bạn đang làm gì khi mất điện?"},
+    {"en":"First we packed our bags, then we called a taxi.","vi":"Đầu tiên chúng tôi xếp đồ, rồi gọi taxi."},
+    {"en":"She was cooking dinner while her children were playing outside.","vi":"Cô ấy đang nấu bữa tối trong khi các con chơi ngoài sân."},
+    {"en":"In the end, we laughed about it for hours.","vi":"Cuối cùng, chúng tôi cười về chuyện đó hàng giờ liền."}
+  ],
+  "bai": [
+    {"dang":"chon","hoi":"I ___ a shower when the phone rang.","dap_an":"was having","sai":["had","have had"],"giai_thich":"Việc tắm đang diễn ra thì bị cuộc gọi xen vào, nên dùng quá khứ tiếp diễn."},
+    {"dang":"chon","hoi":"When we got to the cinema, the film ___.","dap_an":"had already started","sai":["already starts","has already started"],"giai_thich":"Phim bắt đầu trước lúc chúng tôi đến, nên việc xảy ra trước dùng quá khứ hoàn thành had + V3."},
+    {"dang":"chon","hoi":"She ___ her leg while she was skiing.","dap_an":"broke","sai":["was breaking","had been"],"giai_thich":"Gãy chân là việc ngắn xen vào lúc đang trượt tuyết, nên dùng quá khứ đơn."},
+    {"dang":"chon","hoi":"We waited for two hours. ___, we went home without seeing him.","dap_an":"In the end","sai":["First","While"],"giai_thich":"In the end dùng để kể kết quả cuối cùng của câu chuyện."},
+    {"dang":"dien","hoi":"They ___ (play) football when it started to snow.","dap_an":"were playing","chap_nhan":["were playing"],"giai_thich":"Đá bóng là việc đang diễn ra thì tuyết rơi xen vào, nên dùng were + V-ing."},
+    {"dang":"dien","hoi":"I couldn't get in because I ___ (lose) my keys.","dap_an":"had lost","chap_nhan":["had lost","'d lost"],"giai_thich":"Mất chìa khóa xảy ra trước lúc không vào được nhà, nên dùng had + V3."},
+    {"dang":"dien","hoi":"He ___ (not hear) the alarm because he was sleeping.","dap_an":"didn't hear","chap_nhan":["didn't hear","did not hear"],"giai_thich":"Không nghe thấy chuông là sự việc ngắn trong quá khứ nên dùng quá khứ đơn phủ định."},
+    {"dang":"sapxep","dap_an":"The sun was shining when we left the hotel.","vi":"Trời đang nắng khi chúng tôi rời khách sạn.","giai_thich":"Vế đang diễn ra dùng was + V-ing, vế xen vào dùng quá khứ đơn sau when."},
+    {"dang":"sapxep","dap_an":"I had never seen snow before that trip.","vi":"Trước chuyến đi đó tôi chưa từng thấy tuyết.","giai_thich":"never đứng giữa had và V3, chỉ việc chưa từng xảy ra trước một mốc quá khứ."},
+    {"dang":"sapxep","dap_an":"What were you doing at eight last night?","vi":"Lúc tám giờ tối qua bạn đang làm gì?","giai_thich":"Hỏi việc đang diễn ra tại một thời điểm quá khứ nên dùng What were you doing."}
+  ]
+},
+{
+  "buoi": 3,
+  "ten": "Thì tương lai – Kế hoạch và mục tiêu",
+  "tu": [
+    {"en":"plan","ipa":"/plæn/","vi":"kế hoạch","vd":"What are your plans for the weekend?","vd_vi":"Bạn có kế hoạch gì cho cuối tuần?"},
+    {"en":"goal","ipa":"/ɡəʊl/","vi":"mục tiêu","vd":"My goal is to speak English at work.","vd_vi":"Mục tiêu của tôi là nói tiếng Anh ở chỗ làm."},
+    {"en":"arrange","ipa":"/əˈreɪndʒ/","vi":"sắp xếp, hẹn","vd":"I have arranged a meeting with the manager on Monday.","vd_vi":"Tôi đã hẹn một cuộc họp với quản lý vào thứ Hai."},
+    {"en":"look forward to","ipa":"/lʊk ˈfɔːwəd tə/","vi":"mong chờ","vd":"I am really looking forward to the holiday.","vd_vi":"Tôi rất mong chờ kỳ nghỉ."},
+    {"en":"save money","ipa":"/ˌseɪv ˈmʌni/","vi":"tiết kiệm tiền","vd":"I am going to save money for a new laptop.","vd_vi":"Tôi sẽ tiết kiệm tiền để mua laptop mới."},
+    {"en":"book","ipa":"/bʊk/","vi":"đặt chỗ","vd":"We have booked a table for Saturday evening.","vd_vi":"Chúng tôi đã đặt bàn cho tối thứ Bảy."},
+    {"en":"intend","ipa":"/ɪnˈtend/","vi":"dự định","vd":"I intend to finish the course by December.","vd_vi":"Tôi dự định học xong khóa học trước tháng Mười Hai."},
+    {"en":"deadline","ipa":"/ˈdedlaɪn/","vi":"hạn chót","vd":"The deadline for the project is next Friday.","vd_vi":"Hạn chót của dự án là thứ Sáu tới."},
+    {"en":"make progress","ipa":"/ˌmeɪk ˈprəʊɡres/","vi":"tiến bộ","vd":"I am making good progress with my English.","vd_vi":"Tiếng Anh của tôi đang tiến bộ tốt."},
+    {"en":"probably","ipa":"/ˈprɒbəbli/","vi":"có lẽ","vd":"It will probably rain tomorrow afternoon.","vd_vi":"Chiều mai có lẽ trời sẽ mưa."}
+  ],
+  "luyen_am": [
+    {"en":"Are you free on Friday?","ipa":"/ɑː ju ˈfriː ɒn ˈfraɪdeɪ/","ghi_chu":"Câu hỏi Có/Không: lên giọng ở cuối câu (Friday)."},
+    {"en":"What are you doing tonight?","ipa":"/ˈwɒt ə ju ˈduːɪŋ təˈnaɪt/","ghi_chu":"Câu hỏi có từ để hỏi (What, Where...): xuống giọng ở cuối câu."},
+    {"en":"Tea or coffee?","ipa":"/ˈtiː ɔː ˈkɒfi/","ghi_chu":"Câu hỏi lựa chọn: lên giọng ở tea, xuống giọng ở coffee."},
+    {"en":"I will call you later.","ipa":"/aɪ wɪl ˈkɔːl ju ˈleɪtə/","ghi_chu":"Câu kể bình thường: xuống giọng ở cuối câu."},
+    {"en":"Really?","ipa":"/ˈrɪəli/","ghi_chu":"Hỏi lại để tỏ ra ngạc nhiên: lên giọng mạnh ở cuối."}
+  ],
+  "cau": [
+    {"en":"Are you doing anything special this weekend?","vi":"Cuối tuần này bạn có làm gì đặc biệt không?"},
+    {"en":"What are you going to do after the course?","vi":"Bạn định làm gì sau khóa học?"},
+    {"en":"I am meeting my manager on Monday morning.","vi":"Tôi có hẹn gặp quản lý vào sáng thứ Hai."},
+    {"en":"I think it will be a busy year for us.","vi":"Tôi nghĩ đây sẽ là một năm bận rộn với chúng tôi."},
+    {"en":"We are going to save money for a new car.","vi":"Chúng tôi định tiết kiệm tiền mua xe mới."},
+    {"en":"Do you want tea or coffee before the meeting?","vi":"Bạn muốn uống trà hay cà phê trước cuộc họp?"}
+  ],
+  "bai": [
+    {"dang":"chon","hoi":"The phone is ringing. I ___ answer it.","dap_an":"will","sai":["answered","have answered"],"giai_thich":"Quyết định ngay lúc nói nên dùng will."},
+    {"dang":"chon","hoi":"I ___ my dentist at ten tomorrow. I booked it last week.","dap_an":"am seeing","sai":["saw","have seen"],"giai_thich":"Lịch hẹn đã sắp xếp sẵn cho tương lai nên dùng hiện tại tiếp diễn."},
+    {"dang":"chon","hoi":"I think our team ___ the match tomorrow.","dap_an":"will win","sai":["won","has won"],"giai_thich":"I think + dự đoán về tương lai thì dùng will."},
+    {"dang":"chon","hoi":"My sister ___ next month. Everything is already planned.","dap_an":"is getting married","sai":["got married","has got married"],"giai_thich":"next month là tương lai và việc đã lên lịch sẵn nên dùng hiện tại tiếp diễn."},
+    {"dang":"dien","hoi":"I promise I ___ (not tell) anyone your secret.","dap_an":"won't tell","chap_nhan":["won't tell","will not tell"],"giai_thich":"Lời hứa dùng will, phủ định là won't."},
+    {"dang":"dien","hoi":"We ___ (fly) to Hanoi on Friday. We already have the tickets.","dap_an":"are flying","chap_nhan":["are flying","'re flying","are going to fly","'re going to fly"],"giai_thich":"Đã có vé, tức là kế hoạch đã sắp xếp xong, nên dùng hiện tại tiếp diễn hoặc be going to."},
+    {"dang":"dien","hoi":"Next year I ___ (learn) to drive. I have already found a teacher.","dap_an":"am going to learn","chap_nhan":["am going to learn","'m going to learn","am learning","'m learning"],"giai_thich":"Dự định đã quyết từ trước và đã chuẩn bị nên dùng be going to."},
+    {"dang":"sapxep","dap_an":"What time are you leaving tomorrow?","vi":"Mai mấy giờ bạn đi?","giai_thich":"Hỏi giờ của kế hoạch đã định dùng What time + are you + V-ing."},
+    {"dang":"sapxep","dap_an":"I am going to look for a new job.","vi":"Tôi định tìm một công việc mới.","giai_thich":"be going to + động từ nguyên mẫu để nói dự định."},
+    {"dang":"sapxep","dap_an":"Where are you going to stay tonight?","vi":"Tối nay bạn định ở đâu?","giai_thich":"Từ để hỏi Where đứng đầu, sau đó là are you going to + động từ."}
+  ]
+},
+{
+  "buoi": 4,
+  "ten": "Động từ khuyết thiếu – Quy định, lời khuyên và phỏng đoán",
+  "tu": [
+    {"en":"rule","ipa":"/ruːl/","vi":"quy định","vd":"You must follow the safety rules in the factory.","vd_vi":"Bạn phải tuân theo quy định an toàn trong nhà máy."},
+    {"en":"allowed","ipa":"/əˈlaʊd/","vi":"được phép","vd":"Are we allowed to use our phones in class?","vd_vi":"Chúng ta có được dùng điện thoại trong lớp không?"},
+    {"en":"forbidden","ipa":"/fəˈbɪdn/","vi":"bị cấm","vd":"You cannot smoke here because it is forbidden.","vd_vi":"Bạn không thể hút thuốc ở đây vì việc đó bị cấm."},
+    {"en":"advice","ipa":"/ədˈvaɪs/","vi":"lời khuyên","vd":"My teacher gave me some good advice about speaking.","vd_vi":"Cô giáo cho tôi vài lời khuyên hay về kỹ năng nói."},
+    {"en":"advise","ipa":"/ədˈvaɪz/","vi":"khuyên","vd":"The doctor advised me to drink more water.","vd_vi":"Bác sĩ khuyên tôi uống nhiều nước hơn."},
+    {"en":"take a break","ipa":"/ˌteɪk ə ˈbreɪk/","vi":"nghỉ giải lao","vd":"You should take a break every hour.","vd_vi":"Bạn nên nghỉ giải lao mỗi tiếng."},
+    {"en":"wear a uniform","ipa":"/ˌweər ə ˈjuːnɪfɔːm/","vi":"mặc đồng phục","vd":"All staff have to wear a uniform at work.","vd_vi":"Mọi nhân viên phải mặc đồng phục khi làm việc."},
+    {"en":"avoid","ipa":"/əˈvɔɪd/","vi":"tránh","vd":"You should avoid fast food if you want to lose weight.","vd_vi":"Bạn nên tránh đồ ăn nhanh nếu muốn giảm cân."},
+    {"en":"polite","ipa":"/pəˈlaɪt/","vi":"lịch sự","vd":"It is polite to say thank you in every situation.","vd_vi":"Nói cảm ơn trong mọi tình huống là lịch sự."},
+    {"en":"necessary","ipa":"/ˈnesəsəri/","vi":"cần thiết","vd":"It is not necessary to bring your laptop tomorrow.","vd_vi":"Ngày mai không cần mang laptop."}
+  ],
+  "luyen_am": [
+    {"en":"You should ask","ipa":"/ju ʃəd ˈɑːsk/","ghi_chu":"should đọc yếu thành /ʃəd/, gần như shờd, nhấn vào ask."},
+    {"en":"I have to go","ipa":"/aɪ ˈhæf tə ˈɡəʊ/","ghi_chu":"have to đọc liền thành /hæftə/, to đọc yếu /tə/ chứ không đọc /tuː/."},
+    {"en":"He must be tired","ipa":"/hi məs bi ˈtaɪəd/","ghi_chu":"must đọc yếu /məs/, gần như mất âm t, nhấn vào tired."},
+    {"en":"You can park here","ipa":"/ju kən ˈpɑːk ˈhɪə/","ghi_chu":"can trong câu khẳng định đọc yếu /kən/, nhấn vào park."},
+    {"en":"What do you think?","ipa":"/ˈwɒt də ju ˈθɪŋk/","ghi_chu":"do đọc yếu /də/, do you lướt nhanh, nhấn what và think."}
+  ],
+  "cau": [
+    {"en":"You should talk to your manager about the problem.","vi":"Bạn nên nói chuyện với quản lý về vấn đề này."},
+    {"en":"We have to wear a helmet on the building site.","vi":"Chúng tôi phải đội mũ bảo hộ ở công trường."},
+    {"en":"You must not use your phone during the test.","vi":"Bạn không được dùng điện thoại trong lúc làm bài kiểm tra."},
+    {"en":"He has worked all night, so he must be tired.","vi":"Anh ấy làm cả đêm nên chắc hẳn là mệt."},
+    {"en":"She is not answering. She might be in a meeting.","vi":"Cô ấy không nghe máy. Có thể cô ấy đang họp."},
+    {"en":"You do not have to pay for the drinks.","vi":"Bạn không cần trả tiền đồ uống."}
+  ],
+  "bai": [
+    {"dang":"chon","hoi":"You ___ smoke here. It's against the rules.","dap_an":"mustn't","sai":["don't have to","shouldn't to"],"giai_thich":"Trái quy định tức là bị cấm nên dùng mustn't."},
+    {"dang":"chon","hoi":"It's a holiday tomorrow, so we ___ go to work.","dap_an":"don't have to","sai":["mustn't","shouldn't"],"giai_thich":"Ngày nghỉ thì không bắt buộc đi làm, chứ không phải bị cấm, nên dùng don't have to."},
+    {"dang":"chon","hoi":"He has just eaten a big meal. He ___ be hungry.","dap_an":"can't","sai":["must","should"],"giai_thich":"Vừa ăn no nên gần như chắc chắn không đói, phỏng đoán phủ định chắc chắn dùng can't."},
+    {"dang":"chon","hoi":"You look ill. You ___ see a doctor.","dap_an":"should","sai":["mustn't","don't have to"],"giai_thich":"Đưa lời khuyên thì dùng should."},
+    {"dang":"dien","hoi":"Take an umbrella. It ___ (có thể / rain) later.","dap_an":"might rain","chap_nhan":["might rain","may rain","could rain"],"giai_thich":"Phỏng đoán điều chưa chắc chắn dùng might, may hoặc could + động từ nguyên mẫu."},
+    {"dang":"dien","hoi":"Yesterday I ___ (have to) work late.","dap_an":"had to","chap_nhan":["had to"],"giai_thich":"Yesterday là quá khứ, mà must không có dạng quá khứ nên dùng had to."},
+    {"dang":"dien","hoi":"You ___ (should / not) eat so much sugar.","dap_an":"shouldn't","chap_nhan":["shouldn't","should not"],"giai_thich":"Khuyên ai đừng làm gì thì dùng shouldn't + động từ nguyên mẫu."},
+    {"dang":"sapxep","dap_an":"Do we have to bring our own lunch?","vi":"Chúng tôi có phải tự mang bữa trưa không?","giai_thich":"Câu hỏi với have to cần trợ động từ Do đứng đầu."},
+    {"dang":"sapxep","dap_an":"That man must be the new manager.","vi":"Người đàn ông kia chắc hẳn là quản lý mới.","giai_thich":"must be dùng để phỏng đoán gần như chắc chắn."},
+    {"dang":"sapxep","dap_an":"Is it necessary to book a table?","vi":"Có cần đặt bàn trước không?","giai_thich":"Câu hỏi đảo is lên trước it, sau necessary là to + động từ."}
+  ]
+},
+{
+  "buoi": 5,
+  "ten": "Câu điều kiện loại 1 và 2 – Vấn đề và giải pháp",
+  "tu": [
+    {"en":"problem","ipa":"/ˈprɒbləm/","vi":"vấn đề","vd":"We have a problem with the printer again.","vd_vi":"Máy in lại có vấn đề rồi."},
+    {"en":"solution","ipa":"/səˈluːʃn/","vi":"giải pháp","vd":"There is a simple solution to this problem.","vd_vi":"Có một giải pháp đơn giản cho vấn đề này."},
+    {"en":"solve","ipa":"/sɒlv/","vi":"giải quyết","vd":"If we work together, we will solve it quickly.","vd_vi":"Nếu cùng làm, chúng ta sẽ giải quyết nhanh thôi."},
+    {"en":"deal with","ipa":"/ˈdiːl wɪð/","vi":"xử lý","vd":"I have to deal with a lot of emails every day.","vd_vi":"Mỗi ngày tôi phải xử lý rất nhiều email."},
+    {"en":"traffic jam","ipa":"/ˈtræfɪk dʒæm/","vi":"tắc đường","vd":"If I left earlier, I would avoid the traffic jam.","vd_vi":"Nếu tôi đi sớm hơn, tôi sẽ tránh được tắc đường."},
+    {"en":"run out of","ipa":"/ˌrʌn ˈaʊt əv/","vi":"hết, cạn","vd":"We have run out of milk, so I will buy some.","vd_vi":"Nhà hết sữa rồi nên tôi sẽ đi mua."},
+    {"en":"afford","ipa":"/əˈfɔːd/","vi":"đủ tiền mua","vd":"If I could afford it, I would buy a bigger flat.","vd_vi":"Nếu đủ tiền, tôi sẽ mua căn hộ rộng hơn."},
+    {"en":"borrow","ipa":"/ˈbɒrəʊ/","vi":"mượn","vd":"Can I borrow your charger for a minute?","vd_vi":"Cho tôi mượn sạc một lát được không?"},
+    {"en":"lend","ipa":"/lend/","vi":"cho mượn","vd":"If you need money, I will lend you some.","vd_vi":"Nếu bạn cần tiền, tôi sẽ cho bạn mượn một ít."},
+    {"en":"complain","ipa":"/kəmˈpleɪn/","vi":"phàn nàn","vd":"If the food is cold, you should complain to the waiter.","vd_vi":"Nếu đồ ăn nguội, bạn nên phàn nàn với người phục vụ."}
+  ],
+  "luyen_am": [
+    {"en":"If I were you","ipa":"/ɪf aɪ ˈwɜː ju/","ghi_chu":"/f/ của If nối sang I: i-phai, đọc liền một hơi."},
+    {"en":"run out of","ipa":"/ˌrʌn ˈaʊt əv/","ghi_chu":"Nối cả ba từ: rơ-nao-tờv, of đọc yếu /əv/."},
+    {"en":"would ask","ipa":"/wəd ˈɑːsk/","ghi_chu":"would đọc yếu /wəd/, /d/ nối sang ask: wơ-đasc."},
+    {"en":"deal with it","ipa":"/ˈdiːl wɪð ɪt/","ghi_chu":"/ð/ cuối của with nối sang it: wi-đhit, đầu lưỡi chạm răng khi nối."},
+    {"en":"an easy answer","ipa":"/ən ˈiːzi ˈɑːnsə/","ghi_chu":"an nối sang easy: ơ-ni-zi, rồi easy nối sang answer bằng âm /j/ nhẹ."}
+  ],
+  "cau": [
+    {"en":"If I were you, I would ask for help.","vi":"Nếu tôi là bạn, tôi sẽ nhờ giúp đỡ."},
+    {"en":"If we run out of time, we will finish tomorrow.","vi":"Nếu hết giờ, chúng ta sẽ làm nốt vào ngày mai."},
+    {"en":"If I had more free time, I would learn to cook.","vi":"Nếu có nhiều thời gian rảnh hơn, tôi sẽ học nấu ăn."},
+    {"en":"What would you do if you lost your phone?","vi":"Bạn sẽ làm gì nếu bị mất điện thoại?"},
+    {"en":"If the bus is late again, I will take a taxi.","vi":"Nếu xe buýt lại trễ, tôi sẽ đi taxi."},
+    {"en":"I would buy a house if houses were cheaper.","vi":"Tôi sẽ mua nhà nếu nhà rẻ hơn."}
+  ],
+  "bai": [
+    {"dang":"chon","hoi":"If I ___ rich, I would travel around the world.","dap_an":"were","sai":["am","will be"],"giai_thich":"Vế sau có would nên đây là điều không có thật, vế if dùng quá khứ, với be thường dùng were."},
+    {"dang":"chon","hoi":"If it rains tomorrow, we ___ the picnic.","dap_an":"will cancel","sai":["would cancel","cancelled"],"giai_thich":"Mưa ngày mai là điều có thể xảy ra (loại 1), nên vế sau dùng will + động từ."},
+    {"dang":"chon","hoi":"If I had a car, I ___ you to the airport.","dap_an":"would drive","sai":["will drive","drove"],"giai_thich":"Vế if dùng quá khứ had cho điều không có thật (loại 2), nên vế sau dùng would."},
+    {"dang":"chon","hoi":"If I ___ your number, I would call you. But I don't have it.","dap_an":"had","sai":["have","will have"],"giai_thich":"Thực tế là không có số, nên giả định trái thực tế dùng quá khứ had."},
+    {"dang":"dien","hoi":"If I ___ (have) more money, I would buy a new laptop.","dap_an":"had","chap_nhan":["had"],"giai_thich":"Câu điều kiện loại 2 thì vế if chia quá khứ đơn."},
+    {"dang":"dien","hoi":"If you don't hurry, you ___ (miss) the train.","dap_an":"will miss","chap_nhan":["will miss","'ll miss"],"giai_thich":"Vế if ở hiện tại, việc có thể xảy ra thật nên vế sau dùng will."},
+    {"dang":"dien","hoi":"If she studied harder, she ___ (pass) the exam.","dap_an":"would pass","chap_nhan":["would pass","'d pass"],"giai_thich":"Vế if dùng quá khứ studied (loại 2) nên vế sau dùng would + động từ nguyên mẫu."},
+    {"dang":"sapxep","dap_an":"I would never borrow money from a friend.","vi":"Tôi sẽ không bao giờ vay tiền bạn bè.","giai_thich":"never đứng giữa would và động từ chính."},
+    {"dang":"sapxep","dap_an":"Would it be easier to take the train?","vi":"Đi tàu có dễ hơn không?","giai_thich":"Câu hỏi đảo would lên trước chủ ngữ it."},
+    {"dang":"sapxep","dap_an":"Can you lend me some money until Friday?","vi":"Bạn cho tôi mượn ít tiền đến thứ Sáu được không?","giai_thich":"lend + người + vật: cho ai mượn cái gì."}
+  ]
+},
+{
+  "buoi": 6,
+  "ten": "Câu bị động – Công việc và đời sống",
+  "tu": [
+    {"en":"employer","ipa":"/ɪmˈplɔɪə/","vi":"người sử dụng lao động, chủ","vd":"My employer pays for my English course.","vd_vi":"Công ty trả tiền khóa học tiếng Anh cho tôi."},
+    {"en":"employee","ipa":"/ɪmˈplɔɪiː/","vi":"nhân viên","vd":"The company has more than two hundred employees.","vd_vi":"Công ty có hơn hai trăm nhân viên."},
+    {"en":"management","ipa":"/ˈmænɪdʒmənt/","vi":"ban quản lý","vd":"The new rules were made by the management.","vd_vi":"Các quy định mới do ban quản lý đặt ra."},
+    {"en":"instruction","ipa":"/ɪnˈstrʌkʃn/","vi":"hướng dẫn","vd":"Please read the instructions before you use the machine.","vd_vi":"Vui lòng đọc hướng dẫn trước khi dùng máy."},
+    {"en":"useful","ipa":"/ˈjuːsfl/","vi":"hữu ích","vd":"This app is really useful for learning new words.","vd_vi":"Ứng dụng này rất hữu ích để học từ mới."},
+    {"en":"useless","ipa":"/ˈjuːsləs/","vi":"vô dụng","vd":"My old phone is useless because the battery is dead.","vd_vi":"Điện thoại cũ của tôi vô dụng vì pin đã hỏng."},
+    {"en":"unhappy","ipa":"/ʌnˈhæpi/","vi":"không vui, không hài lòng","vd":"Customers were unhappy with the slow delivery.","vd_vi":"Khách hàng không hài lòng vì giao hàng chậm."},
+    {"en":"deliver","ipa":"/dɪˈlɪvə/","vi":"giao hàng","vd":"Your package will be delivered tomorrow morning.","vd_vi":"Gói hàng của bạn sẽ được giao vào sáng mai."},
+    {"en":"translator","ipa":"/trænzˈleɪtə/","vi":"người dịch","vd":"The documents were checked by a translator.","vd_vi":"Các tài liệu đã được một người dịch kiểm tra."},
+    {"en":"produce","ipa":"/prəˈdjuːs/","vi":"sản xuất","vd":"These shoes are produced in Vietnam.","vd_vi":"Những đôi giày này được sản xuất ở Việt Nam."}
+  ],
+  "luyen_am": [
+    {"en":"worker","ipa":"/ˈwɜːkə/","ghi_chu":"/w/: chu tròn môi như huýt sáo rồi mở nhanh ra, không đọc thành u-ơ."},
+    {"en":"write","ipa":"/raɪt/","ghi_chu":"/r/: cong đầu lưỡi về sau, không chạm vòm miệng, không rung lưỡi như r tiếng Việt."},
+    {"en":"think","ipa":"/θɪŋk/","ghi_chu":"/θ/: đặt đầu lưỡi giữa hai hàm răng rồi thổi hơi, không rung cổ họng, không đọc thành th tiếng Việt."},
+    {"en":"the weather","ipa":"/ðə ˈweðə/","ghi_chu":"/ð/: đầu lưỡi giữa hai hàm răng như /θ/ nhưng rung cổ họng; weather có cả /w/ và /ð/."},
+    {"en":"three rooms","ipa":"/ˌθriː ˈruːmz/","ghi_chu":"Thổi hơi /θ/ rồi chuyển ngay sang /r/ cong lưỡi; rooms kết thúc bằng /z/ rung."}
+  ],
+  "cau": [
+    {"en":"The windows are cleaned every week.","vi":"Cửa sổ được lau mỗi tuần."},
+    {"en":"Three thousand cars are produced here every month.","vi":"Ba nghìn chiếc xe được sản xuất ở đây mỗi tháng."},
+    {"en":"This report was written by the whole team.","vi":"Bản báo cáo này do cả nhóm viết."},
+    {"en":"The office is cleaned every evening after work.","vi":"Văn phòng được dọn mỗi tối sau giờ làm."},
+    {"en":"Coffee is grown in the mountains in the north.","vi":"Cà phê được trồng ở vùng núi phía bắc."},
+    {"en":"The meeting has been moved to Thursday.","vi":"Cuộc họp đã được dời sang thứ Năm."}
+  ],
+  "bai": [
+    {"dang":"chon","hoi":"English ___ in many countries.","dap_an":"is spoken","sai":["speaks","is speaking"],"giai_thich":"Tiếng Anh không tự nói được, nó được người ta nói, nên dùng bị động is + V3."},
+    {"dang":"chon","hoi":"The bridge ___ in 1990.","dap_an":"was built","sai":["built","is built"],"giai_thich":"Cây cầu được xây vào năm đã qua nên dùng bị động quá khứ was + V3."},
+    {"dang":"chon","hoi":"A new shopping centre ___ next year.","dap_an":"will be opened","sai":["is opened","opened"],"giai_thich":"next year là tương lai nên bị động dùng will be + V3."},
+    {"dang":"chon","hoi":"Thank you, that was very ___ advice.","dap_an":"helpful","sai":["helpless","help"],"giai_thich":"Cần tính từ mang nghĩa có ích, đuôi -ful là có, còn -less là không có."},
+    {"dang":"dien","hoi":"My car ___ (repair) yesterday.","dap_an":"was repaired","chap_nhan":["was repaired"],"giai_thich":"Xe được người khác sửa vào hôm qua nên dùng bị động was + V3."},
+    {"dang":"dien","hoi":"He is a good ___ (manage). His team loves him.","dap_an":"manager","chap_nhan":["manager"],"giai_thich":"Sau a good cần danh từ chỉ người, thêm đuôi -er vào động từ manage."},
+    {"dang":"dien","hoi":"The results ___ (send) to you next week.","dap_an":"will be sent","chap_nhan":["will be sent","'ll be sent"],"giai_thich":"Kết quả được gửi vào tuần sau nên dùng bị động tương lai will be + V3."},
+    {"dang":"sapxep","dap_an":"The parcel was delivered to the wrong address.","vi":"Gói hàng bị giao nhầm địa chỉ.","giai_thich":"Bị động quá khứ: chủ ngữ + was + V3, rồi đến nơi chốn."},
+    {"dang":"sapxep","dap_an":"Was this photo taken by your brother?","vi":"Bức ảnh này do anh trai bạn chụp à?","giai_thich":"Câu hỏi bị động đưa Was lên đầu, by + người làm đứng cuối."},
+    {"dang":"sapxep","dap_an":"The new office will be opened by the director.","vi":"Văn phòng mới sẽ do giám đốc khai trương.","giai_thich":"Bị động tương lai will be + V3, người thực hiện đặt sau by."}
+  ]
+},
+{
+  "buoi": 7,
+  "ten": "Mệnh đề quan hệ – Mô tả người và vật",
+  "tu": [
+    {"en":"colleague","ipa":"/ˈkɒliːɡ/","vi":"đồng nghiệp","vd":"A colleague is a person who works with you.","vd_vi":"Đồng nghiệp là người làm việc cùng bạn."},
+    {"en":"neighbour","ipa":"/ˈneɪbə/","vi":"hàng xóm","vd":"My neighbour, who is a doctor, helped me last night.","vd_vi":"Hàng xóm của tôi, một bác sĩ, đã giúp tôi tối qua."},
+    {"en":"device","ipa":"/dɪˈvaɪs/","vi":"thiết bị","vd":"A charger is a device that gives power to your phone.","vd_vi":"Sạc là thiết bị cấp điện cho điện thoại."},
+    {"en":"receptionist","ipa":"/rɪˈsepʃənɪst/","vi":"lễ tân","vd":"The receptionist is the person who answers the phone.","vd_vi":"Lễ tân là người nghe điện thoại."},
+    {"en":"ingredient","ipa":"/ɪnˈɡriːdiənt/","vi":"nguyên liệu","vd":"Rice is the main ingredient which we use in this dish.","vd_vi":"Gạo là nguyên liệu chính chúng tôi dùng cho món này."},
+    {"en":"generous","ipa":"/ˈdʒenərəs/","vi":"hào phóng","vd":"She is a generous woman who always helps others.","vd_vi":"Bà ấy là người phụ nữ hào phóng, luôn giúp đỡ người khác."},
+    {"en":"reliable","ipa":"/rɪˈlaɪəbl/","vi":"đáng tin cậy","vd":"I need a reliable car that never breaks down.","vd_vi":"Tôi cần một chiếc xe đáng tin cậy, không bao giờ hỏng."},
+    {"en":"owner","ipa":"/ˈəʊnə/","vi":"chủ (nhà, quán)","vd":"The owner of the cafe is a man who loves music.","vd_vi":"Chủ quán cà phê là một người đàn ông yêu âm nhạc."},
+    {"en":"tool","ipa":"/tuːl/","vi":"dụng cụ","vd":"A hammer is a tool which you use to hit nails.","vd_vi":"Búa là dụng cụ dùng để đóng đinh."},
+    {"en":"elderly","ipa":"/ˈeldəli/","vi":"cao tuổi","vd":"This is the park where elderly people exercise every morning.","vd_vi":"Đây là công viên nơi người cao tuổi tập thể dục mỗi sáng."}
+  ],
+  "luyen_am": [
+    {"en":"colleague","ipa":"/ˈkɒliːɡ/","ghi_chu":"Nhấn âm tiết đầu: CO-league, không nhấn âm sau."},
+    {"en":"receptionist","ipa":"/rɪˈsepʃənɪst/","ghi_chu":"Nhấn âm tiết thứ hai: re-CEP-tion-ist; từ có -tion thường nhấn ngay âm trước nó."},
+    {"en":"photographer","ipa":"/fəˈtɒɡrəfə/","ghi_chu":"Nhấn âm thứ hai: pho-TO-gra-pher, khác với photograph nhấn âm đầu."},
+    {"en":"comfortable","ipa":"/ˈkʌmftəbl/","ghi_chu":"Nhấn âm đầu COM, đọc gọn ba âm tiết: câm-phtờ-bồ."},
+    {"en":"engineer","ipa":"/ˌendʒɪˈnɪə/","ghi_chu":"Từ đuôi -eer nhấn vào chính âm cuối: en-gi-NEER."}
+  ],
+  "cau": [
+    {"en":"A photographer is someone who takes pictures for a living.","vi":"Nhiếp ảnh gia là người kiếm sống bằng nghề chụp ảnh."},
+    {"en":"This is the restaurant where we had our first date.","vi":"Đây là nhà hàng nơi chúng tôi có buổi hẹn đầu tiên."},
+    {"en":"I have a colleague whose brother is an engineer.","vi":"Tôi có một đồng nghiệp có anh trai là kỹ sư."},
+    {"en":"The phone that I bought last week is already broken.","vi":"Cái điện thoại tôi mua tuần trước đã hỏng rồi."},
+    {"en":"The receptionist who helped us was very friendly.","vi":"Cô lễ tân giúp chúng tôi rất thân thiện."},
+    {"en":"Do you know a hotel which is cheap and comfortable?","vi":"Bạn có biết khách sạn nào vừa rẻ vừa thoải mái không?"}
+  ],
+  "bai": [
+    {"dang":"chon","hoi":"The woman ___ lives next door is a nurse.","dap_an":"who","sai":["which","where"],"giai_thich":"Danh từ đứng trước là người (the woman) nên dùng who."},
+    {"dang":"chon","hoi":"This is the town ___ I grew up.","dap_an":"where","sai":["which","who"],"giai_thich":"the town là nơi chốn và mệnh đề sau đã đủ nghĩa, nên dùng where."},
+    {"dang":"chon","hoi":"I met a man ___ car was stolen last night.","dap_an":"whose","sai":["who","who's"],"giai_thich":"Chiếc xe thuộc về người đàn ông, chỉ sự sở hữu nên dùng whose."},
+    {"dang":"chon","hoi":"The book ___ you lent me was really interesting.","dap_an":"that","sai":["who","where"],"giai_thich":"the book là vật nên dùng that (hoặc which), không dùng who hay where."},
+    {"dang":"dien","hoi":"A dentist is a person ___ (người) looks after your teeth.","dap_an":"who","chap_nhan":["who","that"],"giai_thich":"Thay cho danh từ chỉ người a person nên dùng who hoặc that."},
+    {"dang":"dien","hoi":"This is the cafe ___ (nơi chốn) we usually meet.","dap_an":"where","chap_nhan":["where"],"giai_thich":"Thay cho nơi chốn the cafe, mệnh đề sau đã đủ chủ ngữ và động từ, nên dùng where."},
+    {"dang":"dien","hoi":"The laptop ___ (vật) I use at work is very old.","dap_an":"which","chap_nhan":["which","that"],"giai_thich":"Thay cho vật the laptop nên dùng which hoặc that."},
+    {"dang":"sapxep","dap_an":"She is the teacher who taught me English.","vi":"Cô ấy là giáo viên đã dạy tôi tiếng Anh.","giai_thich":"who đứng ngay sau danh từ chỉ người the teacher."},
+    {"dang":"sapxep","dap_an":"This is the hotel where we stayed last summer.","vi":"Đây là khách sạn chúng tôi ở mùa hè năm ngoái.","giai_thich":"where đứng ngay sau danh từ chỉ nơi chốn the hotel."},
+    {"dang":"sapxep","dap_an":"I have a friend whose father is a pilot.","vi":"Tôi có một người bạn có bố là phi công.","giai_thich":"whose đứng sau người sở hữu (a friend) và trước vật/người được sở hữu (father)."}
+  ]
+},
+{
+  "buoi": 8,
+  "ten": "Danh động từ và động từ nguyên mẫu – Công việc và học tập",
+  "tu": [
+    {"en":"apply for","ipa":"/əˈplaɪ fə/","vi":"nộp đơn xin","vd":"I want to apply for a job in marketing.","vd_vi":"Tôi muốn nộp đơn xin việc ở mảng marketing."},
+    {"en":"look for","ipa":"/ˈlʊk fə/","vi":"tìm kiếm","vd":"She is looking for a part-time job near her home.","vd_vi":"Cô ấy đang tìm việc bán thời gian gần nhà."},
+    {"en":"find out","ipa":"/ˌfaɪnd ˈaʊt/","vi":"tìm hiểu, biết được","vd":"I need to find out when the course starts.","vd_vi":"Tôi cần tìm hiểu khi nào khóa học bắt đầu."},
+    {"en":"give up","ipa":"/ˌɡɪv ˈʌp/","vi":"từ bỏ","vd":"Never give up learning when it gets difficult.","vd_vi":"Đừng bao giờ bỏ học khi việc học trở nên khó."},
+    {"en":"fill in","ipa":"/ˌfɪl ˈɪn/","vi":"điền (đơn, mẫu)","vd":"Please fill in this form before the interview.","vd_vi":"Vui lòng điền mẫu này trước buổi phỏng vấn."},
+    {"en":"get on with","ipa":"/ˌɡet ˈɒn wɪð/","vi":"hòa hợp với","vd":"I get on with my colleagues very well.","vd_vi":"Tôi rất hợp với các đồng nghiệp."},
+    {"en":"interview","ipa":"/ˈɪntəvjuː/","vi":"buổi phỏng vấn","vd":"I am nervous about having an interview tomorrow.","vd_vi":"Tôi lo lắng vì ngày mai có buổi phỏng vấn."},
+    {"en":"qualification","ipa":"/ˌkwɒlɪfɪˈkeɪʃn/","vi":"bằng cấp, chứng chỉ","vd":"You need a teaching qualification to work at this school.","vd_vi":"Bạn cần chứng chỉ sư phạm để dạy ở trường này."},
+    {"en":"be good at","ipa":"/bi ˈɡʊd ət/","vi":"giỏi về","vd":"He is good at solving problems quickly.","vd_vi":"Anh ấy giỏi giải quyết vấn đề nhanh."},
+    {"en":"carry on","ipa":"/ˌkæri ˈɒn/","vi":"tiếp tục","vd":"We carried on working until nine o'clock.","vd_vi":"Chúng tôi tiếp tục làm việc đến chín giờ."}
+  ],
+  "luyen_am": [
+    {"en":"application","ipa":"/ˌæplɪˈkeɪʃn/","ghi_chu":"Nhấn âm ngay trước -tion: ap-pli-CA-tion."},
+    {"en":"qualification","ipa":"/ˌkwɒlɪfɪˈkeɪʃn/","ghi_chu":"Từ dài vẫn nhấn âm ngay trước -tion: qua-li-fi-CA-tion."},
+    {"en":"interview","ipa":"/ˈɪntəvjuː/","ghi_chu":"Nhấn âm đầu: IN-ter-view, âm giữa đọc yếu /tə/."},
+    {"en":"develop","ipa":"/dɪˈveləp/","ghi_chu":"Nhấn âm thứ hai: de-VE-lop, âm đầu và cuối đọc nhẹ."},
+    {"en":"give up","ipa":"/ˌɡɪv ˈʌp/","ghi_chu":"Cụm động từ thường nhấn vào tiểu từ phía sau: give UP; /v/ nối sang up: gi-vấp."}
+  ],
+  "cau": [
+    {"en":"I enjoy working with people from different countries.","vi":"Tôi thích làm việc với người từ nhiều nước khác nhau."},
+    {"en":"She decided to apply for a job abroad.","vi":"Cô ấy quyết định nộp đơn xin việc ở nước ngoài."},
+    {"en":"I am thinking about taking an online course.","vi":"Tôi đang tính học một khóa trực tuyến."},
+    {"en":"We need to find out more about the company.","vi":"Chúng ta cần tìm hiểu thêm về công ty này."},
+    {"en":"He gave up smoking after his first child was born.","vi":"Anh ấy bỏ thuốc lá sau khi đứa con đầu chào đời."},
+    {"en":"My manager wants me to fill in an application.","vi":"Quản lý muốn tôi điền một lá đơn."}
+  ],
+  "bai": [
+    {"dang":"chon","hoi":"I enjoy ___ new languages.","dap_an":"learning","sai":["to learn","learn"],"giai_thich":"Sau enjoy động từ phải thêm -ing."},
+    {"dang":"chon","hoi":"She hopes ___ her own business one day.","dap_an":"to start","sai":["starting","start"],"giai_thich":"Sau hope động từ dùng dạng to + động từ nguyên mẫu."},
+    {"dang":"chon","hoi":"He is interested in ___ abroad.","dap_an":"studying","sai":["to study","study"],"giai_thich":"Sau giới từ in động từ phải thêm -ing."},
+    {"dang":"chon","hoi":"Can you help me ___ my keys? I can't find them.","dap_an":"look for","sai":["look after","look up"],"giai_thich":"Không tìm thấy chìa khóa nên cần look for nghĩa là tìm kiếm."},
+    {"dang":"dien","hoi":"I'm looking forward to ___ (meet) you.","dap_an":"meeting","chap_nhan":["meeting"],"giai_thich":"to trong look forward to là giới từ nên động từ sau nó thêm -ing."},
+    {"dang":"dien","hoi":"We can't afford ___ (buy) a new car this year.","dap_an":"to buy","chap_nhan":["to buy"],"giai_thich":"Sau afford động từ dùng dạng to + động từ nguyên mẫu."},
+    {"dang":"dien","hoi":"Would you mind ___ (open) the window?","dap_an":"opening","chap_nhan":["opening"],"giai_thich":"Sau mind động từ phải thêm -ing."},
+    {"dang":"sapxep","dap_an":"I would like to work for a big company.","vi":"Tôi muốn làm việc cho một công ty lớn.","giai_thich":"Sau would like động từ dùng to + động từ nguyên mẫu."},
+    {"dang":"sapxep","dap_an":"She is very good at speaking in public.","vi":"Cô ấy rất giỏi nói trước đám đông.","giai_thich":"Sau good at là động từ thêm -ing."},
+    {"dang":"sapxep","dap_an":"Do you get on with your new boss?","vi":"Bạn có hợp với sếp mới không?","giai_thich":"get on with là cụm động từ ba chữ đi liền nhau, theo sau là người."}
+  ]
+},
+{
+  "buoi": 9,
+  "ten": "Câu gián tiếp – Giao tiếp và chuyển lời",
+  "tu": [
+    {"en":"message","ipa":"/ˈmesɪdʒ/","vi":"lời nhắn","vd":"Can I leave a message for the manager?","vd_vi":"Tôi để lại lời nhắn cho quản lý được không?"},
+    {"en":"explain","ipa":"/ɪkˈspleɪn/","vi":"giải thích","vd":"She explained that the meeting had been cancelled.","vd_vi":"Cô ấy giải thích rằng cuộc họp đã bị hủy."},
+    {"en":"mention","ipa":"/ˈmenʃn/","vi":"nhắc đến","vd":"He mentioned that he was looking for a new job.","vd_vi":"Anh ấy có nhắc là đang tìm việc mới."},
+    {"en":"reply","ipa":"/rɪˈplaɪ/","vi":"trả lời, hồi âm","vd":"I sent the email yesterday, but nobody has replied.","vd_vi":"Tôi gửi email hôm qua mà chưa ai trả lời."},
+    {"en":"misunderstand","ipa":"/ˌmɪsʌndəˈstænd/","vi":"hiểu lầm","vd":"Sorry, I think I misunderstood what you said.","vd_vi":"Xin lỗi, tôi nghĩ là tôi đã hiểu lầm ý bạn."},
+    {"en":"pass on","ipa":"/ˌpɑːs ˈɒn/","vi":"chuyển lời","vd":"Could you pass on my message to your boss?","vd_vi":"Bạn chuyển lời nhắn của tôi tới sếp bạn được không?"},
+    {"en":"get in touch","ipa":"/ˌɡet ɪn ˈtʌtʃ/","vi":"liên lạc","vd":"Please get in touch if you have any questions.","vd_vi":"Vui lòng liên lạc nếu bạn có câu hỏi."},
+    {"en":"promise","ipa":"/ˈprɒmɪs/","vi":"hứa","vd":"He promised that he would call me back.","vd_vi":"Anh ấy hứa sẽ gọi lại cho tôi."},
+    {"en":"suggest","ipa":"/səˈdʒest/","vi":"gợi ý, đề xuất","vd":"My colleague suggested meeting after lunch.","vd_vi":"Đồng nghiệp tôi đề xuất gặp nhau sau bữa trưa."},
+    {"en":"point of view","ipa":"/ˌpɔɪnt əv ˈvjuː/","vi":"quan điểm","vd":"I understand your point of view, but I disagree.","vd_vi":"Tôi hiểu quan điểm của bạn, nhưng tôi không đồng ý."}
+  ],
+  "luyen_am": [
+    {"en":"She said she was busy","ipa":"/ʃi ˈsed ʃi wəz ˈbɪzi/","ghi_chu":"Nhấn said và busy, các từ còn lại đọc nhẹ, was đọc yếu /wəz/."},
+    {"en":"He asked if I was free","ipa":"/hi ˈɑːskt ɪf aɪ wəz ˈfriː/","ghi_chu":"Nhấn asked và free; asked kết thúc bằng /skt/, nối sang if."},
+    {"en":"They told me to wait","ipa":"/ðeɪ ˈtəʊld mi tə ˈweɪt/","ghi_chu":"Nhấn told và wait, me và to đọc nhẹ và nhanh."},
+    {"en":"I said Tuesday, not Thursday","ipa":"/aɪ ˈsed ˈtjuːzdeɪ nɒt ˈθɜːzdeɪ/","ghi_chu":"Khi sửa lại thông tin, nhấn mạnh vào từ cần sửa: Tuesday và Thursday."},
+    {"en":"Could you say that again?","ipa":"/kəd ju ˈseɪ ðæt əˈɡen/","ghi_chu":"Nhấn say và gain trong again, could you đọc lướt /kəd ju/."}
+  ],
+  "cau": [
+    {"en":"She said that she was very busy that day.","vi":"Cô ấy nói hôm đó cô ấy rất bận."},
+    {"en":"He told me that he had lost his phone.","vi":"Anh ấy nói với tôi là anh ấy đã làm mất điện thoại."},
+    {"en":"My boss asked me where I lived.","vi":"Sếp hỏi tôi sống ở đâu."},
+    {"en":"They asked if we were free on Friday evening.","vi":"Họ hỏi chúng tôi có rảnh tối thứ Sáu không."},
+    {"en":"The teacher told us to turn off our phones.","vi":"Giáo viên bảo chúng tôi tắt điện thoại."},
+    {"en":"She promised that she would send the report later.","vi":"Cô ấy hứa lát nữa sẽ gửi bản báo cáo."}
+  ],
+  "bai": [
+    {"dang":"chon","hoi":"'I am tired,' she said. She said that she ___ tired.","dap_an":"was","sai":["is being","were"],"giai_thich":"Câu gián tiếp sau said lùi một thì: am thành was, chủ ngữ she đi với was."},
+    {"dang":"chon","hoi":"He asked me where ___.","dap_an":"I lived","sai":["did I live","do I live"],"giai_thich":"Câu hỏi gián tiếp giữ trật tự câu kể: chủ ngữ trước động từ, không dùng do/did."},
+    {"dang":"chon","hoi":"She asked me ___ I liked coffee.","dap_an":"if","sai":["that","what"],"giai_thich":"Tường thuật câu hỏi Có/Không thì dùng if."},
+    {"dang":"chon","hoi":"My mother ___ me to come home early.","dap_an":"told","sai":["said","spoke"],"giai_thich":"Sau chỗ trống có người (me) rồi to + động từ, chỉ told dùng được như vậy."},
+    {"dang":"dien","hoi":"'I will help you.' He said he ___ (will) help me.","dap_an":"would","chap_nhan":["would","'d"],"giai_thich":"Câu gián tiếp lùi thì: will thành would."},
+    {"dang":"dien","hoi":"'I have finished.' She said she ___ (finish).","dap_an":"had finished","chap_nhan":["had finished","'d finished"],"giai_thich":"Câu gián tiếp lùi thì: have finished thành had finished."},
+    {"dang":"dien","hoi":"'Are you hungry?' He asked me if I ___ (be) hungry.","dap_an":"was","chap_nhan":["was"],"giai_thich":"Lùi thì are thành was, chủ ngữ I đi với was."},
+    {"dang":"sapxep","dap_an":"She asked me what time it was.","vi":"Cô ấy hỏi tôi mấy giờ rồi.","giai_thich":"Câu hỏi gián tiếp để chủ ngữ it trước động từ was, không đảo ngữ."},
+    {"dang":"sapxep","dap_an":"He told me not to worry about it.","vi":"Anh ấy bảo tôi đừng lo về chuyện đó.","giai_thich":"Tường thuật lời bảo đừng làm gì dùng told + người + not to + động từ."},
+    {"dang":"sapxep","dap_an":"They said that the shop was closed.","vi":"Họ nói là cửa hàng đã đóng cửa.","giai_thich":"said that + mệnh đề đã lùi thì (is thành was)."}
+  ]
+},
+{
+  "buoi": 10,
+  "ten": "Too, enough, so, such – Lối sống và nêu quan điểm",
+  "tu": [
+    {"en":"lifestyle","ipa":"/ˈlaɪfstaɪl/","vi":"lối sống","vd":"A healthy lifestyle is more important than money.","vd_vi":"Lối sống lành mạnh quan trọng hơn tiền bạc."},
+    {"en":"socialise","ipa":"/ˈsəʊʃəlaɪz/","vi":"giao lưu","vd":"I do not have enough time to socialise with friends.","vd_vi":"Tôi không có đủ thời gian để giao lưu với bạn bè."},
+    {"en":"go out","ipa":"/ˌɡəʊ ˈaʊt/","vi":"đi chơi","vd":"We usually go out for dinner on Saturday night.","vd_vi":"Chúng tôi thường đi ăn tối bên ngoài vào tối thứ Bảy."},
+    {"en":"stressful","ipa":"/ˈstresfl/","vi":"căng thẳng","vd":"City life can be really stressful.","vd_vi":"Cuộc sống thành phố có thể rất căng thẳng."},
+    {"en":"relaxing","ipa":"/rɪˈlæksɪŋ/","vi":"thư giãn","vd":"Living in the countryside is so relaxing.","vd_vi":"Sống ở nông thôn thật là thư giãn."},
+    {"en":"in my opinion","ipa":"/ɪn ˈmaɪ əˈpɪnjən/","vi":"theo ý tôi","vd":"In my opinion, people spend too much time online.","vd_vi":"Theo tôi, mọi người dành quá nhiều thời gian lên mạng."},
+    {"en":"social media","ipa":"/ˌsəʊʃl ˈmiːdiə/","vi":"mạng xã hội","vd":"Social media helps me stay in touch with old friends.","vd_vi":"Mạng xã hội giúp tôi giữ liên lạc với bạn cũ."},
+    {"en":"on the other hand","ipa":"/ɒn ði ˈʌðə ˌhænd/","vi":"mặt khác","vd":"Big cities have good jobs. On the other hand, they are noisy.","vd_vi":"Thành phố lớn có nhiều việc tốt. Mặt khác, chúng ồn ào."},
+    {"en":"although","ipa":"/ɔːlˈðəʊ/","vi":"mặc dù","vd":"Although I am busy, I always make time for my family.","vd_vi":"Mặc dù bận, tôi luôn dành thời gian cho gia đình."},
+    {"en":"habit","ipa":"/ˈhæbɪt/","vi":"thói quen","vd":"Getting up early is a good habit.","vd_vi":"Dậy sớm là một thói quen tốt."}
+  ],
+  "luyen_am": [
+    {"en":"Do you agree?","ipa":"/duː ju əˈɡriː/","ghi_chu":"Câu hỏi Có/Không: lên giọng ở cuối, chỗ -gree."},
+    {"en":"Why do you think so?","ipa":"/ˈwaɪ də ju ˈθɪŋk ˈsəʊ/","ghi_chu":"Câu hỏi có Why: xuống giọng ở cuối câu."},
+    {"en":"It is too expensive.","ipa":"/ɪt ɪz ˈtuː ɪkˈspensɪv/","ghi_chu":"Nhấn mạnh too để nêu ý kiến, xuống giọng ở cuối câu kể."},
+    {"en":"It was such a good party!","ipa":"/ɪt wəz ˈsʌtʃ ə ˈɡʊd ˈpɑːti/","ghi_chu":"Câu cảm thán: nhấn such và good, giọng lên cao rồi hạ mạnh ở party."},
+    {"en":"Although it is cheap,","ipa":"/ɔːlˈðəʊ ɪt ɪz ˈtʃiːp/","ghi_chu":"Vế mặc dù chưa nói hết ý: hơi lên giọng ở cheap để báo còn vế sau."}
+  ],
+  "cau": [
+    {"en":"In my opinion, city life is too stressful.","vi":"Theo tôi, cuộc sống thành phố quá căng thẳng."},
+    {"en":"Do you think social media is good for us?","vi":"Bạn có nghĩ mạng xã hội tốt cho chúng ta không?"},
+    {"en":"The film was so boring that I fell asleep.","vi":"Bộ phim chán đến mức tôi ngủ gật."},
+    {"en":"It was such a nice day that we went out.","vi":"Hôm đó trời đẹp đến mức chúng tôi ra ngoài chơi."},
+    {"en":"Although I love my job, I need more free time.","vi":"Mặc dù yêu công việc, tôi cần thêm thời gian rảnh."},
+    {"en":"This flat is not big enough for a family.","vi":"Căn hộ này không đủ rộng cho một gia đình."}
+  ],
+  "bai": [
+    {"dang":"chon","hoi":"This coffee is ___ hot to drink. I'll wait.","dap_an":"too","sai":["very","enough"],"giai_thich":"too + tính từ + to + động từ nghĩa là quá đến mức không làm được."},
+    {"dang":"chon","hoi":"He isn't old ___ to drive a car.","dap_an":"enough","sai":["too","very"],"giai_thich":"enough đứng sau tính từ (old enough) nghĩa là đủ để làm gì."},
+    {"dang":"chon","hoi":"It was ___ a long journey that we were exhausted.","dap_an":"such","sai":["so","too"],"giai_thich":"Sau chỗ trống là a + tính từ + danh từ nên dùng such, so chỉ đi với tính từ đứng một mình."},
+    {"dang":"chon","hoi":"___ it was raining, we went for a walk.","dap_an":"Although","sai":["However","Because"],"giai_thich":"Hai vế trái ngược nhau trong cùng một câu nên dùng Although; However phải đứng ở câu riêng."},
+    {"dang":"dien","hoi":"The music was ___ (so / such) loud that I couldn't hear you.","dap_an":"so","chap_nhan":["so"],"giai_thich":"Sau chỗ trống chỉ có tính từ loud, không có danh từ, nên dùng so."},
+    {"dang":"dien","hoi":"I like the city. ___ (mặt khác), it is very expensive.","dap_an":"However","chap_nhan":["however","on the other hand"],"giai_thich":"Câu sau nêu ý trái ngược và đứng thành câu riêng nên dùng However hoặc On the other hand."},
+    {"dang":"dien","hoi":"The room is not ___ (big) for twenty people.","dap_an":"big enough","chap_nhan":["big enough"],"giai_thich":"enough đứng sau tính từ: big enough nghĩa là đủ rộng."},
+    {"dang":"sapxep","dap_an":"Is your English good enough for the job?","vi":"Tiếng Anh của bạn có đủ tốt cho công việc đó không?","giai_thich":"enough đứng ngay sau tính từ good."},
+    {"dang":"sapxep","dap_an":"She speaks so fast that nobody understands her.","vi":"Cô ấy nói nhanh đến mức không ai hiểu.","giai_thich":"Cấu trúc so + trạng từ + that + kết quả."},
+    {"dang":"sapxep","dap_an":"Why do you think it is a bad idea?","vi":"Sao bạn nghĩ đó là ý tồi?","giai_thich":"Why do you think đứng đầu, phần sau giữ trật tự câu kể it is."}
+  ]
+},
+{
+  "buoi": 11,
+  "ten": "Tổng ôn 1 – Ngữ pháp hỗn hợp",
+  "tu": [
+    {"en":"opportunity","ipa":"/ˌɒpəˈtjuːnəti/","vi":"cơ hội","vd":"If I had the opportunity, I would study abroad.","vd_vi":"Nếu có cơ hội, tôi sẽ đi du học."},
+    {"en":"improve","ipa":"/ɪmˈpruːv/","vi":"cải thiện","vd":"My English has improved a lot since last year.","vd_vi":"Tiếng Anh của tôi đã tiến bộ nhiều từ năm ngoái."},
+    {"en":"confident","ipa":"/ˈkɒnfɪdənt/","vi":"tự tin","vd":"I feel more confident when I speak English now.","vd_vi":"Giờ tôi thấy tự tin hơn khi nói tiếng Anh."},
+    {"en":"responsibility","ipa":"/rɪˌspɒnsəˈbɪləti/","vi":"trách nhiệm","vd":"Looking after customers is my main responsibility.","vd_vi":"Chăm sóc khách hàng là trách nhiệm chính của tôi."},
+    {"en":"decision","ipa":"/dɪˈsɪʒn/","vi":"quyết định","vd":"The decision was made by the whole team.","vd_vi":"Quyết định do cả nhóm đưa ra."},
+    {"en":"keep in touch","ipa":"/ˌkiːp ɪn ˈtʌtʃ/","vi":"giữ liên lạc","vd":"We have kept in touch since we left school.","vd_vi":"Chúng tôi giữ liên lạc từ khi ra trường."},
+    {"en":"take part in","ipa":"/ˌteɪk ˈpɑːt ɪn/","vi":"tham gia","vd":"I am going to take part in a speaking contest.","vd_vi":"Tôi sẽ tham gia một cuộc thi nói."},
+    {"en":"instead of","ipa":"/ɪnˈsted əv/","vi":"thay vì","vd":"I walk to work instead of taking the bus.","vd_vi":"Tôi đi bộ đi làm thay vì đi xe buýt."},
+    {"en":"on time","ipa":"/ɒn ˈtaɪm/","vi":"đúng giờ","vd":"The train was late, so we did not arrive on time.","vd_vi":"Tàu bị trễ nên chúng tôi không đến đúng giờ."},
+    {"en":"recently","ipa":"/ˈriːsntli/","vi":"gần đây","vd":"Have you read any good books recently?","vd_vi":"Gần đây bạn có đọc cuốn sách nào hay không?"}
+  ],
+  "luyen_am": [
+    {"en":"thought","ipa":"/θɔːt/","ghi_chu":"/θ/ đầu lưỡi giữa hai hàm răng thổi hơi, rồi /ɔː/ là o dài tròn môi."},
+    {"en":"ship, sheep","ipa":"/ʃɪp/, /ʃiːp/","ghi_chu":"/ɪ/ ngắn và thả lỏng (ship), /iː/ dài và căng môi như cười (sheep)."},
+    {"en":"walked","ipa":"/wɔːkt/","ghi_chu":"Đuôi -ed sau âm vô thanh /k/ đọc thành /t/, không thêm âm tiết."},
+    {"en":"pleasure","ipa":"/ˈpleʒə/","ghi_chu":"/ʒ/ giống /ʃ/ nhưng rung cổ họng, môi hơi chu ra."},
+    {"en":"world","ipa":"/wɜːld/","ghi_chu":"Tròn môi /w/, rồi /ɜː/ ơ dài, cuối cùng đọc rõ /l/ và /d/."}
+  ],
+  "cau": [
+    {"en":"I have been learning English for almost a year.","vi":"Tôi đã học tiếng Anh được gần một năm."},
+    {"en":"If I had more time, I would read more books.","vi":"Nếu có nhiều thời gian hơn, tôi sẽ đọc nhiều sách hơn."},
+    {"en":"The man who lives upstairs is a teacher.","vi":"Người đàn ông sống ở tầng trên là giáo viên."},
+    {"en":"She told me that she had already eaten.","vi":"Cô ấy nói với tôi là cô ấy đã ăn rồi."},
+    {"en":"We walked home because the last bus had left.","vi":"Chúng tôi đi bộ về nhà vì chuyến xe buýt cuối đã chạy."},
+    {"en":"I thought that the weather would be better.","vi":"Tôi đã nghĩ là thời tiết sẽ đẹp hơn."}
+  ],
+  "bai": [
+    {"dang":"chon","hoi":"This house ___ two hundred years ago.","dap_an":"was built","sai":["built","has been built"],"giai_thich":"Ngôi nhà được người ta xây, có mốc ago, nên dùng bị động quá khứ was + V3."},
+    {"dang":"chon","hoi":"I ___ here since I graduated.","dap_an":"have worked","sai":["work","worked"],"giai_thich":"since + mốc quá khứ, việc kéo dài đến nay nên dùng hiện tại hoàn thành."},
+    {"dang":"chon","hoi":"If you ___ harder, you would get better marks.","dap_an":"studied","sai":["study","will study"],"giai_thich":"Vế sau có would nên vế if chia quá khứ (điều kiện loại 2)."},
+    {"dang":"chon","hoi":"That's the girl ___ mother is my teacher.","dap_an":"whose","sai":["who","which"],"giai_thich":"Mẹ thuộc về cô gái, chỉ sở hữu nên dùng whose."},
+    {"dang":"dien","hoi":"I'm tired. I ___ (not sleep) well last night.","dap_an":"didn't sleep","chap_nhan":["didn't sleep","did not sleep"],"giai_thich":"last night là quá khứ đã kết thúc nên dùng quá khứ đơn phủ định."},
+    {"dang":"dien","hoi":"She avoids ___ (drive) in the rain.","dap_an":"driving","chap_nhan":["driving"],"giai_thich":"Sau avoid động từ phải thêm -ing."},
+    {"dang":"dien","hoi":"'Can you help me?' He asked me if I ___ (can) help him.","dap_an":"could","chap_nhan":["could"],"giai_thich":"Câu gián tiếp lùi thì: can thành could."},
+    {"dang":"sapxep","dap_an":"Have you finished the report yet?","vi":"Bạn đã làm xong báo cáo chưa?","giai_thich":"Câu hỏi hiện tại hoàn thành, yet đứng cuối câu."},
+    {"dang":"sapxep","dap_an":"The letter was sent to the wrong person.","vi":"Lá thư bị gửi nhầm người.","giai_thich":"Bị động quá khứ: chủ ngữ + was + V3 + nơi nhận."},
+    {"dang":"sapxep","dap_an":"He told me that he was looking for a job.","vi":"Anh ấy nói với tôi là anh ấy đang tìm việc.","giai_thich":"told me that + mệnh đề lùi thì: is looking thành was looking."}
+  ]
+},
+{
+  "buoi": 12,
+  "ten": "Tổng ôn 2 – Kiểm tra nói và bài test B1",
+  "tu": [
+    {"en":"introduce","ipa":"/ˌɪntrəˈdjuːs/","vi":"giới thiệu","vd":"First, let me introduce myself and my job.","vd_vi":"Trước tiên, cho tôi giới thiệu về bản thân và công việc."},
+    {"en":"describe","ipa":"/dɪˈskraɪb/","vi":"mô tả","vd":"Can you describe the place where you grew up?","vd_vi":"Bạn có thể mô tả nơi bạn lớn lên không?"},
+    {"en":"for example","ipa":"/fər ɪɡˈzɑːmpl/","vi":"ví dụ","vd":"I like sports, for example, football and swimming.","vd_vi":"Tôi thích thể thao, ví dụ như bóng đá và bơi."},
+    {"en":"to sum up","ipa":"/tə ˌsʌm ˈʌp/","vi":"tóm lại","vd":"To sum up, I think working from home is a good idea.","vd_vi":"Tóm lại, tôi nghĩ làm việc ở nhà là ý hay."},
+    {"en":"agree","ipa":"/əˈɡriː/","vi":"đồng ý","vd":"I agree with you, but it is too expensive.","vd_vi":"Tôi đồng ý với bạn, nhưng nó đắt quá."},
+    {"en":"disagree","ipa":"/ˌdɪsəˈɡriː/","vi":"không đồng ý","vd":"I disagree because it would take too much time.","vd_vi":"Tôi không đồng ý vì việc đó sẽ tốn quá nhiều thời gian."},
+    {"en":"advantage","ipa":"/ədˈvɑːntɪdʒ/","vi":"ưu điểm","vd":"One advantage of city life is good public transport.","vd_vi":"Một ưu điểm của cuộc sống thành phố là giao thông công cộng tốt."},
+    {"en":"disadvantage","ipa":"/ˌdɪsədˈvɑːntɪdʒ/","vi":"nhược điểm","vd":"The main disadvantage is that it is very noisy.","vd_vi":"Nhược điểm chính là nó rất ồn."},
+    {"en":"as far as I know","ipa":"/əz ˈfɑːr əz aɪ ˈnəʊ/","vi":"theo tôi biết","vd":"As far as I know, the shop opens at nine.","vd_vi":"Theo tôi biết, cửa hàng mở cửa lúc chín giờ."},
+    {"en":"personally","ipa":"/ˈpɜːsənəli/","vi":"cá nhân tôi thì","vd":"Personally, I prefer living in a small town.","vd_vi":"Cá nhân tôi thì thích sống ở thị trấn nhỏ hơn."}
+  ],
+  "luyen_am": [
+    {"en":"advantage","ipa":"/ədˈvɑːntɪdʒ/","ghi_chu":"Nhấn âm thứ hai VAN, chữ a đầu đọc yếu thành /ə/."},
+    {"en":"Let me introduce myself","ipa":"/ˈlet mi ˌɪntrəˈdjuːs maɪˈself/","ghi_chu":"Let me đọc liền, nhấn chính vào duce và self; /s/ cuối introduce nối sang myself."},
+    {"en":"on the other hand","ipa":"/ɒn ði ˈʌðə ˌhænd/","ghi_chu":"the đứng trước nguyên âm đọc /ði/; hai âm /ð/ đều để đầu lưỡi giữa răng và rung cổ."},
+    {"en":"Which one do you prefer?","ipa":"/ˈwɪtʃ ˈwʌn də ju prɪˈfɜː/","ghi_chu":"Câu hỏi có Which: xuống giọng ở cuối; prefer nhấn âm thứ hai."},
+    {"en":"asked","ipa":"/ɑːskt/","ghi_chu":"Đuôi -ed đọc /t/, đọc đủ cụm phụ âm /skt/ ở cuối, không bỏ âm."}
+  ],
+  "cau": [
+    {"en":"Let me introduce myself and tell you about my job.","vi":"Cho tôi giới thiệu về bản thân và kể về công việc của tôi."},
+    {"en":"One advantage of working from home is saving time.","vi":"Một ưu điểm của làm việc ở nhà là tiết kiệm thời gian."},
+    {"en":"On the other hand, it can be quite lonely.","vi":"Mặt khác, nó có thể khá cô đơn."},
+    {"en":"If I could change one thing, I would work less.","vi":"Nếu được thay đổi một điều, tôi sẽ làm việc ít hơn."},
+    {"en":"I have been working here since I left university.","vi":"Tôi đã làm việc ở đây từ khi ra trường."},
+    {"en":"To sum up, I think it is a good idea.","vi":"Tóm lại, tôi nghĩ đó là một ý hay."}
+  ],
+  "bai": [
+    {"dang":"chon","hoi":"When I arrived, everyone ___ home.","dap_an":"had gone","sai":["has gone","goes"],"giai_thich":"Mọi người về trước lúc tôi đến (mốc quá khứ) nên dùng quá khứ hoàn thành had + V3."},
+    {"dang":"chon","hoi":"You ___ wear a seatbelt. It's the law.","dap_an":"have to","sai":["don't have to","might"],"giai_thich":"Luật bắt buộc nên dùng have to."},
+    {"dang":"chon","hoi":"The film was ___ boring that we left early.","dap_an":"so","sai":["such","too"],"giai_thich":"Sau chỗ trống là tính từ đứng một mình rồi đến that, nên dùng so."},
+    {"dang":"chon","hoi":"I'm looking forward ___ you.","dap_an":"to seeing","sai":["to see","seeing"],"giai_thich":"look forward luôn đi với to, và sau giới từ to này là V-ing."},
+    {"dang":"dien","hoi":"The kitchen ___ (clean) every day by the staff.","dap_an":"is cleaned","chap_nhan":["is cleaned"],"giai_thich":"Nhà bếp được nhân viên dọn hằng ngày nên dùng bị động hiện tại is + V3."},
+    {"dang":"dien","hoi":"If I ___ (be) you, I would accept the offer.","dap_an":"were","chap_nhan":["were","was"],"giai_thich":"Giả định trái thực tế (loại 2) nên be chia quá khứ, chuẩn nhất là were."},
+    {"dang":"dien","hoi":"'Where do you work?' She asked me where I ___ (work).","dap_an":"worked","chap_nhan":["worked"],"giai_thich":"Câu hỏi gián tiếp lùi thì: do you work thành I worked, không dùng do/did."},
+    {"dang":"sapxep","dap_an":"Have you ever been to another country?","vi":"Bạn đã bao giờ đi nước ngoài chưa?","giai_thich":"Hỏi trải nghiệm dùng Have you ever + V3."},
+    {"dang":"sapxep","dap_an":"This is the shop where I bought my phone.","vi":"Đây là cửa hàng nơi tôi mua điện thoại.","giai_thich":"where đứng ngay sau danh từ chỉ nơi chốn the shop."},
+    {"dang":"sapxep","dap_an":"He is not old enough to vote.","vi":"Anh ấy chưa đủ tuổi đi bầu cử.","giai_thich":"enough đứng sau tính từ old, rồi đến to + động từ."}
+  ]
+}
+]}
