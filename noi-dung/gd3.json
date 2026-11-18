@@ -74,6 +74,146 @@
      "vi": "gọi điện thoại",
      "vd": "He makes a phone call to his mother every night.",
      "vd_vi": "Tối nào anh ấy cũng gọi điện cho mẹ."
+    },
+    {
+     "en": "make the bed",
+     "ipa": "/meɪk ðə ˈbed/",
+     "vi": "dọn giường",
+     "vd": "I make the bed every morning.",
+     "vd_vi": "Sáng nào tôi cũng dọn giường."
+    },
+    {
+     "en": "make a mistake",
+     "ipa": "/meɪk ə mɪˈsteɪk/",
+     "vi": "mắc lỗi",
+     "vd": "Don't worry if you make a mistake.",
+     "vd_vi": "Đừng lo nếu bạn mắc lỗi."
+    },
+    {
+     "en": "make friends",
+     "ipa": "/meɪk ˈfrendz/",
+     "vi": "kết bạn",
+     "vd": "My son makes friends very easily.",
+     "vd_vi": "Con trai tôi kết bạn rất dễ."
+    },
+    {
+     "en": "make coffee",
+     "ipa": "/meɪk ˈkɒfi/",
+     "vi": "pha cà phê",
+     "vd": "My husband makes coffee for me every morning.",
+     "vd_vi": "Sáng nào chồng tôi cũng pha cà phê cho tôi."
+    },
+    {
+     "en": "do the washing",
+     "ipa": "/duː ðə ˈwɒʃɪŋ/",
+     "vi": "giặt quần áo",
+     "vd": "I do the washing on Saturday morning.",
+     "vd_vi": "Tôi giặt quần áo vào sáng thứ Bảy."
+    },
+    {
+     "en": "do the cooking",
+     "ipa": "/duː ðə ˈkʊkɪŋ/",
+     "vi": "nấu nướng",
+     "vd": "My mother does the cooking in our family.",
+     "vd_vi": "Trong nhà tôi, mẹ là người nấu nướng."
+    },
+    {
+     "en": "do exercise",
+     "ipa": "/duː ˈeksəsaɪz/",
+     "vi": "tập thể dục",
+     "vd": "I do exercise in the park every evening.",
+     "vd_vi": "Tối nào tôi cũng tập thể dục ở công viên."
+    },
+    {
+     "en": "do the ironing",
+     "ipa": "/duː ði ˈaɪənɪŋ/",
+     "vi": "là (ủi) quần áo",
+     "vd": "I do the ironing on Sunday evening.",
+     "vd_vi": "Tôi là quần áo vào tối Chủ nhật."
+    },
+    {
+     "en": "have lunch",
+     "ipa": "/hæv ˈlʌntʃ/",
+     "vi": "ăn trưa",
+     "vd": "We have lunch at the office at twelve.",
+     "vd_vi": "Chúng tôi ăn trưa ở văn phòng lúc mười hai giờ."
+    },
+    {
+     "en": "have a good time",
+     "ipa": "/hæv ə ɡʊd ˈtaɪm/",
+     "vi": "chơi vui, có khoảng thời gian vui vẻ",
+     "vd": "We had a good time at the beach.",
+     "vd_vi": "Chúng tôi đã chơi rất vui ở biển."
+    },
+    {
+     "en": "have a cup of tea",
+     "ipa": "/hæv ə ˌkʌp əv ˈtiː/",
+     "vi": "uống một tách trà",
+     "vd": "I have a cup of tea after lunch.",
+     "vd_vi": "Tôi uống một tách trà sau bữa trưa."
+    },
+    {
+     "en": "have a meeting",
+     "ipa": "/hæv ə ˈmiːtɪŋ/",
+     "vi": "họp",
+     "vd": "We have a meeting every Monday morning.",
+     "vd_vi": "Sáng thứ Hai nào chúng tôi cũng họp."
+    },
+    {
+     "en": "take a taxi",
+     "ipa": "/teɪk ə ˈtæksi/",
+     "vi": "đi taxi",
+     "vd": "It was late, so we took a taxi home.",
+     "vd_vi": "Muộn rồi nên chúng tôi đi taxi về nhà."
+    },
+    {
+     "en": "take a break",
+     "ipa": "/teɪk ə ˈbreɪk/",
+     "vi": "nghỉ giải lao",
+     "vd": "We take a break at three o'clock.",
+     "vd_vi": "Chúng tôi nghỉ giải lao lúc ba giờ."
+    },
+    {
+     "en": "take medicine",
+     "ipa": "/teɪk ˈmedsn/",
+     "vi": "uống thuốc",
+     "vd": "She takes medicine because she has a cold.",
+     "vd_vi": "Cô ấy uống thuốc vì bị cảm."
+    },
+    {
+     "en": "take a nap",
+     "ipa": "/teɪk ə ˈnæp/",
+     "vi": "chợp mắt, ngủ trưa",
+     "vd": "My father takes a nap after lunch.",
+     "vd_vi": "Bố tôi chợp mắt một lát sau bữa trưa."
+    },
+    {
+     "en": "get up",
+     "ipa": "/ɡet ˈʌp/",
+     "vi": "thức dậy, ra khỏi giường",
+     "vd": "I get up at six on weekdays.",
+     "vd_vi": "Ngày thường tôi dậy lúc sáu giờ."
+    },
+    {
+     "en": "go to bed",
+     "ipa": "/ɡəʊ tə ˈbed/",
+     "vi": "đi ngủ",
+     "vd": "I usually go to bed at eleven.",
+     "vd_vi": "Tôi thường đi ngủ lúc mười một giờ."
+    },
+    {
+     "en": "brush your teeth",
+     "ipa": "/brʌʃ jɔː ˈtiːθ/",
+     "vi": "đánh răng",
+     "vd": "Brush your teeth before you go to bed.",
+     "vd_vi": "Hãy đánh răng trước khi đi ngủ."
+    },
+    {
+     "en": "busy",
+     "ipa": "/ˈbɪzi/",
+     "vi": "bận rộn",
+     "vd": "I am very busy on Monday mornings.",
+     "vd_vi": "Sáng thứ Hai tôi rất bận."
     }
    ],
    "luyen_am": [
@@ -557,6 +697,146 @@
      "vi": "trải nghiệm",
      "vd": "Living abroad is a great experience.",
      "vd_vi": "Sống ở nước ngoài là một trải nghiệm tuyệt vời."
+    },
+    {
+     "en": "visit a museum",
+     "ipa": "/ˈvɪzɪt ə mjuˈziːəm/",
+     "vi": "thăm bảo tàng",
+     "vd": "I have visited a museum in Hue.",
+     "vd_vi": "Tôi đã đi thăm một bảo tàng ở Huế."
+    },
+    {
+     "en": "see snow",
+     "ipa": "/siː ˈsnəʊ/",
+     "vi": "nhìn thấy tuyết",
+     "vd": "My parents have never seen snow.",
+     "vd_vi": "Bố mẹ tôi chưa bao giờ nhìn thấy tuyết."
+    },
+    {
+     "en": "stay in a hotel",
+     "ipa": "/steɪ ɪn ə həʊˈtel/",
+     "vi": "ở khách sạn",
+     "vd": "She has stayed in this hotel three times.",
+     "vd_vi": "Cô ấy đã ở khách sạn này ba lần."
+    },
+    {
+     "en": "take part in",
+     "ipa": "/teɪk ˈpɑːt ɪn/",
+     "vi": "tham gia",
+     "vd": "He has taken part in many football matches.",
+     "vd_vi": "Anh ấy đã tham gia nhiều trận bóng đá."
+    },
+    {
+     "en": "learn a language",
+     "ipa": "/lɜːn ə ˈlæŋɡwɪdʒ/",
+     "vi": "học một ngôn ngữ",
+     "vd": "My daughter has learned two languages.",
+     "vd_vi": "Con gái tôi đã học hai ngoại ngữ."
+    },
+    {
+     "en": "drive a car",
+     "ipa": "/draɪv ə ˈkɑː/",
+     "vi": "lái ô tô",
+     "vd": "I have never driven a car.",
+     "vd_vi": "Tôi chưa bao giờ lái ô tô."
+    },
+    {
+     "en": "read a novel",
+     "ipa": "/riːd ə ˈnɒvl/",
+     "vi": "đọc tiểu thuyết",
+     "vd": "She has read this novel three times.",
+     "vd_vi": "Cô ấy đã đọc cuốn tiểu thuyết này ba lần."
+    },
+    {
+     "en": "go to a concert",
+     "ipa": "/ɡəʊ tə ə ˈkɒnsət/",
+     "vi": "đi xem hoà nhạc, ca nhạc",
+     "vd": "I have been to a concert only once.",
+     "vd_vi": "Tôi mới đi xem ca nhạc đúng một lần."
+    },
+    {
+     "en": "sleep in a tent",
+     "ipa": "/sliːp ɪn ə ˈtent/",
+     "vi": "ngủ trong lều",
+     "vd": "My children have never slept in a tent.",
+     "vd_vi": "Các con tôi chưa bao giờ ngủ trong lều."
+    },
+    {
+     "en": "eat street food",
+     "ipa": "/iːt ˈstriːt fuːd/",
+     "vi": "ăn đồ ăn đường phố",
+     "vd": "Many tourists have eaten street food in Hanoi.",
+     "vd_vi": "Nhiều du khách đã ăn đồ ăn đường phố ở Hà Nội."
+    },
+    {
+     "en": "foreign country",
+     "ipa": "/ˈfɒrən ˈkʌntri/",
+     "vi": "nước ngoài",
+     "vd": "She has lived in a foreign country.",
+     "vd_vi": "Cô ấy đã từng sống ở nước ngoài."
+    },
+    {
+     "en": "tourist",
+     "ipa": "/ˈtʊərɪst/",
+     "vi": "du khách, khách du lịch",
+     "vd": "Many tourists have visited our village this year.",
+     "vd_vi": "Năm nay nhiều du khách đã đến thăm làng chúng tôi."
+    },
+    {
+     "en": "trip",
+     "ipa": "/trɪp/",
+     "vi": "chuyến đi",
+     "vd": "We have had a great trip.",
+     "vd_vi": "Chúng tôi đã có một chuyến đi tuyệt vời."
+    },
+    {
+     "en": "adventure",
+     "ipa": "/ədˈventʃə/",
+     "vi": "cuộc phiêu lưu",
+     "vd": "Our trip to Sa Pa was a real adventure.",
+     "vd_vi": "Chuyến đi Sa Pa của chúng tôi là một cuộc phiêu lưu thực sự."
+    },
+    {
+     "en": "exciting",
+     "ipa": "/ɪkˈsaɪtɪŋ/",
+     "vi": "thú vị, gây hào hứng",
+     "vd": "It has been an exciting year for my family.",
+     "vd_vi": "Đây là một năm đầy hào hứng với gia đình tôi."
+    },
+    {
+     "en": "amazing",
+     "ipa": "/əˈmeɪzɪŋ/",
+     "vi": "tuyệt vời, đáng kinh ngạc",
+     "vd": "The view from the mountain was amazing.",
+     "vd_vi": "Quang cảnh từ trên núi thật tuyệt vời."
+    },
+    {
+     "en": "scary",
+     "ipa": "/ˈskeəri/",
+     "vi": "đáng sợ",
+     "vd": "The film was scary, so my son cried.",
+     "vd_vi": "Bộ phim đáng sợ nên con trai tôi đã khóc."
+    },
+    {
+     "en": "once",
+     "ipa": "/wʌns/",
+     "vi": "một lần",
+     "vd": "I have been to Singapore once.",
+     "vd_vi": "Tôi đã đến Singapore một lần."
+    },
+    {
+     "en": "twice",
+     "ipa": "/twaɪs/",
+     "vi": "hai lần",
+     "vd": "He has failed the driving test twice.",
+     "vd_vi": "Anh ấy đã trượt bài thi lái xe hai lần."
+    },
+    {
+     "en": "many times",
+     "ipa": "/ˈmeni taɪmz/",
+     "vi": "nhiều lần",
+     "vd": "We have watched this film many times.",
+     "vd_vi": "Chúng tôi đã xem phim này nhiều lần."
     }
    ],
    "luyen_am": [
@@ -951,7 +1231,7 @@
      "tieu_de": "Phát âm buổi này: V3 và âm cuối",
      "y": [
       "Đuôi -ed đọc /ɪd/ sau âm t, d: visited, started.",
-      "Đuôi -ed đọc /t/ sau âm p, k, s, ch, sh: watched, cooked (vẫn chỉ một âm tiết).",
+      "Đuôi -ed đọc /t/ sau âm p, k, f, s, ch, sh: watched, cooked, laughed (vẫn chỉ một âm tiết).",
       "Đuôi -ed đọc /d/ trong các trường hợp còn lại: tried, played.",
       "V3 tận cùng -en (eaten, taken): đầu lưỡi chạm lợi trên để giữ rõ âm /n/, đừng nuốt mất.",
       "I've, she's đọc liền một hơi: /aɪv/, /ʃiːz/."
@@ -1042,6 +1322,146 @@
      "vi": "lần đầu tiên",
      "vd": "I have just tried durian for the first time.",
      "vd_vi": "Tôi vừa ăn thử sầu riêng lần đầu tiên."
+    },
+    {
+     "en": "go diving",
+     "ipa": "/ɡəʊ ˈdaɪvɪŋ/",
+     "vi": "đi lặn biển",
+     "vd": "Have you ever been diving in Nha Trang?",
+     "vd_vi": "Bạn đã bao giờ đi lặn ở Nha Trang chưa?"
+    },
+    {
+     "en": "go fishing",
+     "ipa": "/ɡəʊ ˈfɪʃɪŋ/",
+     "vi": "đi câu cá",
+     "vd": "My father has just gone fishing with his friends.",
+     "vd_vi": "Bố tôi vừa đi câu cá với bạn."
+    },
+    {
+     "en": "go hiking",
+     "ipa": "/ɡəʊ ˈhaɪkɪŋ/",
+     "vi": "đi bộ đường dài (leo đồi, núi)",
+     "vd": "Have you ever been hiking in Sa Pa?",
+     "vd_vi": "Bạn đã bao giờ đi bộ đường dài ở Sa Pa chưa?"
+    },
+    {
+     "en": "do yoga",
+     "ipa": "/duː ˈjəʊɡə/",
+     "vi": "tập yoga",
+     "vd": "Have you ever done yoga in the morning?",
+     "vd_vi": "Bạn đã bao giờ tập yoga buổi sáng chưa?"
+    },
+    {
+     "en": "play golf",
+     "ipa": "/pleɪ ˈɡɒlf/",
+     "vi": "chơi gôn",
+     "vd": "My boss has never played golf.",
+     "vd_vi": "Sếp tôi chưa bao giờ chơi gôn."
+    },
+    {
+     "en": "fly a kite",
+     "ipa": "/flaɪ ə ˈkaɪt/",
+     "vi": "thả diều",
+     "vd": "The children have just flown a kite on the beach.",
+     "vd_vi": "Bọn trẻ vừa thả diều trên bãi biển."
+    },
+    {
+     "en": "bake a cake",
+     "ipa": "/beɪk ə ˈkeɪk/",
+     "vi": "nướng bánh",
+     "vd": "Have you ever baked a cake for your mother?",
+     "vd_vi": "Bạn đã bao giờ nướng bánh cho mẹ chưa?"
+    },
+    {
+     "en": "plant a tree",
+     "ipa": "/plɑːnt ə ˈtriː/",
+     "vi": "trồng cây",
+     "vd": "We have just planted a tree in the garden.",
+     "vd_vi": "Chúng tôi vừa trồng một cái cây trong vườn."
+    },
+    {
+     "en": "pack your bag",
+     "ipa": "/pæk jɔː ˈbæɡ/",
+     "vi": "xếp đồ vào túi, va li",
+     "vd": "Have you packed your bag yet?",
+     "vd_vi": "Bạn đã xếp đồ vào túi chưa?"
+    },
+    {
+     "en": "book a flight",
+     "ipa": "/bʊk ə ˈflaɪt/",
+     "vi": "đặt vé máy bay",
+     "vd": "I have already booked a flight to Da Nang.",
+     "vd_vi": "Tôi đã đặt vé máy bay đi Đà Nẵng rồi."
+    },
+    {
+     "en": "get a visa",
+     "ipa": "/ɡet ə ˈviːzə/",
+     "vi": "xin được thị thực (visa)",
+     "vd": "Has your brother got a visa yet?",
+     "vd_vi": "Anh trai bạn đã xin được visa chưa?"
+    },
+    {
+     "en": "passport",
+     "ipa": "/ˈpɑːspɔːt/",
+     "vi": "hộ chiếu",
+     "vd": "She has already found her passport.",
+     "vd_vi": "Cô ấy đã tìm thấy hộ chiếu rồi."
+    },
+    {
+     "en": "ever",
+     "ipa": "/ˈevə/",
+     "vi": "đã bao giờ, từng (trong câu hỏi)",
+     "vd": "Have you ever eaten durian?",
+     "vd_vi": "Bạn đã bao giờ ăn sầu riêng chưa?"
+    },
+    {
+     "en": "just",
+     "ipa": "/dʒʌst/",
+     "vi": "vừa mới",
+     "vd": "The bus has just left the station.",
+     "vd_vi": "Xe buýt vừa rời bến."
+    },
+    {
+     "en": "already",
+     "ipa": "/ɔːlˈredi/",
+     "vi": "đã... rồi",
+     "vd": "I have already done my homework.",
+     "vd_vi": "Tôi đã làm bài tập rồi."
+    },
+    {
+     "en": "yet",
+     "ipa": "/jet/",
+     "vi": "chưa (cuối câu phủ định và câu hỏi)",
+     "vd": "Have you called your mother yet?",
+     "vd_vi": "Bạn đã gọi cho mẹ chưa?"
+    },
+    {
+     "en": "unforgettable",
+     "ipa": "/ˌʌnfəˈɡetəbl/",
+     "vi": "không thể nào quên",
+     "vd": "Our first trip together was unforgettable.",
+     "vd_vi": "Chuyến đi đầu tiên cùng nhau của chúng tôi thật không thể nào quên."
+    },
+    {
+     "en": "dangerous",
+     "ipa": "/ˈdeɪndʒərəs/",
+     "vi": "nguy hiểm",
+     "vd": "Have you ever done anything dangerous?",
+     "vd_vi": "Bạn đã bao giờ làm việc gì nguy hiểm chưa?"
+    },
+    {
+     "en": "brave",
+     "ipa": "/breɪv/",
+     "vi": "dũng cảm",
+     "vd": "My son was very brave at the dentist.",
+     "vd_vi": "Con trai tôi rất dũng cảm khi đi khám răng."
+    },
+    {
+     "en": "nervous",
+     "ipa": "/ˈnɜːvəs/",
+     "vi": "lo lắng, hồi hộp",
+     "vd": "I was nervous before my first flight.",
+     "vd_vi": "Tôi đã rất hồi hộp trước chuyến bay đầu tiên."
     }
    ],
    "luyen_am": [
@@ -1341,7 +1761,7 @@
      "hoi": "She has yet left the office.",
      "tu_sai": "yet",
      "sua": "just",
-     "giai_thich": "Câu khẳng định 'vừa mới' dùng just giữa has và V3."
+     "giai_thich": "Yet chỉ dùng trong câu phủ định và câu hỏi. Câu khẳng định dùng just (vừa mới) hoặc already (rồi) giữa has và V3."
     },
     {
      "dang": "tim_loi",
@@ -1376,7 +1796,7 @@
      "y": [
       "Hỏi về trải nghiệm trong đời: Have / Has + S + **ever** + V3?",
       "ever đứng giữa chủ ngữ và V3.",
-      "Trả lời: Yes, I have. / No, I have never + V3.",
+      "Trả lời: Yes, I have. / No, I haven't. Hoặc nói rõ hơn: No, I have never + V3.",
       "Muốn kể thêm lúc nào thì chuyển sang quá khứ đơn: Yes, I have. I went there last year."
      ],
      "vd": [
@@ -1521,6 +1941,146 @@
      "vi": "Hẹn sớm gặp lại (câu kết email, tin nhắn)",
      "vd": "See you soon at the party!",
      "vd_vi": "Hẹn sớm gặp lại ở bữa tiệc nhé!"
+    },
+    {
+     "en": "buy a house",
+     "ipa": "/baɪ ə ˈhaʊs/",
+     "vi": "mua nhà",
+     "vd": "They are going to buy a house next year.",
+     "vd_vi": "Năm sau họ sẽ mua nhà."
+    },
+    {
+     "en": "start a business",
+     "ipa": "/stɑːt ə ˈbɪznəs/",
+     "vi": "mở công ty, khởi nghiệp kinh doanh",
+     "vd": "My cousin is going to start a business.",
+     "vd_vi": "Anh họ tôi sắp mở công ty riêng."
+    },
+    {
+     "en": "take a course",
+     "ipa": "/teɪk ə ˈkɔːs/",
+     "vi": "tham gia một khoá học",
+     "vd": "I am going to take an English course.",
+     "vd_vi": "Tôi sẽ tham gia một khoá học tiếng Anh."
+    },
+    {
+     "en": "lose weight",
+     "ipa": "/luːz ˈweɪt/",
+     "vi": "giảm cân",
+     "vd": "She is going to lose weight before her wedding.",
+     "vd_vi": "Cô ấy sẽ giảm cân trước đám cưới."
+    },
+    {
+     "en": "get fit",
+     "ipa": "/ɡet ˈfɪt/",
+     "vi": "khoẻ lên (nhờ tập luyện)",
+     "vd": "I am going to get fit this year.",
+     "vd_vi": "Năm nay tôi sẽ tập cho khoẻ người."
+    },
+    {
+     "en": "retire",
+     "ipa": "/rɪˈtaɪə/",
+     "vi": "nghỉ hưu",
+     "vd": "My father is going to retire next month.",
+     "vd_vi": "Tháng sau bố tôi sẽ nghỉ hưu."
+    },
+    {
+     "en": "have a baby",
+     "ipa": "/hæv ə ˈbeɪbi/",
+     "vi": "sinh em bé",
+     "vd": "My sister is going to have a baby in June.",
+     "vd_vi": "Tháng Sáu chị tôi sẽ sinh em bé."
+    },
+    {
+     "en": "go sightseeing",
+     "ipa": "/ɡəʊ ˈsaɪtsiːɪŋ/",
+     "vi": "đi tham quan",
+     "vd": "We are going to go sightseeing in Hoi An.",
+     "vd_vi": "Chúng tôi sẽ đi tham quan ở Hội An."
+    },
+    {
+     "en": "stay with",
+     "ipa": "/ˈsteɪ wɪð/",
+     "vi": "ở cùng, ở nhờ nhà ai",
+     "vd": "I am going to stay with my aunt in Hanoi.",
+     "vd_vi": "Tôi sẽ ở nhà dì tôi ở Hà Nội."
+    },
+    {
+     "en": "pick someone up",
+     "ipa": "/ˌpɪk ˈsʌmwʌn ˈʌp/",
+     "vi": "đón ai đó",
+     "vd": "I am going to pick you up at the airport.",
+     "vd_vi": "Tôi sẽ đón bạn ở sân bay."
+    },
+    {
+     "en": "tonight",
+     "ipa": "/təˈnaɪt/",
+     "vi": "tối nay",
+     "vd": "What are you going to do tonight?",
+     "vd_vi": "Tối nay bạn định làm gì?"
+    },
+    {
+     "en": "tomorrow",
+     "ipa": "/təˈmɒrəʊ/",
+     "vi": "ngày mai",
+     "vd": "I am going to see the doctor tomorrow.",
+     "vd_vi": "Ngày mai tôi sẽ đi khám bác sĩ."
+    },
+    {
+     "en": "next month",
+     "ipa": "/nekst ˈmʌnθ/",
+     "vi": "tháng sau",
+     "vd": "We are going to paint the house next month.",
+     "vd_vi": "Tháng sau chúng tôi sẽ sơn lại nhà."
+    },
+    {
+     "en": "this summer",
+     "ipa": "/ðɪs ˈsʌmə/",
+     "vi": "mùa hè này",
+     "vd": "We are going to visit Phu Quoc this summer.",
+     "vd_vi": "Hè này chúng tôi sẽ đi Phú Quốc."
+    },
+    {
+     "en": "dream",
+     "ipa": "/driːm/",
+     "vi": "ước mơ",
+     "vd": "My dream is to open a small coffee shop.",
+     "vd_vi": "Ước mơ của tôi là mở một quán cà phê nhỏ."
+    },
+    {
+     "en": "goal",
+     "ipa": "/ɡəʊl/",
+     "vi": "mục tiêu",
+     "vd": "My goal this year is to save more money.",
+     "vd_vi": "Mục tiêu năm nay của tôi là tiết kiệm được nhiều tiền hơn."
+    },
+    {
+     "en": "decide",
+     "ipa": "/dɪˈsaɪd/",
+     "vi": "quyết định",
+     "vd": "We have decided to sell our old car.",
+     "vd_vi": "Chúng tôi đã quyết định bán chiếc xe cũ."
+    },
+    {
+     "en": "hope",
+     "ipa": "/həʊp/",
+     "vi": "hy vọng",
+     "vd": "I hope you can come to my party.",
+     "vd_vi": "Tôi hy vọng bạn đến được bữa tiệc của tôi."
+    },
+    {
+     "en": "Best wishes",
+     "ipa": "/ˌbest ˈwɪʃɪz/",
+     "vi": "thân ái (câu chào cuối thư, trước tên)",
+     "vd": "I always end my emails with Best wishes.",
+     "vd_vi": "Tôi luôn kết thúc email bằng Best wishes."
+    },
+    {
+     "en": "write back",
+     "ipa": "/ˌraɪt ˈbæk/",
+     "vi": "viết thư trả lời",
+     "vd": "Please write back and tell me your news.",
+     "vd_vi": "Nhớ viết thư trả lời và kể tin tức của bạn nhé."
     }
    ],
    "luyen_am": [
@@ -2010,6 +2570,146 @@
      "vi": "từng, đã từng hay (thói quen trong quá khứ)",
      "vd": "I used to walk to school every day.",
      "vd_vi": "Hồi trước ngày nào tôi cũng đi bộ đến trường."
+    },
+    {
+     "en": "forget",
+     "ipa": "/fəˈɡet/",
+     "vi": "quên (quá khứ: forgot)",
+     "vd": "I forgot my keys when I left home.",
+     "vd_vi": "Tôi quên chìa khoá khi ra khỏi nhà."
+    },
+    {
+     "en": "primary school",
+     "ipa": "/ˈpraɪməri skuːl/",
+     "vi": "trường tiểu học",
+     "vd": "My primary school was next to a river.",
+     "vd_vi": "Trường tiểu học của tôi ở cạnh một con sông."
+    },
+    {
+     "en": "classmate",
+     "ipa": "/ˈklɑːsmeɪt/",
+     "vi": "bạn cùng lớp",
+     "vd": "I met an old classmate while I was shopping.",
+     "vd_vi": "Tôi gặp lại một bạn học cũ khi đang đi mua sắm."
+    },
+    {
+     "en": "village",
+     "ipa": "/ˈvɪlɪdʒ/",
+     "vi": "làng",
+     "vd": "My grandparents used to live in a small village.",
+     "vd_vi": "Ông bà tôi từng sống ở một ngôi làng nhỏ."
+    },
+    {
+     "en": "festival",
+     "ipa": "/ˈfestɪvl/",
+     "vi": "lễ hội",
+     "vd": "We were watching the festival when it started to rain.",
+     "vd_vi": "Chúng tôi đang xem lễ hội thì trời bắt đầu mưa."
+    },
+    {
+     "en": "celebrate",
+     "ipa": "/ˈselɪbreɪt/",
+     "vi": "ăn mừng, tổ chức (dịp vui)",
+     "vd": "We celebrated my mother's birthday at home.",
+     "vd_vi": "Chúng tôi tổ chức sinh nhật mẹ ở nhà."
+    },
+    {
+     "en": "graduation",
+     "ipa": "/ˌɡrædʒuˈeɪʃn/",
+     "vi": "lễ tốt nghiệp",
+     "vd": "My parents came to my graduation last year.",
+     "vd_vi": "Năm ngoái bố mẹ đã đến dự lễ tốt nghiệp của tôi."
+    },
+    {
+     "en": "proud",
+     "ipa": "/praʊd/",
+     "vi": "tự hào",
+     "vd": "My grandmother was proud of her garden.",
+     "vd_vi": "Bà tôi rất tự hào về khu vườn của mình."
+    },
+    {
+     "en": "storm",
+     "ipa": "/stɔːm/",
+     "vi": "cơn bão",
+     "vd": "A big tree fell down during the storm.",
+     "vd_vi": "Một cái cây lớn bị đổ trong cơn bão."
+    },
+    {
+     "en": "break down",
+     "ipa": "/ˌbreɪk ˈdaʊn/",
+     "vi": "(xe, máy) bị hỏng (quá khứ: broke down)",
+     "vd": "Our car broke down while we were driving home.",
+     "vd_vi": "Xe của chúng tôi bị hỏng khi đang lái về nhà."
+    },
+    {
+     "en": "ring",
+     "ipa": "/rɪŋ/",
+     "vi": "(chuông, điện thoại) reo (quá khứ: rang)",
+     "vd": "The phone rang while I was having a shower.",
+     "vd_vi": "Điện thoại reo khi tôi đang tắm."
+    },
+    {
+     "en": "suddenly",
+     "ipa": "/ˈsʌdənli/",
+     "vi": "đột nhiên",
+     "vd": "We were eating dinner when suddenly the lights went out.",
+     "vd_vi": "Chúng tôi đang ăn tối thì đột nhiên mất điện."
+    },
+    {
+     "en": "lucky",
+     "ipa": "/ˈlʌki/",
+     "vi": "may mắn",
+     "vd": "We were lucky because nobody was hurt.",
+     "vd_vi": "Chúng tôi may mắn vì không ai bị thương."
+    },
+    {
+     "en": "frightened",
+     "ipa": "/ˈfraɪtnd/",
+     "vi": "sợ hãi",
+     "vd": "The children were frightened during the storm.",
+     "vd_vi": "Bọn trẻ sợ hãi trong lúc có bão."
+    },
+    {
+     "en": "funny",
+     "ipa": "/ˈfʌni/",
+     "vi": "buồn cười, hài hước",
+     "vd": "Something funny happened while we were waiting for the bus.",
+     "vd_vi": "Có chuyện buồn cười xảy ra khi chúng tôi đang chờ xe buýt."
+    },
+    {
+     "en": "photo album",
+     "ipa": "/ˈfəʊtəʊ ˌælbəm/",
+     "vi": "cuốn album ảnh",
+     "vd": "We were looking at an old photo album.",
+     "vd_vi": "Chúng tôi đang xem một cuốn album ảnh cũ."
+    },
+    {
+     "en": "grow up",
+     "ipa": "/ˌɡrəʊ ˈʌp/",
+     "vi": "lớn lên (quá khứ: grew up)",
+     "vd": "I grew up in a small town by the sea.",
+     "vd_vi": "Tôi lớn lên ở một thị trấn nhỏ ven biển."
+    },
+    {
+     "en": "ago",
+     "ipa": "/əˈɡəʊ/",
+     "vi": "cách đây, trước đây (đứng sau khoảng thời gian)",
+     "vd": "We moved to Hanoi ten years ago.",
+     "vd_vi": "Chúng tôi chuyển đến Hà Nội cách đây mười năm."
+    },
+    {
+     "en": "while",
+     "ipa": "/waɪl/",
+     "vi": "trong khi, trong lúc",
+     "vd": "I fell asleep while I was watching TV.",
+     "vd_vi": "Tôi ngủ quên trong lúc đang xem TV."
+    },
+    {
+     "en": "at that time",
+     "ipa": "/ət ˈðæt taɪm/",
+     "vi": "lúc đó, hồi đó",
+     "vd": "At that time, we were living in Hue.",
+     "vd_vi": "Hồi đó chúng tôi đang sống ở Huế."
     }
    ],
    "luyen_am": [
@@ -2071,10 +2771,10 @@
      "hoi": "I ___ a shower when you called me, so I did not answer.",
      "dap_an": "was having",
      "sai": [
-      "had",
+      "were having",
       "am having"
      ],
-     "giai_thich": "Việc đang diễn ra (đang tắm) thì bị việc khác xen vào nên dùng quá khứ tiếp diễn."
+     "giai_thich": "Việc đang diễn ra (đang tắm) thì bị việc khác xen vào nên dùng quá khứ tiếp diễn; chủ ngữ I đi với was."
     },
     {
      "dang": "chon",
@@ -2361,7 +3061,7 @@
      "tieu_de": "When và while",
      "y": [
       "**while** + việc dài (quá khứ tiếp diễn): while I was walking home",
-      "**when** + việc ngắn (quá khứ đơn): when the phone rang",
+      "**when** + việc ngắn (quá khứ đơn): when the phone rang. When cũng đi được với việc dài (When I was a child...), nhưng while thì không đi với việc ngắn.",
       "Mệnh đề when / while đứng đầu câu thì có dấu phẩy ở giữa."
      ],
      "vd": [
@@ -2411,7 +3111,7 @@
     {
      "tieu_de": "Phát âm buổi này: đuôi -ed và nối âm",
      "y": [
-      "-ed đọc /t/ sau p, k, s, ch, sh (walked); /d/ sau âm rung (happened); /ɪd/ sau t, d (started).",
+      "-ed đọc /t/ sau p, k, f, s, ch, sh (walked); /d/ sau âm rung (happened); /ɪd/ sau t, d (started).",
       "Âm cuối nối sang nguyên âm đầu từ sau: happened at nghe như 'hap-pen-dat', fell over như 'fe-lâu-vơ'.",
       "used to đọc liền /ˈjuːstə/, âm /s/ chứ không phải /z/.",
       "was, were trong câu đọc nhẹ: /wəz/, /wə/."
@@ -2502,6 +3202,146 @@
      "vi": "quy định, nội quy",
      "vd": "Our office has a new rule about lunch breaks.",
      "vd_vi": "Văn phòng tôi có quy định mới về giờ nghỉ trưa."
+    },
+    {
+     "en": "allowed",
+     "ipa": "/əˈlaʊd/",
+     "vi": "được phép",
+     "vd": "Dogs are not allowed in this park.",
+     "vd_vi": "Không được dắt chó vào công viên này."
+    },
+    {
+     "en": "park",
+     "ipa": "/pɑːk/",
+     "vi": "đỗ xe",
+     "vd": "You mustn't park in front of the gate.",
+     "vd_vi": "Bạn không được đỗ xe trước cổng."
+    },
+    {
+     "en": "drop litter",
+     "ipa": "/drɒp ˈlɪtə/",
+     "vi": "xả rác",
+     "vd": "You mustn't drop litter in the street.",
+     "vd_vi": "Bạn không được xả rác ra đường."
+    },
+    {
+     "en": "helmet",
+     "ipa": "/ˈhelmɪt/",
+     "vi": "mũ bảo hiểm",
+     "vd": "You have to wear a helmet on a motorbike.",
+     "vd_vi": "Đi xe máy thì phải đội mũ bảo hiểm."
+    },
+    {
+     "en": "ID card",
+     "ipa": "/ˌaɪ ˈdiː kɑːd/",
+     "vi": "thẻ căn cước",
+     "vd": "You must show your ID card at the gate.",
+     "vd_vi": "Bạn phải xuất trình thẻ căn cước ở cổng."
+    },
+    {
+     "en": "permission",
+     "ipa": "/pəˈmɪʃn/",
+     "vi": "sự cho phép",
+     "vd": "You must ask for permission before you leave early.",
+     "vd_vi": "Bạn phải xin phép trước khi về sớm."
+    },
+    {
+     "en": "responsible for",
+     "ipa": "/rɪˈspɒnsəbl fə/",
+     "vi": "chịu trách nhiệm về",
+     "vd": "Who is responsible for the kitchen this week?",
+     "vd_vi": "Tuần này ai chịu trách nhiệm khu bếp?"
+    },
+    {
+     "en": "take care of",
+     "ipa": "/teɪk ˈkeər əv/",
+     "vi": "chăm sóc, trông nom",
+     "vd": "I have to take care of my little brother.",
+     "vd_vi": "Tôi phải trông em trai."
+    },
+    {
+     "en": "pay the bills",
+     "ipa": "/peɪ ðə ˈbɪlz/",
+     "vi": "trả các hoá đơn (điện, nước...)",
+     "vd": "My husband has to pay the bills every month.",
+     "vd_vi": "Tháng nào chồng tôi cũng phải trả các hoá đơn."
+    },
+    {
+     "en": "tidy up",
+     "ipa": "/ˌtaɪdi ˈʌp/",
+     "vi": "dọn dẹp cho gọn",
+     "vd": "We have to tidy up after the party.",
+     "vd_vi": "Chúng ta phải dọn dẹp sau bữa tiệc."
+    },
+    {
+     "en": "hand in",
+     "ipa": "/ˌhænd ˈɪn/",
+     "vi": "nộp (bài, báo cáo)",
+     "vd": "Students must hand in their homework on Friday.",
+     "vd_vi": "Học sinh phải nộp bài tập vào thứ Sáu."
+    },
+    {
+     "en": "be careful",
+     "ipa": "/bi ˈkeəfl/",
+     "vi": "cẩn thận",
+     "vd": "You must be careful when you cross the road.",
+     "vd_vi": "Bạn phải cẩn thận khi qua đường."
+    },
+    {
+     "en": "speed limit",
+     "ipa": "/ˈspiːd lɪmɪt/",
+     "vi": "tốc độ tối đa cho phép",
+     "vd": "Drivers mustn't go over the speed limit.",
+     "vd_vi": "Tài xế không được chạy quá tốc độ cho phép."
+    },
+    {
+     "en": "fine",
+     "ipa": "/faɪn/",
+     "vi": "tiền phạt",
+     "vd": "He had to pay a big fine last week.",
+     "vd_vi": "Tuần trước anh ấy phải nộp một khoản phạt lớn."
+    },
+    {
+     "en": "sign",
+     "ipa": "/saɪn/",
+     "vi": "biển báo",
+     "vd": "The sign says you mustn't smoke here.",
+     "vd_vi": "Biển báo ghi là không được hút thuốc ở đây."
+    },
+    {
+     "en": "staff",
+     "ipa": "/stɑːf/",
+     "vi": "nhân viên (cả tập thể)",
+     "vd": "All staff have to wear a name badge.",
+     "vd_vi": "Tất cả nhân viên phải đeo thẻ tên."
+    },
+    {
+     "en": "manager",
+     "ipa": "/ˈmænɪdʒə/",
+     "vi": "người quản lý",
+     "vd": "You have to tell your manager if you are sick.",
+     "vd_vi": "Nếu bị ốm, bạn phải báo cho quản lý."
+    },
+    {
+     "en": "strict",
+     "ipa": "/strɪkt/",
+     "vi": "nghiêm khắc",
+     "vd": "Our teacher is very strict about homework.",
+     "vd_vi": "Cô giáo chúng tôi rất nghiêm khắc về bài tập về nhà."
+    },
+    {
+     "en": "necessary",
+     "ipa": "/ˈnesəsəri/",
+     "vi": "cần thiết",
+     "vd": "It is not necessary to bring food.",
+     "vd_vi": "Không cần phải mang đồ ăn."
+    },
+    {
+     "en": "compulsory",
+     "ipa": "/kəmˈpʌlsəri/",
+     "vi": "bắt buộc",
+     "vd": "English is compulsory at my son's school.",
+     "vd_vi": "Tiếng Anh là môn bắt buộc ở trường con trai tôi."
     }
    ],
    "luyen_am": [
@@ -2980,6 +3820,146 @@
      "vi": "đồ ăn mang đi",
      "vd": "Could I have this as a takeaway, please?",
      "vd_vi": "Cho tôi gói món này mang đi nhé."
+    },
+    {
+     "en": "waitress",
+     "ipa": "/ˈweɪtrəs/",
+     "vi": "nữ phục vụ",
+     "vd": "The waitress brought us the menu.",
+     "vd_vi": "Cô phục vụ mang thực đơn đến cho chúng tôi."
+    },
+    {
+     "en": "drink",
+     "ipa": "/drɪŋk/",
+     "vi": "đồ uống",
+     "vd": "Would you like a drink before dinner?",
+     "vd_vi": "Anh chị có muốn uống gì trước bữa tối không?"
+    },
+    {
+     "en": "vegetarian",
+     "ipa": "/ˌvedʒəˈteəriən/",
+     "vi": "người ăn chay; (món) chay",
+     "vd": "I am a vegetarian, so I would like the tofu.",
+     "vd_vi": "Tôi ăn chay nên tôi muốn món đậu phụ."
+    },
+    {
+     "en": "tip",
+     "ipa": "/tɪp/",
+     "vi": "tiền boa",
+     "vd": "We left a tip for the waiter.",
+     "vd_vi": "Chúng tôi để lại tiền boa cho người phục vụ."
+    },
+    {
+     "en": "salad",
+     "ipa": "/ˈsæləd/",
+     "vi": "món rau trộn, xa lát",
+     "vd": "I would like a green salad, please.",
+     "vd_vi": "Cho tôi một đĩa xa lát rau nhé."
+    },
+    {
+     "en": "steak",
+     "ipa": "/steɪk/",
+     "vi": "món bít tết",
+     "vd": "I would like the steak with chips, please.",
+     "vd_vi": "Cho tôi món bít tết kèm khoai tây chiên nhé."
+    },
+    {
+     "en": "grilled",
+     "ipa": "/ɡrɪld/",
+     "vi": "nướng (trên vỉ)",
+     "vd": "I would rather have grilled chicken.",
+     "vd_vi": "Tôi muốn ăn gà nướng hơn."
+    },
+    {
+     "en": "fried",
+     "ipa": "/fraɪd/",
+     "vi": "chiên, rán",
+     "vd": "My son would like fried rice.",
+     "vd_vi": "Con trai tôi muốn ăn cơm rang."
+    },
+    {
+     "en": "delicious",
+     "ipa": "/dɪˈlɪʃəs/",
+     "vi": "ngon",
+     "vd": "The soup here is really delicious.",
+     "vd_vi": "Món súp ở đây rất ngon."
+    },
+    {
+     "en": "salty",
+     "ipa": "/ˈsɔːlti/",
+     "vi": "mặn",
+     "vd": "This soup is a bit too salty.",
+     "vd_vi": "Món súp này hơi mặn quá."
+    },
+    {
+     "en": "sweet",
+     "ipa": "/swiːt/",
+     "vi": "ngọt",
+     "vd": "I would rather not have anything sweet.",
+     "vd_vi": "Tôi không muốn ăn đồ ngọt."
+    },
+    {
+     "en": "fresh",
+     "ipa": "/freʃ/",
+     "vi": "tươi",
+     "vd": "Would you like some fresh orange juice?",
+     "vd_vi": "Bạn có muốn uống nước cam tươi không?"
+    },
+    {
+     "en": "bottle of water",
+     "ipa": "/ˌbɒtl əv ˈwɔːtə/",
+     "vi": "chai nước",
+     "vd": "Could we have a bottle of water, please?",
+     "vd_vi": "Cho chúng tôi một chai nước nhé."
+    },
+    {
+     "en": "glass",
+     "ipa": "/ɡlɑːs/",
+     "vi": "cốc (thuỷ tinh), ly",
+     "vd": "Could I have a glass of apple juice?",
+     "vd_vi": "Cho tôi một ly nước táo được không?"
+    },
+    {
+     "en": "plate",
+     "ipa": "/pleɪt/",
+     "vi": "cái đĩa",
+     "vd": "This plate is dirty. Could I have another one?",
+     "vd_vi": "Cái đĩa này bẩn. Cho tôi cái khác được không?"
+    },
+    {
+     "en": "chopsticks",
+     "ipa": "/ˈtʃɒpstɪks/",
+     "vi": "đôi đũa",
+     "vd": "Could you bring us some chopsticks, please?",
+     "vd_vi": "Bạn mang cho chúng tôi ít đũa được không?"
+    },
+    {
+     "en": "recommend",
+     "ipa": "/ˌrekəˈmend/",
+     "vi": "gợi ý, giới thiệu (món)",
+     "vd": "What would you recommend for a starter?",
+     "vd_vi": "Bạn gợi ý món khai vị nào?"
+    },
+    {
+     "en": "pay by card",
+     "ipa": "/peɪ baɪ ˈkɑːd/",
+     "vi": "trả bằng thẻ",
+     "vd": "Can I pay by card, please?",
+     "vd_vi": "Tôi trả bằng thẻ được không?"
+    },
+    {
+     "en": "service",
+     "ipa": "/ˈsɜːvɪs/",
+     "vi": "sự phục vụ",
+     "vd": "The food was good, but the service was slow.",
+     "vd_vi": "Đồ ăn ngon nhưng phục vụ chậm."
+    },
+    {
+     "en": "full",
+     "ipa": "/fʊl/",
+     "vi": "no (bụng)",
+     "vd": "No dessert for me, thanks. I am full.",
+     "vd_vi": "Tôi không ăn tráng miệng đâu, cảm ơn. Tôi no rồi."
     }
    ],
    "luyen_am": [
@@ -3455,6 +4435,146 @@
      "vi": "hành lý",
      "vd": "How many pieces of luggage do you have?",
      "vd_vi": "Bạn có mấy kiện hành lý?"
+    },
+    {
+     "en": "turn right",
+     "ipa": "/tɜːn ˈraɪt/",
+     "vi": "rẽ phải",
+     "vd": "Turn right at the end of the street.",
+     "vd_vi": "Rẽ phải ở cuối phố."
+    },
+    {
+     "en": "traffic lights",
+     "ipa": "/ˈtræfɪk laɪts/",
+     "vi": "đèn giao thông",
+     "vd": "Stop when the traffic lights are red.",
+     "vd_vi": "Dừng lại khi đèn giao thông chuyển đỏ."
+    },
+    {
+     "en": "crossroads",
+     "ipa": "/ˈkrɒsrəʊdz/",
+     "vi": "ngã tư",
+     "vd": "Go straight on at the crossroads.",
+     "vd_vi": "Đến ngã tư thì đi thẳng."
+    },
+    {
+     "en": "corner",
+     "ipa": "/ˈkɔːnə/",
+     "vi": "góc phố",
+     "vd": "The bank is on the corner of this street.",
+     "vd_vi": "Ngân hàng ở góc phố này."
+    },
+    {
+     "en": "between",
+     "ipa": "/bɪˈtwiːn/",
+     "vi": "ở giữa (hai thứ)",
+     "vd": "The shop is between the bank and the school.",
+     "vd_vi": "Cửa hàng nằm giữa ngân hàng và trường học."
+    },
+    {
+     "en": "along",
+     "ipa": "/əˈlɒŋ/",
+     "vi": "dọc theo",
+     "vd": "Walk along this road for five minutes.",
+     "vd_vi": "Đi bộ dọc con đường này khoảng năm phút."
+    },
+    {
+     "en": "across",
+     "ipa": "/əˈkrɒs/",
+     "vi": "băng qua, sang bên kia",
+     "vd": "Walk across the bridge and turn left.",
+     "vd_vi": "Đi qua cầu rồi rẽ trái."
+    },
+    {
+     "en": "past",
+     "ipa": "/pɑːst/",
+     "vi": "đi qua, vượt qua (một chỗ)",
+     "vd": "Go past the hospital, and the station is on your right.",
+     "vd_vi": "Đi qua bệnh viện, nhà ga ở bên tay phải bạn."
+    },
+    {
+     "en": "bus stop",
+     "ipa": "/ˈbʌs stɒp/",
+     "vi": "trạm xe buýt",
+     "vd": "Excuse me, where is the bus stop?",
+     "vd_vi": "Xin lỗi, trạm xe buýt ở đâu ạ?"
+    },
+    {
+     "en": "timetable",
+     "ipa": "/ˈtaɪmteɪbl/",
+     "vi": "lịch chạy (tàu, xe)",
+     "vd": "Check the bus timetable before you leave.",
+     "vd_vi": "Hãy xem lịch chạy xe buýt trước khi đi."
+    },
+    {
+     "en": "arrival",
+     "ipa": "/əˈraɪvl/",
+     "vi": "sự đến nơi",
+     "vd": "What is the arrival time of the train?",
+     "vd_vi": "Tàu đến lúc mấy giờ?"
+    },
+    {
+     "en": "passenger",
+     "ipa": "/ˈpæsɪndʒə/",
+     "vi": "hành khách",
+     "vd": "How many passengers are on the bus?",
+     "vd_vi": "Trên xe buýt có bao nhiêu hành khách?"
+    },
+    {
+     "en": "get on",
+     "ipa": "/ɡet ˈɒn/",
+     "vi": "lên (xe buýt, tàu, máy bay)",
+     "vd": "Get on the bus at the next stop.",
+     "vd_vi": "Hãy lên xe buýt ở trạm tới."
+    },
+    {
+     "en": "get off",
+     "ipa": "/ɡet ˈɒf/",
+     "vi": "xuống (xe buýt, tàu, máy bay)",
+     "vd": "Where do I get off for the museum?",
+     "vd_vi": "Muốn đến bảo tàng thì tôi xuống ở đâu?"
+    },
+    {
+     "en": "catch a train",
+     "ipa": "/kætʃ ə ˈtreɪn/",
+     "vi": "bắt chuyến tàu, đi tàu",
+     "vd": "What time do we have to catch the train?",
+     "vd_vi": "Mấy giờ chúng ta phải bắt tàu?"
+    },
+    {
+     "en": "boarding pass",
+     "ipa": "/ˈbɔːdɪŋ pɑːs/",
+     "vi": "thẻ lên máy bay",
+     "vd": "Could I see your boarding pass, please?",
+     "vd_vi": "Cho tôi xem thẻ lên máy bay của anh chị nhé."
+    },
+    {
+     "en": "gate",
+     "ipa": "/ɡeɪt/",
+     "vi": "cửa ra máy bay; cổng",
+     "vd": "Which gate does the flight leave from?",
+     "vd_vi": "Chuyến bay khởi hành ở cửa số mấy?"
+    },
+    {
+     "en": "map",
+     "ipa": "/mæp/",
+     "vi": "bản đồ",
+     "vd": "Could you show me on the map?",
+     "vd_vi": "Bạn chỉ cho tôi trên bản đồ được không?"
+    },
+    {
+     "en": "far",
+     "ipa": "/fɑː/",
+     "vi": "xa",
+     "vd": "How far is the station from here?",
+     "vd_vi": "Nhà ga cách đây bao xa?"
+    },
+    {
+     "en": "journey",
+     "ipa": "/ˈdʒɜːni/",
+     "vi": "chuyến đi, hành trình",
+     "vd": "The journey to Hue takes about twelve hours.",
+     "vd_vi": "Chuyến đi đến Huế mất khoảng mười hai tiếng."
     }
    ],
    "luyen_am": [
@@ -3944,6 +5064,146 @@
      "vi": "yên tĩnh",
      "vd": "Our new street is quieter than the old one.",
      "vd_vi": "Con phố mới của chúng tôi yên tĩnh hơn phố cũ."
+    },
+    {
+     "en": "noisy",
+     "ipa": "/ˈnɔɪzi/",
+     "vi": "ồn ào",
+     "vd": "The city centre is noisier than my street.",
+     "vd_vi": "Trung tâm thành phố ồn hơn phố nhà tôi."
+    },
+    {
+     "en": "cheap",
+     "ipa": "/tʃiːp/",
+     "vi": "rẻ",
+     "vd": "Food here is cheaper than in Hanoi.",
+     "vd_vi": "Đồ ăn ở đây rẻ hơn ở Hà Nội."
+    },
+    {
+     "en": "safe",
+     "ipa": "/seɪf/",
+     "vi": "an toàn",
+     "vd": "My village is safer than the big city.",
+     "vd_vi": "Làng tôi an toàn hơn thành phố lớn."
+    },
+    {
+     "en": "dirty",
+     "ipa": "/ˈdɜːti/",
+     "vi": "bẩn",
+     "vd": "The river is dirtier than it was ten years ago.",
+     "vd_vi": "Con sông bây giờ bẩn hơn mười năm trước."
+    },
+    {
+     "en": "clean",
+     "ipa": "/kliːn/",
+     "vi": "sạch",
+     "vd": "Da Nang is one of the cleanest cities in Vietnam.",
+     "vd_vi": "Đà Nẵng là một trong những thành phố sạch nhất Việt Nam."
+    },
+    {
+     "en": "beautiful",
+     "ipa": "/ˈbjuːtɪfl/",
+     "vi": "đẹp",
+     "vd": "Ha Long Bay is the most beautiful place I have ever seen.",
+     "vd_vi": "Vịnh Hạ Long là nơi đẹp nhất tôi từng thấy."
+    },
+    {
+     "en": "ancient",
+     "ipa": "/ˈeɪnʃənt/",
+     "vi": "cổ, cổ xưa",
+     "vd": "Hoi An is an ancient town in central Vietnam.",
+     "vd_vi": "Hội An là một phố cổ ở miền Trung Việt Nam."
+    },
+    {
+     "en": "lively",
+     "ipa": "/ˈlaɪvli/",
+     "vi": "sôi động, nhộn nhịp",
+     "vd": "The night market is livelier than the day market.",
+     "vd_vi": "Chợ đêm nhộn nhịp hơn chợ ban ngày."
+    },
+    {
+     "en": "clever",
+     "ipa": "/ˈklevə/",
+     "vi": "thông minh, giỏi",
+     "vd": "My sister is cleverer than me at maths.",
+     "vd_vi": "Em gái tôi giỏi toán hơn tôi."
+    },
+    {
+     "en": "kind",
+     "ipa": "/kaɪnd/",
+     "vi": "tốt bụng",
+     "vd": "My grandmother is the kindest person I know.",
+     "vd_vi": "Bà tôi là người tốt bụng nhất mà tôi biết."
+    },
+    {
+     "en": "shy",
+     "ipa": "/ʃaɪ/",
+     "vi": "nhút nhát",
+     "vd": "My son is shyer than his sister.",
+     "vd_vi": "Con trai tôi nhút nhát hơn em gái nó."
+    },
+    {
+     "en": "polite",
+     "ipa": "/pəˈlaɪt/",
+     "vi": "lịch sự",
+     "vd": "My brother is not as polite as my sister.",
+     "vd_vi": "Anh trai tôi không lịch sự bằng chị gái tôi."
+    },
+    {
+     "en": "lazy",
+     "ipa": "/ˈleɪzi/",
+     "vi": "lười",
+     "vd": "My cat is the laziest animal in the house.",
+     "vd_vi": "Con mèo là con vật lười nhất nhà tôi."
+    },
+    {
+     "en": "old-fashioned",
+     "ipa": "/ˌəʊld ˈfæʃnd/",
+     "vi": "lỗi thời, cổ hủ",
+     "vd": "My grandfather's ideas are a bit old-fashioned.",
+     "vd_vi": "Suy nghĩ của ông tôi hơi cổ hủ."
+    },
+    {
+     "en": "population",
+     "ipa": "/ˌpɒpjuˈleɪʃn/",
+     "vi": "dân số",
+     "vd": "Ho Chi Minh City has the largest population in Vietnam.",
+     "vd_vi": "Thành phố Hồ Chí Minh có dân số đông nhất Việt Nam."
+    },
+    {
+     "en": "capital",
+     "ipa": "/ˈkæpɪtl/",
+     "vi": "thủ đô",
+     "vd": "Hanoi is the capital of Vietnam.",
+     "vd_vi": "Hà Nội là thủ đô của Việt Nam."
+    },
+    {
+     "en": "countryside",
+     "ipa": "/ˈkʌntrisaɪd/",
+     "vi": "vùng nông thôn",
+     "vd": "The air in the countryside is cleaner than in the city.",
+     "vd_vi": "Không khí ở nông thôn sạch hơn ở thành phố."
+    },
+    {
+     "en": "building",
+     "ipa": "/ˈbɪldɪŋ/",
+     "vi": "toà nhà",
+     "vd": "This is the tallest building in our city.",
+     "vd_vi": "Đây là toà nhà cao nhất thành phố chúng tôi."
+    },
+    {
+     "en": "area",
+     "ipa": "/ˈeəriə/",
+     "vi": "khu vực",
+     "vd": "This area is quieter than the city centre.",
+     "vd_vi": "Khu này yên tĩnh hơn trung tâm thành phố."
+    },
+    {
+     "en": "tall",
+     "ipa": "/tɔːl/",
+     "vi": "cao (người, toà nhà)",
+     "vd": "My son is taller than my husband now.",
+     "vd_vi": "Giờ con trai tôi còn cao hơn chồng tôi."
     }
    ],
    "luyen_am": [
@@ -4258,9 +5518,9 @@
      "y": [
       "Dùng khi so sánh **hai** người, hai vật, hai nơi; luôn có **than** phía sau.",
       "Tính từ ngắn (1 âm tiết): adj + **-er** + than: cheap → cheaper than.",
-      "Gấp đôi phụ âm cuối: big → bigger, hot → hotter.",
-      "Tính từ tận cùng -y: đổi y → i rồi thêm -er: busy → busier, noisy → noisier.",
-      "Tính từ dài (2 âm tiết trở lên): **more** + adj + than: more expensive than."
+      "Tính từ một âm tiết kết thúc bằng 1 nguyên âm + 1 phụ âm thì gấp đôi phụ âm cuối: big → bigger, hot → hotter (nhưng cheap → cheaper, vì có 2 nguyên âm).",
+      "Tính từ hai âm tiết tận cùng -y: đổi y → i rồi thêm -er: busy → busier, noisy → noisier, friendly → friendlier.",
+      "Các tính từ hai âm tiết khác và tính từ dài hơn: **more** + adj + than: more modern, more expensive than."
      ],
      "vd": [
       {
@@ -4276,8 +5536,8 @@
     {
      "tieu_de": "So sánh nhất",
      "y": [
-      "Dùng khi so sánh **một** với cả nhóm (từ ba trở lên); luôn có **the** phía trước.",
-      "Tính từ ngắn: the + adj + **-est**: the cheapest, the biggest, the busiest.",
+      "Dùng khi so sánh **một** với cả nhóm (từ ba trở lên); thường có **the** phía trước (hoặc my, your...: my best friend).",
+      "Tính từ ngắn và tính từ hai âm tiết tận cùng -y: the + adj + **-est**: the cheapest, the biggest, the busiest.",
       "Tính từ dài: the **most** + adj: the most expensive.",
       "Hay đi với in + nơi chốn / nhóm, hoặc ... I have ever + V3."
      ],
@@ -4432,6 +5692,146 @@
      "vi": "trừ khi, nếu không",
      "vd": "You will be late unless you leave now.",
      "vd_vi": "Bạn sẽ bị muộn nếu không đi ngay bây giờ."
+    },
+    {
+     "en": "problem",
+     "ipa": "/ˈprɒbləm/",
+     "vi": "vấn đề, chuyện rắc rối",
+     "vd": "If you have a problem, call me.",
+     "vd_vi": "Nếu bạn gặp chuyện gì, hãy gọi cho tôi."
+    },
+    {
+     "en": "out of order",
+     "ipa": "/ˌaʊt əv ˈɔːdə/",
+     "vi": "(máy móc) bị hỏng, không dùng được",
+     "vd": "The lift is out of order, so we must take the stairs.",
+     "vd_vi": "Thang máy hỏng nên chúng ta phải đi cầu thang bộ."
+    },
+    {
+     "en": "repair",
+     "ipa": "/rɪˈpeə/",
+     "vi": "sửa chữa",
+     "vd": "If my bike breaks, I will repair it myself.",
+     "vd_vi": "Nếu xe đạp hỏng, tôi sẽ tự sửa."
+    },
+    {
+     "en": "charge your phone",
+     "ipa": "/ˌtʃɑːdʒ jɔː ˈfəʊn/",
+     "vi": "sạc điện thoại",
+     "vd": "Charge your phone before you leave home.",
+     "vd_vi": "Hãy sạc điện thoại trước khi ra khỏi nhà."
+    },
+    {
+     "en": "battery",
+     "ipa": "/ˈbætri/",
+     "vi": "pin",
+     "vd": "My phone battery is low. Can I charge it here?",
+     "vd_vi": "Pin điện thoại của tôi sắp hết. Tôi sạc ở đây được không?"
+    },
+    {
+     "en": "password",
+     "ipa": "/ˈpɑːswɜːd/",
+     "vi": "mật khẩu",
+     "vd": "If you forget your password, click here.",
+     "vd_vi": "Nếu bạn quên mật khẩu, hãy bấm vào đây."
+    },
+    {
+     "en": "oversleep",
+     "ipa": "/ˌəʊvəˈsliːp/",
+     "vi": "ngủ quên, dậy muộn",
+     "vd": "If I oversleep, I will miss the train.",
+     "vd_vi": "Nếu ngủ quên, tôi sẽ lỡ chuyến tàu."
+    },
+    {
+     "en": "borrow",
+     "ipa": "/ˈbɒrəʊ/",
+     "vi": "mượn (của ai)",
+     "vd": "Can I borrow your umbrella until tomorrow?",
+     "vd_vi": "Tôi mượn ô của bạn đến mai được không?"
+    },
+    {
+     "en": "lend",
+     "ipa": "/lend/",
+     "vi": "cho (ai) mượn",
+     "vd": "Could you lend me your pen, please?",
+     "vd_vi": "Bạn cho tôi mượn cái bút được không?"
+    },
+    {
+     "en": "umbrella",
+     "ipa": "/ʌmˈbrelə/",
+     "vi": "cái ô",
+     "vd": "If it rains, you will need an umbrella.",
+     "vd_vi": "Nếu trời mưa, bạn sẽ cần ô."
+    },
+    {
+     "en": "be late for",
+     "ipa": "/bi ˈleɪt fə/",
+     "vi": "bị muộn (giờ làm, buổi hẹn...)",
+     "vd": "If you don't hurry, you will be late for work.",
+     "vd_vi": "Nếu không nhanh lên, bạn sẽ đi làm muộn."
+    },
+    {
+     "en": "hurry up",
+     "ipa": "/ˌhʌri ˈʌp/",
+     "vi": "nhanh lên",
+     "vd": "Hurry up! The train leaves in five minutes.",
+     "vd_vi": "Nhanh lên! Năm phút nữa tàu chạy rồi."
+    },
+    {
+     "en": "worry",
+     "ipa": "/ˈwʌri/",
+     "vi": "lo lắng",
+     "vd": "Don't worry. If you get lost, call me.",
+     "vd_vi": "Đừng lo. Nếu bị lạc thì gọi cho tôi."
+    },
+    {
+     "en": "advice",
+     "ipa": "/ədˈvaɪs/",
+     "vi": "lời khuyên (không đếm được)",
+     "vd": "If you need advice, ask your teacher.",
+     "vd_vi": "Nếu cần lời khuyên, hãy hỏi thầy cô."
+    },
+    {
+     "en": "idea",
+     "ipa": "/aɪˈdɪə/",
+     "vi": "ý kiến, ý tưởng",
+     "vd": "That is a good idea. Let's try it.",
+     "vd_vi": "Ý hay đấy. Mình thử xem."
+    },
+    {
+     "en": "try again",
+     "ipa": "/ˌtraɪ əˈɡen/",
+     "vi": "thử lại",
+     "vd": "If it does not work, try again later.",
+     "vd_vi": "Nếu không được thì lát nữa thử lại."
+    },
+    {
+     "en": "complain",
+     "ipa": "/kəmˈpleɪn/",
+     "vi": "phàn nàn",
+     "vd": "If the food is cold, we will complain to the manager.",
+     "vd_vi": "Nếu đồ ăn nguội, chúng tôi sẽ phàn nàn với quản lý."
+    },
+    {
+     "en": "spare key",
+     "ipa": "/ˌspeə ˈkiː/",
+     "vi": "chìa khoá dự phòng",
+     "vd": "I keep a spare key at my neighbour's house.",
+     "vd_vi": "Tôi để một chìa khoá dự phòng ở nhà hàng xóm."
+    },
+    {
+     "en": "emergency",
+     "ipa": "/iˈmɜːdʒənsi/",
+     "vi": "trường hợp khẩn cấp",
+     "vd": "In an emergency, call 115 for an ambulance.",
+     "vd_vi": "Khi khẩn cấp, hãy gọi 115 để gọi xe cấp cứu."
+    },
+    {
+     "en": "deal with",
+     "ipa": "/ˈdiːl wɪð/",
+     "vi": "giải quyết, xử lý",
+     "vd": "I will deal with this problem tomorrow.",
+     "vd_vi": "Ngày mai tôi sẽ giải quyết vấn đề này."
     }
    ],
    "luyen_am": [
@@ -4908,6 +6308,146 @@
      "vi": "gợi ý, đề xuất",
      "vd": "If you have a better suggestion, tell me.",
      "vd_vi": "Nếu bạn có gợi ý hay hơn thì nói tôi nhé."
+    },
+    {
+     "en": "make progress",
+     "ipa": "/meɪk ˈprəʊɡres/",
+     "vi": "tiến bộ",
+     "vd": "I have made a lot of progress in English.",
+     "vd_vi": "Tôi đã tiến bộ nhiều về tiếng Anh."
+    },
+    {
+     "en": "do your best",
+     "ipa": "/duː jɔː ˈbest/",
+     "vi": "cố gắng hết sức",
+     "vd": "Don't worry. Just do your best.",
+     "vd_vi": "Đừng lo. Cứ cố gắng hết sức."
+    },
+    {
+     "en": "have a chat",
+     "ipa": "/hæv ə ˈtʃæt/",
+     "vi": "trò chuyện, tán gẫu",
+     "vd": "We had a chat while we were waiting for the bus.",
+     "vd_vi": "Chúng tôi trò chuyện trong lúc chờ xe buýt."
+    },
+    {
+     "en": "take a seat",
+     "ipa": "/teɪk ə ˈsiːt/",
+     "vi": "ngồi xuống (lời mời lịch sự)",
+     "vd": "Please take a seat. The doctor will see you soon.",
+     "vd_vi": "Mời anh chị ngồi. Bác sĩ sẽ khám cho anh chị ngay."
+    },
+    {
+     "en": "arrange",
+     "ipa": "/əˈreɪndʒ/",
+     "vi": "sắp xếp",
+     "vd": "I am going to arrange a meeting for Monday.",
+     "vd_vi": "Tôi sẽ sắp xếp một cuộc họp vào thứ Hai."
+    },
+    {
+     "en": "cancel",
+     "ipa": "/ˈkænsl/",
+     "vi": "huỷ",
+     "vd": "If it rains, we will cancel the picnic.",
+     "vd_vi": "Nếu trời mưa, chúng tôi sẽ huỷ buổi dã ngoại."
+    },
+    {
+     "en": "agree",
+     "ipa": "/əˈɡriː/",
+     "vi": "đồng ý",
+     "vd": "I agree with you about the hotel.",
+     "vd_vi": "Tôi đồng ý với bạn về chuyện khách sạn."
+    },
+    {
+     "en": "explain",
+     "ipa": "/ɪkˈspleɪn/",
+     "vi": "giải thích",
+     "vd": "Could you explain this word to me?",
+     "vd_vi": "Bạn giải thích từ này cho tôi được không?"
+    },
+    {
+     "en": "improve",
+     "ipa": "/ɪmˈpruːv/",
+     "vi": "cải thiện",
+     "vd": "I want to improve my speaking skills.",
+     "vd_vi": "Tôi muốn cải thiện kỹ năng nói."
+    },
+    {
+     "en": "practise",
+     "ipa": "/ˈpræktɪs/",
+     "vi": "luyện tập",
+     "vd": "I practise English for twenty minutes every day.",
+     "vd_vi": "Ngày nào tôi cũng luyện tiếng Anh hai mươi phút."
+    },
+    {
+     "en": "hear from",
+     "ipa": "/ˈhɪə frəm/",
+     "vi": "nhận được tin (thư, cuộc gọi) của ai",
+     "vd": "It was nice to hear from you.",
+     "vd_vi": "Rất vui khi nhận được tin của bạn."
+    },
+    {
+     "en": "information",
+     "ipa": "/ˌɪnfəˈmeɪʃn/",
+     "vi": "thông tin (không đếm được)",
+     "vd": "Could you give me some information about the tour?",
+     "vd_vi": "Bạn cho tôi ít thông tin về chuyến tham quan được không?"
+    },
+    {
+     "en": "available",
+     "ipa": "/əˈveɪləbl/",
+     "vi": "rảnh; còn trống",
+     "vd": "Are you available on Friday afternoon?",
+     "vd_vi": "Chiều thứ Sáu bạn có rảnh không?"
+    },
+    {
+     "en": "comfortable",
+     "ipa": "/ˈkʌmftəbl/",
+     "vi": "thoải mái, dễ chịu",
+     "vd": "This hotel is more comfortable than the last one.",
+     "vd_vi": "Khách sạn này thoải mái hơn khách sạn lần trước."
+    },
+    {
+     "en": "useful",
+     "ipa": "/ˈjuːsfl/",
+     "vi": "hữu ích",
+     "vd": "This app is very useful for learning English.",
+     "vd_vi": "Ứng dụng này rất hữu ích cho việc học tiếng Anh."
+    },
+    {
+     "en": "difficult",
+     "ipa": "/ˈdɪfɪkəlt/",
+     "vi": "khó",
+     "vd": "English grammar is not as difficult as I thought.",
+     "vd_vi": "Ngữ pháp tiếng Anh không khó như tôi nghĩ."
+    },
+    {
+     "en": "surprised",
+     "ipa": "/səˈpraɪzd/",
+     "vi": "ngạc nhiên",
+     "vd": "I was surprised when I saw the price.",
+     "vd_vi": "Tôi đã ngạc nhiên khi thấy giá tiền."
+    },
+    {
+     "en": "conversation",
+     "ipa": "/ˌkɒnvəˈseɪʃn/",
+     "vi": "cuộc trò chuyện",
+     "vd": "We had a long conversation about our plans.",
+     "vd_vi": "Chúng tôi đã có một cuộc trò chuyện dài về kế hoạch."
+    },
+    {
+     "en": "message",
+     "ipa": "/ˈmesɪdʒ/",
+     "vi": "tin nhắn",
+     "vd": "I have just sent you a message.",
+     "vd_vi": "Tôi vừa gửi tin nhắn cho bạn."
+    },
+    {
+     "en": "actually",
+     "ipa": "/ˈæktʃuəli/",
+     "vi": "thật ra",
+     "vd": "Actually, I would rather stay at home tonight.",
+     "vd_vi": "Thật ra tối nay tôi muốn ở nhà hơn."
     }
    ],
    "luyen_am": [
@@ -4934,7 +6474,7 @@
     {
      "en": "usually",
      "ipa": "/ˈjuːʒuəli/",
-     "ghi_chu": "Âm /ʒ/ rung như 'gi' tiếng Việt, nhấn âm đầu YOU."
+     "ghi_chu": "Âm /ʒ/: khẩu hình như /ʃ/ ('sh', môi hơi tròn) nhưng rung cổ họng; nhấn âm đầu YOU."
     }
    ],
    "cau": [
@@ -5168,7 +6708,7 @@
     {
      "dang": "sapxep",
      "dap_an": "My sister used to do the washing-up.",
-     "vi": "Chị tôi từng là người rửa bát.",
+     "vi": "Ngày trước chị tôi hay rửa bát.",
      "giai_thich": "Used to + V, cụm 'do the washing-up' đứng liền nhau."
     },
     {
@@ -5248,7 +6788,7 @@
      "tieu_de": "Quá khứ tiếp diễn và used to",
      "y": [
       "was / were + V-ing: việc đang diễn ra trong quá khứ thì việc khác (quá khứ đơn) xen vào.",
-      "while + việc dài, when + việc ngắn.",
+      "while + việc dài, when + việc ngắn (when cũng đi được với việc dài, while thì không đi với việc ngắn).",
       "used to + V: thói quen ngày xưa, nay không còn; phủ định và câu hỏi dùng did + use to.",
       "Sai: I use to live here. → Đúng: I used to live here."
      ],
@@ -5330,7 +6870,7 @@
       "/θ/ (thought): đặt đầu lưỡi giữa hai hàm răng rồi thổi hơi, không đọc thành 't'.",
       "/iː/ dài (sheep) khác /ɪ/ ngắn (ship): kéo dài âm 'i' khi gặp /iː/.",
       "/v/ (vegetables): răng trên cắn nhẹ môi dưới, cổ họng rung.",
-      "/ɜː/ (world): 'ơ' dài ở giữa miệng; /ʒ/ (usually): rung như 'gi' tiếng Việt."
+      "/ɜː/ (world): 'ơ' dài ở giữa miệng; /ʒ/ (usually): khẩu hình như /ʃ/ ('sh', môi hơi tròn) nhưng rung cổ họng."
      ],
      "vd": [
       {
@@ -5418,6 +6958,146 @@
      "vi": "mong chờ (câu kết email)",
      "vd": "I am looking forward to seeing you.",
      "vd_vi": "Tôi rất mong được gặp bạn."
+    },
+    {
+     "en": "check out",
+     "ipa": "/ˌtʃek ˈaʊt/",
+     "vi": "trả phòng (khách sạn)",
+     "vd": "We have to check out before twelve.",
+     "vd_vi": "Chúng tôi phải trả phòng trước mười hai giờ."
+    },
+    {
+     "en": "suitcase",
+     "ipa": "/ˈsuːtkeɪs/",
+     "vi": "va li",
+     "vd": "I have already packed my suitcase.",
+     "vd_vi": "Tôi đã xếp đồ vào va li rồi."
+    },
+    {
+     "en": "tour guide",
+     "ipa": "/ˈtʊə ɡaɪd/",
+     "vi": "hướng dẫn viên du lịch",
+     "vd": "The tour guide was very friendly and funny.",
+     "vd_vi": "Hướng dẫn viên rất thân thiện và vui tính."
+    },
+    {
+     "en": "view",
+     "ipa": "/vjuː/",
+     "vi": "quang cảnh, tầm nhìn",
+     "vd": "Our room had a beautiful view of the sea.",
+     "vd_vi": "Phòng của chúng tôi nhìn ra biển rất đẹp."
+    },
+    {
+     "en": "beach",
+     "ipa": "/biːtʃ/",
+     "vi": "bãi biển",
+     "vd": "We were lying on the beach when it started to rain.",
+     "vd_vi": "Chúng tôi đang nằm trên bãi biển thì trời bắt đầu mưa."
+    },
+    {
+     "en": "sunny",
+     "ipa": "/ˈsʌni/",
+     "vi": "nắng",
+     "vd": "It was sunny and hot all week.",
+     "vd_vi": "Cả tuần trời nắng và nóng."
+    },
+    {
+     "en": "upset",
+     "ipa": "/ʌpˈset/",
+     "vi": "buồn, khó chịu",
+     "vd": "She was upset because she lost her phone.",
+     "vd_vi": "Cô ấy buồn vì làm mất điện thoại."
+    },
+    {
+     "en": "embarrassed",
+     "ipa": "/ɪmˈbærəst/",
+     "vi": "xấu hổ, ngượng",
+     "vd": "I was embarrassed when I fell over in the street.",
+     "vd_vi": "Tôi thấy xấu hổ khi bị ngã trên phố."
+    },
+    {
+     "en": "relaxed",
+     "ipa": "/rɪˈlækst/",
+     "vi": "thư thái, thoải mái",
+     "vd": "I always feel relaxed after a holiday.",
+     "vd_vi": "Sau kỳ nghỉ tôi luôn thấy thư thái."
+    },
+    {
+     "en": "in the end",
+     "ipa": "/ɪn ði ˈend/",
+     "vi": "cuối cùng (sau nhiều chuyện)",
+     "vd": "In the end, we found the hotel.",
+     "vd_vi": "Cuối cùng chúng tôi cũng tìm thấy khách sạn."
+    },
+    {
+     "en": "first of all",
+     "ipa": "/ˌfɜːst əv ˈɔːl/",
+     "vi": "trước hết, đầu tiên",
+     "vd": "First of all, thank you for your email.",
+     "vd_vi": "Trước hết, cảm ơn email của bạn."
+    },
+    {
+     "en": "then",
+     "ipa": "/ðen/",
+     "vi": "sau đó, rồi",
+     "vd": "We had lunch. Then we went to the museum.",
+     "vd_vi": "Chúng tôi ăn trưa. Sau đó chúng tôi đi bảo tàng."
+    },
+    {
+     "en": "after that",
+     "ipa": "/ˌɑːftə ˈðæt/",
+     "vi": "sau đó",
+     "vd": "After that, we took a taxi back to the hotel.",
+     "vd_vi": "Sau đó, chúng tôi đi taxi về khách sạn."
+    },
+    {
+     "en": "finally",
+     "ipa": "/ˈfaɪnəli/",
+     "vi": "cuối cùng (sau thời gian dài chờ đợi)",
+     "vd": "We finally arrived at midnight.",
+     "vd_vi": "Cuối cùng chúng tôi cũng đến nơi lúc nửa đêm."
+    },
+    {
+     "en": "by the way",
+     "ipa": "/ˌbaɪ ðə ˈweɪ/",
+     "vi": "nhân tiện",
+     "vd": "By the way, are you free next Saturday?",
+     "vd_vi": "Nhân tiện, thứ Bảy tới bạn có rảnh không?"
+    },
+    {
+     "en": "let me know",
+     "ipa": "/ˌlet mi ˈnəʊ/",
+     "vi": "cho tôi biết",
+     "vd": "Please let me know if you can come.",
+     "vd_vi": "Hãy cho tôi biết bạn có đến được không nhé."
+    },
+    {
+     "en": "send",
+     "ipa": "/send/",
+     "vi": "gửi (quá khứ: sent)",
+     "vd": "I will send you the photos tonight.",
+     "vd_vi": "Tối nay tôi sẽ gửi ảnh cho bạn."
+    },
+    {
+     "en": "news",
+     "ipa": "/njuːz/",
+     "vi": "tin tức (không đếm được)",
+     "vd": "I have some good news for you.",
+     "vd_vi": "Tôi có tin vui cho bạn."
+    },
+    {
+     "en": "Dear",
+     "ipa": "/dɪə/",
+     "vi": "thân gửi (mở đầu thư, trước tên)",
+     "vd": "Dear Mr Nam, thank you for your email.",
+     "vd_vi": "Thân gửi ông Nam, cảm ơn email của ông."
+    },
+    {
+     "en": "fill in",
+     "ipa": "/ˌfɪl ˈɪn/",
+     "vi": "điền (vào mẫu đơn)",
+     "vd": "Please fill in this form at the front desk.",
+     "vd_vi": "Vui lòng điền vào mẫu đơn này ở quầy lễ tân."
     }
    ],
    "luyen_am": [
