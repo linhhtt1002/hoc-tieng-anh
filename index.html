@@ -114,9 +114,9 @@ ul.sai-list li{margin-bottom:8px}
 <body>
 <div class="khung" id="app"></div>
 <div class="thong-bao" id="thong-bao"></div>
-<script src="cau-hinh.js?v=2"></script>
-<script src="noi-dung.js?v=2"></script>
-<script src="ipa.js?v=2"></script>
+<script src="cau-hinh.js?v=3"></script>
+<script src="noi-dung.js?v=3"></script>
+<script src="ipa.js?v=3"></script>
 <script>
 (function(){
 'use strict';
@@ -319,8 +319,7 @@ function veDangNhap(){
 function veTrangChu(){
   var gds = []; dsBuoi.forEach(function(b){ if(gds.indexOf(b.gd)<0) gds.push(b.gd); });
   if(gds.indexOf(st.gd)<0) st.gd = gds[0];
-  var h = '<div class="dau"><h1>Chào ' + esc(nguoiHoc.ten.split(' ').pop()) + '!<span class="nho">Hôm nay mình học buổi nào?</span></h1>' +
-          '<button class="nut-tron" id="doi" title="Đổi người học" aria-label="Đổi người học">👤</button></div>';
+  var h = '<div class="dau"><h1>Học tiếng Anh mỗi ngày 👋<span class="nho">Hôm nay mình học buổi nào? Điểm của bạn được lưu trên máy này.</span></h1></div>';
   if(DS_IPA.length){
     var soXong = DS_IPA.filter(function(a){ return tienDo['ipa-'+a.ki_hieu] != null; }).length;
     h += '<button class="vao-ipa" id="vao-ipa"><span style="font-size:28px">🗣️</span><div><b>Phát âm 44 âm IPA</b><span>Cách đặt miệng, lưỡi từng âm · nghe phân biệt · nói theo ('+soXong+'/'+DS_IPA.length+' âm đã luyện)</span></div></button>';
@@ -341,9 +340,6 @@ function veTrangChu(){
   $app.querySelectorAll('.buoi').forEach(function(x){ x.onclick = function(){
     var k = x.dataset.k; st.buoi = dsBuoi.filter(function(b){ return b.gd+'-'+b.buoi===k; })[0]; st.man='buoi'; st.phan = st.buoi.ly_thuyet && st.buoi.ly_thuyet.length ? 'ly' : 'tu'; batDauPhan(); veLai(); window.scrollTo(0,0);
   }; });
-  document.getElementById('doi').onclick = function(){
-    if(confirm('Đổi sang người học khác? Tiến độ trên máy này vẫn được giữ.')){ nguoiHoc = null; ghi('nguoiHoc', null); veLai(); }
-  };
 }
 
 /* ---------- màn buổi học ---------- */
@@ -741,7 +737,6 @@ function veNgheChep(v, b){
 
 /* ---------- chạy ---------- */
 function veLai(){
-  if(!nguoiHoc) return veDangNhap();
   if(st.man==='ipa') return veIPA();
   if(st.man==='am') return veAm();
   if(st.man==='buoi' && st.buoi){
