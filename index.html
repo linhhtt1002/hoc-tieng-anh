@@ -114,9 +114,9 @@ ul.sai-list li{margin-bottom:8px}
 <body>
 <div class="khung" id="app"></div>
 <div class="thong-bao" id="thong-bao"></div>
-<script src="cau-hinh.js?v=4"></script>
-<script src="noi-dung.js?v=4"></script>
-<script src="ipa.js?v=4"></script>
+<script src="cau-hinh.js?v=5"></script>
+<script src="noi-dung.js?v=5"></script>
+<script src="ipa.js?v=5"></script>
 <script>
 (function(){
 'use strict';
@@ -130,6 +130,21 @@ var PHAN = [
 var TAB = [{ma:'ly', ten:'Bài học'}].concat(PHAN);
 var TEN_PHAN = {tu:'Từ vựng', bai:'Bài tập', noi:'Nói theo', nghe:'Nghe chép', ipa:'Phát âm IPA'};
 var DS_IPA = (window.IPA && window.IPA.am) || [];
+// Âm thanh từng âm: phát trực tiếp từ trang IELTS Fighter (ielts-fighter.com), không lưu bản sao
+var GOC_AM = 'https://st.ielts-fighter.com/src/ielts-fighter/2019/09/09/';
+var FILE_AM = {'ɪ':'i ngắn','iː':'i dài','e':'e','ə':'ơ ngắn','ɜː':'ơ dài','ʊ':'u ngắn','uː':'u dài','ɒ':'o ngắn','ɔː':'o dài','ʌ':'a ngắn','ɑː':'a dài','æ':'ae',
+  'ɪə':'ie','eə':'ea','eɪ':'ei','ɔɪ':'oi','aɪ':'aɪ','əʊ':'əʊ','aʊ':'aʊ','ʊə':'ʊə',
+  'p':'p','b':'b','t':'t','d':'d','tʃ':'t∫','dʒ':'dʒ','k':'k','ɡ':'g','g':'g','f':'f','v':'v','θ':'θ','ð':'ð','s':'s','z':'z','ʃ':'∫','ʒ':'ʒ',
+  'm':'m','n':'n','ŋ':'η','h':'h','l':'l','r':'r','w':'w','j':'j'};
+var loaAm = null;
+function phatAm(kiHieu){
+  var k = String(kiHieu).replace(/\//g,'').replace(/:/g,'ː'), ten = FILE_AM[k];
+  if(!ten){ bao('Âm này chưa có file đọc mẫu.'); return; }
+  if('speechSynthesis' in window) speechSynthesis.cancel();
+  if(loaAm) loaAm.pause();
+  loaAm = new Audio(GOC_AM + encodeURIComponent(ten) + '.mp3');
+  loaAm.play().catch(function(){ bao('Chưa phát được âm thanh. Kiểm tra mạng rồi bấm lại nhé.'); });
+}
 var API = (window.API_URL || '').trim();
 var $app = document.getElementById('app');
 
@@ -593,7 +608,8 @@ function veAm(){
         (z.da!=null ? '<div class="phan-hoi '+(z.da===q.doc?'dung':'sai')+'"><b>'+(z.da===q.doc?'Đúng rồi!':'Chưa đúng, máy đọc “'+esc(q.doc)+'”')+'</b>Bấm vào từng đáp án ở trên để nghe lại và so sánh.</div><div style="height:12px"></div><button class="nut chinh rong" id="q-tiep">'+(z.i<z.ds.length-1?'Câu tiếp':'Xem kết quả')+'</button>' : '') + '</div>';
     }
   } else {
-    vung = '<div class="the giua"><div style="font-size:52px;font-weight:700;color:var(--chinh);line-height:1.2">'+esc(a.ki_hieu)+'</div><div class="hang" style="justify-content:center;margin-top:8px"><button class="nut nho" id="nghe-mau">🔊 Nghe từ mẫu</button></div></div>';
+    vung = '<div class="the giua"><div style="font-size:52px;font-weight:700;color:var(--chinh);line-height:1.2">'+esc(a.ki_hieu)+'</div><div class="hang" style="justify-content:center;margin-top:8px"><button class="nut chinh" id="nghe-am">🔊 Nghe âm '+esc(a.ki_hieu)+'</button><button class="nut" id="nghe-mau">Nghe từ ví dụ</button></div>' +
+      '<div class="mo" style="font-size:12px;margin-top:8px">Âm thanh: <a href="https://ielts-fighter.com/tin-tuc/bang-phien-am-tieng-anh-ipa_mt1567386908.html" target="_blank" rel="noopener">IELTS Fighter</a></div></div>';
     vung += '<div class="the ly"><h3>Cách đọc</h3><ul>' + (a.cach_doc||[]).map(function(y){ return '<li>'+dam(y)+'</li>'; }).join('') + '</ul>' +
       (a.giong_tieng_viet ? '<div class="vd-dong"><div class="gian"><b>So với tiếng Việt:</b> '+esc(a.giong_tieng_viet)+'</div></div>' : '') +
       (a.loi_hay_gap ? '<div class="vd-dong" style="background:var(--sai-nhat)"><div class="gian"><b>Lỗi hay gặp:</b> '+esc(a.loi_hay_gap)+'</div></div>' : '') +
@@ -640,6 +656,7 @@ function veAm(){
     if(z2.da!=null) $app.querySelectorAll('.lua-chon button').forEach(function(x){ x.disabled=false; x.onclick=function(){ docTo(x.dataset.x); }; });
     return;
   }
+  document.getElementById('nghe-am').onclick = function(){ phatAm(a.ki_hieu); };
   document.getElementById('nghe-mau').onclick = function(){ docTo(a.tu.slice(0,3).map(function(t){ return t.en; }).join('. ') + '.', true); };
   $app.querySelectorAll('[data-doc-tu]').forEach(function(x){ x.onclick = function(){ docTo(a.tu[+x.dataset.docTu].en); }; });
   $app.querySelectorAll('[data-doc-cham]').forEach(function(x){ x.onclick = function(){ docTo(a.tu[+x.dataset.docCham].en, true); }; });
