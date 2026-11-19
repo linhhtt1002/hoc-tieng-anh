@@ -1,68 +1,51 @@
 # App học tiếng Anh: hướng dẫn
 
+Link gửi học sinh: https://linhhtt1002.github.io/hoc-tieng-anh/
+
 ## App có gì
 
-Học viên mở link trên điện thoại, nhập họ tên + số điện thoại một lần, rồi chọn Giai đoạn → Buổi. Ở trang chủ còn có mục **Phát âm 44 âm IPA**: mỗi âm có cách đặt miệng, lưỡi, từ ví dụ, cặp từ dễ nhầm, nói theo có máy chấm, và bài nghe phân biệt.
+Học sinh mở link là vào học ngay, không cần đăng nhập. Điểm chỉ lưu trên máy của từng em. Trang chủ có mục **Phát âm 44 âm IPA** (nghe riêng từng âm, cách đặt miệng lưỡi, cặp từ dễ nhầm, luyện nghe) và 5 giai đoạn, 58 buổi. Mỗi buổi có:
 
-Mỗi buổi có 5 phần:
-
-| Phần | Học viên làm gì |
+| Phần | Học sinh làm gì |
 |---|---|
-| **Bài học** | Kiến thức để xem lại: cách dùng, công thức, dấu hiệu, lỗi hay sai, phát âm của buổi, ví dụ bấm nghe được |
-| **Từ vựng** | Lật thẻ xem nghĩa, nghe đọc mẫu, bấm 🎤 nói thử. Cuối cùng làm bài kiểm tra: xem nghĩa chọn từ, nghe chọn nghĩa |
-| **Bài tập** | 30 câu mỗi buổi: trắc nghiệm, điền từ, sắp xếp câu, tìm lỗi sai, theo đúng ngữ pháp của buổi. Sai thì có giải thích |
-| **Nói theo** | Nghe mẫu (thường / chậm) → bấm 🎤 đọc to → máy tô xanh từ đọc đúng, đỏ từ đọc sai, chấm % |
+| **Bài học** | Kiến thức để xem lại: cách dùng, công thức, dấu hiệu, lỗi hay sai, phát âm của buổi, ví dụ bấm nghe được. Có thêm phần **bổ sung** do giáo viên tự thêm |
+| **Từ vựng** | 30 từ: lật thẻ xem nghĩa, nghe đọc mẫu, bấm 🎤 nói thử, cuối cùng làm bài kiểm tra |
+| **Bài tập** | 30 câu: trắc nghiệm, điền từ, sắp xếp câu, tìm lỗi sai. Sai thì có giải thích |
+| **Nói theo** | Nghe mẫu → bấm 🎤 đọc to → máy tô xanh từ đọc đúng, đỏ từ đọc sai, chấm % |
 | **Nghe chép** | Nghe câu rồi gõ lại, máy so từng từ |
 
-Làm xong mỗi phần, điểm tự gửi về Google Sheet của chị.
-
-**Máy chấm giọng chạy được trên:** Chrome (Android, máy tính) và Safari (iPhone). Trình duyệt khác vẫn nghe được giọng mẫu, nhưng máy không chấm.
+**Máy chấm giọng chạy được trên:** Chrome (Android, máy tính) và Safari (iPhone).
 
 ---
 
-## Nối Google Sheet (làm 1 lần, khoảng 10 phút)
+## Cho phép thêm kiến thức ngay trong app (cài 1 lần, khoảng 10 phút)
 
-1. Vào sheets.google.com → tạo **bảng tính trống**, đặt tên ví dụ "App học tiếng Anh".
-2. Trên thanh menu: **Tiện ích mở rộng → Apps Script**.
-3. Xoá hết chữ có sẵn trong khung soạn, mở file `apps-script/Code.gs`, chép toàn bộ rồi dán vào. Bấm 💾 **Lưu**.
-4. Ở ô chọn hàm cạnh nút **Chạy** (trên cùng), chọn **caiDat** → bấm **Chạy**.
-   - Google hỏi quyền → **Xem xét quyền** → chọn tài khoản → (nếu hiện "Google chưa xác minh ứng dụng") **Nâng cao → Đi tới ... (không an toàn)** → tích **Chọn tất cả** → **Tiếp tục**.
-   - Chạy xong, bảng tính có 3 tab: **Noi_dung** (khoảng 1.850 dòng bài học), **Tien_do**, **Tong_hop**.
-5. Bấm **Triển khai → Tùy chọn triển khai mới** → bánh răng ⚙ → **Ứng dụng web**.
+Trang học trên GitHub chỉ hiển thị, không tự lưu được. Phần kiến thức bạn thêm sẽ được lưu vào một Google Sheet của bạn, nhờ vậy mọi học sinh đều thấy.
+
+1. Vào **sheets.new** → tạo bảng tính trống, đặt tên ví dụ "Kiến thức bổ sung – app tiếng Anh".
+2. Trên thanh menu bấm **Tiện ích mở rộng → Apps Script**.
+3. Mở link sau, bấm **Ctrl+A** rồi **Ctrl+C** để chép mã:
+   https://raw.githubusercontent.com/linhhtt1002/hoc-tieng-anh/main/apps-script/Code.gs
+   Quay lại Apps Script, xoá hết chữ có sẵn, dán mã vào (**Ctrl+V**).
+4. **Đặt mã giáo viên:** ở dòng `var MA_GIAO_VIEN = 'doi-ma-nay';`, thay `doi-ma-nay` bằng mã riêng của bạn (ví dụ `cogiao2026`), giữ nguyên hai dấu nháy. Bấm 💾 **Lưu**.
+   (Mã chỉ nằm trong Google Sheet của bạn, không ai xem được.)
+5. Ở ô chọn hàm cạnh nút **▷ Chạy**, chọn **caiDat** → bấm **Chạy**.
+   - Google hỏi quyền → **Xem xét quyền** → chọn tài khoản → nếu hiện "Google chưa xác minh ứng dụng": **Nâng cao → Đi tới … (không an toàn)** → tích **Chọn tất cả** → **Tiếp tục**.
+   - Chạy xong, bảng tính có tab **Bo_sung**.
+6. Bấm **Triển khai → Tùy chọn triển khai mới** → bánh răng ⚙ → **Ứng dụng web**:
    - Thực thi với tư cách: **Tôi**
    - Người có quyền truy cập: **Bất kỳ ai**
    - Bấm **Triển khai** → chép **URL ứng dụng web** (đuôi `/exec`) → gửi link đó cho Claude.
 
-Claude dán link vào trang học. Từ đó trang đọc nội dung từ tab Noi_dung và ghi điểm vào tab Tien_do.
+Claude gắn link vào app là xong.
 
----
+## Cách thêm kiến thức
 
-## Sửa / thêm nội dung bài học
+1. Mở app → chọn buổi → tab **Bài học** → kéo xuống cuối, bấm **"Giáo viên: thêm kiến thức"** → nhập mã giáo viên (máy nhớ mã, lần sau không phải nhập lại).
+2. Mỗi mục hiện nút **✏️ Thêm vào mục này**, cuối trang có nút **+ Thêm mục mới**.
+3. Gõ nội dung, **mỗi dòng là một ý**. Muốn in đậm thì bọc chữ bằng hai dấu sao: `**am**`.
+4. Ví dụ (không bắt buộc), mỗi dòng một câu theo dạng: `I am a teacher. = Tôi là giáo viên.` App tự thêm nút 🔊 để nghe câu đó.
+5. Bấm **Lưu**. Học sinh mở lại trang là thấy, phần bạn thêm có nhãn **"bổ sung"**.
+6. Ghi nhầm thì bấm **Xoá** ở phần đó. Xong việc bấm **Thoát** để về chế độ học sinh.
 
-Sửa thẳng trong tab **Noi_dung**. Học viên mở lại trang là thấy nội dung mới, không cần triển khai lại.
-
-| Cột | Ý nghĩa |
-|---|---|
-| Giai đoạn, Buổi | Số. Buổi mới (ví dụ GĐ 2 buổi 13) thì thêm dòng "Tên buổi" trước |
-| Loại | Chọn trong danh sách: Tên buổi · Lý thuyết · Từ vựng · Luyện âm · Câu nói · Trắc nghiệm · Điền từ · Sắp xếp câu · Tìm lỗi sai |
-| *Riêng Lý thuyết* | Cột Tiếng Anh = tiêu đề mục (ví dụ "Công thức"). Cột Giải thích = các ý, cách nhau bằng `\|`. Cột Câu ví dụ / Nghĩa câu ví dụ = các ví dụ, cách nhau bằng `\|`, theo đúng thứ tự |
-| *Riêng Tìm lỗi sai* | Cột Tiếng Anh = câu có MỘT từ sai. Cột Đáp án = `từ sai \| từ sửa đúng`, ví dụ `go \| goes` |
-| Tiếng Anh / Câu hỏi | Từ, câu, hoặc câu hỏi có chỗ trống `___` |
-| Phiên âm | Cho Từ vựng, Luyện âm |
-| Nghĩa tiếng Việt | Cho Từ vựng, Câu nói, Sắp xếp câu (gợi ý nghĩa) |
-| Đáp án | Trắc nghiệm, Điền từ. Điền từ có nhiều cách đúng thì ghi `is not \| isn't` |
-| Phương án sai | Trắc nghiệm: 2–3 phương án, cách nhau bằng dấu `\|` |
-| Giải thích / Ghi chú | Hiện ra sau khi học viên trả lời |
-| Câu ví dụ, Nghĩa câu ví dụ | Cho Từ vựng |
-
-**Lưu ý:**
-- Một buổi đã có trong tab Noi_dung thì trang lấy **toàn bộ** buổi đó từ Sheet. Xoá dòng nào thì câu đó biến mất khỏi app.
-- Sắp xếp câu: trang tự xáo các từ trong câu tiếng Anh. Câu nên dài 4–10 từ và chỉ có một cách xếp đúng.
-- Câu nói: tránh tên riêng và số viết bằng chữ số. Máy nghe hay ghi lệch hai loại này nên chấm sai.
-- Muốn khôi phục nội dung gốc: trong Apps Script chọn hàm **napLaiNoiDung** → Chạy. Lệnh này **ghi đè** mọi chỗ chị đã sửa.
-
-## Xem kết quả học viên
-
-- Tab **Tien_do**: mỗi lần học viên làm xong một phần là thêm một dòng (giờ Việt Nam, tên, SĐT, buổi, phần, điểm, các câu cần ôn).
-- Tab **Tong_hop**: tự tính số lần nộp, % trung bình, lần học gần nhất của từng học viên, và % trung bình theo từng buổi.
-- Học viên mất mạng lúc làm bài: điểm được giữ trên máy và tự gửi lại khi có mạng.
+Bạn cũng xem và sửa được trực tiếp trong tab **Bo_sung** của Google Sheet: mỗi dòng là một lần thêm. Ở cột "Ví dụ", mỗi câu ví dụ nằm trên một dòng riêng trong ô (xuống dòng bằng Alt+Enter).
