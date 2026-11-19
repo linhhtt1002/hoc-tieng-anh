@@ -114,9 +114,9 @@ ul.sai-list li{margin-bottom:8px}
 <body>
 <div class="khung" id="app"></div>
 <div class="thong-bao" id="thong-bao"></div>
-<script src="cau-hinh.js?v=6"></script>
-<script src="noi-dung.js?v=6"></script>
-<script src="ipa.js?v=6"></script>
+<script src="cau-hinh.js?v=7"></script>
+<script src="noi-dung.js?v=7"></script>
+<script src="ipa.js?v=7"></script>
 <script>
 (function(){
 'use strict';
@@ -187,30 +187,70 @@ function docTo(text, cham){
 /* ---------- nghe giọng người học ---------- */
 var SR = window.SpeechRecognition || window.webkitSpeechRecognition;
 var dangNghe = null;
+var LA_IOS = /iPhone|iPad|iPod/i.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+var TRONG_APP_CHAT = /Zalo|FBAN|FBAV|FB_IAB|Instagram|Messenger|Line\//i.test(navigator.userAgent);
+// Chrome Android trả "kết quả cuối" rồi tự dừng; Safari iPhone thường chỉ trả "kết quả tạm" và không tự dừng,
+// nên: gom cả kết quả tạm, tự dừng sau 1,5 giây im lặng, tối đa 10 giây, và luôn tự kết thúc dù trình duyệt không báo.
 function ngheNguoiHoc(xong, loi){
+  if(TRONG_APP_CHAT){ loi('trong-app-chat'); return; }
+  SR = window.SpeechRecognition || window.webkitSpeechRecognition;
   if(!SR){ loi('khong-ho-tro'); return; }
-  if(dangNghe){ try{ dangNghe.abort(); }catch(e){} }
+  if(dangNghe){ dangNghe.huy(); }
   if('speechSynthesis' in window) speechSynthesis.cancel();
+  if(loaAm){ try{ loaAm.pause(); }catch(e){} }
   var r = new SR();
-  r.lang = 'en-US'; r.interimResults = false; r.maxAlternatives = 5; r.continuous = false;
-  var cac = [], daXong = false;
+  r.lang = 'en-US'; r.interimResults = true; r.maxAlternatives = 5; r.continuous = false;
+  var cuoi = [], tam = '', daXong = false, henIm = null, henToiDa = null, coTieng = false;
+  function ketThuc(maLoi){
+    if(daXong) return; daXong = true;
+    clearTimeout(henIm); clearTimeout(henToiDa);
+    dangNghe = null;
+    try{ r.abort(); }catch(e){}
+    var ds = cuoi.length ? cuoi : (tam ? [tam] : []);
+    if(ds.length) xong(ds); else loi(maLoi || (coTieng ? 'khong-ro' : 'no-speech'));
+  }
+  function dungSau(ms){ clearTimeout(henIm); henIm = setTimeout(function(){ try{ r.stop(); }catch(e){} setTimeout(function(){ ketThuc(); }, 900); }, ms); }
   r.onresult = function(e){
-    for(var i=e.resultIndex;i<e.results.length;i++){
-      if(!e.results[i].isFinal) continue;
-      for(var j=0;j<e.results[i].length;j++) cac.push(e.results[i][j].transcript);
+    coTieng = true;
+    var t = [];
+    for(var i=0;i<e.results.length;i++){
+      var kq = e.results[i];
+      if(kq.isFinal && i >= e.resultIndex){ for(var j=0;j<kq.length;j++) if(kq[j].transcript) cuoi.push(kq[j].transcript); }
+      t.push(kq[0].transcript);
     }
+    tam = t.join(' ').trim();
+    dungSau(1500);
   };
-  r.onerror = function(e){ daXong = true; dangNghe = null; loi(e.error); };
-  r.onend = function(){ dangNghe = null; if(daXong) return; daXong = true; if(cac.length) xong(cac); else loi('no-speech'); };
-  dangNghe = r;
-  try{ r.start(); }catch(e){ dangNghe = null; loi('khong-bat-dau'); }
+  r.onspeechstart = function(){ coTieng = true; };
+  r.onerror = function(e){
+    if(e.error === 'no-speech' || e.error === 'aborted') return ketThuc(e.error === 'aborted' && !tam && !cuoi.length ? 'bi-ngat' : null);
+    ketThuc(e.error);
+  };
+  r.onend = function(){ ketThuc(); };
+  henToiDa = setTimeout(function(){ try{ r.stop(); }catch(e){} setTimeout(function(){ ketThuc(); }, 1200); }, 10000);
+  dangNghe = {
+    dung: function(){ try{ r.stop(); }catch(e){} setTimeout(function(){ ketThuc(); }, 900); },
+    huy: function(){ if(daXong) return; daXong = true; clearTimeout(henIm); clearTimeout(henToiDa); dangNghe = null; try{ r.abort(); }catch(e){} loi('huy'); }
+  };
+  try{ r.start(); }catch(e){ dangNghe = null; daXong = true; clearTimeout(henToiDa); loi('khong-bat-dau'); }
 }
 function loiMic(ma){
-  if(ma === 'khong-ho-tro') return 'Trình duyệt này chưa chấm được giọng nói. Trên Android hãy mở bằng Chrome, trên iPhone hãy mở bằng Safari.';
-  if(ma === 'not-allowed' || ma === 'service-not-allowed') return 'Chưa được phép dùng micro. Bấm vào biểu tượng ổ khoá cạnh địa chỉ trang, cho phép Micro rồi thử lại.';
-  if(ma === 'no-speech') return 'Chưa nghe thấy gì. Bấm nút rồi nói to, rõ hơn một chút nhé.';
+  if(ma === 'trong-app-chat') return 'Bạn đang mở trang bên trong Zalo/Facebook nên không dùng được micro. Bấm dấu ⋯ ở góc trên, chọn "Mở bằng trình duyệt" (Safari trên iPhone, Chrome trên Android) rồi thử lại.';
+  if(ma === 'khong-ho-tro') return LA_IOS
+    ? 'Trình duyệt này chưa chấm được giọng nói. Trên iPhone hãy mở link bằng Safari.'
+    : 'Trình duyệt này chưa chấm được giọng nói. Hãy mở link bằng Chrome.';
+  if(ma === 'not-allowed') return LA_IOS
+    ? 'Chưa được phép dùng micro. Vào Cài đặt → Safari → Micrô → chọn Cho phép (hoặc Hỏi), rồi tải lại trang và thử lại.'
+    : 'Chưa được phép dùng micro. Bấm vào biểu tượng ổ khoá cạnh địa chỉ trang, cho phép Micro rồi thử lại.';
+  if(ma === 'service-not-allowed') return LA_IOS
+    ? 'iPhone đang tắt tính năng nhận giọng nói. Vào Cài đặt → Chung → Bàn phím → bật "Bật Đọc chính tả", rồi thử lại.'
+    : 'Máy chưa cho phép nhận giọng nói. Kiểm tra quyền Micro của trình duyệt rồi thử lại.';
+  if(ma === 'no-speech') return 'Chưa nghe thấy gì. Bấm nút, đợi chữ "Đang nghe..." hiện ra rồi nói to, rõ hơn nhé.';
+  if(ma === 'audio-capture') return 'Không mở được micro. Kiểm tra máy có đang gọi điện hay app khác đang dùng micro không, rồi thử lại.';
   if(ma === 'network') return 'Mạng yếu nên chưa chấm được. Thử lại sau vài giây.';
-  if(ma === 'aborted') return '';
+  if(ma === 'bi-ngat') return 'Máy dừng nghe giữa chừng. Bấm nói lại nhé (đợi giọng mẫu đọc xong rồi mới bấm 🎤).';
+  if(ma === 'huy') return '';
+  if(ma === 'khong-bat-dau') return 'Chưa mở được micro. Tải lại trang rồi thử lại nhé.';
   return 'Chưa nghe rõ, thử lại nhé.';
 }
 
@@ -482,9 +522,9 @@ function veTheTu(v, b){
 }
 function ganMic(nut, mau, oKq, khiCham){
   nut.onclick = function(){
-    if(dangNghe){ try{ dangNghe.stop(); }catch(e){} return; }
-    nut.classList.add('dang-nghe'); nut.textContent = '🎤 Đang nghe...';
-    oKq.innerHTML = '<div class="ket-qua-noi mo">Nói ngay bây giờ: “'+esc(mau)+'”</div>';
+    if(dangNghe){ dangNghe.dung(); return; }
+    nut.classList.add('dang-nghe'); nut.textContent = '🎤 Đang nghe... (bấm để dừng)';
+    oKq.innerHTML = '<div class="ket-qua-noi mo">Nói ngay bây giờ: “'+esc(mau)+'”. Nói xong ngừng một chút, máy sẽ tự chấm.</div>';
     ngheNguoiHoc(function(cac){
       nut.classList.remove('dang-nghe'); nut.textContent = '🎤 Nói lại';
       var k = chamNoi(mau, cac);
