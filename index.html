@@ -114,9 +114,9 @@ ul.sai-list li{margin-bottom:8px}
 <body>
 <div class="khung" id="app"></div>
 <div class="thong-bao" id="thong-bao"></div>
-<script src="cau-hinh.js?v=7"></script>
-<script src="noi-dung.js?v=7"></script>
-<script src="ipa.js?v=7"></script>
+<script src="cau-hinh.js?v=8"></script>
+<script src="noi-dung.js?v=8"></script>
+<script src="ipa.js?v=8"></script>
 <script>
 (function(){
 'use strict';
@@ -368,7 +368,15 @@ function veTrangChu(){
     var soXong = DS_IPA.filter(function(a){ return tienDo['ipa-'+a.ki_hieu] != null; }).length;
     h += '<button class="vao-ipa" id="vao-ipa"><span style="font-size:28px">🗣️</span><div><b>Phát âm 44 âm IPA</b><span>Cách đặt miệng, lưỡi từng âm · nghe phân biệt · nói theo ('+soXong+'/'+DS_IPA.length+' âm đã luyện)</span></div></button>';
   }
-  h += '<div class="mo" style="margin-bottom:6px">Chọn giai đoạn</div><div class="tab-gd">' + gds.map(function(g){ return '<button data-gd="'+g+'" class="'+(g===st.gd?'chon':'')+'"><b>GĐ '+g+'</b>'+(GD_TEN[g]||'')+'</button>'; }).join('') + '</div>';
+  var ht = doc('hocTiep', null), bt = ht && dsBuoi.filter(function(b){ return b.gd===ht.gd && b.buoi===ht.buoi; })[0];
+  if(bt){
+    var tenTab = (TAB.filter(function(x){ return x.ma===(ht.phan==='kt'?'tu':ht.phan); })[0]||{}).ten || '';
+    h += '<button class="the buoi" id="hoc-tiep" style="border-color:var(--chinh);background:var(--chinh-nhat)"><div class="so">▶ Học tiếp</div><div class="ten">GĐ '+bt.gd+' · Buổi '+bt.buoi+': '+esc(bt.ten)+'</div><div class="np">Đang ở phần '+esc(tenTab)+'</div></button>';
+  }
+  var daHoc = function(b){ return PHAN.some(function(x){ return tienDo[khoa(b,x.ma)] != null; }); };
+  h += '<div class="mo" style="margin-bottom:6px">Chọn giai đoạn</div><div class="tab-gd">' + gds.map(function(g){
+    var cac = dsBuoi.filter(function(b){ return b.gd===g; }), xong = cac.filter(daHoc).length;
+    return '<button data-gd="'+g+'" class="'+(g===st.gd?'chon':'')+'"><b>GĐ '+g+'</b>'+(GD_TEN[g]||'')+'<span style="display:block;font-size:11px;opacity:.85">'+xong+'/'+cac.length+' buổi</span></button>'; }).join('') + '</div>';
   dsBuoi.filter(function(b){ return b.gd===st.gd; }).forEach(function(b){
     var co = b.tu.length || b.bai.length || b.cau.length;
     h += '<button class="the buoi" data-k="'+b.gd+'-'+b.buoi+'"'+(co?'':' disabled')+'><div class="so">Buổi '+b.buoi+'</div><div class="ten">'+esc(b.ten)+'</div>' +
@@ -381,7 +389,8 @@ function veTrangChu(){
   $app.innerHTML = h;
   $app.querySelectorAll('.tab-gd button').forEach(function(x){ x.onclick = function(){ st.gd = +x.dataset.gd; ghi('gdDangHoc', st.gd); veLai(); }; });
   var vi = document.getElementById('vao-ipa'); if(vi) vi.onclick = function(){ st.man='ipa'; veLai(); window.scrollTo(0,0); };
-  $app.querySelectorAll('.buoi').forEach(function(x){ x.onclick = function(){
+  var hti = document.getElementById('hoc-tiep'); if(hti) hti.onclick = function(){ st.buoi = bt; st.gd = bt.gd; st.man='buoi'; st.phan = ht.phan==='kt' ? 'tu' : ht.phan; batDauPhan(); veLai(); window.scrollTo(0,0); };
+  $app.querySelectorAll('.buoi[data-k]').forEach(function(x){ x.onclick = function(){
     var k = x.dataset.k; st.buoi = dsBuoi.filter(function(b){ return b.gd+'-'+b.buoi===k; })[0]; st.man='buoi'; st.phan = st.buoi.ly_thuyet && st.buoi.ly_thuyet.length ? 'ly' : 'tu'; batDauPhan(); veLai(); window.scrollTo(0,0);
   }; });
 }
@@ -392,7 +401,7 @@ function batDauPhan(){
   var b = st.buoi;
   if(st.phan === 'tu') p = { che:'the', i:0, lat:false };
   if(st.phan === 'ly') p = {};
-  if(st.phan === 'bai') p = { ds: tron(b.bai).map(function(x){ return Object.assign({}, x, { lc: x.dang==='chon' ? tron([x.dap_an].concat(x.sai||[])) : null }); }), i:0, da:null, dung:0, sai:[], xep:[], chon:null };
+  if(st.phan === 'bai') p = {};
   if(st.phan === 'noi') p = { an:false, ket:{} };
   if(st.phan === 'nghe') p = { i:0, ds: tron(b.cau).slice(0, Math.min(6, b.cau.length)), da:null, diem:0, ket:[] };
   if(st.phan === 'kt') p = taoKiemTraTu(b);
@@ -401,6 +410,7 @@ function veBuoi(){
   var b = st.buoi;
   var h = '<div class="dau"><button class="nut-tron" id="ve" aria-label="Quay lại">←</button><h1>'+esc(b.ten)+'<span class="nho">Giai đoạn '+b.gd+' · Buổi '+b.buoi+' · '+esc(b.chu_de)+'</span></h1></div>';
   var phanHien = st.phan === 'kt' ? 'tu' : st.phan;
+  ghi('hocTiep', { gd:b.gd, buoi:b.buoi, phan:phanHien });
   h += '<div class="tab-phan">' + TAB.map(function(x){ return '<button data-p="'+x.ma+'" class="'+(x.ma===phanHien?'chon':'')+'">'+x.ten+'</button>'; }).join('') + '</div>';
   h += '<div id="noi-dung"></div>';
   $app.innerHTML = h;
@@ -498,10 +508,28 @@ function veLyThuyet(v, b){
 }
 
 /* --- Từ vựng: thẻ --- */
+var thuocTu = doc('thuocTu', {});
+function daThuoc(b, en){ var m = thuocTu[b.gd+'-'+b.buoi]; return !!(m && m[en]); }
+function datThuoc(b, en, co){ var k = b.gd+'-'+b.buoi; thuocTu[k] = thuocTu[k] || {}; if(co) thuocTu[k][en] = 1; else delete thuocTu[k][en]; ghi('thuocTu', thuocTu); }
 function veTheTu(v, b){
-  var ds = b.tu; if(!ds.length){ v.innerHTML = '<p class="mo">Buổi này chưa có từ vựng.</p>'; return; }
+  if(!b.tu.length){ v.innerHTML = '<p class="mo">Buổi này chưa có từ vựng.</p>'; return; }
+  var soThuoc = b.tu.filter(function(x){ return daThuoc(b, x.en); }).length;
+  var conLai = b.tu.length - soThuoc;
+  if(p.loc && !p.dsLoc) p.dsLoc = b.tu.filter(function(x){ return !daThuoc(b, x.en); });
+  var ds = p.loc ? p.dsLoc : b.tu;
+  var dauTrang = '<div class="the" style="padding:12px 14px"><div class="hang"><span class="gian"><b>Đã thuộc '+soThuoc+'/'+b.tu.length+' từ</b></span>' +
+    '<label class="hang" style="gap:6px;font-size:14px;cursor:pointer"><input type="checkbox" id="loc"'+(p.loc?' checked':'')+(conLai||p.loc?'':' disabled')+'> Chỉ học từ chưa thuộc</label></div>' +
+    '<div class="tien-do" style="margin:8px 0 0"><i style="width:'+Math.round(100*soThuoc/b.tu.length)+'%;background:var(--dung)"></i></div></div>';
+  if(!ds.length || p.i >= ds.length){
+    v.innerHTML = dauTrang + '<div class="the giua"><div class="lon">🎉</div><p>'+(p.loc ? 'Bạn đã lướt hết các từ chưa thuộc.' : 'Hết thẻ rồi.')+'</p>' +
+      '<div class="hang"><button class="nut gian" id="lai">Học lại từ đầu</button><button class="nut chinh gian" id="kt">Kiểm tra 10 câu</button></div></div>';
+    document.getElementById('lai').onclick = function(){ p.i = 0; p.lat = false; p.dsLoc = null; veLai(); };
+    document.getElementById('kt').onclick = function(){ st.phan='kt'; batDauPhan(); veLai(); };
+    var lc = document.getElementById('loc'); if(lc) lc.onchange = function(e){ p.loc = e.target.checked; p.dsLoc = null; p.i = 0; p.lat = false; veLai(); };
+    return;
+  }
   var t = ds[p.i];
-  var h = '<div class="hang mo"><span class="gian">Thẻ '+(p.i+1)+'/'+ds.length+'</span><span>Bấm vào thẻ để xem nghĩa</span></div>' +
+  var h = dauTrang + '<div class="hang mo"><span class="gian">Thẻ '+(p.i+1)+'/'+ds.length+(p.loc?' (chưa thuộc)':'')+'</span><span>Bấm vào thẻ để xem nghĩa</span></div>' +
     '<div class="tien-do"><i style="width:'+Math.round(100*(p.i+1)/ds.length)+'%"></i></div>' +
     '<div class="the the-tu" id="the" style="cursor:pointer"><p class="en">'+esc(t.en)+'</p><div class="ipa">'+esc(t.ipa||'')+'</div>';
   if(p.lat){
@@ -510,17 +538,68 @@ function veTheTu(v, b){
   }
   h += '</div><div class="hang" style="justify-content:center;margin-bottom:12px"><button class="nut" data-doc="tu">🔊 Nghe</button><button class="nut" data-doc="cham">🐢 Chậm</button><button class="nut nut-mic" id="mic">🎤 Nói thử</button></div>' +
        '<div id="kq-mic"></div>' +
-       '<div class="hang"><button class="nut gian" id="truoc"'+(p.i===0?' disabled':'')+'>← Trước</button>' +
-       (p.i < ds.length-1 ? '<button class="nut chinh gian" id="tiep">Tiếp →</button>' : '<button class="nut chinh gian" id="kt">Kiểm tra từ vựng</button>') + '</div>';
+       '<div class="hang" style="margin-bottom:8px"><button class="nut gian" id="chua">🔁 Chưa thuộc</button><button class="nut gian" id="thuoc" style="border-color:var(--dung);color:var(--dung)">✓ Thuộc rồi</button></div>' +
+       '<div class="hang"><button class="nut gian nho" id="truoc"'+(p.i===0?' disabled':'')+'>← Trước</button><button class="nut gian nho" id="tiep">Bỏ qua →</button></div>' +
+       '<div style="height:8px"></div><button class="nut chinh rong" id="kt">Kiểm tra 10 câu</button>';
   v.innerHTML = h;
   document.getElementById('the').onclick = function(e){ if(e.target.closest('button')) return; p.lat = !p.lat; veLai(); };
   v.querySelectorAll('[data-doc]').forEach(function(x){ x.onclick = function(){ var k = x.dataset.doc; docTo(k==='vd' ? t.vd : t.en, k==='cham'); }; });
+  var sang = function(){ p.i++; p.lat=false; veLai(); if(ds[p.i]) docTo(ds[p.i].en); };
   document.getElementById('truoc').onclick = function(){ p.i--; p.lat=false; veLai(); docTo(ds[p.i].en); };
-  var tiep = document.getElementById('tiep'); if(tiep) tiep.onclick = function(){ p.i++; p.lat=false; veLai(); docTo(ds[p.i].en); };
-  var kt = document.getElementById('kt'); if(kt) kt.onclick = function(){ st.phan='kt'; batDauPhan(); veLai(); };
+  document.getElementById('tiep').onclick = sang;
+  document.getElementById('thuoc').onclick = function(){ datThuoc(b, t.en, true); sang(); };
+  document.getElementById('chua').onclick = function(){ datThuoc(b, t.en, false); sang(); };
+  document.getElementById('loc').onchange = function(e){ p.loc = e.target.checked; p.dsLoc = null; p.i = 0; p.lat = false; veLai(); };
+  document.getElementById('kt').onclick = function(){ st.phan='kt'; batDauPhan(); veLai(); };
   ganMic(document.getElementById('mic'), t.en, document.getElementById('kq-mic'));
 }
+/* --- Thu âm để tự so với giọng mẫu (chạy cả khi máy không chấm được, ví dụ iPhone) --- */
+var dangThu = null;
+function coTheThuAm(){ return !!(navigator.mediaDevices && navigator.mediaDevices.getUserMedia && window.MediaRecorder); }
+function ganThuAm(nutMic, mau, oKq, khiCham){
+  if(!coTheThuAm() || nutMic.nextElementSibling && nutMic.nextElementSibling.classList.contains('nut-thu')) return;
+  var nut = document.createElement('button');
+  nut.className = (nutMic.classList.contains('nho') ? 'nut nho' : 'nut') + ' nut-thu';
+  nut.textContent = '⏺ Thu âm';
+  nutMic.parentNode.insertBefore(nut, nutMic.nextSibling);
+  nut.onclick = function(){
+    if(dangThu){ dangThu.dung(); return; }
+    if('speechSynthesis' in window) speechSynthesis.cancel();
+    if(dangNghe) dangNghe.huy();
+    navigator.mediaDevices.getUserMedia({ audio:true }).then(function(luong){
+      var rec, manh = [], henGio;
+      try{ rec = new MediaRecorder(luong); }catch(e){ luong.getTracks().forEach(function(t){ t.stop(); }); oKq.innerHTML = '<div class="canh-bao">Máy này chưa thu âm được.</div>'; return; }
+      rec.ondataavailable = function(e){ if(e.data && e.data.size) manh.push(e.data); };
+      rec.onstop = function(){
+        clearTimeout(henGio); dangThu = null; luong.getTracks().forEach(function(t){ t.stop(); });
+        nut.textContent = '⏺ Thu lại'; nut.classList.remove('dang-nghe');
+        if(!manh.length){ oKq.innerHTML = '<div class="canh-bao">Chưa thu được tiếng, thử lại nhé.</div>'; return; }
+        var url = URL.createObjectURL(new Blob(manh, { type: manh[0].type || 'audio/mp4' }));
+        var giong = new Audio(url);
+        oKq.innerHTML = '<div class="ket-qua-noi"><div style="margin-bottom:8px">Nghe giọng bạn rồi so với giọng mẫu:</div>' +
+          '<div class="hang"><button class="nut nho" data-g="minh">▶ Giọng mình</button><button class="nut nho" data-g="mau">🔊 Giọng mẫu</button></div>' +
+          '<div style="margin:10px 0 6px">Bạn thấy giống chưa?</div><div class="hang">' +
+          '<button class="nut nho" data-tu="90">😀 Giống rồi</button><button class="nut nho" data-tu="65">🙂 Gần giống</button><button class="nut nho" data-tu="30">😕 Chưa giống</button></div></div>';
+        oKq.querySelector('[data-g=minh]').onclick = function(){ if('speechSynthesis' in window) speechSynthesis.cancel(); giong.currentTime = 0; giong.play(); };
+        oKq.querySelector('[data-g=mau]').onclick = function(){ giong.pause(); docTo(mau); };
+        oKq.querySelectorAll('[data-tu]').forEach(function(x){ x.onclick = function(){
+          var d = +x.dataset.tu;
+          oKq.querySelectorAll('[data-tu]').forEach(function(y){ y.classList.toggle('chinh', y===x); });
+          if(khiCham) khiCham({ phanTram:d, tuCham:true });
+        }; });
+      };
+      rec.start();
+      nut.textContent = '⏹ Dừng thu'; nut.classList.add('dang-nghe');
+      oKq.innerHTML = '<div class="ket-qua-noi mo">Đang thu âm, đọc to: “'+esc(mau)+'”. Đọc xong bấm ⏹ Dừng thu.</div>';
+      dangThu = { dung: function(){ try{ rec.stop(); }catch(e){} } };
+      henGio = setTimeout(function(){ if(dangThu) dangThu.dung(); }, 8000);
+    }).catch(function(){
+      oKq.innerHTML = '<div class="canh-bao">'+esc(LA_IOS ? 'Chưa được phép dùng micro. Vào Cài đặt → Safari → Micrô → Cho phép, tải lại trang rồi thử lại.' : 'Chưa được phép dùng micro. Bấm ổ khoá cạnh địa chỉ trang, cho phép Micro rồi thử lại.')+'</div>';
+    });
+  };
+}
 function ganMic(nut, mau, oKq, khiCham){
+  ganThuAm(nut, mau, oKq, khiCham);
   nut.onclick = function(){
     if(dangNghe){ dangNghe.dung(); return; }
     nut.classList.add('dang-nghe'); nut.textContent = '🎤 Đang nghe... (bấm để dừng)';
@@ -533,14 +612,17 @@ function ganMic(nut, mau, oKq, khiCham){
       if(khiCham) khiCham(k);
     }, function(ma){
       nut.classList.remove('dang-nghe'); nut.textContent = '🎤 Nói thử';
-      var m = loiMic(ma); oKq.innerHTML = m ? '<div class="canh-bao">'+esc(m)+'</div>' : '';
+      var m = loiMic(ma);
+      if(m && ma !== 'trong-app-chat' && coTheThuAm()) m += ' Hoặc bấm ⏺ Thu âm để tự nghe lại và so với giọng mẫu.';
+      oKq.innerHTML = m ? '<div class="canh-bao">'+esc(m)+'</div>' : '';
     });
   };
 }
 
 /* --- Từ vựng: kiểm tra --- */
 function taoKiemTraTu(b){
-  var ds = tron(b.tu);
+  var chua = tron(b.tu.filter(function(x){ return !daThuoc(b, x.en); })), roi = tron(b.tu.filter(function(x){ return daThuoc(b, x.en); }));
+  var ds = tron(chua.concat(roi).slice(0, Math.min(10, b.tu.length)));
   return { i:0, dung:0, da:null, sai:[], ds: ds.map(function(t, n){
     var khac = tron(b.tu.filter(function(x){ return x !== t; })).slice(0,3);
     var nghe = n % 2 === 1;
@@ -567,14 +649,45 @@ function veKiemTraTu(v, b){
   document.getElementById('ve-the').onclick = function(){ st.phan='tu'; batDauPhan(); veLai(); };
   if(q.kieu==='nghe'){ document.getElementById('nghe-lai').onclick = function(){ docTo(q.t.en); }; document.getElementById('nghe-cham').onclick = function(){ docTo(q.t.en, true); }; if(p.da==null && !p.daDoc){ p.daDoc = true; setTimeout(function(){ docTo(q.t.en); }, 250); } }
   v.querySelectorAll('.lua-chon button').forEach(function(x){ x.onclick = function(){
-    p.da = x.dataset.x; if(p.da===q.dap) p.dung++; else p.sai.push(q.t.en+' = '+q.t.vi); docTo(q.t.en); veLai(); }; });
+    p.da = x.dataset.x; if(p.da===q.dap) p.dung++; else { p.sai.push(q.t.en+' = '+q.t.vi); datThuoc(b, q.t.en, false); } docTo(q.t.en); veLai(); }; });
   var tiep = document.getElementById('tiep'); if(tiep) tiep.onclick = function(){ p.i++; p.da=null; p.daDoc=false; veLai(); };
 }
 
 /* --- Bài tập --- */
+var saiBai = doc('saiBai', {}), luotBai = doc('luotBai', {});
+function batDauLuot(b, idxs, ten){
+  p = { ten:ten, ds: tron(idxs).map(function(i){ var x = b.bai[i]; return Object.assign({}, x, { _i:i, lc: x.dang==='chon' ? tron([x.dap_an].concat(x.sai||[])) : null }); }),
+        i:0, da:null, dung:0, sai:[], saiIdx:[], xep:[] };
+}
+function veChonLuot(v, b){
+  var k = b.gd+'-'+b.buoi, n = b.bai.length, soLuot = Math.ceil(n/10), cuSai = (saiBai[k]||[]).filter(function(i){ return i < n; });
+  var h = '<div class="the mo" style="font-size:14px">'+n+' câu chia thành '+soLuot+' lượt, mỗi lượt khoảng 10 câu gồm đủ các dạng. Làm lượt nào cũng được, làm xong có nút làm lại các câu sai.</div>';
+  for(var l=0;l<soLuot;l++){
+    var d = luotBai[k+'-'+l];
+    h += '<button class="the buoi" data-luot="'+l+'"><div class="hang"><div class="gian"><div class="ten" style="margin:0">Lượt '+(l+1)+'</div><div class="np">'+b.bai.filter(function(_,i){ return i%soLuot===l; }).length+' câu</div></div>' +
+         (d!=null ? '<span class="diem '+muc(d)+'">'+d+'%</span>' : '<span class="mo">Chưa làm</span>') + '</div></button>';
+  }
+  if(cuSai.length) h += '<button class="nut rong" id="lam-sai" style="margin-bottom:10px;border-color:var(--sai);color:var(--sai)">🔁 Làm lại '+cuSai.length+' câu sai lần trước</button>';
+  h += '<button class="nut rong" id="ca-bai">Làm liền cả '+n+' câu</button>';
+  v.innerHTML = h;
+  v.querySelectorAll('[data-luot]').forEach(function(x){ x.onclick = function(){ var l = +x.dataset.luot;
+    batDauLuot(b, b.bai.map(function(_,i){ return i; }).filter(function(i){ return i%soLuot===l; }), 'luot-'+l); veLai(); window.scrollTo(0,0); }; });
+  var ls = document.getElementById('lam-sai'); if(ls) ls.onclick = function(){ batDauLuot(b, cuSai, 'sai'); veLai(); window.scrollTo(0,0); };
+  document.getElementById('ca-bai').onclick = function(){ batDauLuot(b, b.bai.map(function(_,i){ return i; }), 'ca'); veLai(); window.scrollTo(0,0); };
+}
 function veBaiTap(v, b){
-  if(!p.ds.length){ v.innerHTML = '<p class="mo">Buổi này chưa có bài tập.</p>'; return; }
-  if(p.i >= p.ds.length) return veTongKet(v, b, 'bai', p.dung, p.ds.length, p.sai, function(){ batDauPhan(); veLai(); });
+  if(!b.bai.length){ v.innerHTML = '<p class="mo">Buổi này chưa có bài tập.</p>'; return; }
+  if(!p.ds) return veChonLuot(v, b);
+  if(p.i >= p.ds.length){
+    if(!p.daLuu){
+      p.daLuu = true;
+      var k = b.gd+'-'+b.buoi, pt = Math.round(100*p.dung/p.ds.length);
+      if(p.ten && p.ten.indexOf('luot-')===0){ var kl = k+'-'+p.ten.slice(5); if(luotBai[kl]==null || pt > luotBai[kl]) luotBai[kl] = pt; ghi('luotBai', luotBai); }
+      var cu = (saiBai[k]||[]).filter(function(i){ return !p.ds.some(function(q){ return q._i===i; }); });
+      saiBai[k] = cu.concat(p.saiIdx); ghi('saiBai', saiBai);
+    }
+    return veTongKet(v, b, 'bai', p.dung, p.ds.length, p.sai, function(){ batDauPhan(); veLai(); });
+  }
   var q = p.ds[p.i], daLam = p.da!=null;
   var h = '<div class="hang mo"><span class="gian">Câu '+(p.i+1)+'/'+p.ds.length+'</span><span>Đúng '+p.dung+'</span></div>' +
           '<div class="tien-do"><i style="width:'+Math.round(100*p.i/p.ds.length)+'%"></i></div><div class="the">';
@@ -612,7 +725,7 @@ function veBaiTap(v, b){
   }
   h += '</div>'; v.innerHTML = h;
   var cham = function(traLoi, ok){
-    p.da = traLoi; p.ok = ok; if(ok) p.dung++;
+    p.da = traLoi; p.ok = ok; if(ok) p.dung++; else if(p.saiIdx) p.saiIdx.push(q._i);
     else if(q.dang==='tim_loi') p.sai.push(q.hoi + ' → sai ở “' + q.tu_sai + '”, sửa thành “' + (q.sua||'bỏ từ này') + '”');
     else p.sai.push((q.dang==='sapxep' ? (q.vi||'') : q.hoi) + ' → ' + q.dap_an + (traLoi ? ' (bạn trả lời: '+traLoi+')' : ''));
     veLai();
@@ -648,9 +761,12 @@ function veTongKet(v, b, phan, dung, tong, sai, lamLai){
           '<p>'+(pt>=85?'Tuyệt vời! Bạn nắm bài rất chắc.':pt>=60?'Khá tốt! Xem lại các câu sai bên dưới nhé.':'Chưa sao cả, ôn lại rồi làm lần nữa nhé.')+'</p>' +
           '</div>';
   if(sai.length) h += '<div class="the"><b>Cần ôn lại</b><ul class="sai-list">' + sai.map(function(s){ return '<li>'+esc(s)+'</li>'; }).join('') + '</ul></div>';
-  h += '<div class="hang"><button class="nut gian" id="lam-lai">Làm lại</button><button class="nut chinh gian" id="phan-sau">Phần tiếp theo</button></div>';
+  var coLamSai = phan==='bai' && p.saiIdx && p.saiIdx.length;
+  if(coLamSai) h += '<button class="nut rong" id="lam-sai-ngay" style="margin-bottom:8px;border-color:var(--sai);color:var(--sai)">🔁 Làm lại '+p.saiIdx.length+' câu sai</button>';
+  h += '<div class="hang"><button class="nut gian" id="lam-lai">'+(phan==='bai'?'Chọn lượt khác':'Làm lại')+'</button><button class="nut chinh gian" id="phan-sau">Phần tiếp theo</button></div>';
   v.innerHTML = h;
   document.getElementById('lam-lai').onclick = lamLai;
+  if(coLamSai){ var dsSai = p.saiIdx.slice(); document.getElementById('lam-sai-ngay').onclick = function(){ batDauLuot(b, dsSai, 'sai'); veLai(); window.scrollTo(0,0); }; }
   document.getElementById('phan-sau').onclick = function(){
     var thu = ['tu','bai','noi','nghe'], i = thu.indexOf(phan === 'kt' ? 'tu' : phan);
     if(i < thu.length-1){ st.phan = thu[i+1]; batDauPhan(); } else st.man = 'chu';
@@ -780,8 +896,8 @@ function veNoiTheo(v, b){
      .concat(b.cau.map(function(x){ return { en:x.en, phu:x.vi||'' }; }));
   if(!muc_.length){ v.innerHTML = '<p class="mo">Buổi này chưa có phần luyện nói.</p>'; return; }
   var h = '';
-  if(!SR) h += '<div class="canh-bao">'+esc(loiMic('khong-ho-tro'))+' Bạn vẫn nghe mẫu và nói theo được, chỉ là máy không chấm điểm.</div>';
-  h += '<div class="the mo" style="font-size:14px">Bấm 🔊 nghe mẫu, rồi bấm 🎤 và đọc to. Chữ <span class="w-dung">xanh</span> là máy nghe đúng, chữ <span class="w-sai">đỏ</span> là cần đọc lại. Bật “Ẩn chữ” để luyện nghe trước khi nhìn.</div>';
+  if(!SR) h += '<div class="canh-bao">'+esc(loiMic('khong-ho-tro'))+' Bạn vẫn luyện được: bấm ⏺ Thu âm, nghe lại giọng mình và so với giọng mẫu.</div>';
+  h += '<div class="the mo" style="font-size:14px">Bấm 🔊 nghe mẫu, rồi bấm 🎤 Nói và đọc to: máy tô chữ <span class="w-dung">xanh</span> là đọc đúng, <span class="w-sai">đỏ</span> là cần đọc lại. Máy không chấm được (hay gặp trên iPhone) thì bấm <b>⏺ Thu âm</b>, nghe lại giọng mình và tự so với giọng mẫu. Bật “Ẩn chữ” để luyện nghe trước khi nhìn.</div>';
   h += '<div class="hang" style="margin-bottom:12px"><label class="hang gian" style="gap:8px;cursor:pointer"><input type="checkbox" id="an"'+(p.an?' checked':'')+'> Ẩn chữ (luyện nghe)</label></div>';
   var soAm = b.luyen_am.length;
   muc_.forEach(function(m, i){
