@@ -87,6 +87,7 @@ footer a{color:var(--mo)}
 <script src="sach-ta2.js?v=1"></script>
 <script src="noi-viet.js?v=1"></script>
 <script src="cau-nghe.js?v=1"></script>
+<script src="decuong-ta3.js?v=1"></script>
 <script>
 const GOC='https://englishpracticetest.net/';
 const PHAN=[
@@ -120,7 +121,7 @@ let muc=doc('onthi_muc','nghe');
 function veTabs(){
   document.getElementById('tabs').innerHTML=TAP.map(t=>`<button class="${t.ma===tab?'on':''}" data-t="${t.ma}">${t.ten}<br><small style="font-weight:400">Unit ${t.units[0]}–${t.units.at(-1)}</small></button>`).join('');
   document.querySelectorAll('#tabs button').forEach(b=>b.onclick=()=>{tab=b.dataset.t;ghi('onthi_tab',tab);ve()});
-  const ds=[['nghe','🎧 Bài nghe'],['sach','📘 Kiến thức & bài tập']];if(tab==='ta2'&&window.NOIVIET)ds.push(['noiviet','🗣️ Nói & Viết']);
+  const ds=[['nghe','🎧 Bài nghe'],['sach','📘 Kiến thức & bài tập']];if(tab==='ta2'&&window.NOIVIET)ds.push(['noiviet','🗣️ Nói & Viết']);if(tab==='ta3'&&window.DECUONG3)ds.push(['decuong','📝 Theo đề cương']);
   if(!ds.some(x=>x[0]===muc))muc='nghe';
   document.getElementById('muc').innerHTML=ds.map(([m,t])=>`<button class="${m===muc?'on':''}" data-m="${m}">${t}</button>`).join('');
   document.querySelectorAll('#muc button').forEach(b=>b.onclick=()=>{muc=b.dataset.m;ghi('onthi_muc',muc);ve()});
@@ -182,6 +183,30 @@ function veNoiViet(){
     <div class="kt"><b>Mẫu câu hỏi thông tin:</b><br>${N.cau.ht.map(c=>'• <i>'+c+'</i>').join('<br>')}</div>
   </div></details>`;
 }
+const BT_DC={};
+function veDeCuong(){
+  const D=window.DECUONG3;
+  D.vietlai.forEach((g,i)=>BT_DC['dcvl'+i]=g.bt);BT_DC.dctn=D.tracnghiem;
+  const tongVL=D.vietlai.reduce((s,g)=>s+g.bt.length,0);
+  const nut=(k,n,chu)=>`<button class="nutto" data-lam="${k}">${chu} (${n} câu)${diem[k]!=null?` · đã đúng ${diem[k]}`:''}</button><div class="khung"></div>`;
+  return `<details class="the" open><summary><span class="so">Đề</span><span class="tieude">Cấu trúc đề thi Tiếng Anh 3</span></summary><div class="trong">${D.dang.map(x=>`<div class="kt">${x}</div>`).join('')}</div></details>
+  <details class="the"><summary><span class="so">Viết 1</span><span class="tieude">Viết lại câu giữ nguyên nghĩa</span><span class="tiendo">${tongVL} câu</span></summary><div class="trong">
+    <p class="ghichu">Phần 1 bài viết: 5 câu. Đây là các dạng hay ra nhất trong bộ đề mẫu. Gõ phần còn thiếu vào chỗ trống.</p>
+    ${D.vietlai.map((g,i)=>`<details class="bai"><summary><b>${i+1}.</b> ${g.ten}</summary><div class="kt">${g.kt}</div>${nut('dcvl'+i,g.bt.length,'✏️ Luyện')}</details>`).join('')}
+  </div></details>
+  <details class="the"><summary><span class="so">Trắc nghiệm</span><span class="tieude">Ngữ pháp, phát âm mở rộng</span><span class="tiendo">${D.tracnghiem.length} câu</span></summary><div class="trong">
+    <p class="ghichu">Các điểm có trong bộ trắc nghiệm của đề cương nhưng ngoài sách: quá khứ hoàn thành, điều kiện loại 0, -ed/-ing, phát âm…</p>${nut('dctn',D.tracnghiem.length,'✏️ Làm bài')}
+  </div></details>
+  <details class="the"><summary><span class="so">Viết 2</span><span class="tieude">Bài luận đồng ý / phản đối (≥120 từ)</span><span class="tiendo">${D.luan.de.length} đề</span></summary><div class="trong">
+    <h3 class="nho">Khung bài luận</h3>${D.luan.khung.map(x=>`<div class="kt">${x}</div>`).join('')}
+    <h3 class="nho">Đề và ý gợi ý</h3>
+    ${D.luan.de.map((d,i)=>`<details class="bai"><summary><b>${i+1}.</b> ${d.t}</summary><div class="kt"><b>Nếu đồng ý:</b><br>${d.dong.map(x=>'• '+x).join('<br>')}</div><div class="kt"><b>Nếu phản đối:</b><br>${d.phan.map(x=>'• '+x).join('<br>')}</div></details>`).join('')}
+  </div></details>
+  <details class="the"><summary><span class="so">Nói</span><span class="tieude">10 chủ đề nói (Part 2)</span></summary><div class="trong">
+    <p class="ghichu">Part 2 mở đầu: <i>Today I\'m going to talk about…</i> Nói đủ 3 ý, khoảng 1–2 phút. Phần "Ôn lại" cho biết nên xem lại bài nào trong sách.</p>
+    ${D.noi.map((x,i)=>`<details class="bai"><summary><b>${i+1}.</b> ${x.t}</summary><div class="kt"><b>Nói đủ 3 ý:</b><br>${x.y.map(y=>'• '+y).join('<br>')}</div><div class="kt"><b>Ôn lại:</b> ${x.lk}</div><button class="loa" data-doc="${thoat(x.t)}">🔊 Nghe đề</button></details>`).join('')}
+  </div></details>`;
+}
 function veDeViet(v){return `<div class="kt"><b>Đề ${v.ma}.</b> ${v.ten}${v.it?` <small>(${v.it})</small>`:''}<br>Nói về: ${v.y.map(y=>'• '+y).join(' ')}</div>`}
 function timBai(ma,u){return SACH[u].bai.find(b=>b.ma===ma)}
 function veKhung(k,xem){
@@ -191,6 +216,7 @@ function veKhung(k,xem){
   else lamBai(k,b.bt,b.ma,false);
 }
 function lamBai(k,ds,khoa,ngauNhien){
+  k._ds=ds;k._ng=ngauNhien;
   const cau=(ngauNhien?tron(ds).slice(0,15):ds);
   k._cau=cau;k._khoa=khoa;k._xong=0;k._dung=0;
   k.innerHTML=`<p class="dem">Đã làm <b class="x">0</b>/${cau.length} · Đúng <b class="y">0</b></p>`+cau.map((c,i)=>{
@@ -218,7 +244,8 @@ document.addEventListener('click',e=>{
   if(b.dataset.doc){docTo(b.dataset.doc);return}
   if(b.dataset.ktunit){const u=b.dataset.ktunit,k=document.querySelector(`.khung[data-kq="${u}"]`);lamBai(k,SACH[u].bai.flatMap(x=>x.bt),'unit'+u,true);k.scrollIntoView({behavior:'smooth',block:'start'});return}
   if(b.dataset.nghe){const [n,p]=b.dataset.nghe.split('-'),k=document.querySelector(`.khung[data-nk="${b.dataset.nghe}"]`);if(k.innerHTML){k.innerHTML='';return}lamBai(k,CAUNGHE[n][p],'nghe'+b.dataset.nghe,false);return}
-  if(b.classList.contains('lamlai')){const k=b.closest('.khung');if(k.dataset.nk){const [n,p]=k.dataset.nk.split('-');lamBai(k,CAUNGHE[n][p],'nghe'+k.dataset.nk,false);k.scrollIntoView({behavior:'smooth',block:'start'});return}if(k.dataset.kq)lamBai(k,SACH[k.dataset.kq].bai.flatMap(x=>x.bt),'unit'+k.dataset.kq,true);else lamBai(k,timBai(k.dataset.ma,k.dataset.u).bt,k.dataset.ma,false);k.scrollIntoView({behavior:'smooth',block:'start'});return}
+  if(b.classList.contains('lamlai')){const k=b.closest('.khung');lamBai(k,k._ds,k._khoa,k._ng);k.scrollIntoView({behavior:'smooth',block:'start'});return}
+  if(b.dataset.lam){const k=b.nextElementSibling;if(k.innerHTML){k.innerHTML='';return}lamBai(k,BT_DC[b.dataset.lam],b.dataset.lam,false);return}
   const cd=b.closest('.cau');if(!cd||cd.classList.contains('dung')||cd.classList.contains('sai'))return;
   const k=cd.closest('.khung');
   if(b.dataset.j!=null){cd.querySelectorAll('.lua button').forEach(x=>{x.disabled=true;if(x.dataset.j==='0')x.classList.add('dung')});if(b.dataset.j!=='0')b.classList.add('sai');cham(k,cd,b.dataset.j==='0');return}
@@ -229,7 +256,7 @@ document.addEventListener('toggle',e=>{const d=e.target;if(d.classList&&d.classL
 function ve(){
   veTabs();
   const t=TAP.find(x=>x.ma===tab), o=document.getElementById('noidung');
-  o.innerHTML=muc==='nghe'?veNghe(t):muc==='noiviet'?veNoiViet():veSach(t);
+  o.innerHTML=muc==='nghe'?veNghe(t):muc==='noiviet'?veNoiViet():muc==='decuong'?veDeCuong():veSach(t);
   o.querySelectorAll('.phan').forEach(ph=>{
     const a=ph.querySelector('audio');
     ph.querySelectorAll('.toc button').forEach(b=>b.onclick=()=>{a.playbackRate=+b.dataset.s;ph.querySelectorAll('.toc button').forEach(c=>c.classList.toggle('on',c===b))});
