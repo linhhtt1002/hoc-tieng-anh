@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ôn thi tiếng Anh</title>
+<style>
+:root{--nen:#f4f6fb;--the:#fff;--chu:#1d2433;--mo:#647089;--chinh:#2f5bd3;--chinh-nhat:#e6ecfc;--xanh:#1f9d63;--vien:#e1e5ee}
+@media (prefers-color-scheme:dark){:root{--nen:#12151c;--the:#1b2029;--chu:#e7eaf1;--mo:#9aa4b8;--chinh:#7d9bff;--chinh-nhat:#232c44;--xanh:#46c98c;--vien:#2a303c}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--nen);color:var(--chu);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+header{background:var(--chinh);color:#fff;padding:18px 16px 0}
+header h1{margin:0 0 4px;font-size:22px}
+header p{margin:0 0 14px;opacity:.9;font-size:14px}
+.tabs{display:flex;gap:6px}
+.tabs button{flex:1;border:0;border-radius:12px 12px 0 0;padding:12px 8px;font:inherit;font-weight:700;background:rgba(255,255,255,.18);color:#fff;cursor:pointer}
+.tabs button.on{background:var(--nen);color:var(--chinh)}
+main{max-width:720px;margin:0 auto;padding:16px}
+.muc{display:flex;gap:8px;margin-bottom:14px}
+.muc button{flex:1;border:1px solid var(--vien);background:var(--the);color:var(--chu);border-radius:10px;padding:10px;font:inherit;font-size:15px;cursor:pointer}
+.muc button.on{border-color:var(--chinh);background:var(--chinh-nhat);color:var(--chinh);font-weight:700}
+.the{background:var(--the);border:1px solid var(--vien);border-radius:14px;margin-bottom:12px;overflow:hidden}
+.the>summary{list-style:none;cursor:pointer;padding:14px 16px;display:flex;align-items:center;gap:10px}
+.the>summary::-webkit-details-marker{display:none}
+.so{background:var(--chinh-nhat);color:var(--chinh);border-radius:10px;padding:4px 10px;font-weight:700;white-space:nowrap}
+.tieude{flex:1;font-weight:600}
+.tiendo{font-size:13px;color:var(--mo);white-space:nowrap}
+.tiendo.xong{color:var(--xanh);font-weight:700}
+.trong{padding:0 16px 14px}
+.phan{border-top:1px solid var(--vien);padding:12px 0}
+.phan h3{margin:0 0 2px;font-size:15px}
+.phan .mota{margin:0 0 8px;color:var(--mo);font-size:14px}
+.phan .tinh{margin:0 0 8px;font-size:14px;font-style:italic}
+audio{width:100%;height:40px}
+.hang{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:8px}
+.toc button{border:1px solid var(--vien);background:var(--the);color:var(--chu);border-radius:8px;padding:4px 10px;font:inherit;font-size:13px;cursor:pointer}
+.toc button.on{background:var(--chinh);color:#fff;border-color:var(--chinh)}
+label.da{font-size:14px;display:flex;gap:6px;align-items:center;cursor:pointer;margin-left:auto}
+.nutgoc{display:block;text-align:center;background:var(--chinh);color:#fff;text-decoration:none;border-radius:10px;padding:11px;font-weight:600;margin-top:4px}
+.ghichu{font-size:13px;color:var(--mo);margin:10px 0 0}
+.cho{background:var(--the);border:1px dashed var(--vien);border-radius:14px;padding:18px;color:var(--mo)}
+footer{font-size:12px;color:var(--mo);text-align:center;padding:10px 16px 30px}
+footer a{color:var(--mo)}
+</style>
+</head>
+<body>
+<header>
+  <h1>Ôn thi tiếng Anh</h1>
+  <p>Bài nghe A2 + kiến thức sách face2face Pre-intermediate</p>
+  <div class="tabs" id="tabs"></div>
+</header>
+<main>
+  <div class="muc" id="muc"></div>
+  <div id="noidung"></div>
+</main>
+<footer>Bài nghe phát trực tiếp từ <a href="https://englishpracticetest.net/practice-listening-tests-for-a2-with-answer-and-audioscript/" target="_blank" rel="noopener">englishpracticetest.net</a> (More Listening Tests). Câu hỏi, tranh và đáp án xem trên trang gốc.</footer>
+<script>
+const GOC='https://englishpracticetest.net/';
+const PHAN=[
+  {ten:'Phần 1 · Câu 1–5',mota:'5 đoạn hội thoại ngắn — chọn tranh đúng cho mỗi câu hỏi.'},
+  {ten:'Phần 2 · Câu 6–10',mota:'Một cuộc nói chuyện — nối mỗi người/mục với đáp án A–H.'},
+  {ten:'Phần 3 · Câu 11–15',mota:'Một cuộc nói chuyện — chọn A, B hoặc C.'},
+  {ten:'Phần 4 · Câu 16–20',mota:'Nghe và điền thông tin còn thiếu.'},
+  {ten:'Phần 5 · Câu 21–25',mota:'Nghe và điền thông tin còn thiếu.'}
+];
+// Tình huống của Phần 2 và 3 lấy theo dòng giới thiệu trên trang gốc
+const TINH={
+ 5:['Kate talking to Emma about her family.','A woman talking to a policeman.'],
+ 6:['Pete talking to a friend about his holiday.','Michael talking to Marina about a new sports centre.'],
+ 7:['Jane talking to a friend about clothes for her holiday.','Mrs Lee talking to her secretary about her business trip.'],
+ 8:['Philip talking to his mother about his son, Simon.','Chloe talking to a man about a sailing holiday.'],
+ 9:['Sue talking to a friend about her new clothes.','Jan talking to Steve about a student travel card.'],
+ 10:['Rose talking to Steve about her day.','Peter talking to a friend about learning to drive.'],
+ 11:['Patrick talking to his mother about a photo of old school friends.','Jenny asking Mark about school holiday activities.'],
+ 12:['Sonya talking to Martin about her family.','A woman asking a travel agent about a park in the mountains.']
+};
+const TAP=[{ma:'ta2',ten:'TA 2',units:[5,6,7,8,9]},{ma:'ta3',ten:'TA 3',units:[10,11,12]}];
+const trang=n=>`${GOC}practice-listening-test-for-a2-with-answer-and-audioscript-test-${String(n).padStart(2,'0')}/`;
+const file=(n,p)=>`${GOC}wp-content/uploads/2022/11/a2-test-${n}-0${p}.mp3`;
+
+function doc(k,md){try{return JSON.parse(localStorage.getItem(k))??md}catch(e){return md}}
+function ghi(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}
+let daNghe=doc('onthi_danghe',{});
+let tab=doc('onthi_tab','ta2'); if(!TAP.some(t=>t.ma===tab)) tab='ta2';
+let muc=doc('onthi_muc','nghe');
+
+function veTabs(){
+  document.getElementById('tabs').innerHTML=TAP.map(t=>`<button class="${t.ma===tab?'on':''}" data-t="${t.ma}">${t.ten}<br><small style="font-weight:400">Unit ${t.units[0]}–${t.units.at(-1)}</small></button>`).join('');
+  document.querySelectorAll('#tabs button').forEach(b=>b.onclick=()=>{tab=b.dataset.t;ghi('onthi_tab',tab);ve()});
+  document.getElementById('muc').innerHTML=[['nghe','🎧 Bài nghe'],['sach','📘 Kiến thức & bài tập']].map(([m,t])=>`<button class="${m===muc?'on':''}" data-m="${m}">${t}</button>`).join('');
+  document.querySelectorAll('#muc button').forEach(b=>b.onclick=()=>{muc=b.dataset.m;ghi('onthi_muc',muc);ve()});
+}
+function demXong(n){return [1,2,3,4,5].filter(p=>daNghe[n+'-'+p]).length}
+function veNghe(t){
+  return t.units.map(n=>{
+    const x=demXong(n);
+    return `<details class="the" data-n="${n}"><summary><span class="so">Unit ${n}</span><span class="tieude">Đề nghe số ${n} · 25 câu</span><span class="tiendo ${x===5?'xong':''}">${x===5?'✓ Xong':x+'/5 phần'}</span></summary>
+    <div class="trong">
+      <a class="nutgoc" href="${trang(n)}" target="_blank" rel="noopener">Mở câu hỏi, tranh &amp; đáp án ↗</a>
+      ${PHAN.map((ph,i)=>{const p=i+1,k=n+'-'+p;const tinh=(p===2||p===3)?`<p class="tinh">${TINH[n][p-2]}</p>`:'';
+      return `<div class="phan"><h3>${ph.ten}</h3><p class="mota">${ph.mota}</p>${tinh}
+        <audio controls preload="none" src="${file(n,p)}"></audio>
+        <div class="hang"><span class="toc">${[0.75,1,1.25].map(s=>`<button data-s="${s}" class="${s===1?'on':''}">${s}x</button>`).join(' ')}</span>
+        <label class="da"><input type="checkbox" data-k="${k}" ${daNghe[k]?'checked':''}> Đã nghe xong</label></div></div>`}).join('')}
+      <p class="ghichu">Mỗi đoạn nên nghe 2 lần như khi thi. Làm xong thì bấm "Mở câu hỏi, tranh &amp; đáp án" → nút "Answer &amp; Audioscript" dưới mỗi phần để xem đáp án và lời thoại.</p>
+    </div></details>`}).join('');
+}
+function veSach(t){
+  return `<div class="cho">Phần kiến thức và bài tập sách face2face Pre-intermediate Unit ${t.units[0]}–${t.units.at(-1)} đang được soạn.</div>`;
+}
+function ve(){
+  veTabs();
+  const t=TAP.find(x=>x.ma===tab), o=document.getElementById('noidung');
+  o.innerHTML=muc==='nghe'?veNghe(t):veSach(t);
+  o.querySelectorAll('.phan').forEach(ph=>{
+    const a=ph.querySelector('audio');
+    ph.querySelectorAll('.toc button').forEach(b=>b.onclick=()=>{a.playbackRate=+b.dataset.s;ph.querySelectorAll('.toc button').forEach(c=>c.classList.toggle('on',c===b))});
+    a.addEventListener('play',()=>document.querySelectorAll('audio').forEach(k=>{if(k!==a)k.pause()}));
+    a.addEventListener('error',()=>{if(!ph.querySelector('.loi'))a.insertAdjacentHTML('afterend','<p class="ghichu loi">Không phát được file này — bấm "Mở câu hỏi, tranh & đáp án" để nghe trên trang gốc.</p>')});
+  });
+  o.querySelectorAll('input[data-k]').forEach(c=>c.onchange=()=>{daNghe[c.dataset.k]=c.checked;ghi('onthi_danghe',daNghe);
+    const d=c.closest('details'),n=d.dataset.n,x=demXong(n),s=d.querySelector('.tiendo');s.textContent=x===5?'✓ Xong':x+'/5 phần';s.classList.toggle('xong',x===5)});
+}
+ve();
+</script>
+</body>
+</html>

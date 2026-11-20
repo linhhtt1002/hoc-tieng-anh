@@ -114,9 +114,9 @@ ul.sai-list li{margin-bottom:8px}
 <body>
 <div class="khung" id="app"></div>
 <div class="thong-bao" id="thong-bao"></div>
-<script src="cau-hinh.js?v=9"></script>
-<script src="noi-dung.js?v=9"></script>
-<script src="ipa.js?v=9"></script>
+<script src="cau-hinh.js?v=10"></script>
+<script src="noi-dung.js?v=10"></script>
+<script src="ipa.js?v=10"></script>
 <script>
 (function(){
 'use strict';
@@ -191,48 +191,75 @@ var LA_IOS = /iPhone|iPad|iPod/i.test(navigator.userAgent) || (navigator.platfor
 var TRONG_APP_CHAT = /Zalo|FBAN|FBAV|FB_IAB|Instagram|Messenger|Line\//i.test(navigator.userAgent);
 // Chrome Android trả "kết quả cuối" rồi tự dừng; Safari iPhone thường chỉ trả "kết quả tạm" và không tự dừng,
 // nên: gom cả kết quả tạm, tự dừng sau 1,5 giây im lặng, tối đa 10 giây, và luôn tự kết thúc dù trình duyệt không báo.
+// Dùng lại MỘT bộ nghe cho cả trang (iPhone hay chỉ chạy được lần đầu nếu mỗi lần tạo bộ mới rồi huỷ ngang).
+var boNghe = null, boNgheDangChay = false, phienNghe = null, soLanHong = 0;
+function taoBoNghe(){
+  var r = new SR();
+  r.lang = 'en-US'; r.interimResults = true; r.maxAlternatives = 5; r.continuous = false;
+  r.onstart = function(){ boNgheDangChay = true; };
+  r.onresult = function(e){ if(phienNghe) phienNghe.ketQua(e); };
+  r.onspeechstart = function(){ if(phienNghe) phienNghe.coTieng = true; };
+  r.onerror = function(e){ if(phienNghe) phienNghe.loi(e.error); };
+  r.onend = function(){ boNgheDangChay = false; if(phienNghe) phienNghe.ketThuc(); };
+  return r;
+}
+function tatAmKhac(){
+  if('speechSynthesis' in window) speechSynthesis.cancel();
+  if(loaAm){ try{ loaAm.pause(); }catch(e){} }
+  if(amCtx && amCtx.state === 'running'){ try{ amCtx.suspend(); }catch(e){} }
+}
 function ngheNguoiHoc(xong, loi){
   if(TRONG_APP_CHAT){ loi('trong-app-chat'); return; }
   SR = window.SpeechRecognition || window.webkitSpeechRecognition;
   if(!SR){ loi('khong-ho-tro'); return; }
   if(dangNghe){ dangNghe.huy(); }
-  if('speechSynthesis' in window) speechSynthesis.cancel();
-  if(loaAm){ try{ loaAm.pause(); }catch(e){} }
-  var r = new SR();
-  r.lang = 'en-US'; r.interimResults = true; r.maxAlternatives = 5; r.continuous = false;
-  var cuoi = [], tam = '', daXong = false, henIm = null, henToiDa = null, coTieng = false;
+  tatAmKhac();
+  var ph = { cuoi:[], tam:'', daXong:false, coTieng:false, henIm:null, henToiDa:null };
   function ketThuc(maLoi){
-    if(daXong) return; daXong = true;
-    clearTimeout(henIm); clearTimeout(henToiDa);
+    if(ph.daXong) return; ph.daXong = true;
+    clearTimeout(ph.henIm); clearTimeout(ph.henToiDa);
+    if(phienNghe === ph) phienNghe = null;
     dangNghe = null;
-    try{ r.abort(); }catch(e){}
-    var ds = cuoi.length ? cuoi : (tam ? [tam] : []);
-    if(ds.length) xong(ds); else loi(maLoi || (coTieng ? 'khong-ro' : 'no-speech'));
+    if(boNgheDangChay){ try{ boNghe.stop(); }catch(e){} }   // dừng nhẹ nhàng, không huỷ ngang
+    var ds = ph.cuoi.length ? ph.cuoi : (ph.tam ? [ph.tam] : []);
+    if(ds.length){ soLanHong = 0; xong(ds); }
+    else { soLanHong++; loi(maLoi || (ph.coTieng ? 'khong-ro' : 'no-speech')); }
   }
-  function dungSau(ms){ clearTimeout(henIm); henIm = setTimeout(function(){ try{ r.stop(); }catch(e){} setTimeout(function(){ ketThuc(); }, 900); }, ms); }
-  r.onresult = function(e){
-    coTieng = true;
+  function dungSau(ms){ clearTimeout(ph.henIm); ph.henIm = setTimeout(function(){ try{ boNghe.stop(); }catch(e){} setTimeout(function(){ ketThuc(); }, 900); }, ms); }
+  ph.ketThuc = function(){ ketThuc(); };
+  ph.ketQua = function(e){
+    ph.coTieng = true;
     var t = [];
     for(var i=0;i<e.results.length;i++){
       var kq = e.results[i];
-      if(kq.isFinal && i >= e.resultIndex){ for(var j=0;j<kq.length;j++) if(kq[j].transcript) cuoi.push(kq[j].transcript); }
+      if(kq.isFinal && i >= e.resultIndex){ for(var j=0;j<kq.length;j++) if(kq[j].transcript) ph.cuoi.push(kq[j].transcript); }
       t.push(kq[0].transcript);
     }
-    tam = t.join(' ').trim();
+    ph.tam = t.join(' ').trim();
     dungSau(1500);
   };
-  r.onspeechstart = function(){ coTieng = true; };
-  r.onerror = function(e){
-    if(e.error === 'no-speech' || e.error === 'aborted') return ketThuc(e.error === 'aborted' && !tam && !cuoi.length ? 'bi-ngat' : null);
-    ketThuc(e.error);
+  ph.loi = function(ma){
+    if(ma === 'no-speech') return ketThuc();
+    if(ma === 'aborted') return ketThuc(ph.tam || ph.cuoi.length ? null : 'bi-ngat');
+    ketThuc(ma);
   };
-  r.onend = function(){ ketThuc(); };
-  henToiDa = setTimeout(function(){ try{ r.stop(); }catch(e){} setTimeout(function(){ ketThuc(); }, 1200); }, 10000);
+  var batDau = function(){
+    if(!boNghe) boNghe = taoBoNghe();
+    phienNghe = ph;
+    boNghe.start();
+  };
+  try{ batDau(); }
+  catch(e){
+    // bộ nghe cũ bị kẹt: bỏ đi, tạo bộ mới và thử lại một lần
+    try{ boNghe.abort(); }catch(_){}
+    boNghe = null; boNgheDangChay = false;
+    try{ batDau(); }catch(e2){ phienNghe = null; soLanHong++; loi('khong-bat-dau'); return; }
+  }
+  ph.henToiDa = setTimeout(function(){ try{ boNghe.stop(); }catch(e){} setTimeout(function(){ ketThuc(); }, 1200); }, 10000);
   dangNghe = {
-    dung: function(){ try{ r.stop(); }catch(e){} setTimeout(function(){ ketThuc(); }, 900); },
-    huy: function(){ if(daXong) return; daXong = true; clearTimeout(henIm); clearTimeout(henToiDa); dangNghe = null; try{ r.abort(); }catch(e){} loi('huy'); }
+    dung: function(){ try{ boNghe.stop(); }catch(e){} setTimeout(function(){ ketThuc(); }, 900); },
+    huy: function(){ if(ph.daXong) return; ph.daXong = true; clearTimeout(ph.henIm); clearTimeout(ph.henToiDa); if(phienNghe === ph) phienNghe = null; dangNghe = null; try{ boNghe.stop(); }catch(e){} loi('huy'); }
   };
-  try{ r.start(); }catch(e){ dangNghe = null; daXong = true; clearTimeout(henToiDa); loi('khong-bat-dau'); }
 }
 function loiMic(ma){
   if(ma === 'trong-app-chat') return 'Bạn đang mở trang bên trong Zalo/Facebook nên không dùng được micro. Bấm dấu ⋯ ở góc trên, chọn "Mở bằng trình duyệt" (Safari trên iPhone, Chrome trên Android) rồi thử lại.';
@@ -327,7 +354,10 @@ function tiengKeu(dung){
     o.type = dung ? 'sine' : 'square';
     o.frequency.setValueAtTime(dung ? 880 : 180, t); if(dung) o.frequency.setValueAtTime(1320, t + 0.08);
     g.gain.setValueAtTime(0.12, t); g.gain.exponentialRampToValueAtTime(0.001, t + (dung ? 0.25 : 0.2));
+    if(amCtx.state === 'suspended') amCtx.resume();
     o.connect(g); g.connect(amCtx.destination); o.start(t); o.stop(t + 0.3);
+    // nhả loa ngay sau khi kêu để iPhone còn mở được micro cho phần nói
+    clearTimeout(tiengKeu.hen); tiengKeu.hen = setTimeout(function(){ try{ amCtx.suspend(); }catch(e){} }, 450);
   }catch(e){}
 }
 
@@ -645,8 +675,13 @@ function ganMic(nut, mau, oKq, khiCham){
     }, function(ma){
       nut.classList.remove('dang-nghe'); nut.textContent = '🎤 Nói thử';
       var m = loiMic(ma);
-      if(m && ma !== 'trong-app-chat' && coTheThuAm()) m += ' Hoặc bấm ⏺ Thu âm để tự nghe lại và so với giọng mẫu.';
-      oKq.innerHTML = m ? '<div class="canh-bao">'+esc(m)+'</div>' : '';
+      if(!m){ oKq.innerHTML = ''; return; }
+      var nutTai = soLanHong >= 2 && ma !== 'trong-app-chat' && ma !== 'khong-ho-tro';
+      if(nutTai) m = 'Máy chấm đang bị kẹt sau vài lần dùng (hay gặp trên iPhone). Bấm nút dưới để tải lại trang, bạn sẽ quay về đúng chỗ này.';
+      else if(ma !== 'trong-app-chat' && coTheThuAm()) m += ' Hoặc bấm ⏺ Thu âm để tự nghe lại và so với giọng mẫu.';
+      oKq.innerHTML = '<div class="canh-bao">'+esc(m)+(nutTai ? '<div style="margin-top:8px"><button class="nut nho chinh" data-tai-lai>🔄 Tải lại và thử tiếp</button></div>' : '')+'</div>';
+      var tl = oKq.querySelector('[data-tai-lai]');
+      if(tl) tl.onclick = function(){ taiLaiGiuCho(); };
     });
   };
 }
@@ -1186,6 +1221,21 @@ function veLai(){
   }
   veTrangChu();
 }
+function taiLaiGiuCho(){
+  var g = { man: st.man, gd: st.buoi && st.buoi.gd, buoi: st.buoi && st.buoi.buoi, phan: st.phan === 'kt' ? 'tu' : st.phan, am: st.am, y: window.scrollY };
+  ghi('quayLai', g);
+  location.reload();
+}
+(function(){
+  var g = doc('quayLai', null); if(!g) return;
+  ghi('quayLai', null);
+  if(g.man === 'buoi'){
+    var b = dsBuoi.filter(function(x){ return x.gd === g.gd && x.buoi === g.buoi; })[0];
+    if(b){ st.buoi = b; st.gd = b.gd; st.man = 'buoi'; st.phan = g.phan; batDauPhan(); }
+  } else if(g.man === 'am' && DS_IPA[g.am]){ st.man = 'am'; st.am = g.am; p = { quiz:null }; }
+  else if(g.man === 'ipa'){ st.man = 'ipa'; }
+  setTimeout(function(){ window.scrollTo(0, g.y || 0); }, 60);
+})();
 taiBoSung();
 veLai();
 })();
