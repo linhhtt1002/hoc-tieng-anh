@@ -65,6 +65,7 @@ table.tv td{border-bottom:1px solid var(--vien);padding:7px 4px;vertical-align:m
 .giai:empty{display:none}
 .tong{background:var(--chinh-nhat);border-radius:10px;padding:12px;text-align:center;font-size:17px;margin:6px 0}
 .nutto{display:block;width:100%;border:0;background:var(--chinh);color:#fff;border-radius:10px;padding:12px;font:inherit;font-weight:600;cursor:pointer;margin:12px 0 4px}
+h3.nho{font-size:15px;margin:14px 0 6px}
 .ghichu{font-size:13px;color:var(--mo);margin:10px 0 0}
 .cho{background:var(--the);border:1px dashed var(--vien);border-radius:14px;padding:18px;color:var(--mo)}
 footer{font-size:12px;color:var(--mo);text-align:center;padding:10px 16px 30px}
@@ -82,7 +83,9 @@ footer a{color:var(--mo)}
   <div id="noidung"></div>
 </main>
 <footer>Bài nghe phát trực tiếp từ <a href="https://englishpracticetest.net/practice-listening-tests-for-a2-with-answer-and-audioscript/" target="_blank" rel="noopener">englishpracticetest.net</a> (More Listening Tests). Câu hỏi, tranh và đáp án xem trên trang gốc.</footer>
-<script src="sach.js?v=1"></script>
+<script src="sach.js?v=2"></script>
+<script src="sach-ta2.js?v=1"></script>
+<script src="noi-viet.js?v=1"></script>
 <script>
 const GOC='https://englishpracticetest.net/';
 const PHAN=[
@@ -116,7 +119,9 @@ let muc=doc('onthi_muc','nghe');
 function veTabs(){
   document.getElementById('tabs').innerHTML=TAP.map(t=>`<button class="${t.ma===tab?'on':''}" data-t="${t.ma}">${t.ten}<br><small style="font-weight:400">Unit ${t.units[0]}–${t.units.at(-1)}</small></button>`).join('');
   document.querySelectorAll('#tabs button').forEach(b=>b.onclick=()=>{tab=b.dataset.t;ghi('onthi_tab',tab);ve()});
-  document.getElementById('muc').innerHTML=[['nghe','🎧 Bài nghe'],['sach','📘 Kiến thức & bài tập']].map(([m,t])=>`<button class="${m===muc?'on':''}" data-m="${m}">${t}</button>`).join('');
+  const ds=[['nghe','🎧 Bài nghe'],['sach','📘 Kiến thức & bài tập']];if(tab==='ta2'&&window.NOIVIET)ds.push(['noiviet','🗣️ Nói & Viết']);
+  if(!ds.some(x=>x[0]===muc))muc='nghe';
+  document.getElementById('muc').innerHTML=ds.map(([m,t])=>`<button class="${m===muc?'on':''}" data-m="${m}">${t}</button>`).join('');
   document.querySelectorAll('#muc button').forEach(b=>b.onclick=()=>{muc=b.dataset.m;ghi('onthi_muc',muc);ve()});
 }
 function demXong(n){return [1,2,3,4,5].filter(p=>daNghe[n+'-'+p]).length}
@@ -153,6 +158,29 @@ function veSach(t){
     <div class="khung" data-kq="${n}"></div>
     </div></details>`}).join('')+`<p class="ghichu">Kiến thức và từ vựng tóm tắt theo đúng bài trong sách face2face Pre-intermediate; câu bài tập được soạn mới để luyện đúng phần đó.</p>`;
 }
+function veNoiViet(){
+  const N=window.NOIVIET;
+  return `<details class="the" open><summary><span class="so">Nói</span><span class="tieude">15 chủ đề nói (You should say…)</span></summary><div class="trong">
+    <p class="ghichu">Mỗi chủ đề nói khoảng 1–2 phút, trả lời đủ 3 ý theo thứ tự. Bấm 🔊 để nghe đề.</p>
+    ${N.noi.map((x,i)=>`<details class="bai"><summary><b>${i+1}.</b> ${x.t}</summary>
+      <div class="kt"><b>Cần nói đủ 3 ý:</b><br>${x.y.map(y=>'• '+y).join('<br>')}</div>
+      <div class="kt"><b>Câu mở đầu gợi ý:</b> <i>${x.mo}</i> <button class="loa" data-doc="${thoat(x.mo.replace(/…/g,''))}">🔊</button></div>
+      <div class="kt"><b>Ngữ pháp nên dùng:</b> ${x.ng}</div>
+      <button class="loa" data-doc="${thoat(x.t)}">🔊 Nghe đề</button></details>`).join('')}
+  </div></details>
+  <details class="the"><summary><span class="so">Hỏi</span><span class="tieude">Câu hỏi phụ của giám khảo</span><span class="tiendo">${N.hoi.length} nhóm</span></summary><div class="trong">
+    <p class="ghichu">Trả lời mỗi câu 2–3 câu: trả lời thẳng + lý do + ví dụ.</p>
+    ${N.hoi.map((g,i)=>`<div class="kt"><b>Nhóm ${i+1}</b><br>${g.map(q=>`• ${q} <button class="loa" data-doc="${thoat(q)}">🔊</button>`).join('<br>')}</div>`).join('')}
+  </div></details>
+  <details class="the"><summary><span class="so">Viết</span><span class="tieude">Viết thư trang trọng (10 đề)</span></summary><div class="trong">
+    <h3 class="nho">Khung một lá thư</h3>${N.khung.map(x=>`<div class="kt">${x}</div>`).join('')}
+    <h3 class="nho">Đề thư phàn nàn</h3>${N.viet.filter(v=>v.loai==='kn').map(veDeViet).join('')}
+    <div class="kt"><b>Mẫu câu phàn nàn:</b><br>${N.cau.kn.map(c=>'• <i>'+c+'</i>').join('<br>')}</div>
+    <h3 class="nho">Đề thư hỏi thông tin</h3>${N.viet.filter(v=>v.loai==='ht').map(veDeViet).join('')}
+    <div class="kt"><b>Mẫu câu hỏi thông tin:</b><br>${N.cau.ht.map(c=>'• <i>'+c+'</i>').join('<br>')}</div>
+  </div></details>`;
+}
+function veDeViet(v){return `<div class="kt"><b>Đề ${v.ma}.</b> ${v.ten}${v.it?` <small>(${v.it})</small>`:''}<br>Nói về: ${v.y.map(y=>'• '+y).join(' ')}</div>`}
 function timBai(ma,u){return SACH[u].bai.find(b=>b.ma===ma)}
 function veKhung(k,xem){
   const b=timBai(k.dataset.ma,k.dataset.u);
@@ -198,7 +226,7 @@ document.addEventListener('toggle',e=>{const d=e.target;if(d.classList&&d.classL
 function ve(){
   veTabs();
   const t=TAP.find(x=>x.ma===tab), o=document.getElementById('noidung');
-  o.innerHTML=muc==='nghe'?veNghe(t):veSach(t);
+  o.innerHTML=muc==='nghe'?veNghe(t):muc==='noiviet'?veNoiViet():veSach(t);
   o.querySelectorAll('.phan').forEach(ph=>{
     const a=ph.querySelector('audio');
     ph.querySelectorAll('.toc button').forEach(b=>b.onclick=()=>{a.playbackRate=+b.dataset.s;ph.querySelectorAll('.toc button').forEach(c=>c.classList.toggle('on',c===b))});
