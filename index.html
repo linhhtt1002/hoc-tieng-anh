@@ -46,7 +46,7 @@ label.nhan{display:block;font-weight:600;margin:12px 0 6px}
 .cham{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}
 .cham span{font-size:12px;padding:3px 8px;border-radius:999px;background:var(--nen);color:var(--phu)}
 .cham span.xong{background:var(--dung-nhat);color:var(--dung)}
-.tab-phan{display:grid;grid-template-columns:repeat(5,1fr);gap:2px;background:var(--the);border:1px solid var(--vien);border-radius:12px;padding:4px;margin-bottom:14px}
+.tab-phan{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--the);border:1px solid var(--vien);border-radius:12px;padding:4px;margin-bottom:14px}
 .tab-phan button{border:0;background:none;padding:8px 1px;border-radius:9px;cursor:pointer;font-size:12px;line-height:1.25;font-weight:600;color:var(--phu)}
 .ly h3{margin:0 0 8px;font-size:16px;color:var(--chinh)}
 .ly ul{margin:0;padding-left:18px}
@@ -114,9 +114,9 @@ ul.sai-list li{margin-bottom:8px}
 <body>
 <div class="khung" id="app"></div>
 <div class="thong-bao" id="thong-bao"></div>
-<script src="cau-hinh.js?v=8"></script>
-<script src="noi-dung.js?v=8"></script>
-<script src="ipa.js?v=8"></script>
+<script src="cau-hinh.js?v=9"></script>
+<script src="noi-dung.js?v=9"></script>
+<script src="ipa.js?v=9"></script>
 <script>
 (function(){
 'use strict';
@@ -127,7 +127,7 @@ var PHAN = [
   {ma:'noi', ten:'Nói theo'},
   {ma:'nghe', ten:'Nghe chép'}
 ];
-var TAB = [{ma:'ly', ten:'Bài học'}].concat(PHAN);
+var TAB = [{ma:'ly', ten:'Bài học'}].concat(PHAN).concat([{ma:'game', ten:'🎮 Trò chơi'}]);
 var TEN_PHAN = {tu:'Từ vựng', bai:'Bài tập', noi:'Nói theo', nghe:'Nghe chép', ipa:'Phát âm IPA'};
 var DS_IPA = (window.IPA && window.IPA.am) || [];
 // Âm thanh từng âm: phát trực tiếp từ trang IELTS Fighter (ielts-fighter.com), không lưu bản sao
@@ -302,6 +302,33 @@ function guiKetQua(b, phan, diem, tong, chiTiet){
   var pt = tong ? Math.round(100*diem/tong) : 0;
   var k = khoa(b, phan);
   if(!(k in tienDo) || pt > tienDo[k]){ tienDo[k] = pt; ghi('tienDo', tienDo); }
+  congSao(pt >= 85 ? 3 : pt >= 60 ? 2 : 1);
+}
+
+/* ---------- sao + chuỗi ngày học ---------- */
+function homNay(){ var d = new Date(); return d.getFullYear()+'-'+(d.getMonth()+1)+'-'+d.getDate(); }
+function congSao(n){
+  ghi('sao', doc('sao', 0) + n);
+  var ngay = doc('ngayHoc', []); if(ngay.indexOf(homNay()) < 0){ ngay.push(homNay()); ghi('ngayHoc', ngay.slice(-400)); }
+}
+function chuoiNgay(){
+  var ngay = doc('ngayHoc', []), d = new Date(), n = 0;
+  var key = function(x){ return x.getFullYear()+'-'+(x.getMonth()+1)+'-'+x.getDate(); };
+  if(ngay.indexOf(key(d)) < 0) d.setDate(d.getDate()-1);
+  while(ngay.indexOf(key(d)) >= 0){ n++; d.setDate(d.getDate()-1); }
+  return n;
+}
+/* tiếng "ting" khi đúng, "bụp" khi sai */
+var amCtx = null;
+function tiengKeu(dung){
+  try{
+    amCtx = amCtx || new (window.AudioContext || window.webkitAudioContext)();
+    var o = amCtx.createOscillator(), g = amCtx.createGain(), t = amCtx.currentTime;
+    o.type = dung ? 'sine' : 'square';
+    o.frequency.setValueAtTime(dung ? 880 : 180, t); if(dung) o.frequency.setValueAtTime(1320, t + 0.08);
+    g.gain.setValueAtTime(0.12, t); g.gain.exponentialRampToValueAtTime(0.001, t + (dung ? 0.25 : 0.2));
+    o.connect(g); g.connect(amCtx.destination); o.start(t); o.stop(t + 0.3);
+  }catch(e){}
 }
 
 /* ---------- kiến thức bổ sung do giáo viên thêm (lưu ở Google Sheet qua API) ---------- */
@@ -363,7 +390,10 @@ function veDangNhap(){
 function veTrangChu(){
   var gds = []; dsBuoi.forEach(function(b){ if(gds.indexOf(b.gd)<0) gds.push(b.gd); });
   if(gds.indexOf(st.gd)<0) st.gd = gds[0];
-  var h = '<div class="dau"><h1>Học tiếng Anh mỗi ngày 👋<span class="nho">Hôm nay mình học buổi nào? Điểm của bạn được lưu trên máy này.</span></h1></div>';
+  var cn = chuoiNgay(), sao = doc('sao', 0);
+  var h = '<div class="dau"><h1>Học tiếng Anh mỗi ngày 👋<span class="nho">Hôm nay mình học buổi nào? Điểm của bạn được lưu trên máy này.</span></h1></div>' +
+    '<div class="hang" style="margin-bottom:12px"><div class="the gian" style="margin:0;padding:10px 12px"><b style="font-size:20px">🔥 '+cn+'</b><div class="mo" style="font-size:12px">'+(cn ? 'ngày học liên tiếp' : 'Học hôm nay để bắt đầu chuỗi')+'</div></div>' +
+    '<div class="the gian" style="margin:0;padding:10px 12px"><b style="font-size:20px">⭐ '+sao+'</b><div class="mo" style="font-size:12px">sao (làm bài, chơi game)</div></div></div>';
   if(DS_IPA.length){
     var soXong = DS_IPA.filter(function(a){ return tienDo['ipa-'+a.ki_hieu] != null; }).length;
     h += '<button class="vao-ipa" id="vao-ipa"><span style="font-size:28px">🗣️</span><div><b>Phát âm 44 âm IPA</b><span>Cách đặt miệng, lưỡi từng âm · nghe phân biệt · nói theo ('+soXong+'/'+DS_IPA.length+' âm đã luyện)</span></div></button>';
@@ -401,6 +431,8 @@ function batDauPhan(){
   var b = st.buoi;
   if(st.phan === 'tu') p = { che:'the', i:0, lat:false };
   if(st.phan === 'ly') p = {};
+  dungDongHo();
+  if(st.phan === 'game') p = { game:null };
   if(st.phan === 'bai') p = {};
   if(st.phan === 'noi') p = { an:false, ket:{} };
   if(st.phan === 'nghe') p = { i:0, ds: tron(b.cau).slice(0, Math.min(6, b.cau.length)), da:null, diem:0, ket:[] };
@@ -414,10 +446,10 @@ function veBuoi(){
   h += '<div class="tab-phan">' + TAB.map(function(x){ return '<button data-p="'+x.ma+'" class="'+(x.ma===phanHien?'chon':'')+'">'+x.ten+'</button>'; }).join('') + '</div>';
   h += '<div id="noi-dung"></div>';
   $app.innerHTML = h;
-  document.getElementById('ve').onclick = function(){ if('speechSynthesis' in window) speechSynthesis.cancel(); st.man='chu'; veLai(); };
+  document.getElementById('ve').onclick = function(){ if('speechSynthesis' in window) speechSynthesis.cancel(); dungDongHo(); st.man='chu'; veLai(); };
   $app.querySelectorAll('.tab-phan button').forEach(function(x){ x.onclick = function(){ st.phan = x.dataset.p; batDauPhan(); veLai(); }; });
   var vung = document.getElementById('noi-dung');
-  ({ ly: veLyThuyet, tu: veTheTu, kt: veKiemTraTu, bai: veBaiTap, noi: veNoiTheo, nghe: veNgheChep })[st.phan](vung, b);
+  ({ ly: veLyThuyet, tu: veTheTu, kt: veKiemTraTu, bai: veBaiTap, noi: veNoiTheo, nghe: veNgheChep, game: veTroChoi })[st.phan](vung, b);
 }
 
 /* --- Bài học (lý thuyết để xem lại) --- */
@@ -772,6 +804,187 @@ function veTongKet(v, b, phan, dung, tong, sai, lamLai){
     if(i < thu.length-1){ st.phan = thu[i+1]; batDauPhan(); } else st.man = 'chu';
     veLai(); window.scrollTo(0,0);
   };
+}
+
+/* ---------- Trò chơi (dùng từ vựng của buổi) ---------- */
+var dongHo = null;
+function dungDongHo(){ if(dongHo){ clearInterval(dongHo); dongHo = null; } }
+var kyLuc = doc('kyLuc', {});
+function luuKyLuc(k, gt, nhoHonLaTot){ var cu = kyLuc[k]; var moi = cu == null || (nhoHonLaTot ? gt < cu : gt > cu); if(moi){ kyLuc[k] = gt; ghi('kyLuc', kyLuc); } return moi && cu != null; }
+var GAME = [
+  { ma:'ghep', ten:'🃏 Lật thẻ ghép cặp', mo:'Lật 2 thẻ để ghép từ tiếng Anh với nghĩa. Càng ít lượt càng giỏi.' },
+  { ma:'dua',  ten:'⏱️ Đua 60 giây', mo:'Trả lời thật nhanh trong 60 giây. Đúng liên tiếp được nhân điểm.' },
+  { ma:'chu',  ten:'🔤 Ghép chữ', mo:'Nghe từ, xem nghĩa, bấm các chữ cái để viết đúng từ.' }
+];
+function veTroChoi(v, b){
+  if(b.tu.length < 4){ v.innerHTML = '<p class="mo">Buổi này chưa đủ từ vựng để chơi.</p>'; return; }
+  if(!p.game){
+    var k = b.gd+'-'+b.buoi;
+    v.innerHTML = '<div class="the mo" style="font-size:14px">Chơi với 30 từ vựng của buổi này. Chơi xong được ⭐ sao, phá kỷ lục được thêm sao.</div>' +
+      GAME.map(function(g){
+        var kl = kyLuc[k+'-'+g.ma], txt = kl==null ? 'Chưa chơi' : (g.ma==='ghep' ? 'Kỷ lục: '+kl+' lượt' : 'Kỷ lục: '+kl+' điểm');
+        return '<button class="the buoi" data-game="'+g.ma+'"><div class="ten" style="font-size:18px">'+g.ten+'</div><div class="np">'+g.mo+'</div><div class="cham"><span class="'+(kl!=null?'xong':'')+'">'+txt+'</span></div></button>';
+      }).join('');
+    v.querySelectorAll('[data-game]').forEach(function(x){ x.onclick = function(){ batDauGame(b, x.dataset.game); veLai(); window.scrollTo(0,0); }; });
+    return;
+  }
+  if(p.xong) return veKetThucGame(v, b);
+  ({ ghep: veGameGhep, dua: veGameDua, chu: veGameChu })[p.game](v, b);
+}
+function batDauGame(b, g){
+  dungDongHo();
+  if(g === 'ghep'){
+    var tu = tron(b.tu).slice(0, 6), the = [];
+    tu.forEach(function(w, i){ the.push({ id:i, txt:w.en, loai:'en', w:w }); the.push({ id:i, txt:w.vi, loai:'vi', w:w }); });
+    p = { game:g, the:tron(the), mo:[], xong:false, daGhep:{}, luot:0, batDau:Date.now(), khoa:false };
+  }
+  if(g === 'dua') p = { game:g, diem:0, combo:0, dung:0, sai:0, het:Date.now()+60000, cau:null, khoa:false };
+  if(g === 'chu'){
+    var ds = tron(b.tu.filter(function(w){ return /^[A-Za-z' -]+$/.test(w.en) && w.en.replace(/[^A-Za-z]/g,'').length <= 12; })).slice(0, 8);
+    p = { game:g, ds:ds, i:0, diem:0, goiY:0, saiLan:0 };
+    moTuChu();
+  }
+}
+function thoatGame(){ return '<div class="hang mo" style="margin-bottom:10px"><button class="nut nho" id="thoat-game">← Chọn game khác</button><span class="gian"></span>'; }
+function ganThoatGame(){ var t = document.getElementById('thoat-game'); if(t) t.onclick = function(){ dungDongHo(); p = { game:null }; veLai(); }; }
+
+/* Game 1: lật thẻ ghép cặp */
+function veGameGhep(v, b){
+  var giay = Math.floor((Date.now()-p.batDau)/1000);
+  var h = thoatGame() + '<span>⏱ <b id="gio">'+giay+'</b>s · Lượt: <b>'+p.luot+'</b></span></div>' +
+    '<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px">' + p.the.map(function(t, i){
+      var lo = p.mo.indexOf(i) >= 0, xg = p.daGhep[i];
+      var style = 'min-height:78px;border-radius:14px;padding:6px;font-weight:600;font-size:'+(t.txt.length>14?'13':'15')+'px;cursor:pointer;border:2px solid ' +
+        (xg ? 'var(--dung);background:var(--dung-nhat);color:var(--dung);opacity:.55' : lo ? 'var(--chinh);background:#fff' : 'transparent;background:linear-gradient(135deg,#3b5bdb,#7048e8);color:#fff');
+      return '<button data-o="'+i+'" style="'+style+'"'+(xg?' disabled':'')+'>'+(lo||xg ? esc(t.txt) : '?')+'</button>';
+    }).join('') + '</div>';
+  v.innerHTML = h; ganThoatGame();
+  if(!dongHo) dongHo = setInterval(function(){ var e = document.getElementById('gio'); if(!e){ dungDongHo(); return; } e.textContent = Math.floor((Date.now()-p.batDau)/1000); }, 1000);
+  v.querySelectorAll('[data-o]').forEach(function(x){ x.onclick = function(){
+    var i = +x.dataset.o; if(p.khoa || p.mo.indexOf(i) >= 0 || p.daGhep[i]) return;
+    p.mo.push(i);
+    if(p.the[i].loai === 'en') docTo(p.the[i].txt);
+    if(p.mo.length === 2){
+      p.luot++;
+      var a = p.the[p.mo[0]], c = p.the[p.mo[1]];
+      if(a.id === c.id && a.loai !== c.loai){
+        p.daGhep[p.mo[0]] = p.daGhep[p.mo[1]] = true; p.mo = []; tiengKeu(true);
+        if(Object.keys(p.daGhep).length === p.the.length){
+          dungDongHo(); var giay2 = Math.round((Date.now()-p.batDau)/1000);
+          var sao = p.luot <= 9 ? 3 : p.luot <= 13 ? 2 : 1;
+          var kl = luuKyLuc(b.gd+'-'+b.buoi+'-ghep', p.luot, true);
+          p = { game:'ghep', xong:true, tieuDe:'Ghép xong cả 6 cặp!', dong:['Số lượt lật: '+p.luot+' (ít nhất là 6)', 'Thời gian: '+giay2+' giây'], sao:sao + (kl?1:0), kyLucMoi:kl };
+        }
+      } else {
+        p.khoa = true; tiengKeu(false);
+        setTimeout(function(){ p.mo = []; p.khoa = false; if(st.phan==='game' && p.game==='ghep' && !p.xong) veLai(); }, 900);
+      }
+    }
+    veLai();
+  }; });
+}
+
+/* Game 2: đua 60 giây */
+function cauDua(b){
+  var t = b.tu[Math.floor(Math.random()*b.tu.length)];
+  var khac = tron(b.tu.filter(function(x){ return x !== t; })).slice(0,3);
+  var r = Math.random(), kieu = r < 0.4 ? 'en' : r < 0.75 ? 'vi' : 'nghe';
+  if(kieu === 'vi') return { kieu:kieu, hoi:t.vi, dap:t.en, lc:tron([t.en].concat(khac.map(function(x){ return x.en; }))), t:t };
+  return { kieu:kieu, hoi:t.en, dap:t.vi, lc:tron([t.vi].concat(khac.map(function(x){ return x.vi; }))), t:t };
+}
+function veGameDua(v, b){
+  if(!p.cau) p.cau = cauDua(b);
+  var con = Math.max(0, p.het - Date.now()), q = p.cau;
+  var h = thoatGame() + '<span>Điểm: <b style="font-size:18px">'+p.diem+'</b>'+(p.combo>=2?' · 🔥 x'+Math.min(p.combo,5):'')+'</span></div>' +
+    '<div class="tien-do" style="height:10px"><i id="thanh-gio" style="width:'+(con/600)+'%;background:'+(con<10000?'var(--sai)':'var(--chinh)')+'"></i></div>' +
+    '<div class="the giua">' +
+    (q.kieu==='nghe' ? '<div class="mo">Nghe và chọn nghĩa</div><button class="nut" id="nghe-dua" style="margin:10px 0">🔊 Nghe lại</button>'
+                     : '<div class="mo">'+(q.kieu==='en'?'Nghĩa của từ này là gì?':'Từ tiếng Anh nào nghĩa là:')+'</div><div style="font-size:26px;font-weight:700;margin:8px 0 14px">'+esc(q.hoi)+'</div>') +
+    '<div class="lua-chon" style="text-align:left">' + q.lc.map(function(x){
+      var c = ''; if(p.da != null){ if(x === q.dap) c = 'dung'; else if(x === p.da) c = 'sai'; }
+      return '<button class="'+c+'" data-x="'+esc(x)+'">'+esc(x)+'</button>'; }).join('') + '</div></div>';
+  v.innerHTML = h; ganThoatGame();
+  if(q.kieu==='nghe'){ document.getElementById('nghe-dua').onclick = function(){ docTo(q.t.en); }; if(!q.daDoc){ q.daDoc = true; docTo(q.t.en); } }
+  var ketThuc = function(){
+    dungDongHo();
+    var sao = p.diem >= 250 ? 3 : p.diem >= 120 ? 2 : 1, kl = luuKyLuc(b.gd+'-'+b.buoi+'-dua', p.diem, false);
+    p = { game:'dua', xong:true, tieuDe:'Hết giờ! '+p.diem+' điểm', dong:['Trả lời đúng: '+p.dung+' câu', 'Trả lời sai: '+p.sai+' câu'], sao:sao + (kl?1:0), kyLucMoi:kl };
+    veLai();
+  };
+  if(!dongHo) dongHo = setInterval(function(){
+    var e = document.getElementById('thanh-gio'); if(!e || p.game!=='dua'){ dungDongHo(); return; }
+    var c = Math.max(0, p.het - Date.now()); e.style.width = (c/600)+'%'; if(c < 10000) e.style.background = 'var(--sai)';
+    if(c <= 0) ketThuc();
+  }, 200);
+  v.querySelectorAll('.lua-chon button').forEach(function(x){ x.onclick = function(){
+    if(p.khoa) return;
+    if(x.dataset.x === q.dap){ p.combo++; p.dung++; p.diem += 10 * Math.min(p.combo, 5); tiengKeu(true); p.cau = cauDua(b); p.da = null; veLai(); }
+    else { p.combo = 0; p.sai++; tiengKeu(false); p.da = x.dataset.x; p.khoa = true; veLai();
+      setTimeout(function(){ if(p.game!=='dua' || p.xong) return; p.khoa = false; p.da = null; p.cau = cauDua(b); veLai(); }, 900); }
+  }; });
+}
+
+/* Game 3: ghép chữ */
+function moTuChu(){
+  var w = p.ds[p.i]; if(!w) return;
+  p.chu = w.en.toLowerCase().split('').filter(function(c){ return /[a-z]/.test(c); });
+  p.o = tron(p.chu.map(function(c, i){ return { c:c, i:i }; }));
+  p.dien = []; p.dungTu = false;
+}
+function veGameChu(v, b){
+  if(!p.ds.length){ v.innerHTML = '<p class="mo">Buổi này không có từ phù hợp cho game ghép chữ.</p>'; return; }
+  if(p.i >= p.ds.length){
+    var tong = p.ds.length*10, sao = p.diem >= tong*0.85 ? 3 : p.diem >= tong*0.6 ? 2 : 1, kl = luuKyLuc(b.gd+'-'+b.buoi+'-chu', p.diem, false);
+    p = { game:'chu', xong:true, tieuDe:p.diem+'/'+tong+' điểm', dong:['Số lần dùng gợi ý: '+p.goiY, 'Số lần ghép sai: '+p.saiLan], sao:sao + (kl?1:0), kyLucMoi:kl };
+    return veLai();
+  }
+  var w = p.ds[p.i], k = 0;
+  var oTrong = w.en.split('').map(function(c){
+    if(!/[A-Za-z]/.test(c)) return c === ' ' ? '<span style="width:12px"></span>' : '<span style="font-size:22px;font-weight:700">'+esc(c)+'</span>';
+    var idx = k++, d = p.dien[idx];
+    return '<span style="min-width:30px;height:42px;border-bottom:3px solid '+(p.dungTu?'var(--dung)':'var(--chinh)')+';display:inline-flex;align-items:center;justify-content:center;font-size:24px;font-weight:700;color:'+(p.dungTu?'var(--dung)':'var(--chu)')+'">'+(d!=null ? esc(p.o[d].c) : '')+'</span>';
+  }).join('');
+  var h = thoatGame() + '<span>Từ '+(p.i+1)+'/'+p.ds.length+' · Điểm: <b>'+p.diem+'</b></span></div>' +
+    '<div class="the giua"><div class="mo">Viết từ tiếng Anh có nghĩa:</div><div style="font-size:22px;font-weight:700;margin:6px 0">'+esc(w.vi)+'</div>' +
+    '<div class="hang" style="justify-content:center;margin-bottom:14px"><button class="nut nho" id="chu-nghe">🔊 Nghe</button><button class="nut nho" id="chu-goi-y">💡 Gợi ý (-3)</button></div>' +
+    '<div style="display:flex;flex-wrap:wrap;gap:6px;justify-content:center;margin-bottom:16px">'+oTrong+'</div>' +
+    '<div style="display:flex;flex-wrap:wrap;gap:8px;justify-content:center">' + p.o.map(function(o, j){
+      var daDung = p.dien.indexOf(j) >= 0;
+      return '<button class="chip" data-c="'+j+'" style="min-width:44px;font-size:20px;font-weight:700;'+(daDung?'visibility:hidden':'')+'"'+(p.dungTu?' disabled':'')+'>'+esc(o.c)+'</button>'; }).join('') + '</div>' +
+    '<div class="hang" style="justify-content:center;margin-top:14px"><button class="nut nho" id="chu-xoa"'+(p.dien.length&&!p.dungTu?'':' disabled')+'>⌫ Xoá</button><button class="nut nho" id="chu-bo">Bỏ qua</button></div></div>';
+  v.innerHTML = h; ganThoatGame();
+  document.getElementById('chu-nghe').onclick = function(){ docTo(w.en); };
+  var sangTu = function(){ p.i++; moTuChu(); veLai(); };
+  var kiem = function(){
+    if(p.dien.length < p.chu.length) return;
+    var viet = p.dien.map(function(j){ return p.o[j].c; }).join('');
+    if(viet === p.chu.join('')){ p.dungTu = true; p.diem += Math.max(0, 10 - p.truTu); tiengKeu(true); docTo(w.en); veLai(); setTimeout(function(){ if(p.game==='chu' && !p.xong){ p.truTu = 0; sangTu(); } }, 1100); }
+    else { p.saiLan++; tiengKeu(false); bao('Chưa đúng, thử lại nhé'); p.dien = []; veLai(); }
+  };
+  p.truTu = p.truTu || 0;
+  v.querySelectorAll('[data-c]').forEach(function(x){ x.onclick = function(){ if(p.dungTu) return; p.dien.push(+x.dataset.c); veLai(); kiem(); }; });
+  document.getElementById('chu-xoa').onclick = function(){ p.dien.pop(); veLai(); };
+  document.getElementById('chu-bo').onclick = function(){ p.truTu = 0; sangTu(); };
+  document.getElementById('chu-goi-y').onclick = function(){
+    if(p.dungTu) return;
+    // giữ phần đã đúng từ đầu, thêm đúng 1 chữ tiếp theo
+    var dungDen = 0; while(dungDen < p.dien.length && p.o[p.dien[dungDen]].c === p.chu[dungDen]) dungDen++;
+    p.dien = p.dien.slice(0, dungDen);
+    var can = p.chu[dungDen], j = p.o.findIndex(function(o, jj){ return o.c === can && p.dien.indexOf(jj) < 0; });
+    if(j >= 0){ p.dien.push(j); p.goiY++; p.truTu += 3; }
+    veLai(); kiem();
+  };
+}
+
+function veKetThucGame(v, b){
+  if(!p.daCong){ p.daCong = true; congSao(p.sao); if(p.sao >= 3) tiengKeu(true); }
+  v.innerHTML = '<div class="the giua"><div style="font-size:40px">'+(p.kyLucMoi ? '🏆' : '🎉')+'</div><div style="font-size:22px;font-weight:700;margin:6px 0">'+esc(p.tieuDe)+'</div>' +
+    p.dong.map(function(d){ return '<div class="mo">'+esc(d)+'</div>'; }).join('') +
+    '<div style="font-size:28px;margin:10px 0">'+'⭐'.repeat(p.sao)+'</div><div class="mo">+'+p.sao+' sao'+(p.kyLucMoi?' (có 1 sao thưởng phá kỷ lục)':'')+'</div></div>' +
+    '<div class="hang"><button class="nut gian" id="game-khac">Chọn game khác</button><button class="nut chinh gian" id="choi-lai">Chơi lại</button></div>';
+  var g = p.game;
+  document.getElementById('choi-lai').onclick = function(){ batDauGame(b, g); veLai(); };
+  document.getElementById('game-khac').onclick = function(){ p = { game:null }; veLai(); };
 }
 
 /* ---------- Phát âm 44 âm IPA ---------- */
