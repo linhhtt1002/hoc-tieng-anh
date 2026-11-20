@@ -114,9 +114,9 @@ ul.sai-list li{margin-bottom:8px}
 <body>
 <div class="khung" id="app"></div>
 <div class="thong-bao" id="thong-bao"></div>
-<script src="cau-hinh.js?v=10"></script>
-<script src="noi-dung.js?v=10"></script>
-<script src="ipa.js?v=10"></script>
+<script src="cau-hinh.js?v=11"></script>
+<script src="noi-dung.js?v=11"></script>
+<script src="ipa.js?v=11"></script>
 <script>
 (function(){
 'use strict';
@@ -221,7 +221,8 @@ function ngheNguoiHoc(xong, loi){
     if(phienNghe === ph) phienNghe = null;
     dangNghe = null;
     if(boNgheDangChay){ try{ boNghe.stop(); }catch(e){} }   // dừng nhẹ nhàng, không huỷ ngang
-    var ds = ph.cuoi.length ? ph.cuoi : (ph.tam ? [ph.tam] : []);
+    // ngoài câu ghép, thử cả từng đoạn riêng mà máy gửi (iPhone hay gửi trùng) để chấm theo cách hiểu tốt nhất
+    var ds = ph.cuoi.length ? ph.cuoi.concat(ph.doan || []) : (ph.tam ? [ph.tam].concat(ph.doan || []) : []);
     if(ds.length){ soLanHong = 0; xong(ds); }
     else { soLanHong++; loi(maLoi || (ph.coTieng ? 'khong-ro' : 'no-speech')); }
   }
@@ -236,6 +237,7 @@ function ngheNguoiHoc(xong, loi){
       t.push(kq[0].transcript);
     }
     ph.tam = t.join(' ').trim();
+    ph.doan = t.map(function(x){ return String(x||'').trim(); }).filter(Boolean);
     dungSau(1500);
   };
   ph.loi = function(ma){
@@ -302,6 +304,20 @@ function soKhop(mau, noi){
     if(x+1<n0.length && dich.indexOf(n0[x])<0 && dich.indexOf(n0[x]+n0[x+1])>=0){ n.push(n0[x]+n0[x+1]); x++; }
     else n.push(n0[x]);
   }
+  // iPhone hay gửi lặp: "house house", "this is my this is my house" → bỏ phần lặp liền nhau nếu câu mẫu không có
+  var lapTrongMau = function(arr, i, d){ for(var q=0;q<d;q++) if(arr[i+q] !== arr[i+d+q]) return false; return true; };
+  var co = true;
+  while(co){
+    co = false;
+    for(var d=Math.floor(n.length/2); d>=1 && !co; d--){
+      for(var s=0; s+2*d<=n.length; s++){
+        if(lapTrongMau(n, s, d)){
+          var cum = n.slice(s, s+d).join(' '), coTrongMau = (' '+dich.join(' ')+' ').indexOf(' '+cum+' '+cum+' ') >= 0;
+          if(!coTrongMau){ n.splice(s+d, d); co = true; break; }
+        }
+      }
+    }
+  }
   var A = dich.length, B = n.length, L = [];
   for(var i=0;i<=A;i++){ L.push(new Array(B+1).fill(0)); }
   for(i=A-1;i>=0;i--) for(var j=B-1;j>=0;j--) L[i][j] = dich[i]===n[j] ? L[i+1][j+1]+1 : Math.max(L[i+1][j], L[i][j+1]);
@@ -312,8 +328,8 @@ function soKhop(mau, noi){
   khop.forEach(function(k, t){ if(!k) tuOk[chu[t]] = false; });
   var soDung = khop.filter(Boolean).length;
   var thua = Math.max(0, B - soDung);
-  var p = A ? Math.round(100 * soDung / (A + thua*0.5)) : 0;
-  return { phanTram: Math.min(100,p), tu: tu, dung: tu.map(function(_, i){ return tuOk[i] !== undefined ? tuOk[i] : true; }) };
+  var p = A ? Math.round(100 * soDung / (A + thua*0.25)) : 0;
+  return { phanTram: Math.min(100,p), tu: tu, dung: tu.map(function(_, i){ return tuOk[i] !== undefined ? tuOk[i] : true; }), duHet: soDung === A, thua: thua };
 }
 function chamNoi(mau, cac){
   var tot = null, nghe = '';
@@ -669,7 +685,7 @@ function ganMic(nut, mau, oKq, khiCham){
     ngheNguoiHoc(function(cac){
       nut.classList.remove('dang-nghe'); nut.textContent = '🎤 Nói lại';
       var k = chamNoi(mau, cac);
-      oKq.innerHTML = '<div class="ket-qua-noi"><div><span class="diem '+muc(k.phanTram)+'">'+k.phanTram+'%</span> '+(k.phanTram>=85?'Rất tốt!':k.phanTram>=60?'Khá rồi, chú ý chữ màu đỏ.':'Nghe mẫu rồi thử lại nhé.')+'</div>' +
+      oKq.innerHTML = '<div class="ket-qua-noi"><div><span class="diem '+muc(k.phanTram)+'">'+k.phanTram+'%</span> '+(k.duHet ? (k.thua ? 'Đọc đúng hết các từ! Máy nghe thêm vài từ thừa, lần sau đọc gọn một lần là được.' : 'Rất tốt!') : k.phanTram>=60 ? 'Khá rồi, chú ý chữ màu đỏ.' : 'Nghe mẫu rồi thử lại nhé, chú ý chữ màu đỏ.')+'</div>' +
         '<div style="margin-top:6px">'+veKhop(k)+'</div><div class="mo" style="margin-top:4px">Máy nghe được: “'+esc(k.nghe)+'”</div></div>';
       if(khiCham) khiCham(k);
     }, function(ma){
