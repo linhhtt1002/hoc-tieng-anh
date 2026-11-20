@@ -38,6 +38,33 @@ audio{width:100%;height:40px}
 label.da{font-size:14px;display:flex;gap:6px;align-items:center;cursor:pointer;margin-left:auto}
 .nutgoc{display:block;text-align:center;background:var(--chinh);color:#fff;text-decoration:none;border-radius:10px;padding:11px;font-weight:600;margin-top:4px}
 .dapan{display:inline-block;margin-top:10px;color:var(--chinh);font-weight:600;font-size:14px;text-decoration:none;border:1px solid var(--chinh);border-radius:8px;padding:6px 12px}
+details.bai{border-top:1px solid var(--vien)}
+details.bai>summary{cursor:pointer;padding:12px 0;list-style:none;position:relative;padding-right:56px}
+details.bai>summary::-webkit-details-marker{display:none}
+details.bai>summary small{color:var(--mo)}
+.diem{position:absolute;right:0;top:14px;background:var(--chinh-nhat);color:var(--xanh);font-weight:700;font-size:13px;border-radius:8px;padding:2px 8px}
+.muc2{display:flex;gap:6px;margin-bottom:10px}
+.muc2 button{flex:1;border:1px solid var(--vien);background:var(--the);color:var(--chu);border-radius:8px;padding:8px 4px;font:inherit;font-size:13px;cursor:pointer}
+.muc2 button.on{background:var(--chinh);color:#fff;border-color:var(--chinh)}
+.kt{background:var(--nen);border-radius:10px;padding:10px 12px;margin-bottom:8px;font-size:15px}
+table.tv{width:100%;border-collapse:collapse;font-size:15px;margin-bottom:10px}
+table.tv td{border-bottom:1px solid var(--vien);padding:7px 4px;vertical-align:middle}
+.loa{border:0;background:none;font-size:18px;cursor:pointer}
+.dem{font-size:14px;color:var(--mo);margin:0 0 6px}
+.cau{border:1px solid var(--vien);border-radius:10px;padding:10px 12px;margin-bottom:8px}
+.cau.dung{border-color:var(--xanh)}.cau.sai{border-color:#d9534f}
+.cauhoi{margin:0 0 8px}
+.lua{display:grid;gap:6px}
+.lua button{text-align:left;border:1px solid var(--vien);background:var(--the);color:var(--chu);border-radius:8px;padding:9px 10px;font:inherit;font-size:15px;cursor:pointer}
+.lua button.dung{background:#e3f6ec;border-color:var(--xanh);color:#145c3b}
+.lua button.sai{background:#fbe4e3;border-color:#d9534f;color:#8a2622}
+.dien{display:flex;gap:6px}
+.dien input{flex:1;min-width:0;border:1px solid var(--vien);border-radius:8px;padding:9px 10px;font:inherit;background:var(--the);color:var(--chu)}
+.dien button{border:0;background:var(--chinh);color:#fff;border-radius:8px;padding:0 14px;font:inherit;font-size:14px;cursor:pointer}
+.giai{margin:6px 0 0;font-size:14px}
+.giai:empty{display:none}
+.tong{background:var(--chinh-nhat);border-radius:10px;padding:12px;text-align:center;font-size:17px;margin:6px 0}
+.nutto{display:block;width:100%;border:0;background:var(--chinh);color:#fff;border-radius:10px;padding:12px;font:inherit;font-weight:600;cursor:pointer;margin:12px 0 4px}
 .ghichu{font-size:13px;color:var(--mo);margin:10px 0 0}
 .cho{background:var(--the);border:1px dashed var(--vien);border-radius:14px;padding:18px;color:var(--mo)}
 footer{font-size:12px;color:var(--mo);text-align:center;padding:10px 16px 30px}
@@ -55,6 +82,7 @@ footer a{color:var(--mo)}
   <div id="noidung"></div>
 </main>
 <footer>Bài nghe phát trực tiếp từ <a href="https://englishpracticetest.net/practice-listening-tests-for-a2-with-answer-and-audioscript/" target="_blank" rel="noopener">englishpracticetest.net</a> (More Listening Tests). Câu hỏi, tranh và đáp án xem trên trang gốc.</footer>
+<script src="sach.js?v=1"></script>
 <script>
 const GOC='https://englishpracticetest.net/';
 const PHAN=[
@@ -107,9 +135,66 @@ function veNghe(t){
       <p class="ghichu">Mỗi đoạn nên nghe 2 lần như khi thi. Làm xong phần nào thì bấm "Xem đáp án &amp; lời thoại" của phần đó → trang gốc mở đúng chỗ, bấm nút "Answer &amp; Audioscript" để hiện đáp án và lời thoại.</p>
     </div></details>`}).join('');
 }
+const SACH=window.SACH||{};
+let diem=doc('onthi_diem',{});
+const tron=a=>{a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a};
+const chuan=s=>String(s).toLowerCase().replace(/[’‘`]/g,"'").replace(/\s+/g,' ').replace(/[.!?]+$/,'').trim();
+const thoat=s=>String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;');
 function veSach(t){
-  return `<div class="cho">Phần kiến thức và bài tập sách face2face Pre-intermediate Unit ${t.units[0]}–${t.units.at(-1)} đang được soạn.</div>`;
+  const co=t.units.filter(n=>SACH[n]);
+  if(!co.length) return `<div class="cho">Phần kiến thức và bài tập sách face2face Pre-intermediate Unit ${t.units[0]}–${t.units.at(-1)} đang được soạn.</div>`;
+  return co.map(n=>{const u=SACH[n];const tong=u.bai.reduce((s,b)=>s+b.bt.length,0);
+    return `<details class="the"><summary><span class="so">Unit ${n}</span><span class="tieude">${u.ten}</span><span class="tiendo">${u.bai.length} bài</span></summary><div class="trong">
+    ${u.bai.map(b=>{const k=b.ma,d=diem[k];
+      return `<details class="bai"><summary><b>${b.ma}</b> ${b.ten}<br><small>${b.chude}</small>${d!=null?`<span class="diem">${d}/${b.bt.length}</span>`:''}</summary>
+      <div class="muc2"><button data-xem="kt" class="on">📖 Kiến thức</button><button data-xem="tv">🔤 Từ vựng</button><button data-xem="bt">✏️ Bài tập (${b.bt.length})</button></div>
+      <div class="khung" data-ma="${b.ma}" data-u="${n}"></div></details>`}).join('')}
+    <button class="nutto" data-ktunit="${n}">📝 Kiểm tra cả Unit ${n} (15 câu ngẫu nhiên / ${tong} câu)</button>
+    <div class="khung" data-kq="${n}"></div>
+    </div></details>`}).join('')+`<p class="ghichu">Kiến thức và từ vựng tóm tắt theo đúng bài trong sách face2face Pre-intermediate; câu bài tập được soạn mới để luyện đúng phần đó.</p>`;
 }
+function timBai(ma,u){return SACH[u].bai.find(b=>b.ma===ma)}
+function veKhung(k,xem){
+  const b=timBai(k.dataset.ma,k.dataset.u);
+  if(xem==='kt') k.innerHTML=b.kt.map(x=>`<div class="kt">${x}</div>`).join('');
+  else if(xem==='tv') k.innerHTML=`<table class="tv">${b.tv.map(([e,v])=>`<tr><td><b>${e}</b></td><td>${v}</td><td><button class="loa" data-doc="${thoat(e)}" aria-label="Nghe">🔊</button></td></tr>`).join('')}</table>`;
+  else lamBai(k,b.bt,b.ma,false);
+}
+function lamBai(k,ds,khoa,ngauNhien){
+  const cau=(ngauNhien?tron(ds).slice(0,15):ds);
+  k._cau=cau;k._khoa=khoa;k._xong=0;k._dung=0;
+  k.innerHTML=`<p class="dem">Đã làm <b class="x">0</b>/${cau.length} · Đúng <b class="y">0</b></p>`+cau.map((c,i)=>{
+    const dau=`<p class="cauhoi"><b>${i+1}.</b> ${c.q}</p>`;
+    if(c.o) return `<div class="cau" data-i="${i}">${dau}<div class="lua">${tron(c.o.map((x,j)=>({x,j}))).map(p=>`<button data-j="${p.j}">${thoat(p.x)}</button>`).join('')}</div><p class="giai"></p></div>`;
+    return `<div class="cau" data-i="${i}">${dau}<div class="dien"><input type="text" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Gõ đáp án"><button class="kiem">Kiểm tra</button></div><p class="giai"></p></div>`;
+  }).join('')+`<div class="ketqua"></div>`;
+}
+function cham(k,cd,dung,traLoi){
+  const c=k._cau[+cd.dataset.i];cd.classList.add(dung?'dung':'sai');
+  const dapan=c.o?c.o[0]:c.d[0];
+  cd.querySelector('.giai').innerHTML=(dung?'✅ Đúng! ':`❌ Chưa đúng. Đáp án: <b>${thoat(dapan)}</b>. `)+(c.g||'');
+  k._xong++;if(dung)k._dung++;
+  k.querySelector('.x').textContent=k._xong;k.querySelector('.y').textContent=k._dung;
+  if(k._xong===k._cau.length){
+    const n=k._cau.length,y=k._dung,nx=y===n?'Xuất sắc! 🎉':y>=n*0.8?'Rất tốt! 👍':y>=n*0.5?'Khá rồi, làm lại câu sai nhé.':'Đọc lại phần Kiến thức rồi làm lại nhé.';
+    k.querySelector('.ketqua').innerHTML=`<div class="tong">Kết quả: <b>${y}/${n}</b> — ${nx}</div><button class="nutto lamlai">↻ Làm lại</button>`;
+    if(!k.dataset.kq){const cu=diem[k._khoa];if(cu==null||y>cu){diem[k._khoa]=y;ghi('onthi_diem',diem)}}
+  }
+}
+function docTo(s){try{const u=new SpeechSynthesisUtterance(s.split('/')[0].replace(/\(.*?\)/g,''));u.lang='en-US';u.rate=0.9;speechSynthesis.cancel();speechSynthesis.speak(u)}catch(e){}}
+document.addEventListener('click',e=>{
+  const b=e.target.closest('button');if(!b)return;
+  if(b.dataset.xem){const bai=b.closest('.bai');bai.querySelectorAll('.muc2 button').forEach(x=>x.classList.toggle('on',x===b));veKhung(bai.querySelector('.khung'),b.dataset.xem);return}
+  if(b.dataset.doc){docTo(b.dataset.doc);return}
+  if(b.dataset.ktunit){const u=b.dataset.ktunit,k=document.querySelector(`.khung[data-kq="${u}"]`);lamBai(k,SACH[u].bai.flatMap(x=>x.bt),'unit'+u,true);k.scrollIntoView({behavior:'smooth',block:'start'});return}
+  if(b.classList.contains('lamlai')){const k=b.closest('.khung');if(k.dataset.kq)lamBai(k,SACH[k.dataset.kq].bai.flatMap(x=>x.bt),'unit'+k.dataset.kq,true);else lamBai(k,timBai(k.dataset.ma,k.dataset.u).bt,k.dataset.ma,false);k.scrollIntoView({behavior:'smooth',block:'start'});return}
+  const cd=b.closest('.cau');if(!cd||cd.classList.contains('dung')||cd.classList.contains('sai'))return;
+  const k=cd.closest('.khung');
+  if(b.dataset.j!=null){cd.querySelectorAll('.lua button').forEach(x=>{x.disabled=true;if(x.dataset.j==='0')x.classList.add('dung')});if(b.dataset.j!=='0')b.classList.add('sai');cham(k,cd,b.dataset.j==='0');return}
+  if(b.classList.contains('kiem')){const ip=cd.querySelector('input');if(!ip.value.trim()){ip.focus();return}const c=k._cau[+cd.dataset.i];ip.disabled=true;b.disabled=true;cham(k,cd,c.d.some(x=>chuan(x)===chuan(ip.value)))}
+});
+document.addEventListener('keydown',e=>{if(e.key==='Enter'&&e.target.matches('.dien input')){e.target.parentElement.querySelector('.kiem').click()}});
+document.addEventListener('toggle',e=>{const d=e.target;if(d.classList&&d.classList.contains('bai')&&d.open){const k=d.querySelector('.khung');if(!k.innerHTML)veKhung(k,'kt')}},true);
 function ve(){
   veTabs();
   const t=TAP.find(x=>x.ma===tab), o=document.getElementById('noidung');
