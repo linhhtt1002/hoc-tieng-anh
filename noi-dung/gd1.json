@@ -354,6 +354,28 @@
      ]
     },
     {
+     "tieu_de": "Danh từ số nhiều: quy tắc đầy đủ",
+     "y": [
+      "Tận cùng **s, ss, sh, ch, x, z** thêm -es: bus → buses, dish → dishes, box → boxes.",
+      "Phụ âm + **o** thêm -es: potato → potatoes, tomato → tomatoes. Nguyên âm + o chỉ thêm -s: radio → radios, video → videos. Ngoại lệ hay gặp: photo → photos, piano → pianos.",
+      "Phụ âm + **y** → bỏ y thêm -ies: baby → babies, city → cities. Nguyên âm + y chỉ thêm -s: boy → boys, day → days.",
+      "Tận cùng **f / fe** → đổi thành -ves: knife → knives, leaf → leaves, wife → wives (ngoại lệ: roof → roofs).",
+      "Bất quy tắc phải học thuộc: man → men, woman → women, child → children, person → people, tooth → teeth, foot → feet, mouse → mice.",
+      "Giữ nguyên ở số nhiều: fish → fish, sheep → sheep, deer → deer, aircraft → aircraft, species → species."
+     ],
+     "vd": [
+      {
+       "en": "There are two knives on the table.",
+       "vi": "Có hai con dao trên bàn."
+      },
+      {
+       "en": "The children are in the garden.",
+       "vi": "Bọn trẻ đang ở trong vườn."
+      }
+     ],
+     "nguon": "giao-an"
+    },
+    {
      "tieu_de": "Lỗi hay gặp",
      "y": [
       "Sai: My house small. → Đúng: My house is small. (câu tiếng Anh phải có động từ is)",
@@ -987,6 +1009,37 @@
      ]
     },
     {
+     "tieu_de": "Thêm từ để hỏi với to be",
+     "y": [
+      "**Why**: tại sao. **When**: khi nào. **Which**: cái nào (chọn trong số đã biết). **How**: thế nào, ra sao.",
+      "Công thức vẫn là: Từ để hỏi + am / is / are + S?",
+      "How + tính từ để hỏi mức độ: How old (bao nhiêu tuổi), How tall (cao bao nhiêu), How long (dài / lâu bao nhiêu)."
+     ],
+     "vd": [
+      {
+       "en": "Who is she in the picture?",
+       "vi": "Cô ấy trong bức ảnh là ai?"
+      },
+      {
+       "en": "Which is your pen?",
+       "vi": "Cái bút nào là của bạn?"
+      },
+      {
+       "en": "How is your mother today?",
+       "vi": "Hôm nay mẹ bạn thế nào?"
+      },
+      {
+       "en": "Why are they in the kitchen?",
+       "vi": "Tại sao họ ở trong bếp?"
+      },
+      {
+       "en": "Where is Pedro from?",
+       "vi": "Pedro đến từ đâu?"
+      }
+     ],
+     "nguon": "giao-an"
+    },
+    {
      "tieu_de": "Lỗi hay gặp",
      "y": [
       "Sai: You are a student? → Đúng: Are you a student? (câu hỏi phải đảo to be lên đầu)",
@@ -1542,7 +1595,9 @@
      "y": [
       "Dùng thì hiện tại đơn để nói về **thói quen**, việc lặp lại hằng ngày.",
       "Dùng để nói về sự thật, điều luôn đúng: The sun rises in the east.",
-      "Câu buổi này là câu khẳng định (+); phủ định và câu hỏi học ở buổi sau."
+      "Câu buổi này là câu khẳng định (+); phủ định và câu hỏi học ở buổi sau.",
+      "Nói về **lịch trình, thời gian biểu** (tàu xe, giờ học, giờ mở cửa): The train leaves at eight. Her shop opens at 8 a.m.",
+      "Giới thiệu bản thân: tên, tuổi, nơi ở, nghề nghiệp, sở thích: I live in Hanoi. I like music."
      ],
      "vd": [
       {
@@ -1581,7 +1636,8 @@
       "Tận cùng o, s, x, z, sh, ch thêm **-es**: go → goes, do → does, wash → washes, watch → watches.",
       "Phụ âm + y → bỏ y thêm **-ies**: study → studies, fly → flies.",
       "Nguyên âm + y chỉ thêm -s: play → plays.",
-      "Đặc biệt: have → **has**."
+      "Đặc biệt: have → **has**.",
+      "Tận cùng e chỉ thêm -s: see → sees, like → likes."
      ],
      "vd": [
       {
@@ -1600,7 +1656,9 @@
       "always, usually, often, sometimes, never",
       "every day, every morning, every week",
       "in the morning, in the evening, at night",
-      "Trạng từ always, often... đứng **trước** động từ thường: She often cooks dinner. Riêng với to be thì đứng **sau**: She is always late."
+      "Trạng từ always, often... đứng **trước** động từ thường: She often cooks dinner. Riêng với to be thì đứng **sau**: She is always late.",
+      "Thêm: rarely (hiếm khi), once a week (một lần một tuần), twice a week (hai lần một tuần), three times a month, every month, every year.",
+      "Cụm như once a week, every day đứng **cuối câu**: I go swimming twice a week."
      ],
      "vd": [
       {
@@ -2238,6 +2296,83 @@
      ]
     },
     {
+     "tieu_de": "in / on / at: thêm trường hợp",
+     "y": [
+      "**at** + bữa ăn: at breakfast, at lunch, at dinner. at + tuổi: at the age of five. at + dịp lễ ngắn: at Christmas, at New Year, at Easter.",
+      "**at** trong cụm cố định: at the moment (lúc này), at the end of (cuối), at the beginning of (đầu), at that time (lúc đó).",
+      "**on** + một ngày lễ cụ thể: on Christmas Day, on Christmas Eve, on New Year's Day, on my birthday. (Nói at Christmas nhưng on Christmas Eve.)",
+      "**in** + mùa, thế kỷ: in the summer, in the 21st century. in + khoảng thời gian = sau bao lâu nữa: in two weeks, in a few minutes.",
+      "KHÔNG dùng in / on / at trước **next, last, this, every, each, all, some, today, tomorrow, yesterday**: I see her every Monday (không nói on every Monday)."
+     ],
+     "vd": [
+      {
+       "en": "Bella started school at the age of five.",
+       "vi": "Bella bắt đầu đi học lúc năm tuổi."
+      },
+      {
+       "en": "We have a big dinner on Christmas Eve.",
+       "vi": "Chúng tôi có bữa tối lớn vào đêm Giáng sinh."
+      },
+      {
+       "en": "I visit my grandparents every Sunday.",
+       "vi": "Chủ nhật nào tôi cũng thăm ông bà."
+      }
+     ],
+     "nguon": "giao-an"
+    },
+    {
+     "tieu_de": "Giới từ thời gian khác",
+     "y": [
+      "**from ... to**: từ ... đến: The store is open from 9 a.m. to 5 p.m.",
+      "**between ... and**: trong khoảng giữa: I go to the gym between 6 and 7 p.m.",
+      "**before** (trước) / **after** (sau) một giờ hoặc một việc: before dinner, after work.",
+      "**until**: cho đến khi: The store is open until 9 p.m.",
+      "**during**: trong suốt (một sự việc): I read a book during my lunch break.",
+      "**on time**: đúng giờ (như đã hẹn). **in time**: kịp lúc (không bị muộn).",
+      "**by**: chậm nhất là, không muộn hơn: Please send it by Friday.",
+      "for và since (dùng với thì hiện tại hoàn thành) sẽ học kỹ ở giai đoạn 3 và 4."
+     ],
+     "vd": [
+      {
+       "en": "The bus is always on time.",
+       "vi": "Xe buýt luôn đến đúng giờ."
+      },
+      {
+       "en": "I do my homework after dinner.",
+       "vi": "Tôi làm bài tập sau bữa tối."
+      }
+     ],
+     "nguon": "giao-an"
+    },
+    {
+     "tieu_de": "Số thứ tự và cách đọc ngày tháng",
+     "y": [
+      "Số thứ tự: first (1st), second (2nd), third (3rd), fourth (4th), fifth (5th), sixth, seventh, eighth, ninth, tenth, eleventh, **twelfth**, thirteenth ... twentieth, twenty-first, twenty-second, twenty-third, thirtieth.",
+      "Chú ý chính tả: five → **fifth**, nine → **ninth**, twelve → **twelfth**, twenty → **twentieth**.",
+      "Ngày tháng đọc bằng **số thứ tự**. Ngày 23/9: kiểu Anh viết 23 September, đọc **the twenty-third of September**; kiểu Mỹ viết September 23, đọc **September twenty-third**.",
+      "Sinh nhật, ngày kỷ niệm: My birthday is on the twenty-third of April. Their tenth wedding anniversary.",
+      "Thứ hạng, vị trí: Our team finished in **third place**. The library is the **second** building on the left.",
+      "**Tầng nhà**: kiểu Anh tầng trệt là ground floor, first floor là tầng ngay trên. Kiểu Mỹ first floor thường chính là tầng trệt.",
+      "Trước số thứ tự thường có **the**; nếu đã có my, his, their hoặc 's thì bỏ the: the first question, my first job. Có a khi nghĩa là \"thêm một\": a second chance.",
+      "Con số đứng **sau** danh từ chỉ là nhãn, đọc bằng số đếm: Chapter 4 = chapter four, Lesson 2 = lesson two (nhưng the fourth chapter, the second lesson)."
+     ],
+     "vd": [
+      {
+       "en": "She lives on the fourth floor.",
+       "vi": "Cô ấy sống ở tầng bốn."
+      },
+      {
+       "en": "Please answer the fifth question.",
+       "vi": "Hãy trả lời câu hỏi thứ năm."
+      },
+      {
+       "en": "My birthday is on the twenty-third of April.",
+       "vi": "Sinh nhật tôi vào ngày hai mươi ba tháng Tư."
+      }
+     ],
+     "nguon": "giao-an"
+    },
+    {
      "tieu_de": "Lỗi hay gặp",
      "y": [
       "Sai: She don't drink milk. → Đúng: She doesn't drink milk. (she đi với doesn't)",
@@ -2253,12 +2388,23 @@
       "Người Việt hay **bỏ âm cuối**; tiếng Anh phải đọc rõ âm cuối mới hiểu đúng nghĩa.",
       "/k/ (walk): chặn hơi ở cuống lưỡi, nghe tiếng 'k' nhẹ. /ʃ/ (wash): chu môi thổi 'sh'.",
       "/s/ (bus): kéo hơi 'xì' rõ ở cuối. /z/ (does): rung cổ họng như tiếng ong.",
-      "/n/ (clean): đầu lưỡi chạm chân răng trên, không đọc thành 'ng'."
+      "/n/ (clean): đầu lưỡi chạm chân răng trên, không đọc thành 'ng'.",
+      "Số thứ tự kết thúc bằng âm **/θ/** (fourth, fifth, sixth): đặt đầu lưỡi giữa hai răng thổi hơi, đừng bỏ âm cuối kẻo four và fourth nghe giống nhau.",
+      "Luyện 3 bước: **từ** (four – fourth, five – fifth) → **cụm** (the fourth floor, the fifth question) → **câu** (She lives on the fourth floor.).",
+      "Bấm ⏺ Thu âm, nghe lại và kiểm tra 3 điều: có đọc rõ âm cuối không, nhấn đúng âm không, các từ có nối liền mạch không."
      ],
      "vd": [
       {
        "en": "Does she walk the dog?",
        "vi": "Cô ấy có dắt chó đi dạo không?"
+      },
+      {
+       "en": "four, fourth, five, fifth",
+       "vi": "bốn, thứ tư, năm, thứ năm"
+      },
+      {
+       "en": "She lives on the fourth floor.",
+       "vi": "Cô ấy sống ở tầng bốn."
       }
      ]
     }
@@ -2850,6 +2996,28 @@
      ]
     },
     {
+     "tieu_de": "Đại từ sở hữu và sở hữu cách nâng cao",
+     "y": [
+      "Đại từ sở hữu = tính từ sở hữu + danh từ, đứng **một mình**, không có danh từ theo sau: mine, yours, his, hers, ours, theirs (it không có đại từ sở hữu).",
+      "my pen → mine, your book → yours, her house → hers. Dùng để khỏi lặp lại danh từ: Her house is pink. **Mine** is white. (Mine = my house)",
+      "Sở hữu **chung** (nhiều người cùng có một thứ): chỉ thêm 's vào người cuối: Tom and Lan's car (một chiếc xe của cả hai).",
+      "Sở hữu **riêng** (mỗi người có một thứ): thêm 's vào từng người: Tom's and Lan's cars (mỗi người một chiếc).",
+      "Tên riêng số ít tận cùng bằng s: thêm 's hoặc chỉ dấu ': James's car hoặc James' car.",
+      "Danh từ số nhiều bất quy tắc (không có s) vẫn thêm 's: the children's toys, the women's room."
+     ],
+     "vd": [
+      {
+       "en": "This book is mine, not yours.",
+       "vi": "Quyển sách này là của tôi, không phải của bạn."
+      },
+      {
+       "en": "Tom and Lan's house is near the park.",
+       "vi": "Nhà của Tom và Lan ở gần công viên."
+      }
+     ],
+     "nguon": "giao-an"
+    },
+    {
      "tieu_de": "Lỗi hay gặp",
      "y": [
       "Sai: the car of my father → Đúng: my father's car (dùng 's để chỉ sở hữu)",
@@ -3403,7 +3571,12 @@
      "y": [
       "Dùng thì hiện tại tiếp diễn để nói về việc **đang xảy ra** ngay lúc nói.",
       "Dấu hiệu: now, right now, at the moment, Look!, Listen!",
-      "Thường dùng để tả tranh, ảnh: ai đang làm gì."
+      "Thường dùng để tả tranh, ảnh: ai đang làm gì.",
+      "Việc **đang diễn ra trong giai đoạn này**, không nhất thiết đúng lúc nói: She is quite busy these days. She is writing her thesis.",
+      "**Kế hoạch đã sắp xếp** cho tương lai gần: What are you doing tomorrow? I am meeting my friend.",
+      "**Sự thay đổi, xu hướng**: Her English is improving. These days most people are using email instead of letters.",
+      "Đi với **always** để **phàn nàn** việc lặp lại gây khó chịu: He is always borrowing my pen and never gives it back.",
+      "Việc thường đang làm vào một giờ cố định: At seven p.m. we are usually having dinner."
      ],
      "vd": [
       {
@@ -3442,7 +3615,11 @@
       "Hầu hết thêm **-ing**: read → reading, sing → singing.",
       "Tận cùng **e câm** thì bỏ e: dance → dancing, ride → riding.",
       "Một âm tiết, tận cùng phụ âm + nguyên âm + phụ âm thì **gấp đôi** phụ âm cuối: run → running, swim → swimming, sit → sitting.",
-      "Không gấp đôi w, x, y: play → playing, fix → fixing."
+      "Không gấp đôi w, x, y: play → playing, fix → fixing.",
+      "Tận cùng **ee** giữ nguyên rồi thêm -ing: see → seeing, agree → agreeing.",
+      "Tận cùng **ie** → đổi thành y + ing: lie → lying, die → dying, tie → tying.",
+      "Tận cùng **c** → thêm k + ing: picnic → picnicking, panic → panicking.",
+      "Không gấp đôi khi tận cùng là w: know → knowing, snow → snowing."
      ],
      "vd": [
       {
@@ -3465,6 +3642,54 @@
        "vi": "Cô ấy thường đi bộ. Bây giờ cô ấy đang chạy."
       }
      ]
+    },
+    {
+     "tieu_de": "Dấu hiệu nhận biết đầy đủ",
+     "y": [
+      "Trạng từ: now, right now, at the moment, at present, these days, at + giờ + now (It is 8 o'clock now).",
+      "Câu mệnh lệnh gây chú ý đứng trước: Look! (Nhìn kìa!), Listen! (Nghe này!), Keep silent! (Trật tự!), Watch out! / Look out! (Coi chừng!)."
+     ],
+     "vd": [
+      {
+       "en": "Look! A girl is jumping into the river!",
+       "vi": "Nhìn kìa! Một cô gái đang nhảy xuống sông!"
+      },
+      {
+       "en": "Listen! Someone is knocking at the door.",
+       "vi": "Nghe này! Có ai đó đang gõ cửa."
+      },
+      {
+       "en": "Keep silent! The teacher is coming.",
+       "vi": "Trật tự! Cô giáo đang đến."
+      }
+     ],
+     "nguon": "giao-an"
+    },
+    {
+     "tieu_de": "Động từ thường KHÔNG chia -ing",
+     "y": [
+      "Đây là động từ chỉ **trạng thái**, không phải hành động, nên dù có now vẫn dùng hiện tại đơn.",
+      "Giác quan: see, hear, smell, taste (nghĩa là thấy, nghe thấy, có mùi, có vị).",
+      "Cảm xúc, mong muốn: like, love, hate, want, need, prefer.",
+      "Suy nghĩ: know, understand, believe, remember, think (khi nghĩa là cho rằng).",
+      "Sở hữu: have (nghĩa là có), own, belong, contain. Trạng thái khác: seem, mean, sound.",
+      "Một số từ có hai nghĩa: I have a car (có, không -ing) nhưng I am having lunch (đang ăn). I think it is good (cho rằng) nhưng I am thinking about it (đang suy nghĩ)."
+     ],
+     "vd": [
+      {
+       "en": "I want a cup of tea now.",
+       "vi": "Bây giờ tôi muốn một tách trà."
+      },
+      {
+       "en": "This soup smells good.",
+       "vi": "Món súp này có mùi thơm."
+      },
+      {
+       "en": "I know the answer.",
+       "vi": "Tôi biết câu trả lời."
+      }
+     ],
+     "nguon": "giao-an"
     },
     {
      "tieu_de": "Lỗi hay gặp",
@@ -4027,7 +4252,10 @@
      "y": [
       "Dùng thì quá khứ đơn để nói về việc **đã xảy ra và đã kết thúc** trong quá khứ.",
       "Dấu hiệu: yesterday, last night, last weekend, last week, last year.",
-      "Dấu hiệu khác: two days ago (hai ngày trước), in 2020."
+      "Dấu hiệu khác: two days ago (hai ngày trước), in 2020.",
+      "Thói quen hoặc việc **lặp lại trong quá khứ**: I walked to school every day when I was a child.",
+      "Trạng thái, sự thật **kéo dài trong quá khứ** (nay không còn): My grandfather lived in Hue for ten years.",
+      "Kể **chuỗi sự việc** nối tiếp nhau trong câu chuyện: She opened the door, looked out and smiled."
      ],
      "vd": [
       {
@@ -4064,7 +4292,7 @@
      "y": [
       "(+) S + **V-ed**: She watched a film.",
       "Mọi chủ ngữ dùng **cùng một dạng**, không thêm -s cho he / she: He played, they played.",
-      "Động từ bất quy tắc (go, have, see...) có dạng riêng, sẽ học ở giai đoạn sau."
+      "Động từ bất quy tắc (go → went, have → had, see → saw...) có dạng riêng, phải học thuộc (xem bảng ở buổi 8)."
      ],
      "vd": [
       {
@@ -4080,7 +4308,8 @@
       "Tận cùng e thì chỉ thêm **-d**: live → lived, dance → danced.",
       "Phụ âm + y → **-ied**: study → studied, try → tried.",
       "Nguyên âm + y chỉ thêm -ed: play → played, stay → stayed.",
-      "Một âm tiết, phụ âm + nguyên âm + phụ âm → **gấp đôi**: stop → stopped, plan → planned (không gấp đôi w, x, y: fixed, played)."
+      "Một âm tiết, phụ âm + nguyên âm + phụ âm → **gấp đôi**: stop → stopped, plan → planned (không gấp đôi w, x, y: fixed, played).",
+      "Tận cùng **c** → thêm k + ed: panic → panicked, picnic → picnicked."
      ],
      "vd": [
       {
@@ -4088,6 +4317,26 @@
        "vi": "Tối qua cô ấy đã học tiếng Anh."
       }
      ]
+    },
+    {
+     "tieu_de": "Dấu hiệu nhận biết đầy đủ",
+     "y": [
+      "yesterday (hôm qua), last night / last week / last month / last year (... trước).",
+      "... ago (cách đây ...): five days ago, two years ago.",
+      "in the past (trong quá khứ), the day before (ngày hôm trước), in + năm đã qua: in 2020.",
+      "this morning / this afternoon khi buổi đó **đã qua**: I drank coffee this morning (nói lúc buổi chiều)."
+     ],
+     "vd": [
+      {
+       "en": "We were students five years ago.",
+       "vi": "Năm năm trước chúng tôi là học sinh."
+      },
+      {
+       "en": "Lan didn't go to school last week.",
+       "vi": "Tuần trước Lan không đi học."
+      }
+     ],
+     "nguon": "giao-an"
     },
     {
      "tieu_de": "Lỗi hay gặp",
@@ -4103,7 +4352,7 @@
      "tieu_de": "Phát âm buổi này",
      "y": [
       "Đuôi -ed có 3 cách đọc, dựa vào **âm cuối** của động từ.",
-      "/t/ sau âm vô thanh /p/, /k/, /s/, /ʃ/, /tʃ/, /f/ (cả chữ x như fixed): watched, cooked. Không thêm âm tiết.",
+      "/t/ sau âm vô thanh /p/, /k/, /s/, /ʃ/, /tʃ/, /f/, /θ/ (cả chữ x như fixed): watched, cooked. Không thêm âm tiết.",
       "/ɪd/ sau t, d: visited, needed. Thêm một âm tiết 'id'.",
       "/d/ các trường hợp còn lại: played, stayed. Đọc nhẹ, vẫn một âm tiết.",
       "Lỗi hay gặp: đọc watched thành 'watch-ed' hai âm tiết; đúng là 'watcht'."
@@ -4689,6 +4938,31 @@
        "vi": "Bạn đã gọi anh ấy chưa? Bạn có mệt không?"
       }
      ]
+    },
+    {
+     "tieu_de": "Động từ bất quy tắc hay gặp",
+     "y": [
+      "Động từ bất quy tắc không thêm -ed mà có dạng quá khứ riêng, phải học thuộc.",
+      "go → went, have → had, do → did, get → got, see → saw, eat → ate, come → came, take → took.",
+      "make → made, buy → bought, leave → left, forget → forgot, write → wrote, meet → met.",
+      "read → read (viết giống nhưng quá khứ đọc là /red/).",
+      "Câu phủ định và câu hỏi vẫn dùng did + nguyên mẫu: I didn't go. Did you see it? (không nói didn't went)."
+     ],
+     "vd": [
+      {
+       "en": "I went to school by bus.",
+       "vi": "Tôi đã đi học bằng xe buýt."
+      },
+      {
+       "en": "She left home at seven.",
+       "vi": "Cô ấy đã rời nhà lúc bảy giờ."
+      },
+      {
+       "en": "Did you see my key?",
+       "vi": "Bạn có thấy chìa khoá của tôi không?"
+      }
+     ],
+     "nguon": "giao-an"
     },
     {
      "tieu_de": "Lỗi hay gặp",

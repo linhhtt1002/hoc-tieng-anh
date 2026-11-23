@@ -3739,6 +3739,30 @@
      ]
     },
     {
+     "tieu_de": "Kể các bước của một quy trình",
+     "y": [
+      "Dùng **First, Second, Next, Then, After that, Finally** để chia các bước cho dễ theo dõi.",
+      "Đổi từ nối để không lặp: First ... Then ... Next ... Finally ...",
+      "Có thể dùng cụm danh từ: the first step, the second stage, the final stage.",
+      "Mô tả quy trình rất hay đi với câu bị động: First, the coffee is put into the filter."
+     ],
+     "vd": [
+      {
+       "en": "First, add two spoons of coffee to the filter.",
+       "vi": "Đầu tiên, cho hai thìa cà phê vào phin."
+      },
+      {
+       "en": "Next, pour in a little hot water and wait.",
+       "vi": "Tiếp theo, rót một chút nước nóng vào và đợi."
+      },
+      {
+       "en": "Finally, stir the coffee and add ice.",
+       "vi": "Cuối cùng, khuấy cà phê và thêm đá."
+      }
+     ],
+     "nguon": "giao-an"
+    },
+    {
      "tieu_de": "Lỗi hay gặp",
      "y": [
       "Sai: The bridge built in 1990. → Đúng: The bridge was built in 1990. (bị động phải có be)",

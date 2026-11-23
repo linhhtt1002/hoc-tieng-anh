@@ -5553,6 +5553,28 @@
      ]
     },
     {
+     "tieu_de": "Phân số, phần trăm, thế kỷ",
+     "y": [
+      "Phân số: tử số đọc bằng số đếm, mẫu số đọc bằng **số thứ tự**: 1/5 = one fifth, 1/3 = one third, 7/10 = seven tenths.",
+      "Tử số lớn hơn 1 thì mẫu số thêm **-s**: 2/3 = two thirds, 4/5 = four fifths.",
+      "Đặc biệt: 1/2 = a half / one half, 1/4 = a quarter / one quarter, 3/4 = three quarters.",
+      "Phần trăm dùng **số đếm** + percent: 25% = twenty-five percent (không đọc twenty-fifth percent); 0.5% = zero point five percent.",
+      "Thế kỷ dùng số thứ tự: the twentieth century (the 20th century), the twenty-first century.",
+      "Đứng trước danh từ thì có gạch nối: a nineteenth-century painting; đứng một mình thì không: It is from the nineteenth century."
+     ],
+     "vd": [
+      {
+       "en": "Two thirds of the students are girls.",
+       "vi": "Hai phần ba số học sinh là nữ."
+      },
+      {
+       "en": "Fifty percent of the shirts are on sale.",
+       "vi": "Năm mươi phần trăm số áo đang giảm giá."
+      }
+     ],
+     "nguon": "giao-an"
+    },
+    {
      "tieu_de": "Lỗi hay gặp",
      "y": [
       "Sai: How many money...? → Đúng: How much money...? (money không đếm được)",
