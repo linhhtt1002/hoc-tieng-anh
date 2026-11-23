@@ -1009,6 +1009,107 @@
      ]
     },
     {
+     "tieu_de": "Số đếm (cardinal numbers)",
+     "y": [
+      "Dùng để **đếm số lượng**, nói tuổi, giá tiền, số điện thoại: two books, I am thirty, five dollars.",
+      "0 zero, 1 one, 2 two, 3 three, 4 four, 5 five, 6 six, 7 seven, 8 eight, 9 nine, 10 ten.",
+      "11 **eleven**, 12 **twelve**, 13 thirteen, 14 fourteen, 15 **fifteen**, 16 sixteen, 17 seventeen, 18 **eighteen**, 19 nineteen.",
+      "Tròn chục: 20 twenty, 30 thirty, 40 **forty** (không có u), 50 **fifty**, 60 sixty, 70 seventy, 80 eighty, 90 ninety.",
+      "Số ghép 21–99 có **gạch nối**: 21 twenty-one, 35 thirty-five, 99 ninety-nine.",
+      "100 one hundred (a hundred), 1,000 one thousand, 1,000,000 one million.",
+      "Kiểu Anh có **and** sau hundred: 105 one hundred and five, 250 two hundred and fifty. Kiểu Mỹ hay bỏ and.",
+      "Trước danh từ, hundred / thousand / million **không thêm s**: two hundred people (không nói two hundreds people).",
+      "Dễ nhầm khi nghe: 13 thir**TEEN** (nhấn cuối, kéo dài) với 30 **THIR**ty (nhấn đầu); tương tự 14/40, 15/50... 19/90."
+     ],
+     "vd": [
+      {
+       "en": "There are twenty-five students in my class.",
+       "vi": "Lớp tôi có hai mươi lăm học sinh."
+      },
+      {
+       "en": "My grandmother is eighty-four.",
+       "vi": "Bà tôi tám mươi tư tuổi."
+      },
+      {
+       "en": "It costs one hundred and fifty thousand dong.",
+       "vi": "Nó giá một trăm năm mươi nghìn đồng."
+      }
+     ],
+     "nguon": "giao-an"
+    },
+    {
+     "tieu_de": "Số thứ tự (ordinal numbers)",
+     "y": [
+      "Dùng để chỉ **thứ tự, vị trí**: thứ nhất, thứ hai, thứ ba... (ngày trong tháng, tầng nhà, thứ hạng, lần thứ mấy).",
+      "Ba số đặc biệt: 1st **first**, 2nd **second**, 3rd **third**.",
+      "Còn lại thêm **-th** vào số đếm: 4th fourth, 6th sixth, 7th seventh, 10th tenth, 11th eleventh, 13th thirteenth.",
+      "Đổi chính tả: 5th **fifth** (ve → f), 8th **eighth** (chỉ thêm h), 9th **ninth** (bỏ e), 12th **twelfth** (ve → f).",
+      "Tròn chục đổi y → **ie** rồi thêm th: 20th twentieth, 30th thirtieth, 40th fortieth.",
+      "Số ghép chỉ đổi **số cuối**: 21st twenty-**first**, 22nd twenty-**second**, 23rd twenty-**third**, 34th thirty-fourth.",
+      "Viết chữ có **gạch nối** giữa hàng chục và hàng đơn vị: twenty-first, forty-third. Không viết twentieth-first hay fortieth-second.",
+      "Số lớn cũng chỉ đổi **phần cuối**: 100th one hundredth, 101st one hundred and first, 125th one hundred and twenty-fifth, 1,000th one thousandth, 1,001st one thousand and first.",
+      "Viết tắt = số + 2 chữ cuối của từ: 1**st**, 2**nd**, 3**rd**, 4**th**... Chú ý 11th, 12th, 13th (không viết 11st, 12nd, 13rd), kể cả khi nằm cuối số lớn: 111th, 112th, 1,013th.",
+      "Trước số thứ tự thường có **the**: the first day, the third floor; có my, his... thì bỏ the: my first job."
+     ],
+     "vd": [
+      {
+       "en": "January is the first month of the year.",
+       "vi": "Tháng Một là tháng đầu tiên của năm."
+      },
+      {
+       "en": "My office is on the twelfth floor.",
+       "vi": "Văn phòng của tôi ở tầng mười hai."
+      },
+      {
+       "en": "Today is the twenty-first of May.",
+       "vi": "Hôm nay là ngày hai mươi mốt tháng Năm."
+      }
+     ],
+     "nguon": "giao-an"
+    },
+    {
+     "tieu_de": "Khi nào dùng số đếm, khi nào dùng số thứ tự",
+     "y": [
+      "Mẹo: trả lời câu hỏi **How many? / How much?** (bao nhiêu) → số đếm. Trả lời **Which position? / Which date?** (thứ mấy, ngày nào) → số thứ tự.",
+      "**Số đếm**: bao nhiêu cái, bao nhiêu tuổi, giá tiền, số điện thoại, giờ (seven o'clock), năm (2026 = twenty twenty-six), phần trăm (25 percent).",
+      "**Số thứ tự**: ngày trong tháng (the fifth of June), tầng nhà (the second floor), thứ hạng (first place), lần thứ mấy (the third time), thế kỷ (the twenty-first century).",
+      "Số đứng **sau** danh từ chỉ là nhãn, đọc bằng số đếm: Room 5 = room five, Lesson 2 = lesson two, Chapter 4 = chapter four.",
+      "Số đứng **trước** danh từ chỉ vị trí thì đọc bằng số thứ tự: the fifth room, the second lesson, the fourth chapter."
+     ],
+     "vd": [
+      {
+       "en": "I have three brothers. I am the third child.",
+       "vi": "Tôi có ba anh em trai. Tôi là con thứ ba."
+      },
+      {
+       "en": "Open your book to Lesson two.",
+       "vi": "Mở sách đến Bài hai."
+      }
+     ],
+     "nguon": "giao-an"
+    },
+    {
+     "tieu_de": "Cách đọc số thứ tự",
+     "y": [
+      "Phiên âm (Anh-Anh): first /fɜːst/, second /ˈsekənd/, third /θɜːd/, fourth /fɔːθ/, fifth /fɪfθ/, sixth /sɪksθ/, seventh /ˈsevənθ/, eighth /eɪtθ/, ninth /naɪnθ/, tenth /tenθ/, eleventh /ɪˈlevənθ/, twelfth /twelfθ/, twentieth /ˈtwentiəθ/, twenty-first /ˌtwentiˈfɜːst/.",
+      "Đuôi **-th** đọc là **/θ/**: đặt đầu lưỡi giữa hai hàm răng rồi thổi hơi, không rung cổ. Không đọc thành \"t\" hay \"th\" tiếng Việt.",
+      "Phải đọc rõ âm cuối để phân biệt: four /fɔː/ → fourth /fɔːθ/, ten /ten/ → tenth /tenθ/, nine /naɪn/ → ninth /naɪnθ/.",
+      "Cụm phụ âm cuối khó, đọc đủ từng âm: fifth /fɪfθ/ (từ /f/ chuyển sang /θ/), sixth /sɪksθ/ (đủ /k/ /s/ /θ/), twelfth /twelfθ/ (giữ /f/ trước /θ/).",
+      "twentieth, thirtieth... đọc 3 âm tiết, đuôi /iəθ/: TWEN-ti-eth."
+     ],
+     "vd": [
+      {
+       "en": "fourth, fifth, sixth, twelfth",
+       "vi": "thứ tư, thứ năm, thứ sáu, thứ mười hai"
+      },
+      {
+       "en": "the twentieth of May",
+       "vi": "ngày hai mươi tháng Năm"
+      }
+     ],
+     "nguon": "giao-an"
+    },
+    {
      "tieu_de": "Thêm từ để hỏi với to be",
      "y": [
       "**Why**: tại sao. **When**: khi nào. **Which**: cái nào (chọn trong số đã biết). **How**: thế nào, ra sao.",
@@ -2347,8 +2448,8 @@
     {
      "tieu_de": "Số thứ tự và cách đọc ngày tháng",
      "y": [
-      "Số thứ tự: first (1st), second (2nd), third (3rd), fourth (4th), fifth (5th), sixth, seventh, eighth, ninth, tenth, eleventh, **twelfth**, thirteenth ... twentieth, twenty-first, twenty-second, twenty-third, thirtieth.",
-      "Chú ý chính tả: five → **fifth**, nine → **ninth**, twelve → **twelfth**, twenty → **twentieth**.",
+      "Cách tạo số thứ tự (first, second, third, fifth, twelfth, twenty-first...): xem bảng đầy đủ ở **Buổi 2**.",
+      "Ngày 1 đến 31: first, second, third, fourth ... twentieth, twenty-first, twenty-second, twenty-third ... thirtieth, thirty-first.",
       "Ngày tháng đọc bằng **số thứ tự**. Ngày 23/9: kiểu Anh viết 23 September, đọc **the twenty-third of September**; kiểu Mỹ viết September 23, đọc **September twenty-third**.",
       "Sinh nhật, ngày kỷ niệm: My birthday is on the twenty-third of April. Their tenth wedding anniversary.",
       "Thứ hạng, vị trí: Our team finished in **third place**. The library is the **second** building on the left.",
